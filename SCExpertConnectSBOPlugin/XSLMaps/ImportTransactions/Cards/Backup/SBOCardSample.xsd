@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="BOM">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="BO">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="AdmInfo">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Object" type="xs:byte"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="OCRD">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="row">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="CardCode" type="xs:string"/>
+													<xs:element name="CardName" type="xs:string"/>
+													<xs:element name="CardType" type="xs:string"/>
+													<xs:element name="GroupCode" type="xs:byte"/>
+													<xs:element name="CmpPrivate" type="xs:string"/>
+													<xs:element name="Address" type="xs:string"/>
+													<xs:element name="ZipCode" type="xs:short"/>
+													<xs:element name="MailAddres" type="xs:string"/>
+													<xs:element name="MailZipCod" type="xs:short"/>
+													<xs:element name="Phone1" type="xs:string"/>
+													<xs:element name="Phone2">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="Fax" type="xs:string"/>
+													<xs:element name="CntctPrsn" type="xs:string"/>
+													<xs:element name="Notes">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="Balance" type="xs:decimal"/>
+													<xs:element name="ChecksBal" type="xs:decimal"/>
+													<xs:element name="DNotesBal" type="xs:decimal"/>
+													<xs:element name="OrdersBal" type="xs:decimal"/>
+													<xs:element name="GroupNum" type="xs:byte"/>
+													<xs:element name="CreditLine" type="xs:decimal"/>
+													<xs:element name="DebtLine" type="xs:decimal"/>
+													<xs:element name="Discount" type="xs:decimal"/>
+													<xs:element name="VatStatus" type="xs:string"/>
+													<xs:element name="LicTradNum" type="xs:string"/>
+													<xs:element name="DdctStatus" type="xs:string"/>
+													<xs:element name="DdctPrcnt" type="xs:decimal"/>
+													<xs:element name="ValidUntil">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="Chrctrstcs" type="xs:byte"/>
+													<xs:element name="ExMatchNum" type="xs:byte"/>
+													<xs:element name="InMatchNum" type="xs:byte"/>
+													<xs:element name="ListNum" type="xs:byte"/>
+													<xs:element name="DNoteBalFC" type="xs:decimal"/>
+													<xs:element name="OrderBalFC" type="xs:decimal"/>
+													<xs:element name="DNoteBalSy" type="xs:decimal"/>
+													<xs:element name="OrderBalSy" type="xs:decimal"/>
+													<xs:element name="Transfered" type="xs:string"/>
+													<xs:element name="BalTrnsfrd" type="xs:string"/>
+													<xs:element name="IntrstRate" type="xs:decimal"/>
+													<xs:element name="Commission" type="xs:decimal"/>
+													<xs:element name="CommGrCode" type="xs:byte"/>
+													<xs:element name="Free_Text">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="SlpCode" type="xs:byte"/>
+													<xs:element name="PrevYearAc" type="xs:string"/>
+													<xs:element name="Currency" type="xs:string"/>
+													<xs:element name="RateDifAct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="BalanceSys" type="xs:decimal"/>
+													<xs:element name="BalanceFC" type="xs:decimal"/>
+													<xs:element name="Protected" type="xs:string"/>
+													<xs:element name="Cellular">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="AvrageLate" type="xs:byte"/>
+													<xs:element name="City" type="xs:string"/>
+													<xs:element name="County" type="xs:string"/>
+													<xs:element name="Country" type="xs:string"/>
+													<xs:element name="MailCity" type="xs:string"/>
+													<xs:element name="MailCounty" type="xs:string"/>
+													<xs:element name="MailCountr" type="xs:string"/>
+													<xs:element name="E_Mail" type="xs:string"/>
+													<xs:element name="Picture">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="DflAccount" type="xs:string"/>
+													<xs:element name="DflBranch" type="xs:byte"/>
+													<xs:element name="BankCode" type="xs:string"/>
+													<xs:element name="AddID">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="Pager">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="FatherCard">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="CardFName">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="FatherType" type="xs:string"/>
+													<xs:element name="QryGroup1" type="xs:string"/>
+													<xs:element name="QryGroup2" type="xs:string"/>
+													<xs:element name="QryGroup3" type="xs:string"/>
+													<xs:element name="QryGroup4" type="xs:string"/>
+													<xs:element name="QryGroup5" type="xs:string"/>
+													<xs:element name="QryGroup6" type="xs:string"/>
+													<xs:element name="QryGroup7" type="xs:string"/>
+													<xs:element name="QryGroup8" type="xs:string"/>
+													<xs:element name="QryGroup9" type="xs:string"/>
+													<xs:element name="QryGroup10" type="xs:string"/>
+													<xs:element name="QryGroup11" type="xs:string"/>
+													<xs:element name="QryGroup12" type="xs:string"/>
+													<xs:element name="QryGroup13" type="xs:string"/>
+													<xs:element name="QryGroup14" type="xs:string"/>
+													<xs:element name="QryGroup15" type="xs:string"/>
+													<xs:element name="QryGroup16" type="xs:string"/>
+													<xs:element name="QryGroup17" type="xs:string"/>
+													<xs:element name="QryGroup18" type="xs:string"/>
+													<xs:element name="QryGroup19" type="xs:string"/>
+													<xs:element name="QryGroup20" type="xs:string"/>
+													<xs:element name="QryGroup21" type="xs:string"/>
+													<xs:element name="QryGroup22" type="xs:string"/>
+													<xs:element name="QryGroup23" type="xs:string"/>
+													<xs:element name="QryGroup24" type="xs:string"/>
+													<xs:element name="QryGroup25" type="xs:string"/>
+													<xs:element name="QryGroup26" type="xs:string"/>
+													<xs:element name="QryGroup27" type="xs:string"/>
+													<xs:element name="QryGroup28" type="xs:string"/>
+													<xs:element name="QryGroup29" type="xs:string"/>
+													<xs:element name="QryGroup30" type="xs:string"/>
+													<xs:element name="QryGroup31" type="xs:string"/>
+													<xs:element name="QryGroup32" type="xs:string"/>
+													<xs:element name="QryGroup33" type="xs:string"/>
+													<xs:element name="QryGroup34" type="xs:string"/>
+													<xs:element name="QryGroup35" type="xs:string"/>
+													<xs:element name="QryGroup36" type="xs:string"/>
+													<xs:element name="QryGroup37" type="xs:string"/>
+													<xs:element name="QryGroup38" type="xs:string"/>
+													<xs:element name="QryGroup39" type="xs:string"/>
+													<xs:element name="QryGroup40" type="xs:string"/>
+													<xs:element name="QryGroup41" type="xs:string"/>
+													<xs:element name="QryGroup42" type="xs:string"/>
+													<xs:element name="QryGroup43" type="xs:string"/>
+													<xs:element name="QryGroup44" type="xs:string"/>
+													<xs:element name="QryGroup45" type="xs:string"/>
+													<xs:element name="QryGroup46" type="xs:string"/>
+													<xs:element name="QryGroup47" type="xs:string"/>
+													<xs:element name="QryGroup48" type="xs:string"/>
+													<xs:element name="QryGroup49" type="xs:string"/>
+													<xs:element name="QryGroup50" type="xs:string"/>
+													<xs:element name="QryGroup51" type="xs:string"/>
+													<xs:element name="QryGroup52" type="xs:string"/>
+													<xs:element name="QryGroup53" type="xs:string"/>
+													<xs:element name="QryGroup54" type="xs:string"/>
+													<xs:element name="QryGroup55" type="xs:string"/>
+													<xs:element name="QryGroup56" type="xs:string"/>
+													<xs:element name="QryGroup57" type="xs:string"/>
+													<xs:element name="QryGroup58" type="xs:string"/>
+													<xs:element name="QryGroup59" type="xs:string"/>
+													<xs:element name="QryGroup60" type="xs:string"/>
+													<xs:element name="QryGroup61" type="xs:string"/>
+													<xs:element name="QryGroup62" type="xs:string"/>
+													<xs:element name="QryGroup63" type="xs:string"/>
+													<xs:element name="QryGroup64" type="xs:string"/>
+													<xs:element name="DdctOffice">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="CreateDate" type="xs:int"/>
+													<xs:element name="UpdateDate" type="xs:int"/>
+													<xs:element name="ExportCode">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="DscntObjct" type="xs:byte"/>
+													<xs:element name="DscntRel" type="xs:string"/>
+													<xs:element name="SPGCounter" type="xs:byte"/>
+													<xs:element name="SPPCounter" type="xs:byte"/>
+													<xs:element name="DdctFileNo">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="SCNCounter" type="xs:byte"/>
+													<xs:element name="MinIntrst" type="xs:decimal"/>
+													<xs:element name="DataSource" type="xs:string"/>
+													<xs:element name="OprCount" type="xs:byte"/>
+													<xs:element name="ExemptNo">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="Priority" type="xs:byte"/>
+													<xs:element name="CreditCard" type="xs:byte"/>
+													<xs:element name="CrCardNum">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="CardValid">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="UserSign" type="xs:byte"/>
+													<xs:element name="LocMth" type="xs:string"/>
+													<xs:element name="validFor" type="xs:string"/>
+													<xs:element name="validFrom">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="validTo">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="frozenFor" type="xs:string"/>
+													<xs:element name="frozenFrom">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="frozenTo">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="sEmployed" type="xs:string"/>
+													<xs:element name="MTHCounter" type="xs:byte"/>
+													<xs:element name="BNKCounter" type="xs:byte"/>
+													<xs:element name="DdgKey" type="xs:byte"/>
+													<xs:element name="DdtKey" type="xs:byte"/>
+													<xs:element name="ValidComm">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="FrozenComm">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="chainStore" type="xs:string"/>
+													<xs:element name="DiscInRet" type="xs:string"/>
+													<xs:element name="State1" type="xs:string"/>
+													<xs:element name="State2" type="xs:string"/>
+													<xs:element name="VatGroup">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="LogInstanc" type="xs:byte"/>
+													<xs:element name="ObjType" type="xs:byte"/>
+													<xs:element name="Indicator">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ShipType" type="xs:byte"/>
+													<xs:element name="DebPayAcct" type="xs:string"/>
+													<xs:element name="ShipToDef" type="xs:string"/>
+													<xs:element name="Block">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="MailBlock">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="Password">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ECVatGroup">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="Deleted" type="xs:string"/>
+													<xs:element name="IBAN">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="DocEntry" type="xs:byte"/>
+													<xs:element name="FormCode" type="xs:byte"/>
+													<xs:element name="Box1099">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="PymCode" type="xs:string"/>
+													<xs:element name="BackOrder" type="xs:string"/>
+													<xs:element name="PartDelivr" type="xs:string"/>
+													<xs:element name="DunnLevel" type="xs:byte"/>
+													<xs:element name="DunnDate">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="BlockDunn" type="xs:string"/>
+													<xs:element name="BankCountr" type="xs:string"/>
+													<xs:element name="CollecAuth" type="xs:string"/>
+													<xs:element name="DME">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="InstrucKey">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="SinglePaym" type="xs:string"/>
+													<xs:element name="ISRBillId">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="PaymBlock" type="xs:string"/>
+													<xs:element name="RefDetails">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="HouseBank" type="xs:string"/>
+													<xs:element name="OwnerIdNum">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="PyBlckDesc" type="xs:byte"/>
+													<xs:element name="HousBnkCry" type="xs:string"/>
+													<xs:element name="HousBnkAct" type="xs:string"/>
+													<xs:element name="HousBnkBrn" type="xs:string"/>
+													<xs:element name="ProjectCod">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="SysMatchNo" type="xs:byte"/>
+													<xs:element name="VatIdUnCmp">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="AgentCode">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="TolrncDays" type="xs:byte"/>
+													<xs:element name="SelfInvoic">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="DeferrTax" type="xs:string"/>
+													<xs:element name="LetterNum">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="MaxAmount" type="xs:decimal"/>
+													<xs:element name="FromDate">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ToDate">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="WTLiable">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="CrtfcateNO">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ExpireDate">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="NINum">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="AccCritria" type="xs:string"/>
+													<xs:element name="WTCode">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="Equ" type="xs:string"/>
+													<xs:element name="HldCode" type="xs:string"/>
+													<xs:element name="ConnBP">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="MltMthNum" type="xs:byte"/>
+													<xs:element name="TypWTReprt" type="xs:string"/>
+													<xs:element name="VATRegNum">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="RepName">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="Industry">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="Business">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="WTTaxCat">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="IsDomestic" type="xs:string"/>
+													<xs:element name="IsResident" type="xs:string"/>
+													<xs:element name="AutoCalBCG" type="xs:string"/>
+													<xs:element name="OtrCtlAcct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="AliasName">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="Building">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="MailBuildi">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="BoEPrsnt">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="BoEDiscnt">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="BoEOnClct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="UnpaidBoE">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ITWTCode">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="DunTerm" type="xs:string"/>
+													<xs:element name="ChannlBP">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="DfTcnician" type="xs:byte"/>
+													<xs:element name="Territory" type="xs:byte"/>
+													<xs:element name="BillToDef" type="xs:string"/>
+													<xs:element name="DpmClear">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="IntrntSite" type="xs:string"/>
+													<xs:element name="LangCode" type="xs:byte"/>
+													<xs:element name="HousActKey" type="xs:byte"/>
+													<xs:element name="Profession">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="CDPNum" type="xs:byte"/>
+													<xs:element name="DflBankKey" type="xs:byte"/>
+													<xs:element name="BCACode">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="UseShpdGd" type="xs:string"/>
+													<xs:element name="RegNum">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="VerifNum">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="BankCtlKey">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="HousCtlKey">
+														<xs:complexType/>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="CRD1">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="row" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Address" type="xs:string"/>
+													<xs:element name="CardCode" type="xs:string"/>
+													<xs:element name="Street" type="xs:string"/>
+													<xs:element name="Block">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ZipCode" type="xs:short"/>
+													<xs:element name="City" type="xs:string"/>
+													<xs:element name="County" type="xs:string"/>
+													<xs:element name="Country" type="xs:string"/>
+													<xs:element name="State" type="xs:string"/>
+													<xs:element name="UserSign" type="xs:byte"/>
+													<xs:element name="LogInstanc" type="xs:byte"/>
+													<xs:element name="ObjType" type="xs:byte"/>
+													<xs:element name="LicTradNum" type="xs:string"/>
+													<xs:element name="LineNum" type="xs:byte"/>
+													<xs:element name="TaxCode">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="Building">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="AdresType" type="xs:string"/>
+													<xs:element name="Address2">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="Address3">
+														<xs:complexType/>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="OCPR">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="row">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="CntctCode" type="xs:byte"/>
+													<xs:element name="CardCode" type="xs:string"/>
+													<xs:element name="Name" type="xs:string"/>
+													<xs:element name="Position" type="xs:string"/>
+													<xs:element name="Address" type="xs:string"/>
+													<xs:element name="Tel1" type="xs:string"/>
+													<xs:element name="Tel2">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="Cellolar" type="xs:string"/>
+													<xs:element name="Fax" type="xs:string"/>
+													<xs:element name="E_MailL" type="xs:string"/>
+													<xs:element name="Pager">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="Notes1">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="Notes2">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="DataSource" type="xs:string"/>
+													<xs:element name="UserSign" type="xs:byte"/>
+													<xs:element name="Password">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="LogInstanc" type="xs:byte"/>
+													<xs:element name="ObjType" type="xs:byte"/>
+													<xs:element name="BirthPlace">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="BirthDate">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="Gender" type="xs:string"/>
+													<xs:element name="Profession">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="updateDate" type="xs:int"/>
+													<xs:element name="updateTime" type="xs:short"/>
+													<xs:element name="Title" type="xs:string"/>
+													<xs:element name="BirthCity">
+														<xs:complexType/>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="CRD2">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="row" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="CardCode" type="xs:string"/>
+													<xs:element name="LineNum" type="xs:byte"/>
+													<xs:element name="PymCode" type="xs:string"/>
+													<xs:element name="LogInstanc" type="xs:byte"/>
+													<xs:element name="ObjType" type="xs:byte"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="OCRB">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="row">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="AbsEntry" type="xs:byte"/>
+													<xs:element name="CardCode" type="xs:string"/>
+													<xs:element name="BankCode" type="xs:string"/>
+													<xs:element name="Country" type="xs:string"/>
+													<xs:element name="Account" type="xs:string"/>
+													<xs:element name="Branch" type="xs:byte"/>
+													<xs:element name="Street">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="Block">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ZipCode">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="City" type="xs:string"/>
+													<xs:element name="County">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="State">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ControlKey">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="UsrNumber1">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="UsrNumber2">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="UsrNumber3">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="UsrNumber4">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="IBAN">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="LogInstanc" type="xs:byte"/>
+													<xs:element name="Building">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="AliasName">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="AcctType">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="BankKey" type="xs:byte"/>
+													<xs:element name="BIK">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="AcctName">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="CorresAcct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="Phone">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="Fax">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ISRType" type="xs:byte"/>
+													<xs:element name="ISRBillerI">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="CustIdNum" type="xs:byte"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="dsShippingManifestHeader" targetNamespace="http://tempuri.org/dsShippingManifestHeader.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/dsShippingManifestHeader.xsd"
+	xmlns:mstns="http://tempuri.org/dsShippingManifestHeader.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="dsShippingManifestHeader" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ShippingManifestHeader">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CONSIGNEE" type="xs:string" minOccurs="0" />
+							<xs:element name="CONSIGNEENAME" type="xs:string" minOccurs="0" />
+							<xs:element name="ORDERID" type="xs:string" minOccurs="0" />
+							<xs:element name="ORDERTYPE" type="xs:string" minOccurs="0" />
+							<xs:element name="ORDERTYPEDESC" type="xs:string" minOccurs="0" />
+							<xs:element name="REFERENCEORD" type="xs:string" minOccurs="0" />
+							<xs:element name="TARGETCOMPANY" type="xs:string" minOccurs="0" />
+							<xs:element name="COMPANYTYPE" type="xs:string" minOccurs="0" />
+							<xs:element name="COMPANYTYPEDESC" type="xs:string" minOccurs="0" />
+							<xs:element name="COMPANYNAME" type="xs:string" minOccurs="0" />
+							<xs:element name="STREET1" type="xs:string" minOccurs="0" />
+							<xs:element name="STREET2" type="xs:string" minOccurs="0" />
+							<xs:element name="CITY" type="xs:string" minOccurs="0" />
+							<xs:element name="STATE" type="xs:string" minOccurs="0" />
+							<xs:element name="ZIP" type="xs:string" minOccurs="0" />
+							<xs:element name="CONTACT1NAME" type="xs:string" minOccurs="0" />
+							<xs:element name="CONTACT2NAME" type="xs:string" minOccurs="0" />
+							<xs:element name="CONTACT1PHONE" type="xs:string" minOccurs="0" />
+							<xs:element name="CONTACT2PHONE" type="xs:string" minOccurs="0" />
+							<xs:element name="CONTACT1FAX" type="xs:string" minOccurs="0" />
+							<xs:element name="CONTACT2FAX" type="xs:string" minOccurs="0" />
+							<xs:element name="CONTACT1EMAIL" type="xs:string" minOccurs="0" />
+							<xs:element name="CONTACT2EMAIL" type="xs:string" minOccurs="0" />
+							<xs:element name="NOTES" type="xs:string" minOccurs="0" />
+							<xs:element name="SCHEDULEDDATE" type="xs:date" minOccurs="0" />
+							<xs:element name="SHIPPEDDATE" type="xs:date" minOccurs="0" />
+							<xs:element name="SHIPMENT" type="xs:string" minOccurs="0" />
+							<xs:element name="WAVE" type="xs:string" minOccurs="0" />
+							<xs:element name="STAGINGLANE" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

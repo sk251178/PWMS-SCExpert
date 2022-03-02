@@ -1,0 +1,223 @@
+<DataTemplates>
+  <DataTemplate>
+    <ID>837</ID>
+    <Name>DTUSERWHAREAUM</Name>
+    <AppID>0</AppID>
+    <Label>DTUSERWHAREAUM</Label>
+    <StructureName>USERWHAREA</StructureName>
+    <ConnID>2</ConnID>
+    <FormTemplate>{all:n4}</FormTemplate>
+    <ColumnTemplates />
+    <RowAttributes />
+    <DTType>APPLICATION</DTType>
+    <ScreenId />
+    <ObjectId />
+    <Mode />
+    <User />
+    <RowsInGrid>0</RowsInGrid>
+    <UseDTConnection>False</UseDTConnection>
+    <ParentAppID>0</ParentAppID>
+    <ParentDTID>0</ParentDTID>
+    <HasClientSideExpressions>False</HasClientSideExpressions>
+    <InMemory>False</InMemory>
+    <ViewStyle>0</ViewStyle>
+    <UpdatedBy>Admin</UpdatedBy>
+    <UpdatedOn>2010-03-16 12:37:07.9530</UpdatedOn>
+    <DTHelp />
+    <IsStickyFields>False</IsStickyFields>
+    <DTFields>
+      <DTField>
+        <Name>USERID</Name>
+        <AllowNull>False</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>USERID</Label>
+        <MaxLength>20</MaxLength>
+        <Ordinal>0</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>True</Required>
+        <Visible>FALSE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>True</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>User reference number.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>WHAREA</Name>
+        <AllowNull>False</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>WHAREA</Label>
+        <MaxLength>10</MaxLength>
+        <Ordinal>1</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>True</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>True</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>The Area in the warehouse that the User is assigned to.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>TYPEAHEAD</Name>
+          <Label>Type Ahead</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TypeAhead</Class>
+        </DisplayType>
+        <Properties>
+          <Property>
+            <Code>auto_expand</Code>
+            <CompositeCode>TYPEAHEAD_auto_expand</CompositeCode>
+            <Label>Auto Expand</Label>
+            <Value>True</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>auto_load</Code>
+            <CompositeCode>TYPEAHEAD_auto_load</CompositeCode>
+            <Label>Auto Load</Label>
+            <Value>False</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>auto_postback</Code>
+            <CompositeCode>TYPEAHEAD_auto_postback</CompositeCode>
+            <Label>Auto Expand</Label>
+            <Value>False</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>connection</Code>
+            <CompositeCode>TYPEAHEAD_connection</CompositeCode>
+            <Label>Connection</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>data_template</Code>
+            <CompositeCode>TYPEAHEAD_data_template</CompositeCode>
+            <Label>Data Template</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>extra_fields</Code>
+            <CompositeCode>TYPEAHEAD_extra_fields</CompositeCode>
+            <Label>Extra Fields</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>filter</Code>
+            <CompositeCode>TYPEAHEAD_filter</CompositeCode>
+            <Label>Filter</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>limit_to_list</Code>
+            <CompositeCode>TYPEAHEAD_limit_to_list</CompositeCode>
+            <Label>Limit To List</Label>
+            <Value>True</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>list_height</Code>
+            <CompositeCode>TYPEAHEAD_list_height</CompositeCode>
+            <Label>List Height</Label>
+            <Value>250</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>minimum_chars</Code>
+            <CompositeCode>TYPEAHEAD_minimum_chars</CompositeCode>
+            <Label>Minimum Chars</Label>
+            <Value>1</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>record_limit</Code>
+            <CompositeCode>TYPEAHEAD_record_limit</CompositeCode>
+            <Label>Record Limit</Label>
+            <Value>50</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>sql</Code>
+            <CompositeCode>TYPEAHEAD_sql</CompositeCode>
+            <Label>SQL</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>table</Code>
+            <CompositeCode>TYPEAHEAD_table</CompositeCode>
+            <Label>Table</Label>
+            <Value>warehousearea</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>text_field</Code>
+            <CompositeCode>TYPEAHEAD_text_field</CompositeCode>
+            <Label>Text Field</Label>
+            <Value>warehouseareadescription</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>value_field</Code>
+            <CompositeCode>TYPEAHEAD_value_field</CompositeCode>
+            <Label>Value Field</Label>
+            <Value>warehouseareacode</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>value_list</Code>
+            <CompositeCode>TYPEAHEAD_value_list</CompositeCode>
+            <Label>Value List</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+        </Properties>
+      </DTField>
+    </DTFields>
+    <Expressions />
+  </DataTemplate>
+</DataTemplates>

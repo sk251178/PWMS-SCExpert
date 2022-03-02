@@ -1,0 +1,867 @@
+<DataTemplates>
+  <DataTemplate>
+    <ID>1087</ID>
+    <Name>SysReportGrid</Name>
+    <AppID>0</AppID>
+    <Label>SysReportGrid</Label>
+    <StructureName>sys_report</StructureName>
+    <ConnID>1</ConnID>
+    <FormTemplate>{all:n4}</FormTemplate>
+    <ColumnTemplates />
+    <RowAttributes />
+    <DTType>SYSTEM</DTType>
+    <ScreenId />
+    <ObjectId />
+    <Mode />
+    <User />
+    <RowsInGrid>0</RowsInGrid>
+    <UseDTConnection>True</UseDTConnection>
+    <ParentAppID>0</ParentAppID>
+    <ParentDTID>0</ParentDTID>
+    <HasClientSideExpressions>False</HasClientSideExpressions>
+    <InMemory>False</InMemory>
+    <ViewStyle>0</ViewStyle>
+    <UpdatedBy>Admin</UpdatedBy>
+    <UpdatedOn>2007-02-16 16:37:59.4070</UpdatedOn>
+    <DTHelp />
+    <IsStickyFields>False</IsStickyFields>
+    <DTFields>
+      <DTField>
+        <Name>id</Name>
+        <AllowNull>False</AllowNull>
+        <DataType>System.Int32</DataType>
+        <DefaultValue />
+        <Label>ID</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>10</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>True</Required>
+        <Visible>FALSE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>True</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>NULL</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>NUMERIC_TEXTBOX</Name>
+          <Label>Numeric Textbox</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.NumericTextBox</Class>
+        </DisplayType>
+        <Properties>
+          <Property>
+            <Code>commas</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_commas</CompositeCode>
+            <Label>Commas</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>decimals</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_decimals</CompositeCode>
+            <Label>Decimals</Label>
+            <Value>-1</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>max_value</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_max_value</CompositeCode>
+            <Label>Max Value</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>min_value</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_min_value</CompositeCode>
+            <Label>Min Value</Label>
+            <Value>1</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_color</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_negative_color</CompositeCode>
+            <Label>Negative Color</Label>
+            <Value>#990000</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_format</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_negative_format</CompositeCode>
+            <Label>Negative Format</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>null_value</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_null_value</CompositeCode>
+            <Label>NULL Value</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_symbol</CompositeCode>
+            <Label>Symbol</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol_position</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_symbol_position</CompositeCode>
+            <Label>Symbol Position</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+        </Properties>
+      </DTField>
+      <DTField>
+        <Name>name</Name>
+        <AllowNull>False</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>Name</Label>
+        <MaxLength>50</MaxLength>
+        <Ordinal>20</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>True</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>35</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>NULL</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>title</Name>
+        <AllowNull>False</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>Title</Label>
+        <MaxLength>50</MaxLength>
+        <Ordinal>30</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>True</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>NULL</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>MULTILINE_TEXTBOX</Name>
+          <Label>Multiline Textbox</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties>
+          <Property>
+            <Code>columns</Code>
+            <CompositeCode>MULTILINE_TEXTBOX_columns</CompositeCode>
+            <Label>Columns</Label>
+            <Value>40</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>rows</Code>
+            <CompositeCode>MULTILINE_TEXTBOX_rows</CompositeCode>
+            <Label>Rows</Label>
+            <Value>3</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+        </Properties>
+      </DTField>
+      <DTField>
+        <Name>type</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>type</Label>
+        <MaxLength>10</MaxLength>
+        <Ordinal>40</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>FALSE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp />
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>username</Name>
+        <AllowNull>False</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>Created By</Label>
+        <MaxLength>50</MaxLength>
+        <Ordinal>50</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>True</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp />
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>is_public</Name>
+        <AllowNull>False</AllowNull>
+        <DataType>System.Boolean</DataType>
+        <DefaultValue />
+        <Label>Public</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>60</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>NULL</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>CHECKBOX</Name>
+          <Label>Checkbox</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.Checkbox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>scope</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>scope</Label>
+        <MaxLength>10</MaxLength>
+        <Ordinal>70</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>FALSE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>NULL</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>screen_id</Name>
+        <AllowNull>False</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>Screen ID</Label>
+        <MaxLength>10</MaxLength>
+        <Ordinal>80</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>True</Required>
+        <Visible>FALSE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>TRUE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>NULL</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>obj_id</Name>
+        <AllowNull>False</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>Object ID</Label>
+        <MaxLength>50</MaxLength>
+        <Ordinal>90</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>True</Required>
+        <Visible>FALSE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>TRUE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>NULL</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>show_search_criteria</Name>
+        <AllowNull>False</AllowNull>
+        <DataType>System.Boolean</DataType>
+        <DefaultValue />
+        <Label>Show Search Criteria</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>100</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>FALSE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>NULL</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>CHECKBOX</Name>
+          <Label>Checkbox</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.Checkbox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>comment</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>Comments (press Shift+Enter for new line)</Label>
+        <MaxLength>255</MaxLength>
+        <Ordinal>110</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>FALSE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>NULL</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>MULTILINE_TEXTBOX</Name>
+          <Label>Multiline Textbox</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties>
+          <Property>
+            <Code>columns</Code>
+            <CompositeCode>MULTILINE_TEXTBOX_columns</CompositeCode>
+            <Label>Columns</Label>
+            <Value>40</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>rows</Code>
+            <CompositeCode>MULTILINE_TEXTBOX_rows</CompositeCode>
+            <Label>Rows</Label>
+            <Value>3</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+        </Properties>
+      </DTField>
+      <DTField>
+        <Name>app_id</Name>
+        <AllowNull>False</AllowNull>
+        <DataType>System.Int32</DataType>
+        <DefaultValue />
+        <Label>App ID</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>120</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>True</Required>
+        <Visible>FALSE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>TRUE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>NULL</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>dt_id</Name>
+        <AllowNull>False</AllowNull>
+        <DataType>System.Int32</DataType>
+        <DefaultValue />
+        <Label>DT ID</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>130</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>True</Required>
+        <Visible>FALSE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>TRUE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>NULL</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>field_info</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>field_info</Label>
+        <MaxLength>2000</MaxLength>
+        <Ordinal>140</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>FALSE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>NULL</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>saved</Name>
+        <AllowNull>False</AllowNull>
+        <DataType>System.Boolean</DataType>
+        <DefaultValue />
+        <Label>Saved</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>150</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>FALSE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>NULL</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>CHECKBOX</Name>
+          <Label>Checkbox</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.Checkbox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>fltr_app_id</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.Int32</DataType>
+        <DefaultValue />
+        <Label>fltr_app_id</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>160</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>FALSE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>NULL</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>fltr_dt_id</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.Int32</DataType>
+        <DefaultValue />
+        <Label>fltr_dt_id</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>170</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>FALSE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>NULL</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>sql_query</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>sql_query</Label>
+        <MaxLength>2147483647</MaxLength>
+        <Ordinal>180</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>FALSE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>NULL</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>main_table</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>main_table</Label>
+        <MaxLength>100</MaxLength>
+        <Ordinal>190</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>FALSE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>NULL</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+    </DTFields>
+    <Expressions />
+  </DataTemplate>
+</DataTemplates>

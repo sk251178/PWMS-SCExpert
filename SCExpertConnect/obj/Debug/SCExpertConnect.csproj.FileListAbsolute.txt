@@ -1,0 +1,12 @@
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertConnect\obj\Debug\SCExpertConnect.csproj.AssemblyReference.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertConnect\obj\Debug\SCExpertConnect.ProjectInstaller.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertConnect\obj\Debug\SCExpertConnect.SCExpertConnectWinApp.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertConnect\obj\Debug\SCExpertConnect.csproj.GenerateResource.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertConnect\obj\Debug\SCExpertConnect.csproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\SCExpertConnect\PWMS.SCExpertConnect.exe.config
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\SCExpertConnect\PWMS.SCExpertConnect.xml
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\SCExpertConnect\PWMS.SCExpertConnect.exe
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\SCExpertConnect\PWMS.SCExpertConnect.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertConnect\obj\Debug\SCExpertConnect.csproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertConnect\obj\Debug\PWMS.SCExpertConnect.exe
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertConnect\obj\Debug\PWMS.SCExpertConnect.pdb

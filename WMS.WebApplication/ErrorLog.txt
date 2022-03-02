@@ -1,0 +1,541 @@
+2014-05-12 10:53:41 Log File Created
+2014-05-12 10:53:41 C:\NCR\NCR.NWMS\Projects\LaBodega\WMS.WebApplication\ErrorLog.txt
+--------------------------------------------------------------
+
+***************** ERROR *****************
+2014-05-12 10:53:41 System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:12345
+   at Made4Net.Shared.Authentication.User.Login(String User, String Pass) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.Shared\Authentication\User.vb:line 78
+   at Made4Net.WebControls.LoginBox.DoLogin(String pUser, String pPass) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\Misc\LoginBox.vb:line 527
+*****************************************
+
+***************** ERROR *****************
+2014-05-12 11:25:27 System.Data.SqlClient.SqlException: Invalid column name 'SKUGROUP'.
+Invalid column name 'NUMCASES'.
+Invalid column name 'NUMLINES'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable)
+   at Made4Net.DataAccess.ODBCDataAdapterHelper.FillFromDataAdapter(IDbDataAdapter& IDA, DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\ODBCDataAdapterHelper.vb:line 44
+   at Made4Net.DataAccess.DataInterface.ExecuteCommand(ODBCConnectionInfo connInfo, IDbCommand command, CommandType commandType, Boolean isThrowException, Object[] arguments) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 452
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataSet ds, DataTable dt, String SQL, ODBCConnectionInfo pConnectionInfo, Boolean FillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 612
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataTable dt, String pSQL, ODBCConnectionInfo pConnectionInfo, Boolean pFillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 570
+   at Made4Net.DataAccess.DataInterface.FillDataset(String SQL, DataTable dt, Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, String pConnectionName) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 546
+   at Made4Net.DataAccess.Data.CreateDataTable(Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 116
+   at Made4Net.DataAccess.Data.CreateDataRow(Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 139
+   at Made4Net.DataAccess.Data.GetRecordCount() in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 365
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema, Boolean pSelectedRecordOnly, TableEditorMode pTartgetMode) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 613
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 566
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 562
+   at Made4Net.WebControls.DataGrid2.CreateDataTable() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 558
+   at Made4Net.WebControls.DataGrid2.Refresh() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 539
+   at Made4Net.WebControls.TableEditor.OnPreRender(EventArgs e) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 3898
+*****************************************
+
+***************** ERROR *****************
+2014-05-12 11:25:27 System.Data.SqlClient.SqlException: Invalid column name 'SKUGROUP'.
+Invalid column name 'NUMCASES'.
+Invalid column name 'NUMLINES'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable)
+   at Made4Net.DataAccess.ODBCDataAdapterHelper.FillFromDataAdapter(IDbDataAdapter& IDA, DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\ODBCDataAdapterHelper.vb:line 44
+   at Made4Net.DataAccess.DataInterface.ExecuteCommand(ODBCConnectionInfo connInfo, IDbCommand command, CommandType commandType, Boolean isThrowException, Object[] arguments) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 452
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataSet ds, DataTable dt, String SQL, ODBCConnectionInfo pConnectionInfo, Boolean FillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 612
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataTable dt, String pSQL, ODBCConnectionInfo pConnectionInfo, Boolean pFillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 570
+   at Made4Net.DataAccess.DataInterface.FillDataset(String SQL, DataTable dt, Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, String pConnectionName) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 546
+   at Made4Net.DataAccess.Data.CreateDataTable(Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 116
+   at Made4Net.DataAccess.Data.CreateDataRow(Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 139
+   at Made4Net.DataAccess.Data.GetRecordCount() in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 365
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema, Boolean pSelectedRecordOnly, TableEditorMode pTartgetMode) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 613
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 566
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 562
+   at Made4Net.WebControls.DataGrid2.CreateDataTable() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 558
+   at Made4Net.WebControls.DataGrid2.Refresh() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 539
+   at Made4Net.WebControls.TableEditor.OnPreRender(EventArgs e) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 3898
+*****************************************
+
+***************** ERROR *****************
+2014-05-12 11:27:50 System.Data.SqlClient.SqlException: The text data type cannot be selected as DISTINCT because it is not comparable.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable)
+   at Made4Net.DataAccess.ODBCDataAdapterHelper.FillFromDataAdapter(IDbDataAdapter& IDA, DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\ODBCDataAdapterHelper.vb:line 44
+   at Made4Net.DataAccess.DataInterface.ExecuteCommand(ODBCConnectionInfo connInfo, IDbCommand command, CommandType commandType, Boolean isThrowException, Object[] arguments) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 452
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataSet ds, DataTable dt, String SQL, ODBCConnectionInfo pConnectionInfo, Boolean FillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 612
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataTable dt, String pSQL, ODBCConnectionInfo pConnectionInfo, Boolean pFillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 570
+   at Made4Net.DataAccess.DataInterface.FillDataset(String SQL, DataTable dt, Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, String pConnectionName) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 546
+   at Made4Net.DataAccess.Data.CreateDataTable(Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 116
+   at Made4Net.DataAccess.Data.CreateDataRow(Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 139
+   at Made4Net.DataAccess.Data.GetRecordCount() in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 365
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema, Boolean pSelectedRecordOnly, TableEditorMode pTartgetMode) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 613
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 566
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 562
+   at Made4Net.WebControls.DataGrid2.CreateDataTable() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 558
+   at Made4Net.WebControls.DataGrid2.Refresh() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 539
+   at Made4Net.WebControls.TableEditor.OnPreRender(EventArgs e) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 3898
+*****************************************
+
+***************** ERROR *****************
+2014-05-12 11:27:50 System.Data.SqlClient.SqlException: The text data type cannot be selected as DISTINCT because it is not comparable.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable)
+   at Made4Net.DataAccess.ODBCDataAdapterHelper.FillFromDataAdapter(IDbDataAdapter& IDA, DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\ODBCDataAdapterHelper.vb:line 44
+   at Made4Net.DataAccess.DataInterface.ExecuteCommand(ODBCConnectionInfo connInfo, IDbCommand command, CommandType commandType, Boolean isThrowException, Object[] arguments) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 452
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataSet ds, DataTable dt, String SQL, ODBCConnectionInfo pConnectionInfo, Boolean FillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 612
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataTable dt, String pSQL, ODBCConnectionInfo pConnectionInfo, Boolean pFillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 570
+   at Made4Net.DataAccess.DataInterface.FillDataset(String SQL, DataTable dt, Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, String pConnectionName) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 546
+   at Made4Net.DataAccess.Data.CreateDataTable(Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 116
+   at Made4Net.DataAccess.Data.CreateDataRow(Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 139
+   at Made4Net.DataAccess.Data.GetRecordCount() in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 365
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema, Boolean pSelectedRecordOnly, TableEditorMode pTartgetMode) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 613
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 566
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 562
+   at Made4Net.WebControls.DataGrid2.CreateDataTable() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 558
+   at Made4Net.WebControls.DataGrid2.Refresh() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 539
+   at Made4Net.WebControls.TableEditor.OnPreRender(EventArgs e) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 3898
+*****************************************
+
+***************** ERROR *****************
+2014-05-12 11:28:02 System.Data.SqlClient.SqlException: Invalid column name 'SKUGROUP'.
+Invalid column name 'NUMCASES'.
+Invalid column name 'NUMLINES'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable)
+   at Made4Net.DataAccess.ODBCDataAdapterHelper.FillFromDataAdapter(IDbDataAdapter& IDA, DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\ODBCDataAdapterHelper.vb:line 44
+   at Made4Net.DataAccess.DataInterface.ExecuteCommand(ODBCConnectionInfo connInfo, IDbCommand command, CommandType commandType, Boolean isThrowException, Object[] arguments) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 452
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataSet ds, DataTable dt, String SQL, ODBCConnectionInfo pConnectionInfo, Boolean FillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 612
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataTable dt, String pSQL, ODBCConnectionInfo pConnectionInfo, Boolean pFillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 570
+   at Made4Net.DataAccess.DataInterface.FillDataset(String SQL, DataTable dt, Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, String pConnectionName) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 546
+   at Made4Net.DataAccess.Data.CreateDataTable(Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 116
+   at Made4Net.DataAccess.Data.CreateDataRow(Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 139
+   at Made4Net.DataAccess.Data.GetRecordCount() in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 365
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema, Boolean pSelectedRecordOnly, TableEditorMode pTartgetMode) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 613
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 566
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 562
+   at Made4Net.WebControls.DataGrid2.CreateDataTable() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 558
+   at Made4Net.WebControls.DataGrid2.Refresh() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 539
+   at Made4Net.WebControls.TableEditor.OnPreRender(EventArgs e) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 3898
+*****************************************
+
+***************** ERROR *****************
+2014-05-12 11:28:02 System.Data.SqlClient.SqlException: Invalid column name 'SKUGROUP'.
+Invalid column name 'NUMCASES'.
+Invalid column name 'NUMLINES'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable)
+   at Made4Net.DataAccess.ODBCDataAdapterHelper.FillFromDataAdapter(IDbDataAdapter& IDA, DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\ODBCDataAdapterHelper.vb:line 44
+   at Made4Net.DataAccess.DataInterface.ExecuteCommand(ODBCConnectionInfo connInfo, IDbCommand command, CommandType commandType, Boolean isThrowException, Object[] arguments) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 452
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataSet ds, DataTable dt, String SQL, ODBCConnectionInfo pConnectionInfo, Boolean FillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 612
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataTable dt, String pSQL, ODBCConnectionInfo pConnectionInfo, Boolean pFillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 570
+   at Made4Net.DataAccess.DataInterface.FillDataset(String SQL, DataTable dt, Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, String pConnectionName) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 546
+   at Made4Net.DataAccess.Data.CreateDataTable(Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 116
+   at Made4Net.DataAccess.Data.CreateDataRow(Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 139
+   at Made4Net.DataAccess.Data.GetRecordCount() in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 365
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema, Boolean pSelectedRecordOnly, TableEditorMode pTartgetMode) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 613
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 566
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 562
+   at Made4Net.WebControls.DataGrid2.CreateDataTable() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 558
+   at Made4Net.WebControls.DataGrid2.Refresh() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 539
+   at Made4Net.WebControls.TableEditor.OnPreRender(EventArgs e) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 3898
+*****************************************
+
+***************** ERROR *****************
+2014-05-12 11:28:21 Made4Net.WebControls.TableEditorException: Error while loading data. Object ID: TEMasterReceipt ---> System.ApplicationException: The data generated by the SQL statement is not consistent with the DT structure in object [TEMasterReceipt]. The missing field is [TOTALQTY]. SQL: [SELECT distinct TOP 10 RECEIPT, STATUS, SCHEDULEDDATE, BOL, convert(nvarchar,NOTES) as NOTES, CARRIERCOMPANY, STARTRECEIPTDATE, ADDDATE, ADDUSER, EDITDATE, EDITUSER, TRAILER, VEHICLE, DRIVER1, DRIVER2, SEAL1, SEAL2,CLOSERECEIPTDATE,TRANSPORTREFERENCE,TRANSPORTTYPE,DOOR,YARDENTRYID,ESTUNLOADINGTIME,LABELPRINTED,CONFIRMED,COMPANY,COMPANYNAME  FROM RECEIPTHEADERVIEW].
+   at Made4Net.WebControls.TableEditor.EnsureDataIsConsistentWithDT(String pSQL, DataTable D, TableEditorMode pTargetMode) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 4330
+   at Made4Net.WebControls.TableEditor.CreateDataTable(NameValueCollection pPrimaryKeyValues, TableEditorMode pTargetMode, Boolean pFillSchema, Int32 pFirstRecordIndex, Int32 pLastRecordIndex, GenericCollection pSelectedRecords, LoadDataOutputParams& outParams) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 4210
+   --- End of inner exception stack trace ---
+   at Made4Net.WebControls.TableEditor.CreateDataTable(NameValueCollection pPrimaryKeyValues, TableEditorMode pTargetMode, Boolean pFillSchema, Int32 pFirstRecordIndex, Int32 pLastRecordIndex, GenericCollection pSelectedRecords, LoadDataOutputParams& outParams) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 4216
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema, Boolean pSelectedRecordOnly, TableEditorMode pTartgetMode) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 634
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 566
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 562
+   at Made4Net.WebControls.DataGrid2.CreateDataTable() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 558
+   at Made4Net.WebControls.DataGrid2.Refresh() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 539
+   at Made4Net.WebControls.TableEditor.OnPreRender(EventArgs e) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 3898
+*****************************************
+
+***************** ERROR *****************
+2014-05-12 11:28:21 Made4Net.WebControls.TableEditorException: Error while loading data. Object ID: TEMasterReceipt ---> System.ApplicationException: The data generated by the SQL statement is not consistent with the DT structure in object [TEMasterReceipt]. The missing field is [TOTALQTY]. SQL: [SELECT distinct TOP 10 RECEIPT, STATUS, SCHEDULEDDATE, BOL, convert(nvarchar,NOTES) as NOTES, CARRIERCOMPANY, STARTRECEIPTDATE, ADDDATE, ADDUSER, EDITDATE, EDITUSER, TRAILER, VEHICLE, DRIVER1, DRIVER2, SEAL1, SEAL2,CLOSERECEIPTDATE,TRANSPORTREFERENCE,TRANSPORTTYPE,DOOR,YARDENTRYID,ESTUNLOADINGTIME,LABELPRINTED,CONFIRMED,COMPANY,COMPANYNAME  FROM RECEIPTHEADERVIEW].
+   at Made4Net.WebControls.TableEditor.EnsureDataIsConsistentWithDT(String pSQL, DataTable D, TableEditorMode pTargetMode) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 4330
+   at Made4Net.WebControls.TableEditor.CreateDataTable(NameValueCollection pPrimaryKeyValues, TableEditorMode pTargetMode, Boolean pFillSchema, Int32 pFirstRecordIndex, Int32 pLastRecordIndex, GenericCollection pSelectedRecords, LoadDataOutputParams& outParams) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 4210
+   --- End of inner exception stack trace ---
+   at Made4Net.WebControls.TableEditor.CreateDataTable(NameValueCollection pPrimaryKeyValues, TableEditorMode pTargetMode, Boolean pFillSchema, Int32 pFirstRecordIndex, Int32 pLastRecordIndex, GenericCollection pSelectedRecords, LoadDataOutputParams& outParams) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 4216
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema, Boolean pSelectedRecordOnly, TableEditorMode pTartgetMode) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 634
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 566
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 562
+   at Made4Net.WebControls.DataGrid2.CreateDataTable() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 558
+   at Made4Net.WebControls.DataGrid2.Refresh() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 539
+   at Made4Net.WebControls.TableEditor.OnPreRender(EventArgs e) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 3898
+*****************************************
+
+***************** ERROR *****************
+2014-05-12 11:28:35 System.Data.SqlClient.SqlException: Invalid column name 'SplitInp'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable)
+   at Made4Net.DataAccess.ODBCDataAdapterHelper.FillFromDataAdapter(IDbDataAdapter& IDA, DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\ODBCDataAdapterHelper.vb:line 44
+   at Made4Net.DataAccess.DataInterface.ExecuteCommand(ODBCConnectionInfo connInfo, IDbCommand command, CommandType commandType, Boolean isThrowException, Object[] arguments) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 452
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataSet ds, DataTable dt, String SQL, ODBCConnectionInfo pConnectionInfo, Boolean FillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 612
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataTable dt, String pSQL, ODBCConnectionInfo pConnectionInfo, Boolean pFillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 570
+   at Made4Net.DataAccess.DataInterface.FillDataset(String SQL, DataTable dt, Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, String pConnectionName) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 546
+   at Made4Net.DataAccess.Data.CreateDataTable(Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 116
+   at Made4Net.DataAccess.Data.CreateDataRow(Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 139
+   at Made4Net.DataAccess.Data.GetRecordCount() in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 365
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema, Boolean pSelectedRecordOnly, TableEditorMode pTartgetMode) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 613
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 566
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 562
+   at Made4Net.WebControls.DataGrid2.CreateDataTable() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 558
+   at Made4Net.WebControls.DataGrid2.Refresh() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 539
+   at Made4Net.WebControls.TableEditor.OnPreRender(EventArgs e) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 3898
+*****************************************
+
+***************** ERROR *****************
+2014-05-12 11:28:35 System.Data.SqlClient.SqlException: Invalid column name 'SplitInp'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable)
+   at Made4Net.DataAccess.ODBCDataAdapterHelper.FillFromDataAdapter(IDbDataAdapter& IDA, DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\ODBCDataAdapterHelper.vb:line 44
+   at Made4Net.DataAccess.DataInterface.ExecuteCommand(ODBCConnectionInfo connInfo, IDbCommand command, CommandType commandType, Boolean isThrowException, Object[] arguments) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 452
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataSet ds, DataTable dt, String SQL, ODBCConnectionInfo pConnectionInfo, Boolean FillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 612
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataTable dt, String pSQL, ODBCConnectionInfo pConnectionInfo, Boolean pFillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 570
+   at Made4Net.DataAccess.DataInterface.FillDataset(String SQL, DataTable dt, Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, String pConnectionName) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 546
+   at Made4Net.DataAccess.Data.CreateDataTable(Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 116
+   at Made4Net.DataAccess.Data.CreateDataRow(Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 139
+   at Made4Net.DataAccess.Data.GetRecordCount() in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 365
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema, Boolean pSelectedRecordOnly, TableEditorMode pTartgetMode) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 613
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 566
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 562
+   at Made4Net.WebControls.DataGrid2.CreateDataTable() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 558
+   at Made4Net.WebControls.DataGrid2.Refresh() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 539
+   at Made4Net.WebControls.TableEditor.OnPreRender(EventArgs e) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 3898
+*****************************************
+
+***************** ERROR *****************
+2014-05-12 11:28:49 Made4Net.WebControls.TableEditorException: Error while loading data. Object ID: TEMasterWave ---> System.ApplicationException: The data generated by the SQL statement is not consistent with the DT structure in object [TEMasterWave]. The missing field is [NumOrders]. SQL: [select DISTINCT  TOP 10 WAVE,WAVETYPE,STATUS,CREATEDATE,RELEASEDATE,NumOrderLines,NumExceptionLines,TotalVolume,TotalWeight,NumExceptionSku,QTYTOPICK,TOTALPICKLISTLINE FROM vWaveHeader ORDER BY WAVE DESC].
+   at Made4Net.WebControls.TableEditor.EnsureDataIsConsistentWithDT(String pSQL, DataTable D, TableEditorMode pTargetMode) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 4330
+   at Made4Net.WebControls.TableEditor.CreateDataTable(NameValueCollection pPrimaryKeyValues, TableEditorMode pTargetMode, Boolean pFillSchema, Int32 pFirstRecordIndex, Int32 pLastRecordIndex, GenericCollection pSelectedRecords, LoadDataOutputParams& outParams) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 4210
+   --- End of inner exception stack trace ---
+   at Made4Net.WebControls.TableEditor.CreateDataTable(NameValueCollection pPrimaryKeyValues, TableEditorMode pTargetMode, Boolean pFillSchema, Int32 pFirstRecordIndex, Int32 pLastRecordIndex, GenericCollection pSelectedRecords, LoadDataOutputParams& outParams) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 4216
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema, Boolean pSelectedRecordOnly, TableEditorMode pTartgetMode) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 634
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 566
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 562
+   at Made4Net.WebControls.DataGrid2.CreateDataTable() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 558
+   at Made4Net.WebControls.DataGrid2.Refresh() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 539
+   at Made4Net.WebControls.TableEditor.OnPreRender(EventArgs e) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 3898
+*****************************************
+
+***************** ERROR *****************
+2014-05-12 11:28:49 Made4Net.WebControls.TableEditorException: Error while loading data. Object ID: TEMasterWave ---> System.ApplicationException: The data generated by the SQL statement is not consistent with the DT structure in object [TEMasterWave]. The missing field is [NumOrders]. SQL: [select DISTINCT  TOP 10 WAVE,WAVETYPE,STATUS,CREATEDATE,RELEASEDATE,NumOrderLines,NumExceptionLines,TotalVolume,TotalWeight,NumExceptionSku,QTYTOPICK,TOTALPICKLISTLINE FROM vWaveHeader ORDER BY WAVE DESC].
+   at Made4Net.WebControls.TableEditor.EnsureDataIsConsistentWithDT(String pSQL, DataTable D, TableEditorMode pTargetMode) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 4330
+   at Made4Net.WebControls.TableEditor.CreateDataTable(NameValueCollection pPrimaryKeyValues, TableEditorMode pTargetMode, Boolean pFillSchema, Int32 pFirstRecordIndex, Int32 pLastRecordIndex, GenericCollection pSelectedRecords, LoadDataOutputParams& outParams) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 4210
+   --- End of inner exception stack trace ---
+   at Made4Net.WebControls.TableEditor.CreateDataTable(NameValueCollection pPrimaryKeyValues, TableEditorMode pTargetMode, Boolean pFillSchema, Int32 pFirstRecordIndex, Int32 pLastRecordIndex, GenericCollection pSelectedRecords, LoadDataOutputParams& outParams) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 4216
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema, Boolean pSelectedRecordOnly, TableEditorMode pTartgetMode) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 634
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 566
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 562
+   at Made4Net.WebControls.DataGrid2.CreateDataTable() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 558
+   at Made4Net.WebControls.DataGrid2.Refresh() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 539
+   at Made4Net.WebControls.TableEditor.OnPreRender(EventArgs e) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 3898
+*****************************************
+
+***************** ERROR *****************
+2014-05-12 11:29:06 System.Data.SqlClient.SqlException: Invalid column name 'ACTIVITYSTATUS'.
+Invalid column name 'CASES'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable)
+   at Made4Net.DataAccess.ODBCDataAdapterHelper.FillFromDataAdapter(IDbDataAdapter& IDA, DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\ODBCDataAdapterHelper.vb:line 44
+   at Made4Net.DataAccess.DataInterface.ExecuteCommand(ODBCConnectionInfo connInfo, IDbCommand command, CommandType commandType, Boolean isThrowException, Object[] arguments) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 452
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataSet ds, DataTable dt, String SQL, ODBCConnectionInfo pConnectionInfo, Boolean FillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 612
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataTable dt, String pSQL, ODBCConnectionInfo pConnectionInfo, Boolean pFillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 570
+   at Made4Net.DataAccess.DataInterface.FillDataset(String SQL, DataTable dt, Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, String pConnectionName) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 546
+   at Made4Net.DataAccess.Data.CreateDataTable(Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 116
+   at Made4Net.DataAccess.Data.CreateDataRow(Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 139
+   at Made4Net.DataAccess.Data.GetRecordCount() in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 365
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema, Boolean pSelectedRecordOnly, TableEditorMode pTartgetMode) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 613
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 566
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 562
+   at Made4Net.WebControls.DataGrid2.CreateDataTable() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 558
+   at Made4Net.WebControls.DataGrid2.Refresh() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 539
+   at Made4Net.WebControls.TableEditor.OnPreRender(EventArgs e) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 3898
+*****************************************
+
+***************** ERROR *****************
+2014-05-12 11:29:06 System.Data.SqlClient.SqlException: Invalid column name 'ACTIVITYSTATUS'.
+Invalid column name 'CASES'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable)
+   at Made4Net.DataAccess.ODBCDataAdapterHelper.FillFromDataAdapter(IDbDataAdapter& IDA, DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\ODBCDataAdapterHelper.vb:line 44
+   at Made4Net.DataAccess.DataInterface.ExecuteCommand(ODBCConnectionInfo connInfo, IDbCommand command, CommandType commandType, Boolean isThrowException, Object[] arguments) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 452
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataSet ds, DataTable dt, String SQL, ODBCConnectionInfo pConnectionInfo, Boolean FillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 612
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataTable dt, String pSQL, ODBCConnectionInfo pConnectionInfo, Boolean pFillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 570
+   at Made4Net.DataAccess.DataInterface.FillDataset(String SQL, DataTable dt, Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, String pConnectionName) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 546
+   at Made4Net.DataAccess.Data.CreateDataTable(Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 116
+   at Made4Net.DataAccess.Data.CreateDataRow(Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 139
+   at Made4Net.DataAccess.Data.GetRecordCount() in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 365
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema, Boolean pSelectedRecordOnly, TableEditorMode pTartgetMode) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 613
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 566
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 562
+   at Made4Net.WebControls.DataGrid2.CreateDataTable() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 558
+   at Made4Net.WebControls.DataGrid2.Refresh() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 539
+   at Made4Net.WebControls.TableEditor.OnPreRender(EventArgs e) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 3898
+*****************************************
+
+***************** ERROR *****************
+2014-05-12 11:29:51 System.Data.SqlClient.SqlException: The text data type cannot be selected as DISTINCT because it is not comparable.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable)
+   at Made4Net.DataAccess.ODBCDataAdapterHelper.FillFromDataAdapter(IDbDataAdapter& IDA, DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\ODBCDataAdapterHelper.vb:line 44
+   at Made4Net.DataAccess.DataInterface.ExecuteCommand(ODBCConnectionInfo connInfo, IDbCommand command, CommandType commandType, Boolean isThrowException, Object[] arguments) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 452
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataSet ds, DataTable dt, String SQL, ODBCConnectionInfo pConnectionInfo, Boolean FillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 612
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataTable dt, String pSQL, ODBCConnectionInfo pConnectionInfo, Boolean pFillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 570
+   at Made4Net.DataAccess.DataInterface.FillDataset(String SQL, DataTable dt, Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, String pConnectionName) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 546
+   at Made4Net.DataAccess.Data.CreateDataTable(Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 116
+   at Made4Net.DataAccess.Data.CreateDataRow(Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 139
+   at Made4Net.DataAccess.Data.GetRecordCount() in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 365
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema, Boolean pSelectedRecordOnly, TableEditorMode pTartgetMode) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 613
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 566
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 562
+   at Made4Net.WebControls.DataGrid2.CreateDataTable() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 558
+   at Made4Net.WebControls.DataGrid2.Refresh() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 539
+   at Made4Net.WebControls.TableEditor.OnPreRender(EventArgs e) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 3898
+*****************************************
+
+***************** ERROR *****************
+2014-05-12 11:29:51 System.Data.SqlClient.SqlException: The text data type cannot be selected as DISTINCT because it is not comparable.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable)
+   at Made4Net.DataAccess.ODBCDataAdapterHelper.FillFromDataAdapter(IDbDataAdapter& IDA, DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\ODBCDataAdapterHelper.vb:line 44
+   at Made4Net.DataAccess.DataInterface.ExecuteCommand(ODBCConnectionInfo connInfo, IDbCommand command, CommandType commandType, Boolean isThrowException, Object[] arguments) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 452
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataSet ds, DataTable dt, String SQL, ODBCConnectionInfo pConnectionInfo, Boolean FillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 612
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataTable dt, String pSQL, ODBCConnectionInfo pConnectionInfo, Boolean pFillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 570
+   at Made4Net.DataAccess.DataInterface.FillDataset(String SQL, DataTable dt, Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, String pConnectionName) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 546
+   at Made4Net.DataAccess.Data.CreateDataTable(Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 116
+   at Made4Net.DataAccess.Data.CreateDataRow(Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 139
+   at Made4Net.DataAccess.Data.GetRecordCount() in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 365
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema, Boolean pSelectedRecordOnly, TableEditorMode pTartgetMode) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 613
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 566
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 562
+   at Made4Net.WebControls.DataGrid2.CreateDataTable() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 558
+   at Made4Net.WebControls.DataGrid2.Refresh() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 539
+   at Made4Net.WebControls.TableEditor.OnPreRender(EventArgs e) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 3898
+*****************************************
+
+***************** ERROR *****************
+2014-05-12 11:30:00 System.Data.SqlClient.SqlException: Invalid column name 'SKUGROUP'.
+Invalid column name 'NUMCASES'.
+Invalid column name 'NUMLINES'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable)
+   at Made4Net.DataAccess.ODBCDataAdapterHelper.FillFromDataAdapter(IDbDataAdapter& IDA, DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\ODBCDataAdapterHelper.vb:line 44
+   at Made4Net.DataAccess.DataInterface.ExecuteCommand(ODBCConnectionInfo connInfo, IDbCommand command, CommandType commandType, Boolean isThrowException, Object[] arguments) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 452
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataSet ds, DataTable dt, String SQL, ODBCConnectionInfo pConnectionInfo, Boolean FillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 612
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataTable dt, String pSQL, ODBCConnectionInfo pConnectionInfo, Boolean pFillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 570
+   at Made4Net.DataAccess.DataInterface.FillDataset(String SQL, DataTable dt, Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, String pConnectionName) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 546
+   at Made4Net.DataAccess.Data.CreateDataTable(Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 116
+   at Made4Net.DataAccess.Data.CreateDataRow(Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 139
+   at Made4Net.DataAccess.Data.GetRecordCount() in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 365
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema, Boolean pSelectedRecordOnly, TableEditorMode pTartgetMode) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 613
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 566
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 562
+   at Made4Net.WebControls.DataGrid2.CreateDataTable() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 558
+   at Made4Net.WebControls.DataGrid2.Refresh() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 539
+   at Made4Net.WebControls.TableEditor.OnPreRender(EventArgs e) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 3898
+*****************************************
+
+***************** ERROR *****************
+2014-05-12 11:30:00 System.Data.SqlClient.SqlException: Invalid column name 'SKUGROUP'.
+Invalid column name 'NUMCASES'.
+Invalid column name 'NUMLINES'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable)
+   at Made4Net.DataAccess.ODBCDataAdapterHelper.FillFromDataAdapter(IDbDataAdapter& IDA, DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\ODBCDataAdapterHelper.vb:line 44
+   at Made4Net.DataAccess.DataInterface.ExecuteCommand(ODBCConnectionInfo connInfo, IDbCommand command, CommandType commandType, Boolean isThrowException, Object[] arguments) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 452
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataSet ds, DataTable dt, String SQL, ODBCConnectionInfo pConnectionInfo, Boolean FillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 612
+   at Made4Net.DataAccess.DataInterface.FillDatasetFromSQL(DataTable dt, String pSQL, ODBCConnectionInfo pConnectionInfo, Boolean pFillSchema, Int32 FromRecord, Int32 ToRecord) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 570
+   at Made4Net.DataAccess.DataInterface.FillDataset(String SQL, DataTable dt, Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, String pConnectionName) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\DataInterface.vb:line 546
+   at Made4Net.DataAccess.Data.CreateDataTable(Int32 FromRecord, Int32 ToRecord, Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 116
+   at Made4Net.DataAccess.Data.CreateDataRow(Boolean FillSchema, Boolean EnsureData) in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 139
+   at Made4Net.DataAccess.Data.GetRecordCount() in C:\NCR\NCR.NWMS\M4NLibs\Made4net.DataAccess\Data.vb:line 365
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema, Boolean pSelectedRecordOnly, TableEditorMode pTartgetMode) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 613
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues, Boolean pFillSchema) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 566
+   at Made4Net.WebControls.DataGrid2.CreateDataTable(NameValueCollection pPrimaryKeyValues) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 562
+   at Made4Net.WebControls.DataGrid2.CreateDataTable() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 558
+   at Made4Net.WebControls.DataGrid2.Refresh() in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataGrid\DataGrid2.vb:line 539
+   at Made4Net.WebControls.TableEditor.OnPreRender(EventArgs e) in C:\NCR\NCR.NWMS\M4NLibs\Made4Net.WebControls\DataEditors\TableEditor.vb:line 3898
+*****************************************

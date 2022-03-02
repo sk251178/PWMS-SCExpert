@@ -1,0 +1,3255 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WMS.WebApp
+</name>
+</assembly>
+<members>
+<member name="M:WMS.WebApp.WMSLogHandler.CheckAndInitiateLogging(System.String)">
+ <summary>
+ In the sys_param, if WMSLogging=1 then only we will creating the new logs else there will be no logs for the WMS.
+ </summary>
+ <param name="pUserid"></param>
+ <remarks></remarks>
+</member>
+<member name="T:WMS.WebApp._Default">
+<summary>
+_Default class.
+</summary>
+<remarks>
+Auto-generated class.
+</remarks>
+</member>
+<member name="F:WMS.WebApp._Default._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp._Default._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LabelPrinters._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LabelPrinters._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LabelPrinters._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LabelPrinters._TELabelPrinters">
+<summary>
+TELabelPrinters control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LoginWarehouse._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LoginWarehouse._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LoginWarehouse._pnlImages">
+<summary>
+pnlImages control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LoginWarehouse._lblWareHouse">
+<summary>
+lblWareHouse control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LoginWarehouse._lstWareHouse">
+<summary>
+lstWareHouse control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LoginWarehouse._btnGo">
+<summary>
+btnGo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LoginWarehouse._pnlAppInfo">
+<summary>
+pnlAppInfo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ReportPrinters._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ReportPrinters._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ReportPrinters._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ReportPrinters._TEReportPrinters">
+<summary>
+TEReportPrinters control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:WMS.WebApp.SGImport">
+<summary>
+SGImport class.
+</summary>
+<remarks>
+Auto-generated class.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.SGImport._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.SGImport._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ArchiveDetails._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ArchiveDetails._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ArchiveDetails._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ArchiveDetails._TEArchiveDetails">
+<summary>
+TEArchiveDetails control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ArchiveMaster._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ArchiveMaster._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ArchiveMaster._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ArchiveMaster._TEArchiveMaster">
+<summary>
+TEArchiveMaster control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.BatchReplenishmentTasks._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.BatchReplenishmentTasks._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.BatchReplenishmentTasks._TS">
+<summary>
+TS control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.BatchReplenishmentTasks._TEBatchReplDetailLines">
+<summary>
+TEBatchReplDetailLines control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LaborMeetings._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LaborMeetings._pageRadScriptManager">
+<summary>
+pageRadScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LaborMeetings._DTC">
+<summary>
+DTC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LaborMeetings._Table1">
+<summary>
+Table1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LaborMeetings._TBC">
+<summary>
+TBC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LaborMeetings._Tbl1">
+<summary>
+Tbl1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LaborMeetings._TEUsersInMeeting">
+<summary>
+TEUsersInMeeting control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LaborMeetings._TEUsersNotInMeeting">
+<summary>
+TEUsersNotInMeeting control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.REPLENISHMENTSUBTYPE._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.REPLENISHMENTSUBTYPE._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.REPLENISHMENTSUBTYPE._TEREPLENISHMENTSUBTYPE">
+<summary>
+TEREPLENISHMENTSUBTYPE control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.CrossDockDeliveryLoc._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.CrossDockDeliveryLoc._TECrossDockDelLoc">
+<summary>
+TECrossDockDelLoc control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.DelLocDynamicAssign._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.DelLocDynamicAssign._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.DelLocDynamicAssign._TEDELLOC">
+<summary>
+TEDELLOC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.DelLocFixAssign._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.DelLocFixAssign._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.DelLocFixAssign._TEDELLOC">
+<summary>
+TEDELLOC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.DynamicDeliveryLocation._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.DynamicDeliveryLocation._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.DynamicDeliveryLocation._TEDELLOC">
+<summary>
+TEDELLOC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LocationProblemRC._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LocationProblemRC._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LocationProblemRC._TELocationProblems">
+<summary>
+TELocationProblems control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.OutboundManagement._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.OutboundManagement._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.OutboundManagement._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.OutboundManagement._TEOutboundManage">
+<summary>
+TEOutboundManage control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.PriceFactorCalcParam._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.PriceFactorCalcParam._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.PriceFactorCalcParam._TEBILLINGPRICEFACTORINDEX">
+<summary>
+TEBILLINGPRICEFACTORINDEX control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.PriceFactorCalcParam._DTC">
+<summary>
+DTC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.PriceFactorCalcParam._Table1">
+<summary>
+Table1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.PriceFactorCalcParam._TS">
+<summary>
+TS control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.PriceFactorCalcParam._Tbl">
+<summary>
+Tbl control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.PriceFactorCalcParam._TEBILLINGFIXEDPRICEFACTORPARAMS">
+<summary>
+TEBILLINGFIXEDPRICEFACTORPARAMS control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.PriceFactorCalcParam._Tbl1">
+<summary>
+Tbl1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.PriceFactorCalcParam._TEBILLINGDAILYPRICEFACTORPARAMS">
+<summary>
+TEBILLINGDAILYPRICEFACTORPARAMS control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.PriceFactorCalcParam._TEBILLINGDAILYPRICEFACTORPARAMSVALUES">
+<summary>
+TEBILLINGDAILYPRICEFACTORPARAMSVALUES control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.PriceFactorCalcParam._DC2">
+<summary>
+DC2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ContactManagement._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ContactManagement._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ContactManagement._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ContactManagement._TEMasterContact">
+<summary>
+TEMasterContact control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ContactManagement._DTC">
+<summary>
+DTC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ContactManagement._Table1">
+<summary>
+Table1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ContactManagement._TS">
+<summary>
+TS control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ContactManagement._Tbl">
+<summary>
+Tbl control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ContactManagement._TECompanies">
+<summary>
+TECompanies control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ContactManagement._DC1">
+<summary>
+DC1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ContactManagement._TEAssignCompanies">
+<summary>
+TEAssignCompanies control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.CountBooks._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.CountBooks._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.CountBooks._TECountBook">
+<summary>
+TECountBook control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.CountBooks._DTC">
+<summary>
+DTC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.CountBooks._Table1">
+<summary>
+Table1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.CountBooks._TS">
+<summary>
+TS control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.CountBooks._Tbl">
+<summary>
+Tbl control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.CountBooks._lblSummaryType">
+<summary>
+lblSummaryType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.CountBooks._ddSummaryType">
+<summary>
+ddSummaryType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.CountBooks._pnlLocationSummary">
+<summary>
+pnlLocationSummary control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.CountBooks._TELocSummary">
+<summary>
+TELocSummary control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.CountBooks._DC1">
+<summary>
+DC1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.CountBooks._pnlLoadDiscrepancies">
+<summary>
+pnlLoadDiscrepancies control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.CountBooks._TECountDisc">
+<summary>
+TECountDisc control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.CountBooks._Dataconnector2">
+<summary>
+Dataconnector2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.CountBooks._TETasks">
+<summary>
+TETasks control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.CountBooks._Dataconnector1">
+<summary>
+Dataconnector1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.DeliveryProgress._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.DeliveryProgress._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.DeliveryProgress._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.EmprtyHUPickup._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.EmprtyHUPickup._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.EmprtyHUPickup._TEHUPickup">
+<summary>
+TEHUPickup control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.HandlingUnitStorageTemplate._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.HandlingUnitStorageTemplate._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.HandlingUnitStorageTemplate._TEMasterHandlingUnitStorageTemplate">
+<summary>
+TEMasterHandlingUnitStorageTemplate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.HandlingUnitStorageTemplate._DTC">
+<summary>
+DTC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.HandlingUnitStorageTemplate._Table1">
+<summary>
+Table1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.HandlingUnitStorageTemplate._TS">
+<summary>
+TS control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.HandlingUnitStorageTemplate._Tbl">
+<summary>
+Tbl control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.HandlingUnitStorageTemplate._TEHandlingUnitStorageTemplateDetail">
+<summary>
+TEHandlingUnitStorageTemplateDetail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.HandlingUnitStorageTemplate._DC1">
+<summary>
+DC1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LoadCountSchedule._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LoadCountSchedule._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LoadCountSchedule._TELoadsSched">
+<summary>
+TELoadsSched control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LocationManagementSummary._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LocationManagementSummary._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LocationManagementSummary._ph">
+<summary>
+ph control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LocationOccupancy._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LocationOccupancy._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.LocationOccupancy._TELocOccupancy">
+<summary>
+TELocOccupancy control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.OrderAutomationShipmentAssign._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.OrderAutomationShipmentAssign._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.OrderAutomationShipmentAssign._TESHIPASSIGNPOLICY">
+<summary>
+TESHIPASSIGNPOLICY control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.OrderAutomationShipmentAssign._DTC">
+<summary>
+DTC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.OrderAutomationShipmentAssign._Table1">
+<summary>
+Table1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.OrderAutomationShipmentAssign._TS">
+<summary>
+TS control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.OrderAutomationShipmentAssign._Tbl">
+<summary>
+Tbl control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.OrderAutomationShipmentAssign._TEShippmentAssignmentDetail">
+<summary>
+TEShippmentAssignmentDetail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.OrderAutomationShipmentAssign._DC1">
+<summary>
+DC1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.OrderAutomationShipmentAssign._SheduleTrigger">
+<summary>
+SheduleTrigger control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.OrderAutomationWaveAssign._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.OrderAutomationWaveAssign._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.OrderAutomationWaveAssign._TEWAVEASSIGNPOLICY">
+<summary>
+TEWAVEASSIGNPOLICY control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.OrderAutomationWaveAssign._DTC">
+<summary>
+DTC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.OrderAutomationWaveAssign._Table1">
+<summary>
+Table1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.OrderAutomationWaveAssign._TS">
+<summary>
+TS control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.OrderAutomationWaveAssign._Tbl">
+<summary>
+Tbl control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.OrderAutomationWaveAssign._TEWaveAssignmentDetail">
+<summary>
+TEWaveAssignmentDetail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.OrderAutomationWaveAssign._DC1">
+<summary>
+DC1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.OrderAutomationWaveAssign._SheduleTrigger">
+<summary>
+SheduleTrigger control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.PackingLists._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.PackingLists._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.PackingLists._TEPackList">
+<summary>
+TEPackList control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.PackingLists._DTC">
+<summary>
+DTC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.PackingLists._Table1">
+<summary>
+Table1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.PackingLists._TS">
+<summary>
+TS control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.PackingLists._Tbl">
+<summary>
+Tbl control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.PackingLists._TEPackListDetail">
+<summary>
+TEPackListDetail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.PackingLists._DC1">
+<summary>
+DC1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.PackingLists._TELoadsSelect">
+<summary>
+TELoadsSelect control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="M:WMS.WebApp.PickList.edit_ORDERLINECASEWEIGHT(System.Data.DataTable)">
+ <summary>
+ JIRA Item: RWMS-673
+ Description: Modified the below method to Update the WEIGHT in the ATTRIBUTE Table for the LOADID.
+ Added Generic List collection varaible to store the Loadid and get the loadid from the For Loop to update the WEIGHT column in the Attribute Table.
+ </summary>
+ <param name="dtWeights"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.WebApp.PickList.AttributeLoadExists(System.String)">
+ <summary>
+ JIRA Item: RWMS-673
+ Description: Added the below method to check for the LOADID exists in Attribute Table.
+ Return the boolean value.
+ </summary>
+ <param name="loadid"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:WMS.WebApp.ProblemLocation._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ProblemLocation._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ProblemLocation._pnlAdj">
+<summary>
+pnlAdj control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ProblemLocation._lblProblemReasonCode">
+<summary>
+lblProblemReasonCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ProblemLocation._ddReasonCode">
+<summary>
+ddReasonCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ProblemLocation._TELocationProblems">
+<summary>
+TELocationProblems control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.QCLoads._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.QCLoads._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.QCLoads._TEMaster">
+<summary>
+TEMaster control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.QCSetup._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.QCSetup._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.QCSetup._TEMaster">
+<summary>
+TEMaster control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.QCSetup._DTC">
+<summary>
+DTC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.QCSetup._Table1">
+<summary>
+Table1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.QCSetup._TS">
+<summary>
+TS control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.QCSetup._Tbl">
+<summary>
+Tbl control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.QCSetup._TEGeneral">
+<summary>
+TEGeneral control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.QCSetup._DC1">
+<summary>
+DC1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ReturnLoads._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ReturnLoads._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ReturnLoads._TEReturnLoads">
+<summary>
+TEReturnLoads control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.RouteMaster._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.RouteMaster._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.RouteMaster._TERouteMaster">
+<summary>
+TERouteMaster control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.RouteMaster._DTC">
+<summary>
+DTC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.RouteMaster._Table1">
+<summary>
+Table1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.RouteMaster._TS">
+<summary>
+TS control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.RouteMaster._Tbl">
+<summary>
+Tbl control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.RouteMaster._TERouteMasterDetails">
+<summary>
+TERouteMasterDetails control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.RouteMaster._DC1">
+<summary>
+DC1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.SCExpertConnectSetup._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.SCExpertConnectSetup._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.SCExpertConnectSetup._TEPluginInstance">
+<summary>
+TEPluginInstance control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.SCExpertConnectSetup._DTC">
+<summary>
+DTC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.SCExpertConnectSetup._Table1">
+<summary>
+Table1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.SCExpertConnectSetup._TS">
+<summary>
+TS control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.SCExpertConnectSetup._Tbl">
+<summary>
+Tbl control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.SCExpertConnectSetup._TEParams">
+<summary>
+TEParams control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.SCExpertConnectSetup._DC1">
+<summary>
+DC1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.SCExpertConnectSetup._TEKeys">
+<summary>
+TEKeys control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.SCExpertConnectSetup._DC2">
+<summary>
+DC2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.SCExpertConnectSetupPluginTypes._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.SCExpertConnectSetupPluginTypes._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.SCExpertConnectSetupPluginTypes._TEPluginTypes">
+<summary>
+TEPluginTypes control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.SCExpertConnectTransactions._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.SCExpertConnectTransactions._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.SCExpertConnectTransactions._TEConnectTrans">
+<summary>
+TEConnectTrans control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:WMS.WebApp.SCExpertTransactionData">
+<summary>
+SCExpertTransactionData class.
+</summary>
+<remarks>
+Auto-generated class.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ScreenGenerator._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ScreenGenerator._oScreen">
+<summary>
+oScreen control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ScreenGenerator._oSG">
+<summary>
+oSG control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftInstances._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftInstances._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftInstances._TEShift">
+<summary>
+TEShift control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftInstances._DTC">
+<summary>
+DTC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftInstances._Table1">
+<summary>
+Table1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftInstances._TS">
+<summary>
+TS control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftInstances._Tbl">
+<summary>
+Tbl control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftInstances._TEShiftInstancesTimeBlocks">
+<summary>
+TEShiftInstancesTimeBlocks control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftInstances._DC1">
+<summary>
+DC1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftInstances._TEUsersClockIn">
+<summary>
+TEUsersClockIn control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftMaster._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftMaster._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftMaster._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftMaster._TEShiftMaster">
+<summary>
+TEShiftMaster control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftMaster._DTC">
+<summary>
+DTC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftMaster._Table1">
+<summary>
+Table1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftMaster._TBC">
+<summary>
+TBC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftMaster._Tbl">
+<summary>
+Tbl control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftMaster._TEShiftDetail">
+<summary>
+TEShiftDetail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftMaster._DC1">
+<summary>
+DC1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftMaster._TEShiftTimeBlocks">
+<summary>
+TEShiftTimeBlocks control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftMaster._DataConnector1">
+<summary>
+DataConnector1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftMaster._TEUserDefShift">
+<summary>
+TEUserDefShift control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftMaster._DCUserDefShift">
+<summary>
+DCUserDefShift control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftMaster._TEUserDefNotInShift">
+<summary>
+TEUserDefNotInShift control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftPerformance._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftPerformance._TESHIFTPERF">
+<summary>
+TESHIFTPERF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftPerformance._DTC">
+<summary>
+DTC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftPerformance._Table1">
+<summary>
+Table1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftPerformance._TS">
+<summary>
+TS control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftPerformance._Tbl">
+<summary>
+Tbl control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftPerformance._TEUSERPERF">
+<summary>
+TEUSERPERF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftPerformance._DC1">
+<summary>
+DC1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftPerformance._TEPERFBYTASK">
+<summary>
+TEPERFBYTASK control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftPerformance._DC2">
+<summary>
+DC2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftPerformance._TESHIFTBLOCK">
+<summary>
+TESHIFTBLOCK control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.ShiftPerformance._DC3">
+<summary>
+DC3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._DTC">
+<summary>
+DTC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._Table1">
+<summary>
+Table1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._TS">
+<summary>
+TS control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._Tbl">
+<summary>
+Tbl control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._tblPlanner">
+<summary>
+tblPlanner control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._rdbWave">
+<summary>
+rdbWave control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._rdbOrders">
+<summary>
+rdbOrders control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._lblWave">
+<summary>
+lblWave control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._txtWave">
+<summary>
+txtWave control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._lblCons">
+<summary>
+lblCons control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._txtCons">
+<summary>
+txtCons control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._lblOrder">
+<summary>
+lblOrder control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._txtOrder">
+<summary>
+txtOrder control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._btnSimulatePlanner">
+<summary>
+btnSimulatePlanner control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._tblTaskManager">
+<summary>
+tblTaskManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._lblUser">
+<summary>
+lblUser control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._taUserID">
+<summary>
+taUserID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._lblMHType">
+<summary>
+lblMHType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._taMHEquip">
+<summary>
+taMHEquip control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._LabeInitalLocation">
+<summary>
+LabeInitalLocation control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._taInitLoc">
+<summary>
+taInitLoc control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._btnTaskManager">
+<summary>
+btnTaskManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._TABLE4">
+<summary>
+TABLE4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._taLoad">
+<summary>
+taLoad control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._LabeUsrId">
+<summary>
+LabeUsrId control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._TypeAheadBoxUsrId">
+<summary>
+TypeAheadBoxUsrId control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._taContainer">
+<summary>
+taContainer control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._Button1">
+<summary>
+Button1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._TABLE3">
+<summary>
+TABLE3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._rdbReplZone">
+<summary>
+rdbReplZone control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._rdbReplPicking">
+<summary>
+rdbReplPicking control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._lblLocation">
+<summary>
+lblLocation control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._taLocation">
+<summary>
+taLocation control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._lblWareahousearea">
+<summary>
+lblWareahousearea control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._taWareahousearea">
+<summary>
+taWareahousearea control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._lblPutRegion">
+<summary>
+lblPutRegion control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._taPutRegion">
+<summary>
+taPutRegion control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._lblReplSku">
+<summary>
+lblReplSku control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._taSKU">
+<summary>
+taSKU control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._btnReplenisment">
+<summary>
+btnReplenisment control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._TABLEDISTANCE">
+<summary>
+TABLEDISTANCE control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._TypeAheadBoxLocationFrom">
+<summary>
+TypeAheadBoxLocationFrom control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._TypeAheadBoxLocationTo">
+<summary>
+TypeAheadBoxLocationTo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._Label3">
+<summary>
+Label3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._TextBoxHeight">
+<summary>
+TextBoxHeight control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._Label4">
+<summary>
+Label4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._TypeAheadBoxHandlingEquipment">
+<summary>
+TypeAheadBoxHandlingEquipment control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._Label5">
+<summary>
+Label5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._CheckBoxUnidirection">
+<summary>
+CheckBoxUnidirection control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._Button2">
+<summary>
+Button2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._Button3">
+<summary>
+Button3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._chkisDeleteLog">
+<summary>
+chkisDeleteLog control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.Simulators._logFiletxt">
+<summary>
+logFiletxt control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.SLAssignmentPolicy._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.SLAssignmentPolicy._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.SLAssignmentPolicy._TESLASSIGNPOLICY">
+<summary>
+TESLASSIGNPOLICY control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.TalkmanConfigurationSetup._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.TalkmanConfigurationSetup._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.TalkmanConfigurationSetup._TEMessages">
+<summary>
+TEMessages control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.TalkmanConfigurationSetup._DTC">
+<summary>
+DTC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.TalkmanConfigurationSetup._Table1">
+<summary>
+Table1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.TalkmanConfigurationSetup._TS">
+<summary>
+TS control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.TalkmanConfigurationSetup._Tbl">
+<summary>
+Tbl control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.TalkmanConfigurationSetup._TEMessageFields">
+<summary>
+TEMessageFields control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.TalkmanConfigurationSetup._DC1">
+<summary>
+DC1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.TalkmanConfigurationSetup._TEMessageDynamicFields">
+<summary>
+TEMessageDynamicFields control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.TalkmanConfigurationSetup._DC2">
+<summary>
+DC2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.TaskProblemCodes._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.TaskProblemCodes._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.TaskProblemCodes._TETaskProblemCodes">
+<summary>
+TETaskProblemCodes control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.TaskProblemCodes._DTC">
+<summary>
+DTC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.TaskProblemCodes._Table1">
+<summary>
+Table1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.TaskProblemCodes._TS">
+<summary>
+TS control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.TaskProblemCodes._Tbl">
+<summary>
+Tbl control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.TaskProblemCodes._TETaskTypes">
+<summary>
+TETaskTypes control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.TaskProblemCodes._DC1">
+<summary>
+DC1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.UseClockInAssignTask._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.UseClockInAssignTask._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.UseClockInAssignTask._Table1">
+<summary>
+Table1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.UseClockInAssignTask._TEUseClockInAssignTask">
+<summary>
+TEUseClockInAssignTask control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.UseClockInAssignTask._TEUserAssignTask">
+<summary>
+TEUserAssignTask control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WHArea._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WHArea._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WHArea._TEWHAREA">
+<summary>
+TEWHAREA control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WHArea._DTC">
+<summary>
+DTC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WHArea._Table1">
+<summary>
+Table1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WHArea._TS">
+<summary>
+TS control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WHArea._Tbl">
+<summary>
+Tbl control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WHArea._TEUSERWHAREA">
+<summary>
+TEUSERWHAREA control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WHArea._DC1">
+<summary>
+DC1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WHArea._TEAssignUsers">
+<summary>
+TEAssignUsers control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WHParams._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WHParams._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WHParams._TEWHPARAM">
+<summary>
+TEWHPARAM control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WorkRegion._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WorkRegion._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WorkRegion._TEWORKREGION">
+<summary>
+TEWORKREGION control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WorkRegionManagement._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WorkRegionManagement._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WorkRegionManagement._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WorkRegionManagement._TEWORKREGION">
+<summary>
+TEWORKREGION control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WorkRegionManagement._DTC">
+<summary>
+DTC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WorkRegionManagement._Table1">
+<summary>
+Table1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WorkRegionManagement._TS">
+<summary>
+TS control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WorkRegionManagement._Tbl">
+<summary>
+Tbl control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WorkRegionManagement._TEUnAssignUser">
+<summary>
+TEUnAssignUser control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WorkRegionManagement._DataConnector1">
+<summary>
+DataConnector1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WorkRegionManagement._TEAssignUsers">
+<summary>
+TEAssignUsers control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.WebApp.WorkRegionManagement._DC1">
+<summary>
+DC1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

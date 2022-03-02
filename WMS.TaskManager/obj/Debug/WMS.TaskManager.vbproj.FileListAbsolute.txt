@@ -1,0 +1,13 @@
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.TaskManager\obj\Debug\WMS.TaskManager.vbproj.AssemblyReference.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.TaskManager\obj\Debug\WMS.TaskManager.ProjectInstaller.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.TaskManager\obj\Debug\WMS.TaskManager.Service1.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.TaskManager\obj\Debug\WMS.TaskManager.vbproj.GenerateResource.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.TaskManager\obj\Debug\WMS.TaskManager.vbproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\TaskManager\PWMS.TaskManager.exe.config
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\TaskManager\PWMS.TaskManager.exe
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\TaskManager\PWMS.TaskManager.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\TaskManager\PWMS.TaskManager.xml
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.TaskManager\obj\Debug\WMS.TaskManager.vbproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.TaskManager\obj\Debug\PWMS.TaskManager.exe
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.TaskManager\obj\Debug\PWMS.TaskManager.xml
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.TaskManager\obj\Debug\PWMS.TaskManager.pdb

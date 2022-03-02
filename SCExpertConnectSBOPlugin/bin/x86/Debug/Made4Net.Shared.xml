@@ -1,0 +1,650 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Made4Net.Shared
+</name>
+</assembly>
+<members>
+<member name="M:Made4Net.Shared.AppConfig.Get(System.String,System.String)">
+returns the value of the appSettings key specified by Name
+if the key if not found, return the default value
+if DefaultValue is not specified, throw an exception
+</member>
+<member name="M:Made4Net.Shared.AppConfig.GetSystemParameter(System.String,System.Object)">
+Gets the system parameter from database. If the get failed then return the default value.
+If default value was not found then throw an exception.
+</member>
+<member name="P:Made4Net.Shared.AppConfig.SystemResourceDirectory">
+ <summary>
+ Returns the system resource directory. 
+ Can be configured as an asolute path or relative path (relative to the application root).
+ </summary>
+ <history>
+ 	[Administrator]	3/2/2007	Created
+ </history>
+</member>
+<member name="M:Made4Net.Shared.Web.Common.GetPhysicalPath(System.String,System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Returns a physical path for the given relative path based on the rootPath.
+ i.e.:
+ relativePath = "..\cgi-bin\"
+ rootPath = "C:\MyFolder\MyDir\"
+ result = "C:\MyFolder\cgi-bin\"
+ </summary>
+ <param name="RelativePath"></param>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	8/24/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.Web.Common.GetPhysicalPath(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Returns a physical path for the given relative path based on the web application root 
+ i.e.:
+ relativePath = "..\cgi-bin\"
+ application root = "C:\Inetpub\wwwroot\MyApp\WebRoot"
+ result = "C:\Inetpub\wwwroot\MyApp\cgi-bin"
+ </summary>
+ <param name="RelativePath"></param>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	8/24/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.Web.Common.GetSystemResourceDirectory">
+ -----------------------------------------------------------------------------
+ <summary>
+ Returns the system resource directory as specified by the system parameter. Can be configured as an asolute path or relative path (relative to the application root).
+ </summary>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	3/2/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.Web.Common.GetSystemResourcePath">
+ -----------------------------------------------------------------------------
+ <summary>
+ Returns the full path of the directory returned by the GetSystemResourceDirectory() method.
+ </summary>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	3/2/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.Web.Common.GetSystemResourceSubDirectory(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Returns a sub-directoy within the resource directory. If it does not exist, attempt to create it.
+ i.e.:
+ Resource dir = "C:\Inetpub\wwwroot\MyApp\Resources\"
+ subPath = "Images\Products"
+ Result = "C:\Inetpub\wwwroot\MyApp\Resources\Images\Products"
+ </summary>
+ <param name="subPath"></param>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	3/2/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.Web.Common.GetSystemResourceSubPath(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Returns the full path of the directory returned by the GetSystemResourceSubDirectory() method.
+ </summary>
+ <param name="subPath"></param>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	3/2/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="T:Made4Net.Shared.Web.Skins.Object">
+ -----------------------------------------------------------------------------
+ Project	 : Made4net.Shared
+ Class	 : Shared.Web.Skins.Object
+ 
+ -----------------------------------------------------------------------------
+ <summary>
+ Represents a single object defined by a skin. i.e Grid cellspacing=0"
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	10/17/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="T:Made4Net.Shared.Web.Skins.ObjectCollection">
+ -----------------------------------------------------------------------------
+ Project	 : Made4net.Shared
+ Class	 : Shared.Web.Skins.ObjectAttributes
+ 
+ -----------------------------------------------------------------------------
+ <summary>
+ Contains a list of objects defined by a single skin.
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	10/17/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="T:Made4Net.Shared.Web.Skins.Skin">
+ -----------------------------------------------------------------------------
+ Project	 : Made4net.Shared
+ Class	 : Shared.Web.Skins.Skin
+ 
+ -----------------------------------------------------------------------------
+ <summary>
+ Provides all information about a single skin. To create an instance of this class use SkinReader.Read() method.
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	10/17/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="T:Made4Net.Shared.Web.Skins.SkinInfo">
+ -----------------------------------------------------------------------------
+ Project	 : Made4net.Shared
+ Class	 : Shared.SkinInfo
+ 
+ -----------------------------------------------------------------------------
+ <summary>
+ Contains general skin functions and information about all skins currently in use.
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	10/17/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="T:Made4Net.Shared.DataClass">
+ -----------------------------------------------------------------------------
+ <summary>
+ An abstract class used to provide easy interaction between business logic and records in the database.
+ </summary>
+ <remarks>
+ By inheriting from this class you can easily create classes that contain logic for your application as well as the basic functionality of database interaction like INSERT, UPDATE, and DELETE commands without the need of composing SQL statements.
+ </remarks>
+ <history>
+ 	[Administrator]	6/21/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="F:Made4Net.Shared.DataClass._Data">
+ -----------------------------------------------------------------------------
+ <summary>
+ Stores the data of a class instance.
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	6/21/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="F:Made4Net.Shared.DataClass._FieldsValuesSet">
+ -----------------------------------------------------------------------------
+ <summary>
+ Determines wheather field values where already set in the current instance.
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	6/21/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="F:Made4Net.Shared.DataClass._IsNew">
+ -----------------------------------------------------------------------------
+ <summary>
+ Determines wheather an instance represents a new record.
+ </summary>
+ <remarks>
+ New records will be inserted to the database when the Save() method is called.
+ </remarks>
+ <history>
+ 	[Administrator]	6/21/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="F:Made4Net.Shared.DataClass._Fields">
+ -----------------------------------------------------------------------------
+ <summary>
+ Contains all data fields for the current instance including their values.
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	6/21/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="F:Made4Net.Shared.DataClass._ApplicationFieldCache">
+ -----------------------------------------------------------------------------
+ <summary>
+ Maintains a cache of discovered fields for non-HTTP applications.
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	6/21/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="F:Made4Net.Shared.DataClass._UniqueKey">
+ -----------------------------------------------------------------------------
+ <summary>
+ A collection of fields that uniquely identify a record.
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	6/21/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="T:Made4Net.Shared.DataClass.DataClassCacheContext">
+ -----------------------------------------------------------------------------
+ <summary>
+ Specifies the cache context for storing data.
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	6/21/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="F:Made4Net.Shared.DataClass.DataClassCacheContext.HttpApplication">
+ -----------------------------------------------------------------------------
+ <summary>
+ Data will be saved in the HTTP application scope
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	6/21/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="F:Made4Net.Shared.DataClass.DataClassCacheContext.Application">
+ -----------------------------------------------------------------------------
+ <summary>
+ Data will be saved in the _ApplicationFieldCache static variable
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	6/21/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.DataClass.#ctor(System.Object[],Made4Net.Shared.DataClassParams)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Initializes a new instance of the class.
+ </summary>
+ <param name="PrimaryKeyValues">An array containing all primary key values that identify the record.</param>
+ <remarks>
+ Use this constructor in an inherited class to load an existing record.
+ </remarks>
+ <history>
+ 	[Administrator]	6/21/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.DataClass.#ctor(System.String[],System.Object[],Made4Net.Shared.DataClassParams)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Initializes a new instance of the class.
+ </summary>
+ <param name="UniqueKeyFields">An array containing names of fields that uniquely identify the record.</param>
+ <param name="UniqueKeyValues">An array containing all unique key values that identify the record.</param>
+ <remarks>
+ Use this constructor in an inherited class to load an existing record.
+ </remarks>
+ <history>
+ 	[Administrator]	6/21/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.DataClass.#ctor(Made4Net.Shared.DataClassParams)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Initializes a new instance of the class.
+ </summary>
+ <remarks>
+ Use this constructor in an inherited class to create a new record.
+ </remarks>
+ <history>
+ 	[Administrator]	6/21/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.DataClass.Copy">
+ -----------------------------------------------------------------------------
+ <summary>
+ Creates a deep copy of this class
+ </summary>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	6/14/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.DataClass.StoreFields">
+ -----------------------------------------------------------------------------
+ <summary>
+ Stores a copy of the discovered fields.
+ </summary>
+ <remarks>
+ The values of the fields are removed before the fields are stored.
+ </remarks>
+ <history>
+ 	[Administrator]	6/21/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.DataClass.LoadRow(System.Data.DataRow)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Initializes an instance from a data row. Use this method to load multiple instances from a DataTable.
+ </summary>
+ <param name="dr"></param>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	2/7/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.DataClass.CreateUpdateQueue">
+ -----------------------------------------------------------------------------
+ <summary>
+ Creates a new update queue or returns the existing update queue.
+ All changes will be posted to the queue until it is flushed.
+ For automatic queuing for all objects, use the BeginUpdateQueuing() method.
+ </summary>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	1/31/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.DataClass.GetUpdateQueue">
+ -----------------------------------------------------------------------------
+ <summary>
+ Returns the update queue for this class from the current context.
+ If the static BeginUpdateQueuing() method was called and no queue currently exists, a new queue will be created.
+ Returns NULL if the static BeginUpdateQueuing() method was NOT called and no queue was manually created using the CreateUpdateQueue() method.
+ </summary>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	2/2/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.DataClass.BeginUpdateQueuing">
+ -----------------------------------------------------------------------------
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	2/2/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.DataClassField.CompareValue(System.Object,System.Object)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Returns True if the two values are equal
+ </summary>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.DataClassUpdateQueue.FlushAll">
+ -----------------------------------------------------------------------------
+ <summary>
+ Flushes all queues in the current context and leaves them open for more updates.
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	1/31/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.DataClassUpdateQueue.FlushCloseAll">
+ -----------------------------------------------------------------------------
+ <summary>
+ Flushes and closes all queues in the current context.
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	1/31/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.DataClassUpdateQueue.Flush">
+ -----------------------------------------------------------------------------
+ <summary>
+ Flushes the queue and leaves it open for more updates.
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	1/31/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.DataClassUpdateQueue.Close">
+ -----------------------------------------------------------------------------
+ <summary>
+ Closes the queue without flushing. Pending updates will not be posted.
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	1/31/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.DataClassUpdateQueue.FlushClose">
+ -----------------------------------------------------------------------------
+ <summary>
+ Flushes and closes the queue
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	1/31/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.M4NMessageQueueCollection.IsDoNotRemoveOnFail(System.String)">
+ <summary>
+ Method that return a flag to indicate whether to remove message from Q on exception
+ </summary>
+ <param name="pName">Parameter to indicate Q Name</param>
+ <returns>return a flag to indicate whether to remove message from Q on exception</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Made4Net.Shared.Strings.Concat(System.String,System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Concatanates two strings using by adding a comma
+ </summary>
+ <param name="String1"></param>
+ <param name="String2"></param>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.Strings.Concat(System.String,System.String,System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Concatenates two strings using by adding the specified separator
+ </summary>
+ <param name="String1"></param>
+ <param name="String2"></param>
+ <param name="Separator"></param>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.Strings.PSQ(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Preserve single quotes by escaping all single quotes with another single quote
+ </summary>
+ <param name="pValue">The string to be escaped</param>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.Strings.PSQ(System.String,System.Char)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Preserve single quotes by escaping all single quotes with the escape character provided
+ </summary>
+ <param name="pValue">The string to be escaped</param>
+ <param name="pEscapeChar">The escape character to be used</param>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.Strings.PDQ(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Preserve double quotes by escaping all double quotes with an additional double quote
+ </summary>
+ <param name="pValue">The string to be escaped</param>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.Strings.PDQ(System.String,System.Char)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Preserve double quotes by escaping all double quotes with the escape character provided
+ </summary>
+ <param name="pValue">The string to be escaped</param>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.Strings.Escape(System.String,System.Char,System.Char)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Escape a string
+ </summary>
+ <param name="pValue">The string to be escaped</param>
+ <param name="pPreserveChar">The character to be preserved</param>
+ <param name="pEscapeChar">The escape character</param>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.Strings.IsEmpty(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Check if a string has a null value (Nothing in Visual Basic) or is a zero-length string
+ </summary>
+ <param name="s">The string to be checked</param>
+ <returns>True if the string has a null value or is a zero-length string. Otherwise false.</returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	2/21/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.Strings.IndexOf(System.String[],System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Find the first occurance of a string in a second string
+ </summary>
+ <param name="pNeedle">An array of strings to search for</param>
+ <param name="pHaystack">The string to search in</param>
+ <returns>The first index of any of the strings provided in Needle if any are found. Otherwise, returns -1.</returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	2/21/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.Strings.Truncate(System.String,System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Truncates a string to the specified length.
+ </summary>
+ <param name="text">The string to truncate.</param>
+ <param name="size">The maximum length of the string.</param>
+ <returns></returns>
+ <remarks>
+ If the string is shorter than the maximum size, the string is returned unchanged.
+ </remarks>
+ <history>
+ 	[Administrator]	9/7/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Shared.XML.XmlDocument.GetNode(System.String,System.Xml.XmlNode)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Returns a single node matching the xpath specified. Throws a XmlNodeNotFoundException if not found.
+ </summary>
+ <param name="xpath"></param>
+ <param name="searchNode"></param>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	5/1/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+</members>
+</doc>

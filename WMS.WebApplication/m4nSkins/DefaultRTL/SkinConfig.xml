@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Skin>
+	<Info>
+		<Name>Hebrew Default</Name>
+		<Description>The Hebrew Default Skin</Description>
+	</Info>
+	
+	<ImageMapping>
+	
+		<Image Name="RightBanner" Src="RightBanner.jpg" />
+		<Image Name="MiddleBanner" Src="MiddleBanner.jpg" />
+		<Image Name="LeftBanner" Src="LeftBanner.jpg" />
+
+		<Image Name="NavBg" Src="NavBg.jpg" />
+		<Image Name="LastScreenArrow" Src="LastScreenArrow.gif" />
+		<Image Name="MenuRightCorner" Src="MenuLeftCorner.jpg" Width="15"/>
+		<Image Name="MenuSeparator" Src="MenuSeparator.jpg" Width="2"/>
+		<Image Name="MenuBg" Src="MenuBg.jpg" />
+		<Image Name="MenuLeftCorner" Src="MenuRightCorner.jpg" Width="11"/>
+
+		<Image Name="FrameTopLeftCorner" Src="FrameTopLeftCorner.jpg" />
+		<Image Name="FrameTopBg" Src="FrameTopBg.jpg" />
+		<Image Name="FrameTopRightCorner" Src="FrameTopRightCorner.jpg" />
+		<Image Name="FrameJumpLeftArrow" Src="FrameJumpLeftArrow.jpg" />
+		<Image Name="FrameJumpRightArrow" Src="FrameJumpRightArrow.jpg" />
+		<Image Name="FrameBottomLeftCorner" Src="FrameBottomLeftCorner.jpg" />
+		<Image Name="FrameBottomBG" Src="FrameBottomBG.jpg" />
+		<Image Name="FrameBottomRightCorner" Src="FrameBottomRightCorner.jpg" />
+
+		<Image Name="FTableTabsSelectedLeftCorner" Src="FTableTabsSelectedLeftCorne.jpg" />
+		<Image Name="FTableSelectedTabsBg" Src="FTableSelectedTabsBg.jpg" />
+		<Image Name="FTableTabsSelectedRightCorner" Src="FTableTabsSelectedRightCorn.jpg" />
+		<Image Name="FTableTabsSelectedMiddleCorner" Src="FTableTabsSelectedMiddleCorner.jpg" />
+		<Image Name="FTableTabsSelectedArrow" Src="FTableTabsSelectedArrow.jpg" />
+		<Image Name="FTableTabsNonSelectedLeftCorner" Src="FTableTabsNonSelectedLeftCo.jpg" />
+		<Image Name="FTableTabsNonSelectedMiddleCorner" Src="FTableTabsNonSelectedMiddleCorner.jpg" />
+		<Image Name="FTableTabsNonSelectedBg" Src="FTableTabsNonSelectedBg.jpg" />
+		<Image Name="FTableTabsNonSelectedRightCorner" Src="FTableTabsNonSelectedRightC.jpg" />
+		<Image Name="FTableTabsNonSelectedArrow" Src="FTableTabsNonSelectedArrow.jpg" />
+		
+		<Image Name="STableTabsSelectedLeftCorner" Src="STableTabsSelectedLeftCorner.jpg" />
+		<Image Name="STableSelectedTabsBg" Src="STableSelectedTabsBg.jpg" />
+		<Image Name="STableTabsSelectedRightCorner" Src="STableTabsSelectedRightCorn.jpg" />
+		<Image Name="STableTabsSelectedArrow" Src="STableTabsSelectedArrow.jpg" />
+		<Image Name="STableTabsNonSelectedLeftCorner" Src="STableTabsNonSelectedLeftCo.jpg" />
+		<Image Name="STableTabsNonSelectedBg" Src="STableTabsNonSelectedBg.jpg" />
+		<Image Name="STableTabsNonSelectedRightCorner" Src="STableTabsNonSelectedRightC.jpg" />
+		<Image Name="STableTabsNonSelectedArrow" Src="STableTabsNonSelectedArrow.jpg" />
+
+		<Image Name="TableContentLeftCorner" Src="TableContentLeftCorner.jpg" />
+		<Image Name="TableContentBg" Src="TableContentBg.jpg" />
+		<Image Name="TableContentRightCorner" Src="TableContentRightCorner.jpg" />
+		<Image Name="TableContentArrangeArrow" Src="TableContentArrangeArrow.gif" />
+		
+		<!-- Truck Iamges--> 
+		<Image Name="LeftDriverCabImageUrl" Src="DriverCab.gif" />
+		<Image Name="LeftTruckWheelsImageUrl" Src="TruckWheels.gif" />
+		<Image Name="RightDriverCabImageUrl" Src="RightDriverCab.gif" />
+		<Image Name="RightTruckWheelsImageUrl" Src="RightTruckWheels.gif" />
+
+		<Image Name="ButtonGo" Src="Go_Button.jpg" />
+		<!-- Action Bar - The file name (example "BtnEdit.gif") is used for the basic behavior -->
+		<!-- To set an image for Disable mode use the same file name with _d at the end	-->
+		<!--		For examlple "BtnEdit_d.gif"										--> 
+		<!-- To set an image for Selected mode use the same file name with _s at the end-->
+		<!--		For examlple "BtnEdit_s.gif"										--> 
+		<Image Name="ActionBarBtnCancel" Src="ActionBar/btnCancel.gif" />
+		<Image Name="ActionBarBtnDelete" Src="ActionBar/btnDelete.gif" />
+		<Image Name="ActionBarBtnEdit" Src="ActionBar/btnEdit.gif" />
+		<Image Name="ActionBarBtnExec" Src="ActionBar/btnExec.gif" />
+		<Image Name="ActionBarBtnFind" Src="ActionBar/btnFind.gif" />
+		<Image Name="ActionBarBtnMultiEdit" Src="ActionBar/btnMultiEdit.gif" />
+		<Image Name="ActionBarBtnNew" Src="ActionBar/btnNew.gif" />
+		<Image Name="ActionBarBtnSave" Src="ActionBar/btnSave.gif" />
+		<Image Name="ActionBarBtnView" Src="ActionBar/btnView.gif" />
+		<Image Name="ActionBarBtnClearAll" Src="ActionBar/btnClearAll.gif" />
+		<Image Name="ActionBarLoadSavedSearch" Src="ActionBar/btnSavedSearch.gif" />
+		<Image Name="ActionBarSaveSearch" Src="ActionBar/btnSavedSearch.gif" />
+
+		<Image Name="QuickReport" Src="ActionBar/btnDoc.gif" />
+		<Image Name="csv" Src="ActionBar/csv.gif" />
+		<Image Name="QuickChart" Src="ActionBar/chart.gif" />
+		
+		<Image Name="ActionBarBtnCheck" Src="ActionBar/btnCheck.gif" />
+		<Image Name="ActionBarBtnViews" Src="ActionBar/btnViews.gif" />
+		<Image Name="ActionBarBtnViewsActive" Src="ActionBar/btnViews_a.gif" />
+		
+		<Image Name="ActionBarBtnReleaseWave" Src="ActionBar/ReleaseWave.gif" />
+		<Image Name="ActionBarBtnPlanWave" Src="ActionBar/ReleaseWave.gif" />
+		<Image Name="ActionBarBtnCompleteWave" Src="ActionBar/CompleteWave.gif" />
+		
+		<Image Name="ActionBarApprovePicks" Src="ActionBar/btnApprovePicks.gif" />
+		<Image Name="ActionBarCancelPicks" Src="ActionBar/btnCancelPicks.gif" />
+		<Image Name="ActionBarUnAllocatePicks" Src="ActionBar/btnCancelAllocating.gif" />
+		<Image Name="ActionBarShipOrders" Src="ActionBar/BtnShipOrders.gif" />
+		<Image Name="ActionBarSplitPicks" Src="ActionBar/btnSplitPicks.gif" />
+		
+		<Image Name="ActionBarApproveConsolidation" Src="ActionBar/btnApprovePicks.gif" />
+		<Image Name="ActionBarCancelConsolidation" Src="ActionBar/btnCancelPicks.gif" />
+		<Image Name="ActionBarApproveConsolidationDetail" Src="ActionBar/btnApprovePicks.gif" />
+		<Image Name="ActionBarCancelConsolidationDetail" Src="ActionBar/btnCancelPicks.gif" />
+		
+		<Image Name="ActionBarBtnConsolidate" Src="ActionBar/btnMultiEdit.gif" />
+		<Image Name="ActionBarBtnCloseReceipt" Src="ActionBar/btnMultiEdit.gif" />
+		
+		<Image Name="ActionBarSearchBtnRegular" Src="ActionBar/RegularView.gif" />
+		<Image Name="ActionBarSearchBtnExtended" Src="ActionBar/ExtendedView.gif" />
+		<Image Name="ActionBarGridBtnRegular" Src="ActionBar/RegularView.gif" />
+		<Image Name="ActionBarGridBtnExtended" Src="ActionBar/ExtendedView.gif" />
+		
+		<Image Name="ActionBarLeft" Src="ActionBar/Left.gif" />
+		<Image Name="ActionBarBG" Src="ActionBar/BG.gif" />
+		<Image Name="ActionBarRight" Src="ActionBar/Right.gif" />
+
+		<Image Name="SortAsc" Src="SortAsc.gif" />
+		<Image Name="SortDesc" Src="SortDesc.gif" />
+
+		<Image Name="GridColumnView" Src="GridColumnView.gif" />
+		<Image Name="GridColumnEdit" Src="GridColumnEdit.gif" />
+		<Image Name="GridColumnSelect" Src="GridColumnSelect.gif" />
+		
+		<Image Name="SplashRight" Src="TopLeftBanner.jpg" />
+		<Image Name="SplashLeft" Src="TopRightBanner.jpg" />
+		<Image Name="SplashMiddle" Src="TopMiddleBanner.jpg" />
+		
+		<Image Name="ReportPreview" Src="ActionBar/ReportPreview.gif" />
+		<Image Name="ReportShowPDF" Src="ActionBar/ReportShowPDF.gif" />
+		<Image Name="ReportPrint" Src="ActionBar/ReportPrint.gif" />
+		
+		<Image Name="LabelPrint" Src="ActionBar/Label.gif" />
+		<Image Name="Receipt" Src="ActionBar/Receipt.gif" />
+		
+		<Image Name="GridColumnDelete" Src="GridColumnDelete.gif" />
+
+		<Image Name="Plus" Src="ActionBar/ExtendedView.gif" />
+		<Image Name="Minus" Src="ActionBar/RegularView.gif" />
+
+		<!-- Yard Diagram-->
+		<Image Name="Vehicle_Default" Src="Truck1.gif" />
+		<Image Name="Vehicle_T-7.525" Src="Truck1.gif" />
+		<Image Name="Vehicle_T-3.825" Src="Truck2.gif" />
+		<Image Name="YardLocation_Dock" Src="GridColumnLocate.gif" />
+		<Image Name="YardLocation_Default" Src="GridColumnLocate_d.gif" />
+		
+		<!-- TMS Buttons Region Start-->
+		<Image Name="ActionBarBtnGeoCode" Src="ActionBar/btngeocode.gif" />
+		<Image Name="ActionBarBtnPlanRoute" Src="ActionBar/btnrouteproc.gif" />
+		<Image Name="ActionBarBtnApprove" Src="ActionBar/btnCheck.gif" />
+		<Image Name="ActionBarBtnLocate" Src="ActionBar/btnMultiEdit.gif" />
+		<Image Name="ActionBarBtnCenter" Src="GridColumnLocate.gif" />
+		<Image Name="ActionBarBtnClear" Src="ActionBar/btnMultiEdit.gif" />
+		<Image Name="GridColumnLocate" Src="GridColumnLocate.gif" />
+		<!-- TMS Buttons Region End-->
+
+		<Image Name="ActionBarBtnHelp" Src="ActionBar/btnHelp.gif" />
+		<Image Name="BtnHome" Src="ActionBar/Home.gif" />
+                <Image Name="ClearSort" Src="Empty.gif" />
+	</ImageMapping>
+
+	<StyleMapping>
+		<Style Name="Style_FTableTabsNonSelected" CSSText="font-size:12px;font-weight:bold;padding-left:15px;padding-right:15px;padding-top:2px;padding-bottom:2px;" />
+		<Style Name="Style_FTableTabsSelected" CSSText="font-size:12px;font-weight:bold;padding-left:15px;padding-right:15px;padding-top:2px;padding-bottom:2px;" />
+		<Style Name="Style_FTableTabsEnd" CSSText="border-bottom:solid 1 gray; width:100%" />
+	</StyleMapping>
+	
+	<Objects>
+		<Grid Width="720" border="1" bordercolor="#CCCCCC" cellpadding="2" rules="rows" />
+		<ActionBar cellpadding="0" cellspacing="0" />
+		<ReportActionBar cellpadding="3" cellspacing="0"/>
+		<Chart ChartType="Bar" LegendPosition="Top" is3D="true" Orientation="Vertical" ColorPalette="None"/>
+	</Objects>
+</Skin>

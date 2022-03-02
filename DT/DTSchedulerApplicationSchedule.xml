@@ -1,0 +1,291 @@
+<DataTemplates>
+  <DataTemplate>
+    <ID>680</ID>
+    <Name>DTSchedulerApplicationSchedule</Name>
+    <AppID>0</AppID>
+    <Label>DTSchedulerApplicationSchedule</Label>
+    <StructureName>SchedulerApplications</StructureName>
+    <ConnID>1</ConnID>
+    <FormTemplate>{all:n4}</FormTemplate>
+    <ColumnTemplates />
+    <RowAttributes />
+    <DTType>SYSTEM</DTType>
+    <ScreenId />
+    <ObjectId />
+    <Mode />
+    <User />
+    <RowsInGrid>0</RowsInGrid>
+    <UseDTConnection>True</UseDTConnection>
+    <ParentAppID>0</ParentAppID>
+    <ParentDTID>0</ParentDTID>
+    <HasClientSideExpressions>False</HasClientSideExpressions>
+    <InMemory>False</InMemory>
+    <ViewStyle>0</ViewStyle>
+    <UpdatedBy>Admin</UpdatedBy>
+    <UpdatedOn>2009-05-04 13:55:19.4370</UpdatedOn>
+    <DTHelp />
+    <IsStickyFields>False</IsStickyFields>
+    <DTFields>
+      <DTField>
+        <Name>ScheduleID</Name>
+        <AllowNull>False</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>ScheduleID</Label>
+        <MaxLength>100</MaxLength>
+        <Ordinal>0</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>True</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>True</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp />
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>ApplicationID</Name>
+        <AllowNull>False</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>ApplicationID</Label>
+        <MaxLength>100</MaxLength>
+        <Ordinal>1</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>True</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp />
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>DROPDOWN</Name>
+          <Label>Drop Down</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.DropDownList</Class>
+        </DisplayType>
+        <Properties>
+          <Property>
+            <Code>all</Code>
+            <CompositeCode>DROPDOWN_all</CompositeCode>
+            <Label>All/None Option</Label>
+            <Value>False</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>all_text</Code>
+            <CompositeCode>DROPDOWN_all_text</CompositeCode>
+            <Label>All/None Text</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>connection</Code>
+            <CompositeCode>DROPDOWN_connection</CompositeCode>
+            <Label>Connection</Label>
+            <Value>Made4NetSchema</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>IgnoreCase</Code>
+            <CompositeCode>DROPDOWN_IgnoreCase</CompositeCode>
+            <Label>IgnoreCase</Label>
+            <Value>true</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>order_by</Code>
+            <CompositeCode>DROPDOWN_order_by</CompositeCode>
+            <Label>Order By</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>table</Code>
+            <CompositeCode>DROPDOWN_table</CompositeCode>
+            <Label>Table</Label>
+            <Value>sys_applications</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>text_field</Code>
+            <CompositeCode>DROPDOWN_text_field</CompositeCode>
+            <Label>Text Field</Label>
+            <Value>applicationname</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>value_field</Code>
+            <CompositeCode>DROPDOWN_value_field</CompositeCode>
+            <Label>Value Field</Label>
+            <Value>applicationid</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>value_list</Code>
+            <CompositeCode>DROPDOWN_value_list</CompositeCode>
+            <Label>Value List</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>where</Code>
+            <CompositeCode>DROPDOWN_where</CompositeCode>
+            <Label>Where</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+        </Properties>
+      </DTField>
+      <DTField>
+        <Name>DBConnectionName</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>DBConnectionName</Label>
+        <MaxLength>20</MaxLength>
+        <Ordinal>2</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp />
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>DROPDOWN</Name>
+          <Label>Drop Down</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.DropDownList</Class>
+        </DisplayType>
+        <Properties>
+          <Property>
+            <Code>all</Code>
+            <CompositeCode>DROPDOWN_all</CompositeCode>
+            <Label>All/None Option</Label>
+            <Value>False</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>all_text</Code>
+            <CompositeCode>DROPDOWN_all_text</CompositeCode>
+            <Label>All/None Text</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>connection</Code>
+            <CompositeCode>DROPDOWN_connection</CompositeCode>
+            <Label>Connection</Label>
+            <Value>Made4NetSchema</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>IgnoreCase</Code>
+            <CompositeCode>DROPDOWN_IgnoreCase</CompositeCode>
+            <Label>IgnoreCase</Label>
+            <Value>true</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>order_by</Code>
+            <CompositeCode>DROPDOWN_order_by</CompositeCode>
+            <Label>Order By</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>table</Code>
+            <CompositeCode>DROPDOWN_table</CompositeCode>
+            <Label>Table</Label>
+            <Value>conn</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>text_field</Code>
+            <CompositeCode>DROPDOWN_text_field</CompositeCode>
+            <Label>Text Field</Label>
+            <Value>conn_name</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>value_field</Code>
+            <CompositeCode>DROPDOWN_value_field</CompositeCode>
+            <Label>Value Field</Label>
+            <Value>conn_name</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>value_list</Code>
+            <CompositeCode>DROPDOWN_value_list</CompositeCode>
+            <Label>Value List</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>where</Code>
+            <CompositeCode>DROPDOWN_where</CompositeCode>
+            <Label>Where</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+        </Properties>
+      </DTField>
+    </DTFields>
+    <Expressions />
+  </DataTemplate>
+</DataTemplates>

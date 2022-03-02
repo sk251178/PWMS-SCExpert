@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="COMPANY" targetNamespace="http://tempuri.org/COMPANY.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/COMPANY.xsd" xmlns:mstns="http://tempuri.org/COMPANY.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="BUSINESSOBJECT">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="BOTYPE" type="xs:string" />
+				<xs:element name="DATACOLLECTION" type="xs:string" />
+				<xs:element name="DATA">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CONSIGNEE" type="xs:string" />
+							<xs:element name="COMPANY" type="xs:string" />
+							<xs:element name="COMPANYTYPE" type="xs:string" />
+							<xs:element name="COMPANYNAME" type="xs:string" />
+							<xs:element name="OTHERCOMPANY" type="xs:string" />
+							<xs:element name="COMPANYGROUP" type="xs:string" />
+							<xs:element name="STATUS" type="xs:boolean" />
+							<xs:element name="MIXPICKING" type="xs:boolean" />
+							<xs:element name="CONTAINER" type="xs:string" />
+							<xs:element name="DEFAULTCONTACT" type="xs:string" />
+							<xs:element name="DELIVERYCOMMENTS" type="xs:string" />
+							<xs:element name="SERVICETIME" type="xs:double" />
+							<xs:element name="PREFUNLOADINGSIDE" type="xs:string" />
+							<xs:element name="ALLOWASNREC" type="xs:boolean" />
+							<xs:element name="PICKINGCOMMENTS" type="xs:boolean" />
+							<xs:element name="CONTACTS">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="CONTACT">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="CONTACTID" type="xs:string" />
+													<xs:element name="STREET1" type="xs:string" />
+													<xs:element name="STREET2" type="xs:string" />
+													<xs:element name="CITY" type="xs:string" />
+													<xs:element name="STATE" type="xs:string" />
+													<xs:element name="ZIP" type="xs:string" />
+													<xs:element name="CONTACT1NAME" type="xs:string" />
+													<xs:element name="CONTACT2NAME" type="xs:string" />
+													<xs:element name="CONTACT1PHONE" type="xs:string" />
+													<xs:element name="CONTACT2PHONE" type="xs:string" />
+													<xs:element name="CONTACT1FAX" type="xs:string" />
+													<xs:element name="CONTACT2FAX" type="xs:string" />
+													<xs:element name="CONTACT1EMAIL" type="xs:string" />
+													<xs:element name="CONTACT2EMAIL" type="xs:string" />
+													<xs:element name="POINTID" type="xs:string" />
+													<xs:element name="ROUTE" type="xs:string" />
+													<xs:element name="STAGINGLANE" type="xs:string" />
+													<xs:element name="PICKUPCONFIRMATIONTYPE" type="xs:string" />
+													<xs:element name="DELIVERYCONFIRMATIONTYPE" type="xs:string" />
+													<xs:element name="STAGINGWAREHOUSEAREA" type="xs:string" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+  </xs:element>
+</xs:schema>

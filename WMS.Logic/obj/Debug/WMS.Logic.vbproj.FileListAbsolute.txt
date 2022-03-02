@@ -1,0 +1,9 @@
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Logic\obj\Debug\WMS.Logic.vbproj.AssemblyReference.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Logic\obj\Debug\WMS.Logic.vbproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\WMS.Logic.dll
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\WMS.Logic.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\WMS.Logic.xml
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Logic\obj\Debug\WMS.Logic.vbproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Logic\obj\Debug\WMS.Logic.dll
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Logic\obj\Debug\WMS.Logic.xml
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Logic\obj\Debug\WMS.Logic.pdb

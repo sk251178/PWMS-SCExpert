@@ -1,0 +1,10 @@
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.TaxRight\obj\Debug\WMS.TaxRight.csproj.AssemblyReference.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.TaxRight\obj\Debug\WMS.TaxRight.ProjectInstaller.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.TaxRight\obj\Debug\WMS.TaxRight.csproj.GenerateResource.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.TaxRight\obj\Debug\WMS.TaxRight.csproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\TaxRight\PWMS.TaxRight.exe.config
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\TaxRight\PWMS.TaxRight.exe
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\TaxRight\PWMS.TaxRight.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.TaxRight\obj\Debug\WMS.TaxRight.csproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.TaxRight\obj\Debug\PWMS.TaxRight.exe
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.TaxRight\obj\Debug\PWMS.TaxRight.pdb

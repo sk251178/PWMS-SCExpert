@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="dsRetShipSKu" targetNamespace="http://tempuri.org/dsRetShipSKu.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/dsRetShipSKu.xsd" xmlns:mstns="http://tempuri.org/dsRetShipSKu.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="dsRetShipSKu" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="RetShipSku">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CONSIGNEE" type="xs:string" minOccurs="0" />
+							<xs:element name="SKU" type="xs:string" minOccurs="0" />
+							<xs:element name="SKUDESC" type="xs:string" minOccurs="0" />
+							<xs:element name="RETQTY" type="xs:int" minOccurs="0" />
+							<xs:element name="SHIPQTY" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

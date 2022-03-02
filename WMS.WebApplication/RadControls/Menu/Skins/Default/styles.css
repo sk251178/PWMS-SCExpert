@@ -1,0 +1,220 @@
+/* RadMenu Made4NetDefault skin */
+.RadMenu_Default
+{
+}
+
+.RadMenu_Default .link
+{
+	vertical-align:middle;
+	font-family:MS Sans Serif,Arial;
+	font-size:11px;
+	text-decoration:none;
+	text-align:center;
+	color: black;
+	line-height: 25px;
+	background-color:transparent;
+}
+
+.RadMenu_Default .link .text
+{
+	padding-right: 8px;
+	padding-left: 8px;
+        /*background-color:green;*/
+}
+
+.RadMenu_Default .slide
+{
+	margin-top: 4px;
+	
+}
+.RadMenu_Default .vertical .slide
+{
+        margin-top: -1px;	
+}
+.RadMenu_Default .rootGroup
+{
+/*
+	border-bottom: 3px solid #7E7E81;/*#cbcbcb;*/
+	/*border-top: 1px solid #7E7E81;
+	border-right: 3px solid #7E7E81;
+	border-left: 1px solid #7E7E81;
+*/
+	background-color: Transparent;
+	/*border-width:medium;
+	border-color:Red;
+	background-image: url("/Vopak/m4nSkins/Default/Images/NavBg.jpg")*/
+}
+
+.RadMenu_Default .rootGroup .link
+{
+  color:#333366; 
+  font-family: MS Sans Serif,Arial; 
+  font-size:11px;   
+  cursor:default;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.RadMenu_Default .rootGroup .link:hover
+{
+  background: #0F467E;
+}
+.RadMenu_Default .rootGroup .link:hover .expandTop,
+.RadMenu_Default .rootGroup .vertical .link:hover .text,
+/*.RadMenu_Default .rootGroup .focused .text*/
+.RadMenu_Default .rootGroup .expanded .text
+{
+	/*border-top: 1px solid #b8b8b8;*/
+	background: #0F467E;
+	color:white;
+	margin-top: 3px;
+	line-height: 18px;
+	
+}
+
+.RadMenu_Default .rootGroup .disabled:hover
+{
+	border-bottom: 1px solid #cbcbcb;
+	/*border-top: 4px solid #cbcbcb;*/
+	/*background: White;/*#cbcbcb;*/
+	background-color:Transparent;
+}
+
+.RadMenu_Default .rootGroup .disabled:hover .text
+{
+	/*border-top: 1px solid #cbcbcb;*/
+	background:#0F467E;
+}
+
+.RadMenu_Default .text
+{
+	padding: 0px 15px;
+	font-size: 11px;
+}
+
+.RadMenu_Default .group
+{
+	background: white;
+	background-color:Transparent;
+	border-bottom: 3px solid #7E7E81;/*#cbcbcb;*/
+/*
+	border-top: 1px solid #7E7E81;
+*/
+	border-right: 3px solid #7E7E81;
+	border-left: 1px solid #7E7E81;	
+	border-bottom: 2px solid #cbcbcb;
+	border-top: 0px solid #cbcbcb;
+}
+
+.RadMenu_Default .group .link
+{
+	/*background-color:Transparent;*/
+	background:white; /*#f1f1f1;*/
+	/*border: solid 1px #d1d1d1;*/
+	/*border-top-color: white;*/
+	text-align: left;
+	text-decoration:none;
+}
+
+.RadMenu_Default .group .text
+{
+	padding-left:6px;
+	padding-right: 8px;
+	line-height: 18px;
+}
+
+.RadMenu_Default .group .link:hover,
+.RadMenu_Default .group .focused,
+.RadMenu_Default .group .expanded
+{
+	background: #0F467E;/*#fafafa;*/
+	/*border-bottom: 1px solid #ef2626;
+	border-top: 1px solid white;*/
+	/*font-weight: normal;*/
+	color:White;
+	margin-top:-3px; /* Changed By Simon from -4 to -3 */
+}
+
+.RadMenu_Default .leftArrow,
+.RadMenu_Default .rightArrow,
+.RadMenu_Default .topArrow,
+.RadMenu_Default .bottomArrow,
+.RadMenu_Default .leftArrowDisabled,
+.RadMenu_Default .rightArrowDisabled,
+.RadMenu_Default .topArrowDisabled,
+.RadMenu_Default .bottomArrowDisabled
+{
+	border-left: 1px solid #d1d1d1;
+	border-right: 1px solid #d1d1d1;
+	background: #f1f1f1 url('img/left.gif') center center no-repeat;
+	width:15px;
+}
+
+.RadMenu_Default .topArrow,
+.RadMenu_Default .topArrowDisabled
+{
+	background-image:url('img/top.gif');
+	width:100%;
+}
+
+.RadMenu_Default .bottomArrow,
+.RadMenu_Default .bottomArrowDisabled
+{
+	background-image:url('img/bottom.gif');
+	width:100%;
+}
+
+.RadMenu_Default .rightArrow,
+.RadMenu_Default .leftArrow
+{
+	height:100%;
+}
+
+.RadMenu_Default .rightArrow,
+.RadMenu_Default .rightArrowDisabled
+{
+	background-image:url('img/right.gif');
+}
+
+.RadMenu_Default .vertical .separator .text
+{
+	background: #eaeaea;
+	font-size:1px;
+	padding-top: 2px;	
+	border-left: solid 1px #d1d1d1;
+	border-right: solid 1px #d1d1d1;
+}
+
+.RadMenu_Default .expandLeft,
+.RadMenu_Default .expandRight
+{
+	background:transparent url(img/groupImage.gif) right center no-repeat;
+	margin: 0px 3px;
+}
+
+.RadMenu_Default .link:hover .expandLeft,
+.RadMenu_Default .link:hover .expandRight,
+.RadMenu_Default .focused .expandLeft,
+.RadMenu_Default .focused .expandRight,
+.RadMenu_Default .expanded .expandLeft,
+.RadMenu_Default .expanded .expandRight
+{
+	background:transparent url(img/invertedGroupImage.gif) right center no-repeat;
+}
+
+/* right to left */
+.RadMenu_Default_rtl .group .link:hover .expandLeft,
+.RadMenu_Default_rtl .group .link:hover .expandRight
+{
+	background:transparent url(img/left.gif) left center no-repeat;
+	margin: 0px 1px;
+	padding-left: 8px;
+}
+
+.RadMenu_Default_rtl .expandLeft,
+.RadMenu_Default_rtl .expandRight
+{
+	background:transparent url(img/groupImageRTL.gif) left center no-repeat;
+}
+/* end right to left */
+
+

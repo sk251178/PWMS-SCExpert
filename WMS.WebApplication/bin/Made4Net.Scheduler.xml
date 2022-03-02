@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Made4Net.Scheduler</name>
+    </assembly>
+    <members>
+        <member name="T:Made4Net.Scheduler.Application">
+            Each configured application is represented by this class. Trigger
+            specified starting of the application will be handled by this class.
+        </member>
+        <member name="F:Made4Net.Scheduler.Application.mRunning">
+            Is application working thread  is running/paused.
+        </member>
+        <member name="F:Made4Net.Scheduler.Application.mConfigured">
+            Is  application  already configured. Without configuration no work is possible.
+        </member>
+        <member name="M:Made4Net.Scheduler.Application.AlertAtApplicationFailure(System.String,System.String@)">
+            <summary>
+            This function start the configured executable file or call configured method in assembly.
+            </summary>
+            <param name="sender">Object which has fired the start event.</param>
+            <param name="onlyOne">Flag if only one instance should be started or more possible.</param>
+        </member>
+        <member name="M:Made4Net.Scheduler.Application.ClearTriggerList">
+            <summary>
+            Function clear trigger list and remove callback function from trigger events.
+            </summary>
+        </member>
+        <member name="M:Made4Net.Scheduler.Application.Configure(System.Data.DataTable,System.Data.DataTable,System.Data.DataTable,System.Boolean)">
+            <summary>
+            Configure application from meta data , start the application and its triggers
+            </summary>
+        </member>
+        <member name="M:Made4Net.Scheduler.Application.ApplicationExited(System.Object,System.EventArgs)">
+            <summary>
+            Function is called when the application is exited.The application is removed
+            from the process list
+            </summary>
+        </member>
+        <member name="M:Made4Net.Scheduler.Application.CheckProcessList">
+            <summary>
+            Check all applications in mProcessList and remove exited applications.
+            </summary>
+        </member>
+        <member name="M:Made4Net.Scheduler.DateTimeSchedulerInfo.GetNextDateTime(System.Collections.ArrayList,System.Int32)">
+            <summary>
+            Assuming the array is sorted , get the next  value starting from startValue
+            </summary>
+            <param name="values"></param>
+            <param name="startVal"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.Scheduler.Scheduler.Configure(System.Data.DataSet)">
+            <summary>
+            Configure scheduler from Data Set
+            </summary>
+        </member>
+        <member name="M:Made4Net.Scheduler.ITrigger.Stop">
+            True if the trigger was started otherwise false. 
+        </member>
+        <member name="T:Made4Net.Scheduler.RecurringTrigger">
+            Origin:Cron
+        </member>
+        <member name="F:Made4Net.Scheduler.RecurringTrigger.mTimer">
+            This timer is used to handle asynchronous trigger event. The interval to next
+            start time will be calculated in Start() and this
+            timer will be configured with this interval to match the first event.
+        </member>
+        <member name="F:Made4Net.Scheduler.RecurringTrigger.mRestartTimer">
+            Timer which is used to handle recalculation of start event due to long
+            time interval until next trigger event.
+        </member>
+        <member name="M:Made4Net.Scheduler.Trigger.Create(System.String)">
+            Create a new instance of a specified implemented trigger class.
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Made4Net.Scheduler.TriggerEventArgs.#ctor(System.Boolean)" -->
+        <member name="T:Made4Net.Scheduler.SchedulerUtils">
+            <summary>
+            Summary description for SchedulerUtils.
+            </summary>
+        </member>
+    </members>
+</doc>

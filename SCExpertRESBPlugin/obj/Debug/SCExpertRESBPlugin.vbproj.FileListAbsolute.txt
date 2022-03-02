@@ -1,0 +1,11 @@
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertRESBPlugin\obj\Debug\Resources.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertRESBPlugin\obj\Debug\SCExpertRESBPlugin.vbproj.GenerateResource.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertRESBPlugin\obj\Debug\SCExpertRESBPlugin.vbproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\SCExpertRESBPlugin.dll
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\SCExpertRESBPlugin.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\SCExpertRESBPlugin.xml
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertRESBPlugin\obj\Debug\SCExpertRESBPlugin.vbproj.AssemblyReference.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertRESBPlugin\obj\Debug\SCExpertRESBPlugin.vbproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertRESBPlugin\obj\Debug\SCExpertRESBPlugin.dll
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertRESBPlugin\obj\Debug\SCExpertRESBPlugin.xml
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertRESBPlugin\obj\Debug\SCExpertRESBPlugin.pdb

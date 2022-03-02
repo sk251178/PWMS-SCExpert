@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MessagesConfig>
+	<MessageEOF>CRLFCRLF</MessageEOF>
+	<MessageFormat>Delimited</MessageFormat>
+	<MessageDelimiter>,</MessageDelimiter>
+	<Messages>
+		<Message>
+			<MessageName>LOGINREQ</MessageName>
+			<MessageType>LUT</MessageType>
+			<Confirmation></Confirmation>
+			<Fields>
+				<Field name="Message type" value="LOGINREQ" length=""/>
+				<Field name="Device ID"/>
+				<Field name="Message Date"/>
+				<Field name="User"/>
+				<Field name="Password"/>
+				<Field name="Warehouse"/>
+				<Field name="MHTYPE"/>
+				<Field name="MHID"/>
+				<Field name="Location"/>
+			</Fields>
+			<ResponseMessage>LOGINRESP</ResponseMessage>
+		</Message>
+		<Message>
+			<MessageName>LOGINRESP</MessageName>
+			<Fields>
+				<Field name="Message type" value="LOGINRESP" length=""/>
+				<Field name="Device ID"/>
+				<Field name="Message Date"/>
+				<Field name="Response Code"/>
+				<Field name="Response Text"/>
+			</Fields>
+			<DynamicFields viewname="talkman_login" connection="Made4NetSchema">
+				<Field name="Language"/>
+			</DynamicFields>
+		</Message>
+		<Message>
+			<MessageName>LOGOFFREQ</MessageName>
+			<MessageType>ODR</MessageType>
+			<Confirmation>Y</Confirmation>
+			<Fields>
+				<Field name="Message type" value="LOGINREQ" length=""/>
+				<Field name="Device ID"/>
+				<Field name="Message Date"/>
+				<Field name="Transaction Date"/>
+			</Fields>
+		</Message>
+		<Message>
+				<MessageName>TASKASSIGNREQ</MessageName>
+				<MessageType>LUT</MessageType>
+				<Confirmation></Confirmation>
+				<Fields>
+					<Field name="Message type" value="TASKASSIGNREQ" length=""/>
+					<Field name="Device ID"/>
+					<Field name="Message Date"/>
+					<Field name="Task Type"/>
+					<Field name="Task ID"/>
+				</Fields>
+				<ResponseMessage>TASKASSIGNRESP</ResponseMessage>
+			</Message>
+			<Message>
+				<MessageName>TASKASSIGNRESP</MessageName>
+				<Fields>
+					<Field name="Message type" value="TASKASSIGNRESP" length=""/>
+					<Field name="Device ID"/>
+					<Field name="Message Date"/>
+					<Field name="Response Code"/>
+					<Field name="Response Text"/>
+				</Fields>
+				<DynamicFields viewname="talkman_taskassignment">
+					<Field name="TaskType"/>
+					<Field name="TaskID"/>
+				</DynamicFields>
+			</Message>
+		<Message>
+			<MessageName>TASKRELEASEREQ</MessageName>
+			<MessageType>LUT</MessageType>
+			<Confirmation></Confirmation>
+			<Fields>
+				<Field name="Message type" value="TASKRELEASEREQ" length=""/>
+				<Field name="Device ID"/>
+				<Field name="Message Date"/>
+				<Field name="Transaction Date"/>
+				<Field name="Task ID"/>
+			</Fields>
+			<ResponseMessage>TASKRELEASERESP</ResponseMessage>
+		</Message>
+		<Message>
+			<MessageName>TASKRELEASERESP</MessageName>
+			<Fields>
+				<Field name="Message type" value="LOGINRESP" length=""/>
+				<Field name="Device ID"/>
+				<Field name="Message Date"/>
+				<Field name="Response Code"/>
+				<Field name="Response Text"/>
+			</Fields>
+		</Message>
+		<Message>
+			<MessageName>PICKINGINFOREQ</MessageName>
+			<MessageType>LUT</MessageType>
+			<Confirmation></Confirmation>
+			<Fields>
+				<Field name="Message type" value="PICKINGINFOREQ" length=""/>
+				<Field name="Device ID"/>
+				<Field name="Message Date"/>
+				<Field name="Transaction Date"/>
+				<Field name="Task ID"/>
+			</Fields>
+			<ResponseMessage>PICKINGINFORESP</ResponseMessage>
+		</Message>
+		<Message>
+			<MessageName>PICKINGINFORESP</MessageName>
+			<Fields>
+				<Field name="Message type" value="PICKINGINFORESP" length=""/>
+				<Field name="Device ID"/>
+				<Field name="Message Date"/>
+				<Field name="Response Code"/>
+				<Field name="Response Text"/>
+			</Fields>
+			<DynamicFields viewname="talkman_pickinginfo">
+				<Field name="PickType"/>
+				<Field name="HUType"/>
+				<Field name="PrintPickLabels"/>
+				<Field name="PrintShipLabels"/>
+				<Field name="Location"/>
+				<Field name="CheckDigits"/>
+			</DynamicFields>
+		</Message>
+		<Message>
+			<MessageName>PICKINGLISTREQ</MessageName>
+			<MessageType>LUT</MessageType>
+			<Confirmation></Confirmation>
+			<Fields>
+				<Field name="Message type" value="PICKINGINFOREQ" length=""/>
+				<Field name="Device ID"/>
+				<Field name="Message Date"/>
+				<Field name="Transaction Date"/>
+				<Field name="Task ID"/>
+				<Field name="Pick Mode" />
+			</Fields>
+			<ResponseMessage>PICKINGLISTRESP</ResponseMessage>
+		</Message>
+		<Message>
+			<MessageName>PICKINGLISTRESP</MessageName>
+			<Fields>
+				<Field name="Message type" value="PICKINGLISTRESP" length=""/>
+				<Field name="Device ID"/>
+				<Field name="Message Date"/>
+				<Field name="Response Code"/>
+				<Field name="Response Text"/>
+			</Fields>
+			<DynamicFields viewname="Talkman_GetPick_BatchOther">
+				<Field name="Picklist"/>
+				<Field name="PicklistLine"/>
+				<Field name="CountFlag"/>
+				<Field name="Location"/>
+				<Field name="CheckDigit"/>
+				<Field name="Quantity"/>
+				<Field name="UOM"/>
+				<Field name="BaseUOM"/>
+			</DynamicFields>
+		</Message>
+	</Messages>	   
+</MessagesConfig>

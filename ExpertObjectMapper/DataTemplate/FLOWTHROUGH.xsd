@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FLOWTHROUGH" targetNamespace="http://tempuri.org/FLOWTHROUGH.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/FLOWTHROUGH.xsd" xmlns:mstns="http://tempuri.org/FLOWTHROUGH.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="BUSINESSOBJECT">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="BOTYPE" type="xs:string" />
+        <xs:element name="DATACOLLECTION" type="xs:string" />
+        <xs:element name="DATA">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CONSIGNEE" type="xs:string" />
+              <xs:element name="FLOWTHROUGH" type="xs:string" />
+              <xs:element name="ORDERTYPE" type="xs:string" />
+              <xs:element name="REFERENCEORD" type="xs:string" />
+              <xs:element name="SOURCECOMPANY" type="xs:string" />
+              <xs:element name="SOURCECOMPANYTYPE" type="xs:string" />
+              <xs:element name="TARGETCOMPANY" type="xs:string" />
+              <xs:element name="TARGETCOMPANYTYPE" type="xs:string" />
+              <xs:element name="NOTES" type="xs:string" />
+              <xs:element name="STATUS" type="xs:string" />
+              <xs:element name="STATUSDATE" type="xs:dateTime" />
+              <xs:element name="CREATEDATE" type="xs:dateTime" />
+              <xs:element name="SCHEDULEDARRIVALDATE" type="xs:dateTime" />
+              <xs:element name="REQUESTEDDELIVERYDATE" type="xs:dateTime" />
+              <xs:element name="SCHEDULEDDELIVERYDATE" type="xs:dateTime" />
+              <xs:element name="SHIPPEDDATE" type="xs:dateTime" />
+              <xs:element name="STAGINGLANE" type="xs:string" />
+              <xs:element name="SHIPMENT" type="xs:string" />
+              <xs:element name="STOPNUMBER" type="xs:int" />
+              <xs:element name="LOADINGSEQ" type="xs:string" />
+              <xs:element name="ROUTINGSET" type="xs:string" />
+              <xs:element name="ROUTE" type="xs:string" />
+              <xs:element name="DELIVERYSTATUS" type="xs:string" />
+              <xs:element name="ORDERPRIORITY" type="xs:int" />
+              <xs:element name="RECEIVEDFROM" type="xs:string" />
+              <xs:element name="SHIPTO" type="xs:string" />
+              <xs:element name="STAGINGWAREHOUSEAREA" type="xs:string" />
+              <xs:element name="EXPECTEDDATE" type="xs:dateTime" />
+              <xs:element name="APPOINTMENTID" type="xs:string" />
+              <xs:element name="CARRIERID" type="xs:string" />
+              <xs:element name="CONTACTS">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="CONTACT">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="STREET1" type="xs:string" />
+                          <xs:element name="STREET2" type="xs:string" />
+                          <xs:element name="CITY" type="xs:string" />
+                          <xs:element name="STATE" type="xs:string" />
+                          <xs:element name="ZIP" type="xs:string" />
+                          <xs:element name="CONTACT1NAME" type="xs:string" />
+                          <xs:element name="CONTACT2NAME" type="xs:string" />
+                          <xs:element name="CONTACT1PHONE" type="xs:string" />
+                          <xs:element name="CONTACT2PHONE" type="xs:string" />
+                          <xs:element name="CONTACT1FAX" type="xs:string" />
+                          <xs:element name="CONTACT2FAX" type="xs:string" />
+                          <xs:element name="CONTACT1EMAIL" type="xs:string" />
+                          <xs:element name="CONTACT2EMAIL" type="xs:string" />
+                          <xs:element name="POINTID" type="xs:string" />
+                          <xs:element name="ROUTE" type="xs:string" />
+                          <xs:element name="STAGINGLANE" type="xs:string" />
+                          <xs:element name="PICKUPCONFIRMATIONTYPE" type="xs:string" />
+                          <xs:element name="DELIVERYCONFIRMATIONTYPE" type="xs:string" />
+                          <xs:element name="STAGINGWAREHOUSEAREA" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="LINES">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="LINE">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="FLOWTHROUGHLINE" type="xs:string" />
+                          <xs:element name="SKU" type="xs:string" />
+                          <xs:element name="QTYORIGINAL" type="xs:decimal" />
+                          <xs:element name="QTYRECEIVED" type="xs:decimal" />
+                          <xs:element name="QTYMODIFIED" type="xs:decimal" />
+                          <xs:element name="QTYPICKED" type="xs:decimal" />
+                          <xs:element name="QTYSTAGED" type="xs:decimal" />
+                          <xs:element name="QTYPACKED" type="xs:decimal" />
+                          <xs:element name="QTYVERIFIED" type="xs:decimal" />
+                          <xs:element name="QTYLOADED" type="xs:decimal" />
+                          <xs:element name="QTYSHIPPED" type="xs:decimal" />
+                          <xs:element name="INPUTQTY" type="xs:decimal" />
+                          <xs:element name="INPUTUOM" type="xs:string" />
+                          <xs:element name="INPUTSKU" type="xs:string" />
+                          <xs:element name="INVENTORYSTATUS" type="xs:string" />
+                          <xs:element name="ATTRIBUTES">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ATTRIBUTE">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="ATTNAME" type="xs:string" />
+                                      <xs:element name="ATTVALUE" type="xs:string" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ROUTE" type="xs:string" />
+                          <xs:element name="STOPNUMBER" type="xs:integer" />
+                          <xs:element name="LOADS">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="LOAD">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="LOADID" type="xs:string" />
+                                      <xs:element name="UOM" type="xs:string" />
+                                      <xs:element name="QTY" type="xs:decimal" />
+                                      <xs:element name="STATUS" type="xs:string" />
+                                      <xs:element name="LOADATTRIBUTES">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="LOADATTRIBUTE">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="NAME" type="xs:string" />
+                                                  <xs:element name="VALUE" type="xs:string" />
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="CONTAINER">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="ContainerId" type="xs:string" />
+                                            <xs:element name="HandlingUnitType" type="xs:string" />
+                                            <xs:element name="Serial" type="xs:string" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

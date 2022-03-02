@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="16">
+	<component name="defaultmap1" blackbox="0" editable="1">
+		<properties ShowLibraryNameInHeader="1" SelectedLanguage="xslt"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="10" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="20"/>
+					</targets>
+					<view ltx="667" lty="125" rbx="264" rby="-24"/>
+					<data>
+						<constant value="AVAILABLE" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="11" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="21"/>
+					</targets>
+					<view ltx="682" lty="282" rbx="234" rby="102"/>
+					<data>
+						<constant value="A" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="8" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="24"/>
+					</targets>
+					<view ltx="661" lty="49" rbx="256" rby="-111"/>
+					<data>
+						<constant value="EACH" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="12" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="22"/>
+					</targets>
+					<view ltx="675" lty="159" rbx="227" rby="-21"/>
+					<data>
+						<constant value="0" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="9" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="25"/>
+					</targets>
+					<view ltx="666" lty="90" rbx="263" rby="-59"/>
+					<data>
+						<constant datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="13" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="23"/>
+					</targets>
+					<view ltx="671" lty="189" rbx="223" rby="9"/>
+					<data>
+						<constant value="1" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="4" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="-2" lty="-18" rbx="251" rby="321"/>
+					<data>
+						<root scrollposition="409">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="BOM" expanded="1">
+										<entry name="BO" expanded="1">
+											<entry name="OITM" expanded="1">
+												<entry name="row" expanded="1">
+													<entry name="ItemCode" outkey="26"/>
+													<entry name="ItemName" outkey="27"/>
+													<entry name="ItmsGrpCod" outkey="28"/>
+													<entry name="CodeBars" outkey="29"/>
+													<entry name="InvntItem" outkey="30"/>
+													<entry name="SuppCatNum" outkey="31"/>
+													<entry name="NumInSale" outkey="293"/>
+													<entry name="ManSerNum" outkey="106"/>
+													<entry name="frozenFor" outkey="32"/>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="SapItems.xsd" inputinstance="SapItems.xml" outputinstance="SapItems.xml" instanceroot="{}BOM"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="5" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="333" lty="-5" rbx="601" rby="323"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="DATACOLLECTION" expanded="1">
+										<entry name="DATA" expanded="1">
+											<entry name="CONSIGNEE" inpkey="164"/>
+											<entry name="SKU" inpkey="165"/>
+											<entry name="DEFAULTUOM" inpkey="166"/>
+											<entry name="SKUDESC" inpkey="167"/>
+											<entry name="PICKSORTORDER" inpkey="168"/>
+											<entry name="SKUSHORTDESC" inpkey="169"/>
+											<entry name="MANUFACTURERSKU" inpkey="170"/>
+											<entry name="VENDORSKU" inpkey="171"/>
+											<entry name="OTHERSKU" inpkey="172"/>
+											<entry name="SKUGROUP" inpkey="173"/>
+											<entry name="SKUCLASS">
+												<entry name="ATTRIBUTES">
+													<entry name="ATTRIBUTE">
+														<entry name="ATTNAME" inpkey="174"/>
+														<entry name="ATTVALUE" inpkey="175"/>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="CLASSNAME" inpkey="176"/>
+											<entry name="STATUS" inpkey="177"/>
+											<entry name="INVENTORY" inpkey="178"/>
+											<entry name="NEWSKU" inpkey="179"/>
+											<entry name="INITIALSTATUS" inpkey="180"/>
+											<entry name="VELOCITY" inpkey="181"/>
+											<entry name="FIFOINDIFFERENCE" inpkey="182"/>
+											<entry name="ONSITEMIN" inpkey="183"/>
+											<entry name="ONSITEMAX" inpkey="184"/>
+											<entry name="LASTCYCLECOUNT" inpkey="185"/>
+											<entry name="CYCLECOUNTINT" inpkey="186"/>
+											<entry name="LOWLIMITCOUNT" inpkey="187"/>
+											<entry name="PREFLOCATION" inpkey="188"/>
+											<entry name="PREFPUTREGION" inpkey="189"/>
+											<entry name="PICTURE" inpkey="190"/>
+											<entry name="UNITPRICE" inpkey="191"/>
+											<entry name="OPORTUNITYRELPFLAG" inpkey="192"/>
+											<entry name="HAZCLASS" inpkey="193"/>
+											<entry name="TRANSPORTATIONCLASS" inpkey="194"/>
+											<entry name="OVERPICKPCT" inpkey="195"/>
+											<entry name="OVERRECEIVEPCT" inpkey="196"/>
+											<entry name="HUTYPE" inpkey="197"/>
+											<entry name="DEFAULTRECUOM" inpkey="198"/>
+											<entry name="STORAGECLASS" inpkey="199"/>
+											<entry name="NOTES" inpkey="200"/>
+											<entry name="UOMCOLLECTION" expanded="1">
+												<entry name="UOMOBJ" expanded="1">
+													<entry name="UOM" inpkey="282"/>
+													<entry name="EANUPC" inpkey="283"/>
+													<entry name="GROSSWEIGHT" inpkey="284"/>
+													<entry name="NETWEIGHT" inpkey="285"/>
+													<entry name="LENGTH" inpkey="286"/>
+													<entry name="WIDTH" inpkey="287"/>
+													<entry name="HEIGHT" inpkey="288"/>
+													<entry name="VOLUME" inpkey="289"/>
+													<entry name="LOWERUOM" inpkey="290"/>
+													<entry name="UNITSPERMEASURE" inpkey="291"/>
+													<entry name="SHIPPABLE" inpkey="292"/>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="ExpertItems.xsd" inputinstance="ExpertItems.xml" outputinstance="ExpertItems.xml" instanceroot="{}DATACOLLECTION"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="7" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="19"/>
+					</targets>
+					<view ltx="660" lty="12" rbx="255" rby="-151"/>
+					<data>
+						<constant value="DEFAULT" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="19">
+						<edges>
+							<edge vertexkey="164" edgekey="305"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="20">
+						<edges>
+							<edge vertexkey="180" edgekey="224"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="21">
+						<edges>
+							<edge vertexkey="181" edgekey="225"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="22">
+						<edges>
+							<edge vertexkey="191" edgekey="238"/>
+							<edge vertexkey="187" edgekey="239"/>
+							<edge vertexkey="186" edgekey="240"/>
+							<edge vertexkey="184" edgekey="241"/>
+							<edge vertexkey="183" edgekey="242"/>
+							<edge vertexkey="284" edgekey="294"/>
+							<edge vertexkey="285" edgekey="295"/>
+							<edge vertexkey="286" edgekey="296"/>
+							<edge vertexkey="287" edgekey="297"/>
+							<edge vertexkey="288" edgekey="298"/>
+							<edge vertexkey="289" edgekey="299"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="23">
+						<edges>
+							<edge vertexkey="196" edgekey="245"/>
+							<edge vertexkey="195" edgekey="246"/>
+							<edge vertexkey="192" edgekey="247"/>
+							<edge vertexkey="292" edgekey="300"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="24">
+						<edges>
+							<edge vertexkey="198" edgekey="250"/>
+							<edge vertexkey="166" edgekey="251"/>
+							<edge vertexkey="282" edgekey="301"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="25">
+						<edges>
+							<edge vertexkey="200" edgekey="255"/>
+							<edge vertexkey="199" edgekey="256"/>
+							<edge vertexkey="197" edgekey="257"/>
+							<edge vertexkey="194" edgekey="258"/>
+							<edge vertexkey="193" edgekey="259"/>
+							<edge vertexkey="190" edgekey="260"/>
+							<edge vertexkey="189" edgekey="261"/>
+							<edge vertexkey="188" edgekey="262"/>
+							<edge vertexkey="185" edgekey="263"/>
+							<edge vertexkey="182" edgekey="264"/>
+							<edge vertexkey="175" edgekey="265"/>
+							<edge vertexkey="174" edgekey="266"/>
+							<edge vertexkey="171" edgekey="267"/>
+							<edge vertexkey="169" edgekey="268"/>
+							<edge vertexkey="168" edgekey="269"/>
+							<edge vertexkey="283" edgekey="302"/>
+							<edge vertexkey="290" edgekey="303"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="26">
+						<edges>
+							<edge vertexkey="165" edgekey="270"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="27">
+						<edges>
+							<edge vertexkey="167" edgekey="271"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="28">
+						<edges>
+							<edge vertexkey="173" edgekey="272"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="29">
+						<edges>
+							<edge vertexkey="172" edgekey="273"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="30">
+						<edges>
+							<edge vertexkey="178" edgekey="274"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="31">
+						<edges>
+							<edge vertexkey="170" edgekey="275"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="32">
+						<edges>
+							<edge vertexkey="179" edgekey="276"/>
+							<edge vertexkey="177" edgekey="277"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="106">
+						<edges>
+							<edge vertexkey="176" edgekey="278"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="293">
+						<edges>
+							<edge vertexkey="291" edgekey="304"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

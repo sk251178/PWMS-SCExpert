@@ -1,0 +1,114 @@
+html {margin:0;padding:0}
+body {margin:0;padding:0;font-family:Arial;font-size:12px;color:#323332}
+span {font-size:inherit;font-weight:inherit}
+
+input[type="checkbox"] {}
+input:disabled {color:#AAA;background:#EEE;}
+textarea {width:100%;height:80px;padding:5px;font-size:1em;border:none;overflow:auto;resize:none;outline:none;background-color:transparent;}
+textarea:disabled {color:#AAA;}
+
+div.disabled .field.textarea {background:#EEE;}
+div.disabled, li.disabled {position:relative;}
+div.disabled:after, li.disabled:after {content:" ";position:absolute;top:0;bottom:0;left:0;right:0;height:100%;width:100%;z-index:1;background:rgba(255,255,255,0);cursor:not-allowed;}
+
+ul {padding:0;margin:0;}
+a:link {text-decoration:none;color:inherit;}
+a:visited {text-decoration:none;color:inherit;}
+a:hover {text-decoration:none;color:inherit;}
+a:active {text-decoration:none;color:inherit;}
+.display-none {display:none}
+.table {display:table;width:100%;}
+.row {display:table-row;height:40px;white-space:nowrap;overflow:hidden;}
+.column {display:table-cell;box-sizing:border-box;height:40px;vertical-align:middle;line-height:40px;padding:0 10px 0 0;text-align:left;cursor:pointer;}
+.column.column-title {border-bottom:1px solid #F1F1F1;font-size:1.2em;color:#AAA;cursor:pointer;}
+.column:first-child {padding-left:15px;}
+.app-horizontal-item-scroll-wrapper {position:relative;}
+
+#app-frame {position:absolute;left:0;right:0;top:0;bottom:0;overflow:hidden;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;background:#333;}
+#app-frame .app-icon-round {display:inline-block;height:28px;width:28px;line-height:28px;border:2px solid;border-radius:100%;font-size:14px;text-align:center;cursor:pointer;}
+#app-frame .app-icon-round > div {line-height:inherit}
+#absolutepp-frame .app-icon-round:hover {}
+#app-frame .app-icon-round.small {height:18px;width:18px;line-height:18px;font-size:12px;}
+#app-frame .app-icon-round.inverted {border-color:#FFF;color:#FFF;}
+
+#app-frame #app-view {position:absolute;z-index:5;top:0;bottom:0;right:0;left:0;}
+#app-frame.app-header-visible #app-view {top:75px;}
+#app-frame.app-footer-visible #app-view {bottom:80px;}
+
+.form-fields {padding:0}
+.form-fields .field-container {padding: 0 0 20px 0;}
+.form-fields .field-container.select_list.disabled {color:#AAA;}
+.form-fields .field-container:last-child {padding-bottom:0;}
+.form-fields .field {position:relative;}
+.form-fields .field input[type="text"], .form-fields .field input[type="password"], .form-fields .field input[type="email"] {
+		box-sizing:border-box;width:100%;height:35px;padding:5px 10px;border:1px solid #CCC;
+		/*border-radius:8px;border:none;box-shadow:inset #999 2px 2px 8px;font-size:1em;*/
+}
+.form-fields .field input:focus {outline:none;}
+.form-fields .field input::-ms-clear {display:none;}
+.form-fields .field input.ng-invalid.ng-dirty {border-color:#B50010;color:#B50010;transition-duration:0.2s;-webkit-transition-duration:0.2s;}
+.form-fields .field.disabled label {color:#AAA;}
+.form-fields .field .field-icon {position:absolute;top:10px;left:10px;font-size:1.3em;}
+.form-fields .field .field-icon.app-filter-icon {font-family:'icomoon';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.form-fields .field .field-icon.app-filter-icon:before {content:"\e600";}
+.form-fields .field.with-icon input {padding-left:35px;}
+.form-fields .field.checkbox .field-label {position:relative;top:-2px;padding:0 0 0 5px;font-size:1.2em;cursor:pointer;}
+.form-fields .field.textarea {
+	padding:5px;background-color:#FFF;border:1px solid #CCC;border-radius:8px;
+	/*border-radius:20px;box-shadow:inset #999 2px 2px 8px;color:#000;font-size:1.2em*/
+}
+.form-fields .field .app-standalone-input {text-align:center;}
+
+
+.app-field {box-sizing:border-box;width:100%;border-radius:40px;border:none;padding:5px 10px;box-shadow: inset #999 2px 2px 8px;color:#000;font-size:1.2em;}
+.app-field:focus {outline:none;}
+.app-field-small {height:24px;width:24px;text-align:center;border:none;border-radius:8px;box-sizing:border-box;box-shadow:inset #999 2px 2px 8px;;color:#000;background:#FFF;}
+.app-field-small:focus {outline:none;}
+
+app-buttons .app-action-button {color:#000;}
+app-buttons .app-action-button .action-button-icon {display:inline-block;height:35px;width:36px;line-height:35px;font-size:1.6em;border:2px solid #57585A;}
+app-buttons .app-action-button .action-button-title {padding:0 8px 0 8px;font-size:1.2em;cursor:pointer;}
+
+.app-view-sections {width:100%;}
+.app-view-section {position:absolute;top:0;bottom:0;width:50%;background:#FFF;}
+.app-view-section .app-view-section-title {top:110px;left:0;height:50px;background:#57585A;text-align:center;font-size:1.2em;line-height:50px;color:#FFF;}
+.app-view-section:nth-of-type(2) {left:50%;border-left:1px solid #CCC;}
+.app-view-section:nth-of-type(2) .app-view-section-title {background:#BCBDC1;color:#57585A;}
+.app-view-section-scroll {position:absolute;top:0;bottom:0;left:0;right:0;padding:0;overflow:hidden;}
+.app-view-section > .app-view-section-scroll {padding:0 20px;}
+
+.app-list .app-list-item {position:relative;height:40px;margin:0 0 2px 0;padding:0 20px 0 10px;background:#EEE;line-height:40px;color:#333;cursor:pointer;}
+.app-list .app-list-item.with-image {height:60px;line-height:60px;}
+.app-list .app-list-item .app-list-item-label {text-overflow:ellipsis;white-space:nowrap;width:100%;overflow:hidden;}
+.app-list .app-list-item.with-image .app-list-item-label {display:inline-block;width:40%;}
+.app-list .app-list-item .app-list-item-icon {position:absolute;right:5px;top:0;bottom:0;line-height:40px;text-align:center;font-family:'icomoon';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.app-list .app-list-item .app-list-item-icon:before {content:"\e603";}
+.app-list .app-list-item.selected {background:#bcbdc1;}
+.app-list .app-list-item.selected .app-list-item-icon {right:10px;opacity:0;/* Temporary until NCR approves */}
+.app-list .app-list-item.selected .app-list-item-icon:before {content:"\f081";}
+.app-list .app-list-item.reversed {padding:0 40px 0 25px;}
+.app-list .app-list-item.reversed .app-list-item-icon {left:10px;right:auto;}
+.app-list .app-list-item.reversed .app-list-item-icon:before {content:"\f081";}
+.app-list.unselectable .app-list-item {cursor:default;}
+
+@media all and (max-width:650px) {
+	body {font-size:14px;}
+	* {
+		font-family:"Arial", "Arial Unicode MS", "Microsoft Sans Serif", "Free Sans", "Gentium Plus", "Gentium Basic", "Gentium", "GentiumAlt", "DejaVu Sans", "DejaVu Serif", "Free Serif", "TITUS Cyberbit Basic", "Bitstream Cyberbit", "Bitstream CyberBase", "Doulos SIL", "Code2000", "Code2001";
+		-webkit-text-size-adjust:none;-ms-text-size-adjust:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-ms-tap-highlight-color:rgba(0,0,0,0)
+	}
+	:focus {outline:none}
+	a, input.submit {-webkit-tap-highlight-color:rgba(0,0,0,0);-ms-tap-highlight-color:rgba(0,0,0,0);text-decoration:none;-webkit-touch-callout:none;-ms-touch-callout:none;-webkit-user-select:none;-ms-user-select:none;-webkit-appearance:none;-ms-appearance:none;cursor:pointer}
+	a:active, a:hover, input.submit:active, input.submit:hover {background:transparent!important;cursor:pointer}
+	input, select, textarea {padding:0;margin:0;resize:none;font-size:1em;-webkit-user-select:auto!important;-ms-user-select:auto!important;-webkit-tap-highlight-color:rgba(0,0,0,0);-ms-tap-highlight-color:rgba(0,0,0,0)}
+	input::-webkit-inner-spin-button {-webkit-appearance:none}
+	input::-ms-inner-spin-button {-ms-appearance:none}
+	input::-ms-clear {display:none} /* For IE10 desktop mode - Removed the "x" on the right side of the input field */
+	select::-ms-expand {display:none} /* Used for hiding the arrow of the select box in IE10 */
+	img {border:0}
+
+	#app-frame.app-footer-visible #app-view {bottom:0;}
+	.app-view-sections > .app-view-section {width:100%;}
+	app-list-items-edit .app-view-sections > .app-view-section {width:50%;}
+	.form-fields .field input[type="text"], .form-fields .field input[type="password"], .form-fields .field input[type="email"] {font-size:1em;}
+}

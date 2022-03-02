@@ -1,0 +1,11 @@
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.LaborPerformance\obj\Debug\WMS.LaborPerformance.csproj.AssemblyReference.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.LaborPerformance\obj\Debug\WMS.LaborPerformance.ProjectInstaller.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.LaborPerformance\obj\Debug\WMS.LaborPerformance.csproj.GenerateResource.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.LaborPerformance\obj\Debug\WMS.LaborPerformance.csproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\LaborPerformance\PWMS.LaborPerformance.exe.config
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\LaborPerformance\PWMS.LaborPerformance.xml
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\LaborPerformance\PWMS.LaborPerformance.exe
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\LaborPerformance\PWMS.LaborPerformance.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.LaborPerformance\obj\Debug\WMS.LaborPerformance.csproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.LaborPerformance\obj\Debug\PWMS.LaborPerformance.exe
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.LaborPerformance\obj\Debug\PWMS.LaborPerformance.pdb

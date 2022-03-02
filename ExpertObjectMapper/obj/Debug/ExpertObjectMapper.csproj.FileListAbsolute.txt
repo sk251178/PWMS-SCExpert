@@ -1,0 +1,7 @@
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\ExpertObjectMapper\obj\Debug\ExpertObjectMapper.csproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\ExpertObjectMapper.XML
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\ExpertObjectMapper.dll
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\ExpertObjectMapper.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\ExpertObjectMapper\obj\Debug\ExpertObjectMapper.csproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\ExpertObjectMapper\obj\Debug\ExpertObjectMapper.dll
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\ExpertObjectMapper\obj\Debug\ExpertObjectMapper.pdb

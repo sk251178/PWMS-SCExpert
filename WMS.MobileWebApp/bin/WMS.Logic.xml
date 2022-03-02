@@ -1,0 +1,494 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WMS.Logic
+</name>
+</assembly>
+<members>
+<member name="T:WMS.Logic.MasterDao">
+ <summary>
+ Data access layer for master Data
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.MasterDao.GetPriorityCodeForTask(System.String)">
+ <summary>
+ Get code for priority name
+ </summary>
+ <param name="param"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.MasterDao.GetSumOfQtyInReplenWithPriority(System.String,System.String)">
+ <summary>
+ Get the sum of qty of Replens at PRIORITY_IMMEDIATE 
+ </summary>
+ <param name="location"></param>
+ <param name="priority"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.MasterDao.GetAllTaskPriorities">
+ <summary>
+ Gets list of task priority codes from codelist
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.MasterDao.SetPriorityOfTask(System.String,System.Int32)">
+ <summary>
+ Set Priority of Task
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.MultipayloadsDao.GetMultipayloads(System.String)">
+ <summary>
+ Get the  Multipayloads for new RDT Screen
+ </summary>
+ <param name="pLoadId"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.MultipayloadsDao.GetGroupOfloads(System.String)">
+ <summary>
+ Get the  Group of Loads 
+ </summary>
+ <param name="ploads"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.MultipayloadsDao.GetLoadsHeight(System.String)">
+ <summary>
+ Get the  Group of Loads Height
+ </summary>
+ <param name="ploadId"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.MultipayloadsDao.GetLoadsInLocation(System.String)">
+ <summary>
+ Get the  Group of Loads plocation
+ </summary>
+ <param name="plocation"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.MultipayloadsDao.GetLoadsInDestinationLocation(System.String)">
+ <summary>
+ Get the  Group of Loads plocation
+ </summary>
+ <param name="plocation"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.OrderDao.GetAllOrdersForWave(System.String)">
+ <summary>
+ Gets list of task priority codes from codelist
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.ReplenishmentDao.SetPriority(System.Int32,WMS.Logic.PickLoc)">
+ <summary>
+ Sets priority for the task based on replenishment location
+ </summary>
+ <param name="PriorityType"></param>
+ <param name="PickLocation"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.ReplenishmentDao.UpdateReplenishmentDate(System.DateTime,WMS.Logic.PickLoc)">
+ <summary>
+ Sets priority for the task based on replenishment location
+ </summary>
+ <param name="dueDate"></param>
+ <param name="PickLocation"></param>
+ <remarks></remarks>
+
+</member>
+<member name="M:WMS.Logic.ReplenishmentDao.GetCancelReplenishments(System.String,System.String,System.String,WMS.Logic.LogHandler)">
+ <summary>
+ Get the Cancel Replenishments for the task based on replenishment location
+ </summary>
+ <param name="psku"></param>
+ <param name="pconsignee"></param>
+ <param name="plocation"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.ReplenishmentDao.GetOutBoundDepartureDateByOrder(System.String)">
+ <summary>
+ Get the Get OutBound Departure Date for the Order ID
+ </summary>
+ <param name="pOrderId"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.ReplenishmentDao.GetWaveDepartureDateByWave(System.String)">
+ <summary>
+ Get the  Wave Departure Date for the Wave ID
+ </summary>
+ <param name="pWaveId"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.ReplenishmentDao.GetStandardTimeForUser(System.String)">
+ <summary>
+ Get the  Get Standard Time For User
+ </summary>
+ <param name="pUser"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.ReplenishmentDao.CalculatePickTimeForUser(System.String)">
+ <summary>
+ Get the Calculate Pick Time For User
+ </summary>
+ <param name="pUser"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.ReplenishmentDao.CalculateReplenishmentTimeForUser(System.String,System.String)">
+ <summary>
+ Get the Calculate Replenishment Time For User
+ </summary>
+ <param name="PickLocation"></param>
+ <param name="pUser"></param>
+ <returns></returns>
+ <remarks></remarks>
+
+</member>
+<member name="M:WMS.Logic.ReplenishmentDao.UpdateReplenishmentStatus(System.String,System.DateTime,System.String,System.String,WMS.Logic.LogHandler)">
+ <summary>
+ Update Replenishment Status
+ </summary>
+ <param name="_status"></param>
+ <param name="_editdate"></param>
+ <param name="_edituser"></param>
+ <param name="_replId"></param>
+ <remarks></remarks>
+
+</member>
+<member name="M:WMS.Logic.ReplenishmentDao.GetLoadIDForPayload(System.String,WMS.Logic.LogHandler)">
+ <summary>
+ Get the LOADID for PayLoad
+ </summary>
+ <param name="pLoadId"></param>
+ <returns></returns>
+ <remarks></remarks>
+
+</member>
+<member name="M:WMS.Logic.ReplenishmentDao.UpdatePayloadStatus(System.Double,System.DateTime,System.String,System.String,WMS.Logic.LogHandler)">
+ <summary>
+ Update Payload  Status and Units
+ </summary>
+ <param name="_unitsallocated"></param>
+ <param name="_editdate"></param>
+ <param name="_edituser"></param>
+ <param name="_loadId"></param>
+ <remarks></remarks>
+
+</member>
+<member name="F:WMS.Logic.SqlQueries.GetOrdersForWave">
+ <summary>
+ Get All Orders for the WAVE
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:WMS.Logic.SqlQueries.GetCodeList">
+ <summary>
+ string literal for SQL to Get Codelist for task priority
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:WMS.Logic.SqlQueries.GetCodeListValue">
+ <summary>
+ string literal for SQL to Get Code for task priority description
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:WMS.Logic.SqlQueries.UpdateDueDateForReplenishment">
+ <summary>
+ string literal for SQL to Update DueDate For Replenishment
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.TaskStdCalculation.CalculateTravelDistanceForCounting">
+ <summary>
+ RWMS-1497 : Counting task has no to location, only fromlocation, also if execution location exists and is different from from location then the from->to distance will be calculated or else
+ only start -> from will be calculated.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.Multiputaway.RequestDestinationForMultiLoad(System.String[],System.String@,System.String@,System.Int32,System.String@,System.Boolean,System.Boolean)">
+ <summary>
+ When Simulation flag is set then we will only find location and not assign load to any activity
+ </summary>
+</member>
+<member name="P:WMS.Logic.PlanStrategy.CASEPERHOUR">
+ <summary>
+ RWMS-2604
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:WMS.Logic.Prioritize.priority">
+ <summary>
+ Dictionalry that holds priority values
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.Prioritize.GetPriorityValue(System.String)">
+ <summary>
+ Gets priority code for the defined priority name
+ </summary>
+ <param name="priorityName">priority Name</param>
+ <returns>priority code for tasks</returns>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.Prioritize.SetPriority(System.Int32,WMS.Logic.PickLoc)">
+ <summary>
+ Sets priority for the task based on replenishment location
+ </summary>
+ <param name="PriorityType"></param>
+ <param name="PickLocation"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:WMS.Logic.PrioritizeReplenishments">
+ <summary>
+ Class that implements prioritization policy for Replenishments
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.Putaway.RequestDestinationForLoad(System.String,System.String@,System.String@,System.Int32,System.String@,System.Boolean,System.Boolean)">
+ <summary>
+ When Simulation flag is set then we will only find location and not assign load to any activity
+ </summary>
+</member>
+<member name="T:WMS.Logic.ReplenishmentDueDate">
+ <summary>
+ Implementation of RWMS-2604
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.ReplenishmentDueDate.ReEstimateDueDateOnPickListAssign(System.String,WMS.Logic.LogHandler)">
+ <summary>
+ If labor standards are being used, compute a case per hour (CPH) as (goal time / total units on picklist)
+
+ If labor standards are not being used, use a case per hour (CPH) value that was be added to the picking policy planstrategyheader.CasesPerHour.
+
+ Calculate a time to pick a case in minutes: (60 / CPH)
+ To calculate in seconds: (60 / CPH) * 60
+ Example:
+ If CPH is 240, time to pick a case = (60 / 240) = .25 minutes
+ 		.25 minutes = 15 seconds (.25 * 60)
+ If CPH is 250, time to pick a case = (60 / 250) = .24 minutes
+ .24 minutes = 14.4 seconds (.24 * 60)
+ If CPH is 200, time to pick a case = (60 / 200) = .30 minutes
+ .30 minutes = 18 seconds (.30 * 60)
+
+ For each SKU on the picklist where the pickloc quantity is less than the quantity to be picked, compute the estimated time the selector will arrive at the pick location.
+ 1.	Take the start date/time of the PARPICK task
+ 2.	Compute the previous cases in the picklist
+ 3.	Multiple the previous cases (from #2) by the # seconds to pick each case
+ 4.	Add the # of seconds from #3 to the start date/time from #1
+ 5.	This is the estimated date/time the selector will reach the pick location
+
+ If the estimated date/time is less than the current due date/time on the task (replenishment.duedatetime), update the due date/time on the replenishment task.
+
+ </summary>
+ <param name="pTaskID"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.ReplenishmentManager.GetOutBoundDepartureDate(System.String)">
+ <summary>
+ Get the Get OutBound Departure Date for the Order ID
+ </summary>
+ <param name="pOrderId"></param>    
+ <returns></returns>
+ <remarks></remarks>
+To Get the departure date/time of the shipment and/or outbound order
+ 
+</member>
+<member name="M:WMS.Logic.ReplenishmentManager.GetWaveDepartureDate(System.String)">
+ <summary>
+ Get the  Wave Departure Date for the Wave ID
+ </summary>
+ <param name="pWaveId"></param>    
+ <returns></returns>
+ <remarks></remarks>
+To Get the departure date/time of the shipment and/or for Wave Details
+</member>
+<member name="M:WMS.Logic.ReplenishmentManager.CalculateReplenishmentTime(System.String,System.String)">
+ <summary>
+ Get the Calculate Replenishment Time For User
+ </summary>
+ <param name="PickLocation"></param>    
+ <param name="pUser"></param>    
+ <returns></returns>
+ <remarks></remarks>
+ 
+</member>
+<member name="M:WMS.Logic.ReplenishmentManager.CancelReplenishments(System.String,System.String,System.String,WMS.Logic.LogHandler)">
+ <summary>
+ Get the Cancel Replenishments for the task based on replenishment location
+ </summary>
+ <param name="psku"></param>
+ <param name="pconsignee"></param>
+ <param name="plocation"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.TaskManager.setStartLocation(WMS.Logic.Task@,System.String,Made4Net.Shared.ILogHandler)">
+ <summary>
+ If the user started a task and leaves it before comleting StartLocation of that task is not cleared.
+ This method will clear the StartLocation.
+ </summary>
+ <param name="task"></param>
+ <param name="UserId"></param>
+</member>
+<member name="M:WMS.Logic.TaskManager.AssignDeleveryTask(System.String,WMS.Logic.Picklist,System.String)">
+ <summary>
+ Assign Load delivery Task - PWMS-520/560
+ </summary>
+ <param name="UserId">User to whome to assign</param>
+ <param name="Pcklist">Load delivery task of this picklist</param>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.TaskManager.SetStartTimeFromWHActivity(WMS.Logic.Task,System.String)">
+ <summary>
+ RWMS-1497
+ </summary>
+ <param name="t"></param>
+ <param name="UserId"></param>
+ <remarks></remarks>
+</member>
+<member name="T:WMS.Logic.ViewStateParser">
+ <summary>
+ Parses the view state, constructing a viaully-accessible object graph.
+ </summary>
+</member>
+<member name="M:WMS.Logic.ViewStateParser.#ctor(System.IO.TextWriter)">
+ <summary>
+ Creates a new ViewStateParser instance, specifying the TextWriter to emit the output to.
+ </summary>
+</member>
+<member name="M:WMS.Logic.ViewStateParser.ParseViewStateGraph(System.Object)">
+ <summary>
+ Emits a readable version of the view state to the TextWriter passed into the object's constructor.
+ </summary>
+ <param name="viewState">The view state object to start parsing at.</param>
+</member>
+<member name="M:WMS.Logic.ViewStateParser.ParseViewStateGraph(System.String)">
+ <summary>
+ Emits a readable version of the view state to the TextWriter passed into the object's constructor.
+ </summary>
+ <param name="viewStateAsString">A base-64 encoded representation of the view state to parse.</param>
+</member>
+<member name="M:WMS.Logic.ViewStateParser.ParseViewStateGraph(System.Object,System.Int32,System.String)">
+ <summary>
+ Recursively parses the view state.
+ </summary>
+ <param name="node">The current view state node.</param>
+ <param name="depth">The "depth" of the view state tree.</param>
+ <param name="label">A label to display in the emitted output next to the current node.</param>
+</member>
+<member name="M:WMS.Logic.ViewStateParser.Indent(System.Int32)">
+ <summary>
+ Returns a string containing the <see cref="P:WMS.Logic.ViewStateParser.IndentString"/> property value a specified number of times.
+ </summary>
+ <param name="depth">The number of times to repeat the <see cref="P:WMS.Logic.ViewStateParser.IndentString"/> property.</param>
+ <returns>A string containing the <see cref="P:WMS.Logic.ViewStateParser.IndentString"/> property value a specified number of times.</returns>
+</member>
+<member name="P:WMS.Logic.ViewStateParser.IndentString">
+ <summary>
+ Specifies the indentation to use for each level when displaying the object graph.
+ </summary>
+ <value>A string value; the default is three blank spaces.</value>
+</member>
+<member name="M:WMS.Logic.DistanceApplied.UpdateWithActualDistance(System.String,System.Data.DataRow[]@,System.Double,WMS.Logic.LogHandler)">
+ <summary>
+ Updates the Rows returened by vPutAway view with Applied Distance for the Distance Column. Note the vPutAway only considers straight cartesian line
+ for calculating the distance which is not correct.
+ </summary>
+ <param name="startLocation"></param>The start location where the Load can be picked. This is Piclocation of the SKU. Mandatory non null field.
+ <param name="locationsToUpdate"></param>A collection of most elligble locations returned by vPutAway view.
+ <param name="oLogger"></param>Instantiated and initialized logger object.
+ <returns>Boolean</returns>Returns True if succeds or else False.
+ <remarks>
+ Note when calling this method, the location scoring has not been done, after calling this method location scoring should be done so
+ that the scored locations are in according to the actual distance.
+ </remarks>
+</member>
+<member name="M:WMS.Logic.DistanceApplied.GetPickLocationForSKU(WMS.Logic.Load,WMS.Logic.LogHandler)">
+ <summary>
+ Gets the Pickloaction of the given SKU.
+ </summary>
+ <param name="ld"></param>Load
+ <param name="oLogger"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:WMS.Logic.Load._lastmoveuser">
+<remarks>vladimir 12/11/2008</remarks>
+</member>
+<member name="F:WMS.Logic.Load._editdate">
+<remarks>vladimir 12/11/2008</remarks>
+</member>
+<member name="M:WMS.Logic.Load.CreateLoadFromLastMovedDateForHandlingUnit(System.String)">
+ <summary>
+ This function returns the first Load of the container sorted by LastMoveDate.
+ This function can be used in the scenario where InvLoad view returns no loads because loads for the container are already shipped.
+ </summary>
+ <param name="container"> Handling unit/Container</param>
+ <returns></returns>
+</member>
+<member name="M:WMS.Logic.OutboundOrderHeader.OutboundOrderDetail.Pick(System.Decimal,System.String,System.String,System.Int32,WMS.Logic.SKU,System.Decimal)">
+ <summary>
+ RWMS-665 and RWMS-790- Added the new Optional Parameter pPickdtlQty and Added the if condition
+ if units is less than pPickdtlQty
+ RWMS-724 - Added the new Optional Parameter pPickdtlQty and Added the if condition
+ </summary>
+ <param name="units"></param>
+ <param name="puser"></param>
+ <param name="pSku"></param>
+ <param name="pPickdtlQty"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.OutboundOrderHeader.Pick(System.Int32,System.Decimal,System.String,System.String,System.Int32,System.String,WMS.Logic.SKU,System.Decimal)">
+ <summary>
+ RWMS-665 and RWMS-790 - Added the new optional pPickdetlQty parameter. This is the QTY column in the Pickdetail.
+ Passed the optional parameter 'pPickdetlQty' to the Me.Lines.Line(pOrderLine).Pick(units, puser, oSku, pPickdetlQty)
+ </summary>
+ <param name="pOrderLine"></param>
+ <param name="units"></param>
+ <param name="pLoadId"></param>
+ <param name="pPickList"></param>
+ <param name="pPickLine"></param>
+ <param name="puser"></param>
+ <param name="oSku"></param>
+ <param name="pPickdetlQty"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.Logic.ReceiptDetail.GetOrderlineByReceiptAndSku(System.String,System.String)">
+ <summary>
+ checks if there is only on occurance of sku on a receipt
+ if true - returns the orderline 
+ </summary>
+ <param name="pReceipt"></param>
+ <param name="pSku"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:WMS.Logic.WHActivity">
+ <summary>
+ Labor calc changes RWMS-952 -> PWMS-903
+ </summary>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

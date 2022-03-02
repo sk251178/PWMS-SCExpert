@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="dsPick" targetNamespace="http://tempuri.org/dsPick.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/dsPick.xsd" xmlns:mstns="http://tempuri.org/dsPick.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="dsPick" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="PickDetails">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PICKLIST" type="xs:string" minOccurs="0" />
+							<xs:element name="PICKLISTLINE" type="xs:int" minOccurs="0" />
+							<xs:element name="PICKMETHOD" type="xs:string" minOccurs="0" />
+							<xs:element name="PICKREGION" type="xs:string" minOccurs="0" />
+							<xs:element name="CONSIGNEE" type="xs:string" minOccurs="0" />
+							<xs:element name="WAVE" type="xs:string" minOccurs="0" />
+							<xs:element name="ORDERID" type="xs:string" minOccurs="0" />
+							<xs:element name="ORDERLINE" type="xs:string" minOccurs="0" />
+							<xs:element name="STATUS" type="xs:string" minOccurs="0" />
+							<xs:element name="SKU" type="xs:string" minOccurs="0" />
+							<xs:element name="UOM" type="xs:string" minOccurs="0" />
+							<xs:element name="QTY" type="xs:int" minOccurs="0" />
+							<xs:element name="ADJQTY" type="xs:int" minOccurs="0" />
+							<xs:element name="PICKEDQTY" type="xs:int" minOccurs="0" />
+							<xs:element name="FROMLOCATION" type="xs:string" minOccurs="0" />
+							<xs:element name="FROMLOAD" type="xs:string" minOccurs="0" />
+							<xs:element name="TOLOAD" type="xs:string" minOccurs="0" />
+							<xs:element name="TOCONTAINER" type="xs:string" minOccurs="0" />
+							<xs:element name="TOLOCATION" type="xs:string" minOccurs="0" />
+							<xs:element name="ASSIGNEDUSER" type="xs:string" minOccurs="0" />
+							<xs:element name="ADDDATE" type="xs:date" minOccurs="0" />
+							<xs:element name="ADDUSER" type="xs:string" minOccurs="0" />
+							<xs:element name="EDITDATE" type="xs:date" minOccurs="0" />
+							<xs:element name="EDITUSER" type="xs:string" minOccurs="0" />
+							<xs:element name="SKUDESC" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

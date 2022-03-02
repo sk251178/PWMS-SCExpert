@@ -1,0 +1,2565 @@
+﻿
+<DataTemplates>
+  <DataTemplate>
+    <ID>165</ID>
+    <Name>DTConsigneePlanPolicy</Name>
+    <AppID>0</AppID>
+    <Label>Consignee Plan Policy</Label>
+    <StructureName>CONSIGNEEPLANPOLICY</StructureName>
+    <ConnID>2</ConnID>
+    <FormTemplate>{all:n4}</FormTemplate>
+    <ColumnTemplates />
+    <RowAttributes />
+    <DTType>APPLICATION</DTType>
+    <ScreenId />
+    <ObjectId />
+    <Mode />
+    <User />
+    <RowsInGrid>0</RowsInGrid>
+    <UseDTConnection>False</UseDTConnection>
+    <ParentAppID>0</ParentAppID>
+    <ParentDTID>0</ParentDTID>
+    <HasClientSideExpressions>False</HasClientSideExpressions>
+    <InMemory>False</InMemory>
+    <ViewStyle>0</ViewStyle>
+    <UpdatedBy>Admin</UpdatedBy>
+    <UpdatedOn>2016-01-08 10:39:03.0330</UpdatedOn>
+    <DTHelp />
+    <IsStickyFields>False</IsStickyFields>
+    <DTFields>
+      <DTField>
+        <Name>PLANPOLICYID</Name>
+        <AllowNull>False</AllowNull>
+        <DataType>System.Int32</DataType>
+        <DefaultValue />
+        <Label>PLANPOLICYID</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>0</Ordinal>
+        <ReadOnly>True</ReadOnly>
+        <Required>False</Required>
+        <Visible>FALSE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>True</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>The value of the Order.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>CONSIGNEE</Name>
+        <AllowNull>False</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>CONSIGNEE</Label>
+        <MaxLength>20</MaxLength>
+        <Ordinal>1</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>3PL</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>True</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>NOT3PL</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>Client reference ID.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>PRIORITY</Name>
+        <AllowNull>False</AllowNull>
+        <DataType>System.Int32</DataType>
+        <DefaultValue />
+        <Label>PRIORITY</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>2</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>Plan Policy line priority</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>ORDERPRIORITY</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.Int32</DataType>
+        <DefaultValue />
+        <Label>ORDERPRIORITY</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>4</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>The priority of the Order that is to be picked.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>ORDERTYPE</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>ORDERTYPE</Label>
+        <MaxLength>10</MaxLength>
+        <Ordinal>4</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>Order Type to be Picked.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>DROPDOWN</Name>
+          <Label>Drop Down</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.DropDownList</Class>
+        </DisplayType>
+        <Properties>
+          <Property>
+            <Code>all</Code>
+            <CompositeCode>DROPDOWN_all</CompositeCode>
+            <Label>All/None Option</Label>
+            <Value>True</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>all_text</Code>
+            <CompositeCode>DROPDOWN_all_text</CompositeCode>
+            <Label>All/None Text</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>connection</Code>
+            <CompositeCode>DROPDOWN_connection</CompositeCode>
+            <Label>Connection</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>IgnoreCase</Code>
+            <CompositeCode>DROPDOWN_IgnoreCase</CompositeCode>
+            <Label>IgnoreCase</Label>
+            <Value>true</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>order_by</Code>
+            <CompositeCode>DROPDOWN_order_by</CompositeCode>
+            <Label>Order By</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>table</Code>
+            <CompositeCode>DROPDOWN_table</CompositeCode>
+            <Label>Table</Label>
+            <Value>CODELISTDETAIL</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>text_field</Code>
+            <CompositeCode>DROPDOWN_text_field</CompositeCode>
+            <Label>Text Field</Label>
+            <Value>DESCRIPTION</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>value_field</Code>
+            <CompositeCode>DROPDOWN_value_field</CompositeCode>
+            <Label>Value Field</Label>
+            <Value>CODE</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>value_list</Code>
+            <CompositeCode>DROPDOWN_value_list</CompositeCode>
+            <Label>Value List</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>where</Code>
+            <CompositeCode>DROPDOWN_where</CompositeCode>
+            <Label>Where</Label>
+            <Value>CODELISTCODE='OUTORDTYPE'</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+        </Properties>
+      </DTField>
+      <DTField>
+        <Name>CLASSNAME</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>CLASSNAME</Label>
+        <MaxLength>10</MaxLength>
+        <Ordinal>5</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>Classification according to which the plan policy will be activated.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>DROPDOWN</Name>
+          <Label>Drop Down</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.DropDownList</Class>
+        </DisplayType>
+        <Properties>
+          <Property>
+            <Code>all</Code>
+            <CompositeCode>DROPDOWN_all</CompositeCode>
+            <Label>All/None Option</Label>
+            <Value>True</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>all_text</Code>
+            <CompositeCode>DROPDOWN_all_text</CompositeCode>
+            <Label>All/None Text</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>connection</Code>
+            <CompositeCode>DROPDOWN_connection</CompositeCode>
+            <Label>Connection</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>IgnoreCase</Code>
+            <CompositeCode>DROPDOWN_IgnoreCase</CompositeCode>
+            <Label>IgnoreCase</Label>
+            <Value>true</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>order_by</Code>
+            <CompositeCode>DROPDOWN_order_by</CompositeCode>
+            <Label>Order By</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>table</Code>
+            <CompositeCode>DROPDOWN_table</CompositeCode>
+            <Label>Table</Label>
+            <Value>SKUCLS</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>text_field</Code>
+            <CompositeCode>DROPDOWN_text_field</CompositeCode>
+            <Label>Text Field</Label>
+            <Value>CLASSDESCRIPTION</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>value_field</Code>
+            <CompositeCode>DROPDOWN_value_field</CompositeCode>
+            <Label>Value Field</Label>
+            <Value>CLASSNAME</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>value_list</Code>
+            <CompositeCode>DROPDOWN_value_list</CompositeCode>
+            <Label>Value List</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>where</Code>
+            <CompositeCode>DROPDOWN_where</CompositeCode>
+            <Label>Where</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+        </Properties>
+      </DTField>
+      <DTField>
+        <Name>SKU</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>SKU</Label>
+        <MaxLength>20</MaxLength>
+        <Ordinal>6</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>The clients SKU.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>VELOCITY</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>VELOCITY</Label>
+        <MaxLength>10</MaxLength>
+        <Ordinal>7</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>Rates the SKU according to frequency of movement - according to which different policies may be activated</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>SKUGROUP</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>SKUGROUP</Label>
+        <MaxLength>20</MaxLength>
+        <Ordinal>8</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>The SKU group which the SKU is part of.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>DROPDOWN</Name>
+          <Label>Drop Down</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.DropDownList</Class>
+        </DisplayType>
+        <Properties>
+          <Property>
+            <Code>all</Code>
+            <CompositeCode>DROPDOWN_all</CompositeCode>
+            <Label>All/None Option</Label>
+            <Value>True</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>all_text</Code>
+            <CompositeCode>DROPDOWN_all_text</CompositeCode>
+            <Label>All/None Text</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>connection</Code>
+            <CompositeCode>DROPDOWN_connection</CompositeCode>
+            <Label>Connection</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>IgnoreCase</Code>
+            <CompositeCode>DROPDOWN_IgnoreCase</CompositeCode>
+            <Label>IgnoreCase</Label>
+            <Value>true</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>order_by</Code>
+            <CompositeCode>DROPDOWN_order_by</CompositeCode>
+            <Label>Order By</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>table</Code>
+            <CompositeCode>DROPDOWN_table</CompositeCode>
+            <Label>Table</Label>
+            <Value>SKUGROUP</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>text_field</Code>
+            <CompositeCode>DROPDOWN_text_field</CompositeCode>
+            <Label>Text Field</Label>
+            <Value>SKUGROUPDESC</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>value_field</Code>
+            <CompositeCode>DROPDOWN_value_field</CompositeCode>
+            <Label>Value Field</Label>
+            <Value>SKUGROUP</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>value_list</Code>
+            <CompositeCode>DROPDOWN_value_list</CompositeCode>
+            <Label>Value List</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>where</Code>
+            <CompositeCode>DROPDOWN_where</CompositeCode>
+            <Label>Where</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+        </Properties>
+      </DTField>
+      <DTField>
+        <Name>COMPANYTYPE</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>COMPANYTYPE</Label>
+        <MaxLength>10</MaxLength>
+        <Ordinal>8</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>The Companies field of service.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>ADDDATE</Name>
+        <AllowNull>False</AllowNull>
+        <DataType>System.DateTime</DataType>
+        <DefaultValue />
+        <Label>ADDDATE</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>9</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>FALSE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format>{0: MM/dd/yyyy hh:mm}</Format>
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>The date on which data was added.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>DATE_BOX</Name>
+          <Label>Date/Time</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.DateTimeBox</Class>
+        </DisplayType>
+        <Properties>
+          <Property>
+            <Code>show_date</Code>
+            <CompositeCode>DATE_BOX_show_date</CompositeCode>
+            <Label>Show Date</Label>
+            <Value>True</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>show_time</Code>
+            <CompositeCode>DATE_BOX_show_time</CompositeCode>
+            <Label>Show Time</Label>
+            <Value>True</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+        </Properties>
+      </DTField>
+      <DTField>
+        <Name>ROUTE</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>ROUTE</Label>
+        <MaxLength>10</MaxLength>
+        <Ordinal>9</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>The Orders route.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>TARGETCOMPANY</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>TARGETCOMPANY</Label>
+        <MaxLength>20</MaxLength>
+        <Ordinal>9</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>The Company to which the inventory is to be shipped.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>ADDUSER</Name>
+        <AllowNull>False</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>ADDUSER</Label>
+        <MaxLength>20</MaxLength>
+        <Ordinal>10</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>FALSE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>The user who added the data.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>FROMORDERVALUE</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.Double</DataType>
+        <DefaultValue />
+        <Label>FROMORDERVALUE</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>10</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>A minimum order value of  for which the Picking Policy will be active.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>NUMERIC_TEXTBOX</Name>
+          <Label>Numeric Textbox</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.NumericTextBox</Class>
+        </DisplayType>
+        <Properties>
+          <Property>
+            <Code>commas</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_commas</CompositeCode>
+            <Label>Commas</Label>
+            <Value>True</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>decimals</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_decimals</CompositeCode>
+            <Label>Decimals</Label>
+            <Value>-1</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>max_value</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_max_value</CompositeCode>
+            <Label>Max Value</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>min_value</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_min_value</CompositeCode>
+            <Label>Min Value</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_color</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_negative_color</CompositeCode>
+            <Label>Negative Color</Label>
+            <Value>#990000</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_format</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_negative_format</CompositeCode>
+            <Label>Negative Format</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>null_value</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_null_value</CompositeCode>
+            <Label>NULL Value</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_symbol</CompositeCode>
+            <Label>Symbol</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol_position</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_symbol_position</CompositeCode>
+            <Label>Symbol Position</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+        </Properties>
+      </DTField>
+      <DTField>
+        <Name>FROMORDERVOLUME</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.Double</DataType>
+        <DefaultValue />
+        <Label>FROMORDERVOLUME</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>11</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>A minimum order volume  for which the Picking Policy will be active.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>NUMERIC_TEXTBOX</Name>
+          <Label>Numeric Textbox</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.NumericTextBox</Class>
+        </DisplayType>
+        <Properties>
+          <Property>
+            <Code>commas</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_commas</CompositeCode>
+            <Label>Commas</Label>
+            <Value>True</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>decimals</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_decimals</CompositeCode>
+            <Label>Decimals</Label>
+            <Value>-1</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>max_value</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_max_value</CompositeCode>
+            <Label>Max Value</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>min_value</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_min_value</CompositeCode>
+            <Label>Min Value</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_color</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_negative_color</CompositeCode>
+            <Label>Negative Color</Label>
+            <Value>#990000</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_format</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_negative_format</CompositeCode>
+            <Label>Negative Format</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>null_value</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_null_value</CompositeCode>
+            <Label>NULL Value</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_symbol</CompositeCode>
+            <Label>Symbol</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol_position</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_symbol_position</CompositeCode>
+            <Label>Symbol Position</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+        </Properties>
+      </DTField>
+      <DTField>
+        <Name>COMPANYGROUP</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>COMPANYGROUP</Label>
+        <MaxLength>20</MaxLength>
+        <Ordinal>11</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>The group the Company is part of.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>EDITDATE</Name>
+        <AllowNull>False</AllowNull>
+        <DataType>System.DateTime</DataType>
+        <DefaultValue />
+        <Label>EDITDATE</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>11</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>FALSE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format>{0: MM/dd/yyyy hh:mm}</Format>
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>The date on which data was edited.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>DATE_BOX</Name>
+          <Label>Date/Time</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.DateTimeBox</Class>
+        </DisplayType>
+        <Properties>
+          <Property>
+            <Code>show_date</Code>
+            <CompositeCode>DATE_BOX_show_date</CompositeCode>
+            <Label>Show Date</Label>
+            <Value>True</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>show_time</Code>
+            <CompositeCode>DATE_BOX_show_time</CompositeCode>
+            <Label>Show Time</Label>
+            <Value>True</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+        </Properties>
+      </DTField>
+      <DTField>
+        <Name>EDITUSER</Name>
+        <AllowNull>False</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>EDITUSER</Label>
+        <MaxLength>20</MaxLength>
+        <Ordinal>12</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>FALSE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>The user who last edited the data.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>POLICYID</Name>
+        <AllowNull>False</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>POLICYID</Label>
+        <MaxLength>20</MaxLength>
+        <Ordinal>12</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>True</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>The Picking Policy to follow when picking.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>INVSTATUS</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>INVSTATUS</Label>
+        <MaxLength>20</MaxLength>
+        <Ordinal>19</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>Inventory Status.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>FROMLINEVALUE</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.Double</DataType>
+        <DefaultValue />
+        <Label>FROMLINEVALUE</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>21</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>A minimum line value of  for which the Picking Policy will be active.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>NUMERIC_TEXTBOX</Name>
+          <Label>Numeric Textbox</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.NumericTextBox</Class>
+        </DisplayType>
+        <Properties>
+          <Property>
+            <Code>commas</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_commas</CompositeCode>
+            <Label>Commas</Label>
+            <Value>True</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>decimals</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_decimals</CompositeCode>
+            <Label>Decimals</Label>
+            <Value>-1</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>max_value</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_max_value</CompositeCode>
+            <Label>Max Value</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>min_value</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_min_value</CompositeCode>
+            <Label>Min Value</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_color</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_negative_color</CompositeCode>
+            <Label>Negative Color</Label>
+            <Value>#990000</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_format</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_negative_format</CompositeCode>
+            <Label>Negative Format</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>null_value</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_null_value</CompositeCode>
+            <Label>NULL Value</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_symbol</CompositeCode>
+            <Label>Symbol</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol_position</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_symbol_position</CompositeCode>
+            <Label>Symbol Position</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+        </Properties>
+      </DTField>
+      <DTField>
+        <Name>FROMLINEVOLUME</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.Double</DataType>
+        <DefaultValue />
+        <Label>FROMLINEVOLUME</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>22</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>A minimum line volume  for which the Picking Policy will be active.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>NUMERIC_TEXTBOX</Name>
+          <Label>Numeric Textbox</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.NumericTextBox</Class>
+        </DisplayType>
+        <Properties>
+          <Property>
+            <Code>commas</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_commas</CompositeCode>
+            <Label>Commas</Label>
+            <Value>True</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>decimals</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_decimals</CompositeCode>
+            <Label>Decimals</Label>
+            <Value>-1</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>max_value</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_max_value</CompositeCode>
+            <Label>Max Value</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>min_value</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_min_value</CompositeCode>
+            <Label>Min Value</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_color</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_negative_color</CompositeCode>
+            <Label>Negative Color</Label>
+            <Value>#990000</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_format</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_negative_format</CompositeCode>
+            <Label>Negative Format</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>null_value</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_null_value</CompositeCode>
+            <Label>NULL Value</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_symbol</CompositeCode>
+            <Label>Symbol</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol_position</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_symbol_position</CompositeCode>
+            <Label>Symbol Position</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+        </Properties>
+      </DTField>
+      <DTField>
+        <Name>FROMORDERUNITS</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.Double</DataType>
+        <DefaultValue />
+        <Label>FROMORDERUNITS</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>24</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format>{0:0.00}</Format>
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>A minimum number of units per order for which the Picking Policy will be active.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>FROMORDERLINES</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.Double</DataType>
+        <DefaultValue />
+        <Label>FROMORDERLINES</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>25</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>A minimum number of lines per order for which the Picking Policy will be active.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>NUMERIC_TEXTBOX</Name>
+          <Label>Numeric Textbox</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.NumericTextBox</Class>
+        </DisplayType>
+        <Properties>
+          <Property>
+            <Code>commas</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_commas</CompositeCode>
+            <Label>Commas</Label>
+            <Value>True</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>decimals</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_decimals</CompositeCode>
+            <Label>Decimals</Label>
+            <Value>-1</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>max_value</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_max_value</CompositeCode>
+            <Label>Max Value</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>min_value</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_min_value</CompositeCode>
+            <Label>Min Value</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_color</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_negative_color</CompositeCode>
+            <Label>Negative Color</Label>
+            <Value>#990000</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_format</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_negative_format</CompositeCode>
+            <Label>Negative Format</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>null_value</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_null_value</CompositeCode>
+            <Label>NULL Value</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_symbol</CompositeCode>
+            <Label>Symbol</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol_position</Code>
+            <CompositeCode>NUMERIC_TEXTBOX_symbol_position</CompositeCode>
+            <Label>Symbol Position</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+        </Properties>
+      </DTField>
+      <DTField>
+        <Name>CARRIER</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>CARRIER</Label>
+        <MaxLength>20</MaxLength>
+        <Ordinal>26</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>Carrier Company reference ID.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>UNLOADINGTYPE</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>UNLOADINGTYPE</Label>
+        <MaxLength>20</MaxLength>
+        <Ordinal>27</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>The method by which inventory is unloaded from a vehicle.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>VEHICLETYPE</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>VEHICLETYPE</Label>
+        <MaxLength>20</MaxLength>
+        <Ordinal>28</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>The type of vehicle that will be used for shipping.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>TRANSPORTTYPE</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>TRANSPORTTYPE</Label>
+        <MaxLength>20</MaxLength>
+        <Ordinal>29</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>The method by which shipping will be performed.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>FROMLINEUNITS</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.Decimal</DataType>
+        <DefaultValue />
+        <Label>FROMLINEUNITS</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>30</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp />
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>numeric_textbox</Name>
+          <Label>Numeric Textbox</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.NumericTextBox</Class>
+        </DisplayType>
+        <Properties>
+          <Property>
+            <Code>commas</Code>
+            <CompositeCode>numeric_textbox_commas</CompositeCode>
+            <Label>Commas</Label>
+            <Value>True</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>decimals</Code>
+            <CompositeCode>numeric_textbox_decimals</CompositeCode>
+            <Label>Decimals</Label>
+            <Value>-1</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>max_value</Code>
+            <CompositeCode>numeric_textbox_max_value</CompositeCode>
+            <Label>Max Value</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>min_value</Code>
+            <CompositeCode>numeric_textbox_min_value</CompositeCode>
+            <Label>Min Value</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_color</Code>
+            <CompositeCode>numeric_textbox_negative_color</CompositeCode>
+            <Label>Negative Color</Label>
+            <Value>#990000</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_format</Code>
+            <CompositeCode>numeric_textbox_negative_format</CompositeCode>
+            <Label>Negative Format</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>null_value</Code>
+            <CompositeCode>numeric_textbox_null_value</CompositeCode>
+            <Label>NULL Value</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol</Code>
+            <CompositeCode>numeric_textbox_symbol</CompositeCode>
+            <Label>Symbol</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol_position</Code>
+            <CompositeCode>numeric_textbox_symbol_position</CompositeCode>
+            <Label>Symbol Position</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+        </Properties>
+      </DTField>
+      <DTField>
+        <Name>HAZCLASS</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>HAZCLASS</Label>
+        <MaxLength>20</MaxLength>
+        <Ordinal>30</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp>Load info.</DTFieldHelp>
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>linesunits</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.Decimal</DataType>
+        <DefaultValue />
+        <Label>linesunits</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>31</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp />
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>numeric_textbox</Name>
+          <Label>Numeric Textbox</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.NumericTextBox</Class>
+        </DisplayType>
+        <Properties>
+          <Property>
+            <Code>commas</Code>
+            <CompositeCode>numeric_textbox_commas</CompositeCode>
+            <Label>Commas</Label>
+            <Value>True</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>decimals</Code>
+            <CompositeCode>numeric_textbox_decimals</CompositeCode>
+            <Label>Decimals</Label>
+            <Value>-1</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>max_value</Code>
+            <CompositeCode>numeric_textbox_max_value</CompositeCode>
+            <Label>Max Value</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>min_value</Code>
+            <CompositeCode>numeric_textbox_min_value</CompositeCode>
+            <Label>Min Value</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_color</Code>
+            <CompositeCode>numeric_textbox_negative_color</CompositeCode>
+            <Label>Negative Color</Label>
+            <Value>#990000</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_format</Code>
+            <CompositeCode>numeric_textbox_negative_format</CompositeCode>
+            <Label>Negative Format</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>null_value</Code>
+            <CompositeCode>numeric_textbox_null_value</CompositeCode>
+            <Label>NULL Value</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol</Code>
+            <CompositeCode>numeric_textbox_symbol</CompositeCode>
+            <Label>Symbol</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol_position</Code>
+            <CompositeCode>numeric_textbox_symbol_position</CompositeCode>
+            <Label>Symbol Position</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+        </Properties>
+      </DTField>
+      <DTField>
+        <Name>ordervalue</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.Decimal</DataType>
+        <DefaultValue />
+        <Label>ordervalue</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>32</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp />
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>numeric_textbox</Name>
+          <Label>Numeric Textbox</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.NumericTextBox</Class>
+        </DisplayType>
+        <Properties>
+          <Property>
+            <Code>commas</Code>
+            <CompositeCode>numeric_textbox_commas</CompositeCode>
+            <Label>Commas</Label>
+            <Value>True</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>decimals</Code>
+            <CompositeCode>numeric_textbox_decimals</CompositeCode>
+            <Label>Decimals</Label>
+            <Value>-1</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>max_value</Code>
+            <CompositeCode>numeric_textbox_max_value</CompositeCode>
+            <Label>Max Value</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>min_value</Code>
+            <CompositeCode>numeric_textbox_min_value</CompositeCode>
+            <Label>Min Value</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_color</Code>
+            <CompositeCode>numeric_textbox_negative_color</CompositeCode>
+            <Label>Negative Color</Label>
+            <Value>#990000</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_format</Code>
+            <CompositeCode>numeric_textbox_negative_format</CompositeCode>
+            <Label>Negative Format</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>null_value</Code>
+            <CompositeCode>numeric_textbox_null_value</CompositeCode>
+            <Label>NULL Value</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol</Code>
+            <CompositeCode>numeric_textbox_symbol</CompositeCode>
+            <Label>Symbol</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol_position</Code>
+            <CompositeCode>numeric_textbox_symbol_position</CompositeCode>
+            <Label>Symbol Position</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+        </Properties>
+      </DTField>
+      <DTField>
+        <Name>ordervolume</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.Decimal</DataType>
+        <DefaultValue />
+        <Label>ordervolume</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>33</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp />
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>numeric_textbox</Name>
+          <Label>Numeric Textbox</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.NumericTextBox</Class>
+        </DisplayType>
+        <Properties>
+          <Property>
+            <Code>commas</Code>
+            <CompositeCode>numeric_textbox_commas</CompositeCode>
+            <Label>Commas</Label>
+            <Value>True</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>decimals</Code>
+            <CompositeCode>numeric_textbox_decimals</CompositeCode>
+            <Label>Decimals</Label>
+            <Value>-1</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>max_value</Code>
+            <CompositeCode>numeric_textbox_max_value</CompositeCode>
+            <Label>Max Value</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>min_value</Code>
+            <CompositeCode>numeric_textbox_min_value</CompositeCode>
+            <Label>Min Value</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_color</Code>
+            <CompositeCode>numeric_textbox_negative_color</CompositeCode>
+            <Label>Negative Color</Label>
+            <Value>#990000</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_format</Code>
+            <CompositeCode>numeric_textbox_negative_format</CompositeCode>
+            <Label>Negative Format</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>null_value</Code>
+            <CompositeCode>numeric_textbox_null_value</CompositeCode>
+            <Label>NULL Value</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol</Code>
+            <CompositeCode>numeric_textbox_symbol</CompositeCode>
+            <Label>Symbol</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol_position</Code>
+            <CompositeCode>numeric_textbox_symbol_position</CompositeCode>
+            <Label>Symbol Position</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+        </Properties>
+      </DTField>
+      <DTField>
+        <Name>linevolume</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.Decimal</DataType>
+        <DefaultValue />
+        <Label>linevolume</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>34</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp />
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>numeric_textbox</Name>
+          <Label>Numeric Textbox</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.NumericTextBox</Class>
+        </DisplayType>
+        <Properties>
+          <Property>
+            <Code>commas</Code>
+            <CompositeCode>numeric_textbox_commas</CompositeCode>
+            <Label>Commas</Label>
+            <Value>True</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>decimals</Code>
+            <CompositeCode>numeric_textbox_decimals</CompositeCode>
+            <Label>Decimals</Label>
+            <Value>-1</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>max_value</Code>
+            <CompositeCode>numeric_textbox_max_value</CompositeCode>
+            <Label>Max Value</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>min_value</Code>
+            <CompositeCode>numeric_textbox_min_value</CompositeCode>
+            <Label>Min Value</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_color</Code>
+            <CompositeCode>numeric_textbox_negative_color</CompositeCode>
+            <Label>Negative Color</Label>
+            <Value>#990000</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_format</Code>
+            <CompositeCode>numeric_textbox_negative_format</CompositeCode>
+            <Label>Negative Format</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>null_value</Code>
+            <CompositeCode>numeric_textbox_null_value</CompositeCode>
+            <Label>NULL Value</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol</Code>
+            <CompositeCode>numeric_textbox_symbol</CompositeCode>
+            <Label>Symbol</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol_position</Code>
+            <CompositeCode>numeric_textbox_symbol_position</CompositeCode>
+            <Label>Symbol Position</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+        </Properties>
+      </DTField>
+      <DTField>
+        <Name>linevalue</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.Decimal</DataType>
+        <DefaultValue />
+        <Label>linevalue</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>35</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp />
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>numeric_textbox</Name>
+          <Label>Numeric Textbox</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.NumericTextBox</Class>
+        </DisplayType>
+        <Properties>
+          <Property>
+            <Code>commas</Code>
+            <CompositeCode>numeric_textbox_commas</CompositeCode>
+            <Label>Commas</Label>
+            <Value>True</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>decimals</Code>
+            <CompositeCode>numeric_textbox_decimals</CompositeCode>
+            <Label>Decimals</Label>
+            <Value>-1</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>max_value</Code>
+            <CompositeCode>numeric_textbox_max_value</CompositeCode>
+            <Label>Max Value</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>min_value</Code>
+            <CompositeCode>numeric_textbox_min_value</CompositeCode>
+            <Label>Min Value</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_color</Code>
+            <CompositeCode>numeric_textbox_negative_color</CompositeCode>
+            <Label>Negative Color</Label>
+            <Value>#990000</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_format</Code>
+            <CompositeCode>numeric_textbox_negative_format</CompositeCode>
+            <Label>Negative Format</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>null_value</Code>
+            <CompositeCode>numeric_textbox_null_value</CompositeCode>
+            <Label>NULL Value</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol</Code>
+            <CompositeCode>numeric_textbox_symbol</CompositeCode>
+            <Label>Symbol</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol_position</Code>
+            <CompositeCode>numeric_textbox_symbol_position</CompositeCode>
+            <Label>Symbol Position</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+        </Properties>
+      </DTField>
+      <DTField>
+        <Name>orderunits</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.Decimal</DataType>
+        <DefaultValue />
+        <Label>orderunits</Label>
+        <MaxLength>-1</MaxLength>
+        <Ordinal>36</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp />
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name>numeric_textbox</Name>
+          <Label>Numeric Textbox</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.NumericTextBox</Class>
+        </DisplayType>
+        <Properties>
+          <Property>
+            <Code>commas</Code>
+            <CompositeCode>numeric_textbox_commas</CompositeCode>
+            <Label>Commas</Label>
+            <Value>True</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>decimals</Code>
+            <CompositeCode>numeric_textbox_decimals</CompositeCode>
+            <Label>Decimals</Label>
+            <Value>-1</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>max_value</Code>
+            <CompositeCode>numeric_textbox_max_value</CompositeCode>
+            <Label>Max Value</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>min_value</Code>
+            <CompositeCode>numeric_textbox_min_value</CompositeCode>
+            <Label>Min Value</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_color</Code>
+            <CompositeCode>numeric_textbox_negative_color</CompositeCode>
+            <Label>Negative Color</Label>
+            <Value>#990000</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>negative_format</Code>
+            <CompositeCode>numeric_textbox_negative_format</CompositeCode>
+            <Label>Negative Format</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>null_value</Code>
+            <CompositeCode>numeric_textbox_null_value</CompositeCode>
+            <Label>NULL Value</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol</Code>
+            <CompositeCode>numeric_textbox_symbol</CompositeCode>
+            <Label>Symbol</Label>
+            <Value />
+            <IsDirty>False</IsDirty>
+          </Property>
+          <Property>
+            <Code>symbol_position</Code>
+            <CompositeCode>numeric_textbox_symbol_position</CompositeCode>
+            <Label>Symbol Position</Label>
+            <Value>0</Value>
+            <IsDirty>False</IsDirty>
+          </Property>
+        </Properties>
+      </DTField>
+      <DTField>
+        <Name>strategyid</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>strategyid</Label>
+        <MaxLength>50</MaxLength>
+        <Ordinal>37</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp />
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+      <DTField>
+        <Name>orderlines</Name>
+        <AllowNull>True</AllowNull>
+        <DataType>System.String</DataType>
+        <DefaultValue />
+        <Label>orderlines</Label>
+        <MaxLength>10</MaxLength>
+        <Ordinal>38</Ordinal>
+        <ReadOnly>False</ReadOnly>
+        <Required>False</Required>
+        <Visible>TRUE</Visible>
+        <DisplayID>all</DisplayID>
+        <AppGroup>0</AppGroup>
+        <Format />
+        <LabelPosition>0</LabelPosition>
+        <LabelAlign>0</LabelAlign>
+        <PrimaryKey>False</PrimaryKey>
+        <IsDBField>True</IsDBField>
+        <InputInGrid>False</InputInGrid>
+        <SearchType />
+        <ColumnIndex>0</ColumnIndex>
+        <Columns>0</Columns>
+        <Hidden>FALSE</Hidden>
+        <Value />
+        <InUse>False</InUse>
+        <NoWrap>False</NoWrap>
+        <Group>0</Group>
+        <Aggregate />
+        <Align />
+        <DTFieldHelp />
+        <IsStickyField>False</IsStickyField>
+        <DisplayType>
+          <Name />
+          <Label>- None -</Label>
+          <AssemblyDLL>Made4Net.WebControls.dll</AssemblyDLL>
+          <Class>Made4Net.WebControls.DisplayTypes.TextBox</Class>
+        </DisplayType>
+        <Properties />
+      </DTField>
+    </DTFields>
+    <Expressions />
+  </DataTemplate>
+</DataTemplates>

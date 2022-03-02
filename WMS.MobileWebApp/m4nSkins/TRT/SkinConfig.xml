@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Skin>
+  <Info>
+    <Name>Default</Name>
+    <Description>This is the default skin</Description>
+  </Info>
+	<ImageMapping>
+	</ImageMapping>
+
+	<StyleMapping>
+	</StyleMapping>
+  <Objects>
+    <MobilePageSize Width="640px" border="1" Height="280px" Dir="ltr"/>
+    <MobileMainMenuBottonSize Width="30" Height="20"/>
+    <MobileModeBottonSize Width="30" Height="20"/>
+	  <Browser Type="Graphics" PopupType="Graphics" PopupPosition="UpperLine"/>
+  </Objects>
+</Skin>

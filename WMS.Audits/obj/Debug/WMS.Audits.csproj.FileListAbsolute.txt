@@ -1,0 +1,10 @@
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Audits\obj\Debug\WMS.Audits.ProjectInstaller.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Audits\obj\Debug\WMS.Audits.csproj.GenerateResource.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Audits\obj\Debug\WMS.Audits.csproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\Audits\PWMS.Audits.exe.config
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\Audits\PWMS.Audits.xml
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\Audits\PWMS.Audits.exe
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\Audits\PWMS.Audits.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Audits\obj\Debug\WMS.Audits.csproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Audits\obj\Debug\PWMS.Audits.exe
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Audits\obj\Debug\PWMS.Audits.pdb

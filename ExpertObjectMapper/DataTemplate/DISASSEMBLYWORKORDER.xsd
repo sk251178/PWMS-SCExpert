@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DISASSEMBLYWORKORDER" targetNamespace="http://tempuri.org/DISASSEMBLYWORKORDER.xsd"
+	elementFormDefault="qualified" xmlns="http://tempuri.org/DISASSEMBLYWORKORDER.xsd" xmlns:mstns="http://tempuri.org/DISASSEMBLYWORKORDER.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="BUSINESSOBJECT">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="BOTYPE" type="xs:string" />
+				<xs:element name="DATACOLLECTION" type="xs:string" />
+				<xs:element name="DATA">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CONSIGNEE" type="xs:string" />
+							<xs:element name="ORDERID" type="xs:string" />
+							<xs:element name="ORDERTYPE" type="xs:string" />
+							<xs:element name="REFERENCEORD" type="xs:string" />
+							<xs:element name="REFERENCEORDLINE" type="xs:string" />
+							<xs:element name="OUTBOUNDORDER" type="xs:string" />
+							<xs:element name="OUTBOUNDORDERLINE" type="xs:string" />
+							<xs:element name="SKU" type="xs:string" />
+							<xs:element name="INVENTORYSTATUS" type="xs:string" />
+							<xs:element name="ORIGINALQTY" type="xs:decimal" />
+							<xs:element name="MODIFIEDQTY" type="xs:decimal" />
+							<xs:element name="PLANNEDQTY" type="xs:decimal" />
+							<xs:element name="COMPLETEDQTY" type="xs:decimal" />
+							<xs:element name="LOCATION" type="xs:dateTime" />
+							<xs:element name="CREATEDATE" type="xs:dateTime" />
+							<xs:element name="RELEASEDATE" type="xs:dateTime" />
+							<xs:element name="DUEDATE" type="xs:dateTime" />
+							<xs:element name="CLOSEDATE" type="xs:dateTime" />
+							<xs:element name="NOTES" type="xs:string" />
+							<xs:element name="STATUS" type="xs:string" />
+							<xs:element name="ATTRIBUTES">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="ATTRIBUTE">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="NAME" type="xs:string" />
+													<xs:element name="VALUE" type="xs:string" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="SKUCOMPONENTS">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="SKUCOMPONENT">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="PARTSKU" type="xs:string" />
+													<xs:element name="PARTQTY" type="xs:decimal" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>							
+							<xs:element name="LOADS">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="LOAD">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="LOADID" type="xs:string" />
+													<xs:element name="UOM" type="xs:string" />
+													<xs:element name="QTY" type="xs:string" />
+													<xs:element name="STATUS" type="xs:string" />
+													<xs:element name="LOADATTRIBUTES">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="LOADATTRIBUTE">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="NAME" type="xs:string" />
+																			<xs:element name="VALUE" type="xs:string" />
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

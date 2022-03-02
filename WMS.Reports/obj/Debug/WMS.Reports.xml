@@ -1,0 +1,695 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WMS.Reports
+</name>
+</assembly>
+<members>
+<member name="T:WMS.Reports.dsBillCharges">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsBillCharges.BillChargesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsBillCharges.BillChargesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsBillCharges.BillChargesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsCompanies">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsCompanies.COMPANYBYCONSIGNEEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsCompanies.COMPANYBYCONSIGNEERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsCompanies.COMPANYBYCONSIGNEERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsFlowthroughDetail">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsFlowthroughDetail.FlowthroughDetailDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsFlowthroughDetail.FlowthroughDetailRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsFlowthroughDetail.FlowthroughDetailRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsFlowthroughDiscrepancies">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsFlowthroughSummary">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsFlowthroughSummary.FlowthroughSummaryDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsFlowthroughSummary.FlowthroughSummaryRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsFlowthroughSummary.FlowthroughSummaryRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsInvBySku">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsInvBySku.invBySkuDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsInvBySku.invBySkuRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsInvBySku.invBySkuRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsInvByStatus">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsInvByStatus.InvByStatDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsInvByStatus.InvByStatRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsInvByStatus.InvByStatRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsInvOnHold">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsInvOnHold.InvOnHoldDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsInvOnHold.InvOnHoldRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsInvOnHold.InvOnHoldRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsInvTrans">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsInvTrans.InvTransDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsInvTrans.InvTransRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsInvTrans.InvTransRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsLoadByStatus">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsLoadByStatus.LoadByStatusDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsLoadByStatus.LoadByStatusRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsLoadByStatus.LoadByStatusRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsLocationContent">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsLocationContent.INVLOADDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsLocationContent.INVLOADRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsLocationContent.INVLOADRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsLocations">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsLocations.LocationsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsLocations.LocationsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsLocations.LocationsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsPick">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsPick.PickDetailsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsPick.PickDetailsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsPick.PickDetailsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsPickdetail">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsPickdetail.PICKDETAILDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsPickdetail.PICKDETAILRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsPickdetail.PICKDETAILRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsPickerEfficiency">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsPickerEfficiency.dsPickEfficiencyDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsPickerEfficiency.dsPickEfficiencyRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsPickerEfficiency.dsPickEfficiencyRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsPickLoc">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsPickLoc.PickLocDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsPickLoc.PickLocRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsPickLoc.PickLocRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsPicks">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsPicks.PICKSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsPicks.PICKSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsPicks.PICKSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsRecByCons">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsRecByCons.recbyconsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsRecByCons.recbyconsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsRecByCons.recbyconsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsReceipt">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsReceipt.ReceiptsHeaderDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsReceipt.ReceiptsHeaderRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsReceipt.ReceiptsHeaderRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsReceiptDetail">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsReceiptDetail.ReceiptDetailDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsReceiptDetail.ReceiptDetailRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsReceiptDetail.ReceiptDetailRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsReceivingDetails">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsReceivingDetails.ReceivingDetailsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsReceivingDetails.ReceivingDetailsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsReceivingDetails.ReceivingDetailsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsReceivingSummary">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsReceivingSummary.ReceivingSummaryDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsReceivingSummary.ReceivingSummaryRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsReceivingSummary.ReceivingSummaryRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsReplenishment">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsReplenishment.dsReplenishmentDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsReplenishment.dsReplenishmentRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsReplenishment.dsReplenishmentRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsRetShipSKu">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsRetShipSKu.RetShipSkuDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsRetShipSKu.RetShipSkuRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsRetShipSKu.RetShipSkuRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsSecondaryPick">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsSecondaryPick.dsSecondaryPickDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsSecondaryPick.dsSecondaryPickRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsSecondaryPick.dsSecondaryPickRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsShipedOrders">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsShipedOrders.ShipingOrdersDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsShipedOrders.ShipingOrdersRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsShipedOrders.ShipingOrdersRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsShippingDetails">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsShippingDetails.ShippingDetailsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsShippingDetails.ShippingDetailsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsShippingDetails.ShippingDetailsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsShippingManifestDetail">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsShippingManifestDetail.ShippingManifestDetailDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsShippingManifestDetail.ShippingManifestDetailRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsShippingManifestDetail.ShippingManifestDetailRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsShippingManifestHeader">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsShippingManifestHeader.ShippingManifestHeaderDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsShippingManifestHeader.ShippingManifestHeaderRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsShippingManifestHeader.ShippingManifestHeaderRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsShippingSummary">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsShippingSummary.ShippingSummaryDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsShippingSummary.ShippingSummaryRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsShippingSummary.ShippingSummaryRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsSku">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsSku.SKUDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsSku.SKURow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsSku.SKURowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsSkuReceipt">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsSkuReceipt.skuReceiptDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsSkuReceipt.skuReceiptRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsSkuReceipt.skuReceiptRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsTestReport1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsTestReport1.OrderDetailsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsTestReport1.OrderDetailsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsTestReport1.OrderDetailsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsTransShipmentDetail">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsTransShipmentDetail.TransShipmentDetailDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsTransShipmentDetail.TransShipmentDetailRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsTransShipmentDetail.TransShipmentDetailRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMS.Reports.dsTransShipmentSummary">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsTransShipmentSummary.TransShipmentSummaryDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsTransShipmentSummary.TransShipmentSummaryRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMS.Reports.dsTransShipmentSummary.TransShipmentSummaryRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+</members>
+</doc>

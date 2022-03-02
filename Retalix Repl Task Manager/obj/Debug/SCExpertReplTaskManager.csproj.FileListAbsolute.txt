@@ -1,0 +1,9 @@
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\ReplTaskManager\PWMSReplTaskManager.exe.config
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\ReplTaskManager\PWMSReplTaskManager.exe
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\ReplTaskManager\PWMSReplTaskManager.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\Retalix Repl Task Manager\obj\Debug\RetalixReplTaskManager.ProjectInstaller.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\Retalix Repl Task Manager\obj\Debug\SCExpertReplTaskManager.csproj.GenerateResource.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\Retalix Repl Task Manager\obj\Debug\SCExpertReplTaskManager.csproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\Retalix Repl Task Manager\obj\Debug\SCExpertReplTaskManager.csproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\Retalix Repl Task Manager\obj\Debug\PWMSReplTaskManager.exe
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\Retalix Repl Task Manager\obj\Debug\PWMSReplTaskManager.pdb

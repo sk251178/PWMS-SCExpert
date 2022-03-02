@@ -1,0 +1,9 @@
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.AttributeValidators\obj\Debug\WMS.AttributeValidators.vbproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\WMS.AttributeValidators.dll
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\WMS.AttributeValidators.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\WMS.AttributeValidators.xml
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.AttributeValidators\obj\Debug\WMS.AttributeValidators.vbproj.AssemblyReference.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.AttributeValidators\obj\Debug\WMS.AttributeValidators.vbproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.AttributeValidators\obj\Debug\WMS.AttributeValidators.dll
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.AttributeValidators\obj\Debug\WMS.AttributeValidators.xml
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.AttributeValidators\obj\Debug\WMS.AttributeValidators.pdb

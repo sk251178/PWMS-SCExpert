@@ -1,0 +1,9 @@
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\FlowrackService\PWMSFlowrackService.exe.config
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\FlowrackService\PWMSFlowrackService.exe
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\FlowrackService\PWMSFlowrackService.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\Retalix Flowrack Service\obj\Debug\RetalixFlowrackService.ProjectInstaller.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\Retalix Flowrack Service\obj\Debug\SCExpertFlowrackService.csproj.GenerateResource.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\Retalix Flowrack Service\obj\Debug\SCExpertFlowrackService.csproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\Retalix Flowrack Service\obj\Debug\SCExpertFlowrackService.csproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\Retalix Flowrack Service\obj\Debug\PWMSFlowrackService.exe
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\Retalix Flowrack Service\obj\Debug\PWMSFlowrackService.pdb

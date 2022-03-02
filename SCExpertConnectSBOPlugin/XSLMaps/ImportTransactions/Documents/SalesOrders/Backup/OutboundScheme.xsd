@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="DATACOLLECTION">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="DATA">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CONSIGNEE">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="ORDERID">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="ORDERTYPE">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="REFERENCEORD">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="TARGETCOMPANY">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="COMPANYTYPE">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="STATUS">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="CREATEDATE">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="NOTES">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="STAGINGLANE">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="REQUESTEDDATE">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="SCHEDULEDDATE">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="SHIPPEDDATE">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="SHIPMENT">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="STOPNUMBER">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="ORDERPRIORITY">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="ROUTE">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="LOADINGSEQ">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="WAVE">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="ROUTINGSET">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="STATUSDATE">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="HOSTORDERID">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="DELIVERYSTATUS">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="TARGETCOMPANYNAME">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="SHIPTO">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="CONTACT">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="STREET1">
+											<xs:complexType/>
+										</xs:element>
+										<xs:element name="STREET2">
+											<xs:complexType/>
+										</xs:element>
+										<xs:element name="CITY">
+											<xs:complexType/>
+										</xs:element>
+										<xs:element name="STATE">
+											<xs:complexType/>
+										</xs:element>
+										<xs:element name="ZIP">
+											<xs:complexType/>
+										</xs:element>
+										<xs:element name="CONTACT1NAME">
+											<xs:complexType/>
+										</xs:element>
+										<xs:element name="CONTACT2NAME">
+											<xs:complexType/>
+										</xs:element>
+										<xs:element name="CONTACT1PHONE">
+											<xs:complexType/>
+										</xs:element>
+										<xs:element name="CONTACT2PHONE">
+											<xs:complexType/>
+										</xs:element>
+										<xs:element name="CONTACT1FAX">
+											<xs:complexType/>
+										</xs:element>
+										<xs:element name="CONTACT2FAX">
+											<xs:complexType/>
+										</xs:element>
+										<xs:element name="CONTACT1EMAIL">
+											<xs:complexType/>
+										</xs:element>
+										<xs:element name="CONTACT2EMAIL">
+											<xs:complexType/>
+										</xs:element>
+										<xs:element name="POINTID">
+											<xs:complexType/>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="LINES">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="LINE">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="ORDERLINE">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="REFERENCEORDLINE">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="SKU">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="INVENTORYSTATUS">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="QTYORIGINAL">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="QTYMODIFIED">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="QTYALLOCATED">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="QTYPICKED">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="QTYSTAGED">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="QTYVERIFIED">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="QTYLOADED">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="QTYSHIPPED">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="EXPLOADEDFLAG">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="INPUTQTY">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="INPUTUOM">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="UNITPRICE">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="INPUTSKU">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="SKUVOLUME">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="SKUWEIGHT">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="NOTES">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ATTRIBUTES">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="ATTRIBUTE">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="ATTNAME">
+																				<xs:complexType/>
+																			</xs:element>
+																			<xs:element name="ATTVALUE">
+																				<xs:complexType/>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="LOADS">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="LOAD">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="LOADID">
+																				<xs:complexType/>
+																			</xs:element>
+																			<xs:element name="UOM">
+																				<xs:complexType/>
+																			</xs:element>
+																			<xs:element name="QTY">
+																				<xs:complexType/>
+																			</xs:element>
+																			<xs:element name="STATUS">
+																				<xs:complexType/>
+																			</xs:element>
+																			<xs:element name="LOADATTRIBUTES">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="LOADATTRIBUTE">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="NAME">
+																										<xs:complexType/>
+																									</xs:element>
+																									<xs:element name="VALUE">
+																										<xs:complexType/>
+																									</xs:element>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																			<xs:element name="CONTAINER">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="ContainerId">
+																							<xs:complexType/>
+																						</xs:element>
+																						<xs:element name="HandlingUnitType">
+																							<xs:complexType/>
+																						</xs:element>
+																						<xs:element name="Serial">
+																							<xs:complexType/>
+																						</xs:element>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

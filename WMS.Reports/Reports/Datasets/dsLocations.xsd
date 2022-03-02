@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="dsLocations" targetNamespace="http://tempuri.org/dsLocations.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/dsLocations.xsd" xmlns:mstns="http://tempuri.org/dsLocations.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="dsLocations" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Locations">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="LOCATION" type="xs:string" minOccurs="0" />
+							<xs:element name="STATUS" type="xs:string" minOccurs="0" />
+							<xs:element name="PUTREGION" type="xs:string" minOccurs="0" />
+							<xs:element name="PICKREGION" type="xs:string" minOccurs="0" />
+							<xs:element name="WAREHOUSEAREA" type="xs:string" minOccurs="0" />
+							<xs:element name="LOCUSAGETYPE" type="xs:string" minOccurs="0" />
+							<xs:element name="LOCMHTYPE" type="xs:string" minOccurs="0" />
+							<xs:element name="INVENTORY" type="xs:string" minOccurs="0" />
+							<xs:element name="LASTCOUNTDATE" type="xs:date" minOccurs="0" />
+							<xs:element name="ACCESSTYPE" type="xs:string" minOccurs="0" />
+							<xs:element name="LENGTH" type="xs:double" minOccurs="0" />
+							<xs:element name="WIDTH" type="xs:double" minOccurs="0" />
+							<xs:element name="HEIGHT" type="xs:double" minOccurs="0" />
+							<xs:element name="CUBIC" type="xs:double" minOccurs="0" />
+							<xs:element name="LOADSCAPACITY" type="xs:int" minOccurs="0" />
+							<xs:element name="PENDINGWEIGHT" type="xs:double" minOccurs="0" />
+							<xs:element name="PENDINGCUBIC" type="xs:double" minOccurs="0" />
+							<xs:element name="PENDINGLOADS" type="xs:double" minOccurs="0" />
+							<xs:element name="LOOSEID" type="xs:string" minOccurs="0" />
+							<xs:element name="AISLE" type="xs:string" minOccurs="0" />
+							<xs:element name="BAY" type="xs:string" minOccurs="0" />
+							<xs:element name="LOCLEVEL" type="xs:string" minOccurs="0" />
+							<xs:element name="HEIGHTFROMFLOOR" type="xs:double" minOccurs="0" />
+							<xs:element name="LASTMOVEIN" type="xs:date" minOccurs="0" />
+							<xs:element name="LASTMOVEOUT" type="xs:date" minOccurs="0" />
+							<xs:element name="PICKSFROMLASTCOUNT" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

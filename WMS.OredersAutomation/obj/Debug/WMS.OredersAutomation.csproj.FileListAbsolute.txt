@@ -1,0 +1,11 @@
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.OredersAutomation\obj\Debug\WMS.OredersAutomation.csproj.AssemblyReference.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.OredersAutomation\obj\Debug\WMS.OredersAutomation.ProjectInstaller.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.OredersAutomation\obj\Debug\WMS.OredersAutomation.csproj.GenerateResource.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.OredersAutomation\obj\Debug\WMS.OredersAutomation.csproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\OrdersAutomation\PWMS.OredersAutomation.exe.config
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\OrdersAutomation\PWMS.OredersAutomation.xml
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\OrdersAutomation\PWMS.OredersAutomation.exe
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\OrdersAutomation\PWMS.OredersAutomation.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.OredersAutomation\obj\Debug\WMS.OredersAutomation.csproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.OredersAutomation\obj\Debug\PWMS.OredersAutomation.exe
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.OredersAutomation\obj\Debug\PWMS.OredersAutomation.pdb

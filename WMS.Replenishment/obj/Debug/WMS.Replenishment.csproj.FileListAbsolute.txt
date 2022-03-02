@@ -1,0 +1,12 @@
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Replenishment\obj\Debug\WMS.Replenishment.ProjectInstaller.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Replenishment\obj\Debug\WMS.Replenishment.ReplenishmentService.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Replenishment\obj\Debug\WMS.Replenishment.csproj.GenerateResource.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Replenishment\obj\Debug\WMS.Replenishment.csproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Replenishment\obj\Debug\WMS.Replenishment.csproj.AssemblyReference.cache
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\Replenshment\PWMS.Replenishment.exe.config
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\Replenshment\PWMS.Replenishment.xml
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\Replenshment\PWMS.Replenishment.exe
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\Replenshment\PWMS.Replenishment.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Replenishment\obj\Debug\WMS.Replenishment.csproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Replenishment\obj\Debug\PWMS.Replenishment.exe
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Replenishment\obj\Debug\PWMS.Replenishment.pdb

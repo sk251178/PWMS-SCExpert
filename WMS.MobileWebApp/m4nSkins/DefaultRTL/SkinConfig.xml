@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Skin>
+	<Info>
+		<Name>HebrewRTL</Name>
+		<Description>The RTL Default Skin</Description>
+	</Info>
+	
+	<ImageMapping>
+	</ImageMapping>
+
+	<StyleMapping>
+	</StyleMapping>
+	
+	<Objects>
+		<Grid Width="750" border="1" bordercolor="#CCCCCC" cellpadding="2" rules="rows" />
+		<ActionBar cellpadding="0" cellspacing="0" />
+		<ReportActionBar cellpadding="3" cellspacing="0"/>
+		<MobileMainMenuBottonSize Width="65" Height="40"/>
+		<MobileModeBottonSize Width="65" Height="40"/>
+		<Browser Type="Graphics" PopupType="Graphics" PopupPosition="UpperLine"/>
+	</Objects>
+</Skin>

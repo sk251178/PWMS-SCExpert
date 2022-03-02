@@ -1,0 +1,461 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataManager</name>
+    </assembly>
+    <members>
+        <member name="T:DataManager.Constants">
+            <summary>
+            Class to hold constant values
+            </summary>
+        </member>
+        <member name="F:DataManager.Constants.StartLocation">
+            <summary>
+            Constant string literal for StartLocation
+            </summary>
+        </member>
+        <member name="T:DataManager.DataAccessObjects.DistanceDao">
+            <summary>
+            Data access objects for distance related operations
+            </summary>
+        </member>
+        <member name="M:DataManager.DataAccessObjects.DistanceDao.PopulateNodes">
+            <summary>
+            Populates list of nodes for warehouse
+            </summary>
+            <returns>list of <see cref="T:DataManager.DataModel.WareHouseMapNodes"/></returns>
+        </member>
+        <member name="M:DataManager.DataAccessObjects.DistanceDao.PopulateEdges(System.Collections.Generic.List{DataManager.DataModel.WareHouseMapNodes})">
+            <summary>
+            Populate edges in the warehouse, meant for bidirectional walk
+            </summary>
+            <param name="lstNodes"> list of <see cref="T:DataManager.DataModel.WareHouseMapNodes"/> to populates nodes for edges</param>
+            <returns>list of <see cref="T:DataManager.DataModel.WareHouseMapEdges"/></returns>
+        </member>
+        <member name="M:DataManager.DataAccessObjects.DistanceDao.PopulateEdgesWithHeight(System.Collections.Generic.List{DataManager.DataModel.WareHouseMapNodes},System.String,System.String)">
+            <summary>
+            Populate edges with defined height, meant for bidirectional walk
+            </summary>
+            <param name="lstNodes">list of <see cref="T:DataManager.DataModel.WareHouseMapNodes"/> to populates nodes for edges</param>
+            <param name="height">param to define height of edge</param>
+            <param name="hOperator">param to define greater than, less than</param>
+            <returns>list of <see cref="T:DataManager.DataModel.WareHouseMapEdges"/></returns>
+        </member>
+        <member name="M:DataManager.DataAccessObjects.DistanceDao.GetNodeToNodeShortPath(System.String,System.String)">
+            <summary>
+            get the shortest path from source node to destination node
+            </summary>
+            <param name="FromNode">source node</param>
+            <param name="ToNode">destination node</param>
+            <returns>the shortest distance</returns>
+        </member>
+        <member name="M:DataManager.DataAccessObjects.DistanceDao.GetNodeToNodeShortPathWithHeight(System.String,System.String,DataManager.ServiceModel.Rules)">
+            <summary>
+            get the shortest path from source node to destination node with equipment height to be passed through edges
+            </summary>
+            <param name="FromNode">source node</param>
+            <param name="ToNode">destination node</param>
+            <param name="rule"><see cref="T:DataManager.ServiceModel.Rules"/> defined for the edge height</param>
+            <returns>the shortest distance</returns>
+        </member>
+        <member name="M:DataManager.DataAccessObjects.DistanceDao.ClearWareHouseMapShortDistance">
+            <summary>
+            Clear the shortest distance table
+            </summary>
+        </member>
+        <member name="M:DataManager.DataAccessObjects.DistanceDao.AddShortestDistance(System.String,System.String,System.String,System.Double,System.Double)">
+            <summary>
+            Insert records in the WAREHOUSEMAPSHORTDISTANCE table
+            </summary>
+            <param name="startNode"></param>
+            <param name="targetNode"></param>
+            <param name="previousNode"></param>
+            <param name="shortestPath"></param>
+            <param name="clearanceHeight"></param>
+        </member>
+        <member name="M:DataManager.DataAccessObjects.DistanceDao.GetTraversedPath(System.String,System.String)">
+            <summary>
+            Get traversed path for the source and target node
+            </summary>
+            <param name="startNode">Start Node</param>
+            <param name="targetNode">Target Node</param>
+        </member>
+        <member name="M:DataManager.DataAccessObjects.DistanceDao.GetNodesForLocation(System.String,System.String)">
+            <summary>
+            Get nodes for the location
+            </summary>
+            <param name="pickedge"></param>
+            <param name="filledge">previous location the operator was at</param>
+            <returns>List of nodes for the location</returns>
+        </member>
+        <member name="M:DataManager.DataAccessObjects.DistanceDao.PopulateOneWayEdges(System.Collections.Generic.List{DataManager.DataModel.WareHouseMapNodes})">
+            <summary>
+            Meant for Unidirectional walk
+            </summary>
+            <param name="lstNodes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DataManager.DataAccessObjects.DistanceDao.PopulateNodesNoCache">
+            <summary>
+            Populates list of nodes for warehouse, from DB, not from Cached data
+            </summary>
+            <returns>list of <see cref="T:DataManager.DataModel.WareHouseMapNodes"/></returns>
+        </member>
+        <member name="M:DataManager.DataAccessObjects.DistanceDao.PopulateEdgesNoCache(System.Collections.Generic.List{DataManager.DataModel.WareHouseMapNodes})">
+            <summary>
+            Populate edges in the warehouse, meant for bidirectional walk, from DB, not from Cached data
+            </summary>
+            <param name="lstNodes"> list of <see cref="T:DataManager.DataModel.WareHouseMapNodes"/> to populates nodes for edges</param>
+            <returns>list of <see cref="T:DataManager.DataModel.WareHouseMapEdges"/></returns>
+        </member>
+        <member name="F:DataManager.DataAccessObjects.SqlQueries.GetAllWarehouseEdges">
+            <summary>
+            Gets all edges for warehouse
+            </summary>
+        </member>
+        <member name="F:DataManager.DataAccessObjects.SqlQueries.GetAllWarehouseNodes">
+            <summary>
+            Gets all nodes for warehouse
+            </summary>
+        </member>
+        <member name="F:DataManager.DataAccessObjects.SqlQueries.GetNodeToNodeShortPath">
+            <summary>
+            Get NodeToNode ShortPath
+            </summary>
+        </member>
+        <member name="F:DataManager.DataAccessObjects.SqlQueries.GetWarehouseEdgesWithHeight">
+            <summary>
+            Get edges with height constarint
+            </summary>
+        </member>
+        <member name="F:DataManager.DataAccessObjects.SqlQueries.TruncateWarehouseShortDistance">
+            <summary>
+            Truncates the Warehouse ShortDistance entity
+            </summary>
+        </member>
+        <member name="F:DataManager.DataAccessObjects.SqlQueries.AddShortestDistance">
+            <summary>
+            Makes an entry in WAREHOUSEMAPSHORTDISTANCE
+            </summary>
+        </member>
+        <member name="F:DataManager.DataAccessObjects.SqlQueries.GetTraversedPath">
+            <summary>
+            Gets all Nodes and aggreagate distance for the traversedNodes
+            </summary>
+        </member>
+        <member name="F:DataManager.DataAccessObjects.SqlQueries.GetNodesForLocation">
+            <summary>
+            Get Nodes for Location
+            </summary>
+        </member>
+        <member name="T:DataManager.DataModel.Location">
+            <summary>
+            Location Object with xyz co ordinates
+            TODO: charles to add, additional needed properties
+            </summary>
+        </member>
+        <member name="P:DataManager.DataModel.Location.LocationName">
+            <summary>
+            Location Name
+            </summary>
+        </member>
+        <member name="P:DataManager.DataModel.Location.XCoOrdinate">
+            <summary>
+            XCoOrdinate of the location
+            </summary>
+        </member>
+        <member name="P:DataManager.DataModel.Location.YCoOrdinate">
+            <summary>
+            YCoOrdinate of the location
+            </summary>
+        </member>
+        <member name="P:DataManager.DataModel.Location.ZCoOrdinate">
+            <summary>
+            ZCoOrdinate of the location
+            </summary>
+        </member>
+        <member name="P:DataManager.DataModel.Location.EdgeId">
+            <summary>
+            Edge ID of the location. Can be pick edge or fill edge
+            </summary>
+        </member>
+        <member name="P:DataManager.DataModel.LocationIntersect.XCoOrdinate">
+            <summary>
+            XCoOrdinate of the Intersect location
+            </summary>
+        </member>
+        <member name="P:DataManager.DataModel.LocationIntersect.YCoOrdinate">
+            <summary>
+            YCoOrdinate of the Intersection location
+            </summary>
+        </member>
+        <member name="P:DataManager.DataModel.LocationIntersect.EdgeId">
+            <summary>
+            Edge Id of location
+            </summary>
+        </member>
+        <member name="P:DataManager.DataModel.LocationIntersect.IsSlope">
+            <summary>
+            check if slope 
+            </summary>
+        </member>
+        <member name="T:DataManager.DataModel.WareHouseMapEdges">
+            <summary>
+            TODO: Surya to add respective comments
+            </summary>
+        </member>
+        <member name="T:DataManager.DataModel.WareHouseMapNodes">
+            <summary>
+            TODO: Surya to add respective comments
+            </summary>
+        </member>
+        <member name="T:DataManager.ServiceModel.Path">
+            <summary>
+            Response class used to return shortest distance
+            </summary>
+        </member>
+        <member name="M:DataManager.ServiceModel.Path.#ctor">
+            <summary>
+            Initialize the dictionary when class initialized
+            </summary>
+        </member>
+        <member name="P:DataManager.ServiceModel.Path.TraversedNodes">
+            <summary>
+            All the nodes traversed for the shortest path from source to destination. Key is NodeId, Value is distance travelled
+            </summary>
+        </member>
+        <member name="P:DataManager.ServiceModel.Path.Distance">
+            <summary>
+            distance b/w 2 nodes
+            </summary>
+        </member>
+        <member name="P:DataManager.ServiceModel.Path.ErrorMessage">
+            <summary>
+            error message
+            </summary>
+        </member>
+        <member name="T:DataManager.ServiceModel.Distance">
+            <summary>
+            Distance to hold values for node 2 node, distance to Source Node, Distance to Dest Node
+            </summary>
+        </member>
+        <member name="P:DataManager.ServiceModel.Distance.SourceToTargetNode">
+            <summary>
+            Property to hold SourceToTarget distance
+            </summary>
+        </member>
+        <member name="P:DataManager.ServiceModel.Distance.ToSourceNode">
+            <summary>
+            Property to hold ToSourceNode distance from start location
+            </summary>
+        </member>
+        <member name="P:DataManager.ServiceModel.Distance.ToTargetNode">
+            <summary>
+            Property to hold ToTargetNode distance from target location
+            </summary>
+        </member>
+        <member name="P:DataManager.ServiceModel.Distance.SourceToTargetLocation">
+            <summary>
+            Property to hold SourceToTarget location distance
+            </summary>
+        </member>
+        <member name="T:DataManager.ServiceModel.Rules">
+            <summary>
+            Class to defines rules/checks for shortest distance calculation. It's extendable, currently Height and IsUnidirectional rules are supported.
+            For equipment height, Parameter should be Height, Operator is greater than symbol, Data is equipment height
+            For Unidirectional, Parameter should be IsUnidirectional, operator is isTrue, Data is the user for whom we have to identify the location
+            </summary>
+        </member>
+        <member name="P:DataManager.ServiceModel.Rules.Parameter">
+            <summary>
+            Parameter that need to be validated
+            </summary>
+        </member>
+        <member name="P:DataManager.ServiceModel.Rules.Operator">
+            <summary>
+            Operation that need to be performed Ex: Greater than, less than, Is true etc
+            </summary>
+        </member>
+        <member name="P:DataManager.ServiceModel.Rules.Data">
+            <summary>
+            Non Location related Data that need to be validated for the parameter
+            </summary>
+        </member>
+        <member name="P:DataManager.ServiceModel.Rules.Entity">
+            <summary>
+            Future feature to incorporate additional rules for any of the business entities.
+            Currently not used for distance calculation
+            </summary>
+        </member>
+        <member name="T:DataManager.ServiceModel.Types">
+            <summary>
+            Will have enums defined for the business actions
+            </summary>
+        </member>
+        <member name="T:DataManager.ServiceModel.Types.TaskType">
+            <summary>
+            Defines the tasktypes that are supported, In sync with WMS.Lib.Constants
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.REPL">
+            <summary>
+            REPLENISHMENT
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.FULLREPL">
+            <summary>
+            Full replenishment
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.NEGTREPL">
+            <summary>
+            Negative replenishment
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.PARTREPL">
+            <summary>
+            Partial Replenishments
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.LDCOUNT">
+            <summary>
+            LOAD COUNTING
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.LOCCNT">
+            <summary>
+            LOCATION COUNTING
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.LOCBLKCNT">
+            <summary>
+            LOCATION BULK COUNTING
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.PARPICK">
+            <summary>
+            PARTIAL PICKING
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.NPP">
+            <summary>
+            NEG PALLET PICK
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.FULLPICK">
+            <summary>
+            FULL PICKING
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.PICKING">
+            <summary>
+            PICKING
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.PARALLELPK">
+            <summary>
+            PARALLEL PICKING
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.LOADPW">
+            <summary>
+            LOAD PUTAWAY
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.CONTPW">
+            <summary>
+            CONT PUTAWAY
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.CONTLDPW">
+            <summary>
+            CONT LOAD PUTAWAY
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.LOADDEL">
+            <summary>
+            LOAD DELIVERY
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.CONTDEL">
+            <summary>
+            CONT DELIVERY
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.CONTLDDEL">
+            <summary>
+            CONT LOAD DELIVERY
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.CONTCONDEL">
+            <summary>
+            CONT CONT DELIVERY
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.LOADLOAD">
+            <summary>
+            LOAD LOADING
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.CONTLOAD">
+            <summary>
+            CONT LOADING
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.CONTLDLOAD">
+            <summary>
+            CONT LOAD LOADING
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.CONTCONLOAD">
+            <summary>
+            CONT CONT LOADING
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.PUTAWAY">
+            <summary>
+            PUTAWAY
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.DELIVERY">
+            <summary>
+            DELIVERY
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.CONSOLID">
+            <summary>
+            CONSOLIDATION
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.CONSOLDEL">
+            <summary>
+            CONSOLIDATION DELIVERY
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.EMPHUDEL">
+            <summary>
+            EMPTY HU PICKUP TASK
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.UNLOADING">
+            <summary>
+            UNLOADING
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.NSPICKUP">
+            <summary>
+            NSPICKUP
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.SPICKUP">
+            <summary>
+            SPICKUP
+            </summary>
+        </member>
+        <member name="F:DataManager.ServiceModel.Types.TaskType.MISC">
+            <summary>
+            Miscellenious
+            </summary>
+        </member>
+    </members>
+</doc>

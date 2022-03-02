@@ -1,0 +1,248 @@
+/* RadToolBar default embedded skin */
+
+.default_radtoolbar_left,
+.default_radtoolbar_right
+{
+	background: transparent url("Img/toolbarCorners.gif") no-repeat top left;
+	width: 5px;
+	height: 30px;
+	overflow: hidden;
+}
+
+.default_radtoolbar_top,
+.default_radtoolbar_bot
+{
+	height: 1px;
+	background-color: #4f4f4f;
+	width: 100%;
+}
+
+.default_radtoolbar_right
+{
+	background-position: -5px 0;
+}
+
+.default_radtoolbar_horizontal
+{
+	background: transparent url("Img/toolbarBg.gif") repeat-x top left;
+	height: 30px;
+	font: normal 11px "Arial";
+	color: #333;
+	padding: 0;
+}
+
+.default_radtoolbar_vertical
+{
+	background: #fff url("Img/toolbarBgVertical.gif") repeat-y top right;
+	font: normal 11px "Arial";
+	color: #333;
+	padding: 0 3px;
+	border: 1px solid #4f4f4f;
+	border-width: 0 1px;
+}
+
+.default_radtoolbar_horizontal a /* e.g. custom links */
+{
+	font: normal 11px "Arial";
+	color: #333;
+	text-decoration: none;
+}
+
+.default_radbutton_normal,
+.default_radbutton_hover,
+.default_radbutton_mousedown,
+.default_radtbutton_normal,
+.default_radtbutton_hover,
+.default_radtbutton_mousedown,
+.default_radtbutton_toggled,
+.default_radtbutton_hover_toggled,
+.default_radtbutton_mousedown_toggled
+{
+	margin: 1px 0 0 0;
+	padding: 2px 6px 1px 0;
+	overflow: visible !important;
+	position: relative;
+	cursor: pointer;
+}
+
+.default_radbutton_text_normal,
+.default_radbutton_text_hover,
+.default_radbutton_text_mousedown,
+.default_radtbutton_text_toggled,
+.default_radtbutton_text_hover_toggled,
+.default_radtbutton_text_mousedown_toggled,
+.default_radtbutton_text_normal,
+.default_radtbutton_text_hover,
+.default_radtbutton_text_mousedown
+{
+	margin: 1px 1px 0 1px;
+	padding: 0 0 3px 0;
+}
+
+.default_radtoolbar_vertical div
+{
+	margin-top: 0;
+}
+
+.default_radbutton_normal img,
+.default_radbutton_text_normal img,
+.default_radbutton_hover img,
+.default_radbutton_text_hover img,
+.default_radbutton_mousedown img,
+.default_radtbutton_normal img,
+.default_radtbutton_hover img,
+.default_radtbutton_mousedown img,
+.default_radtbutton_toggled img,
+.default_radtbutton_hover_toggled img,
+.default_radtbutton_mousedown_toggled img,
+.default_radbutton_text_mousedown img,
+.default_radtbutton_text_toggled img,
+.default_radtbutton_text_hover_toggled img,
+.default_radtbutton_text_mousedown_toggled img,
+.default_radtbutton_text_normal img,
+.default_radtbutton_text_hover img,
+.default_radtbutton_text_mousedown img
+{
+	left: 0;
+	top: 0;
+	padding: 3px 5px 3px 5px;
+	position: absolute;
+}
+
+.default_radbutton_hover,
+.default_radtbutton_hover,
+.default_radtbutton_hover_toggled
+{
+	background: transparent url("Img/toolbarBgHover.gif") no-repeat top right;
+}
+
+.default_radbutton_hover img,
+.default_radtbutton_hover img,
+.default_radtbutton_hover_toggled img
+{
+	background: transparent url("Img/toolbarButtonOver.gif") no-repeat top left;
+}
+
+.default_radbutton_mousedown img,
+.default_radtbutton_mousedown img,
+.default_radtbutton_toggled img
+{
+	background: transparent url("Img/toolbarButtonSelected.gif") no-repeat top left;
+}
+
+.default_radbutton_text_normal,
+.default_radbutton_text_hover,
+.default_radbutton_text_mousedown,
+.default_radtbutton_text_normal,
+.default_radtbutton_text_hover,
+.default_radtbutton_text_mousedown,
+.default_radtbutton_text_toggled,
+.default_radtbutton_text_hover_toggled,
+.default_radtbutton_text_mousedown_toggled
+{
+	text-align: left;
+	width: auto !important;
+	height: 23px !important;
+}
+
+.default_radbutton_text_hover,
+.default_radbutton_text_mousedown,
+.default_radtbutton_text_toggled,
+.default_radtbutton_text_hover_toggled,
+.default_radtbutton_text_mousedown_toggled,
+.default_radtbutton_text_hover,
+.default_radtbutton_text_mousedown
+{
+	margin: 1px 0 0 0;
+	border-width: 0 1px;
+	border-color: #6d6d6d;
+	border-style: solid;
+}
+
+* html .default_radbutton_text_hover img,
+* html .default_radbutton_text_mousedown img,
+* html .default_radtbutton_text_toggled img,
+* html .default_radtbutton_text_hover_toggled img,
+* html .default_radtbutton_text_mousedown_toggled img,
+* html .default_radtbutton_text_hover img,
+* html .default_radtbutton_text_mousedown img
+{
+	margin: 0 0 0 1px;
+}
+
+.default_radbutton_text_normal img,
+.default_radbutton_text_hover img,
+.default_radbutton_text_mousedown img,
+.default_radtbutton_text_toggled img,
+.default_radtbutton_text_hover_toggled img,
+.default_radtbutton_text_mousedown_toggled img,
+.default_radtbutton_text_normal img,
+.default_radtbutton_text_hover img,
+.default_radtbutton_text_mousedown img
+{
+	float: left;
+	display: block;
+	position: relative;
+	padding-right: 1px;
+}
+
+.default_radbutton_text_normal span,
+.default_radbutton_text_hover span,
+.default_radbutton_text_mousedown span,
+.default_radtbutton_text_toggled span,
+.default_radtbutton_text_hover_toggled span,
+.default_radtbutton_text_mousedown_toggled span,
+.default_radtbutton_text_normal span,
+.default_radtbutton_text_hover span,
+.default_radtbutton_text_mousedown span
+{
+	position: relative;
+	height: 23px;
+	float: left;
+	display: block;
+	font: normal 11px/23px "Arial";
+	cursor: pointer;
+}
+
+.default_radbutton_text_hover,
+.default_radtbutton_text_hover,
+.default_radtbutton_text_hover_toggled
+{
+	background: transparent url("Img/toolbarBgHover.gif") repeat-x top right;
+}
+
+.default_radbutton_text_mousedown,
+.default_radtbutton_text_toggled,
+.default_radtbutton_text_mousedown_toggled,
+.default_radtbutton_text_mousedown
+{
+	background: transparent url("Img/toolbarBgSelected.gif") repeat-x top right;
+	color: #fff;
+}
+
+.default_radseparator_h
+{
+	border-left: 1px solid #c6c6c6;
+	width: 1px;
+	background-color: #fff;
+	height: 20px;
+	line-height: 0;
+	margin: 1px;
+}
+
+.default_radseparator_v
+{
+	border-top: 1px solid #c6c6c6;
+	height: 1px;
+	overflow: hidden;
+	background-color: #fff;
+	margin: 0 auto;
+	width: 90%;
+	line-height: 1px;
+}
+
+.default_radbutton_disabled
+{
+	filter: alpha(opacity='40'); 
+	opacity: 0.4;
+}

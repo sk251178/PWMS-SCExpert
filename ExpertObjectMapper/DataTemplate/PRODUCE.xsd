@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PRODUCE" targetNamespace="http://tempuri.org/PRODUCE.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/PRODUCE.xsd" xmlns:mstns="http://tempuri.org/PRODUCE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="BUSINESSOBJECT">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="BOTYPE" type="xs:string" />
+				<xs:element name="DATACOLLECTION" type="xs:string" />
+				<xs:element name="DATA">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CONSIGNEE" type="xs:string" />
+							<xs:element name="SKU" type="xs:string" />
+							<xs:element name="FROMLOAD" type="xs:string" />
+							<xs:element name="UOM" type="xs:string" />
+							<xs:element name="TOQTY" type="xs:decimal" />
+							<xs:element name="FROMSTATUS" type="xs:string" />
+							<xs:element name="DOCUMENT" type="xs:string" />
+							<xs:element name="TOLOC" type="xs:string" />
+							<xs:element name="UNITPRICE" type="xs:decimal" />
+							<xs:element name="ATTRIBUTES">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="ATTRIBUTE">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="NAME" type="xs:string" />
+													<xs:element name="VALUE" type="xs:string" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="ACTIVITYDATE" type="xs:string" />
+							<xs:element name="FROMQTY" type="xs:decimal" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

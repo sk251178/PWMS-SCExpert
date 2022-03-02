@@ -1,0 +1,11 @@
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Logic.Billing\obj\Debug\WMS.Logic.Billing.vbproj.AssemblyReference.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Logic.Billing\obj\Debug\WMS.Logic.Billing.Resources.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Logic.Billing\obj\Debug\WMS.Logic.Billing.vbproj.GenerateResource.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Logic.Billing\obj\Debug\WMS.Logic.Billing.vbproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\WMS.Logic.Billing.dll
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\WMS.Logic.Billing.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\WMS.Logic.Billing.xml
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Logic.Billing\obj\Debug\WMS.Logic.Billing.vbproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Logic.Billing\obj\Debug\WMS.Logic.Billing.dll
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Logic.Billing\obj\Debug\WMS.Logic.Billing.xml
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Logic.Billing\obj\Debug\WMS.Logic.Billing.pdb

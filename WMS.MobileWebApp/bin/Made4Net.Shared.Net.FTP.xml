@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Made4Net.Shared.Net.FTP</name>
+    </assembly>
+    <members>
+        <member name="T:Made4Net.Shared.Net.FTP.FtpDataStream">
+             <summary>
+            
+             </summary>
+        </member>
+    </members>
+</doc>

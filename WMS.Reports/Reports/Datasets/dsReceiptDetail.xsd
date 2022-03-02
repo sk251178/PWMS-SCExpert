@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="dsReceiptDetail" targetNamespace="http://tempuri.org/dsReceiptDetail.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/dsReceiptDetail.xsd" xmlns:mstns="http://tempuri.org/dsReceiptDetail.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="dsReceiptDetail" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ReceiptDetail">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Receipt" type="xs:string" minOccurs="0" />
+							<xs:element name="ReceiptLine" type="xs:int" minOccurs="0" />
+							<xs:element name="Company" type="xs:string" minOccurs="0" />
+							<xs:element name="InboundOrder" type="xs:string" minOccurs="0" />
+							<xs:element name="InboundOrderLine" type="xs:int" minOccurs="0" />
+							<xs:element name="Consignee" type="xs:string" minOccurs="0" />
+							<xs:element name="SKU" type="xs:string" minOccurs="0" />
+							<xs:element name="SKUDESC" type="xs:string" minOccurs="0" />
+							<xs:element name="QTYEXPECTED" type="xs:int" minOccurs="0" />
+							<xs:element name="QTYRECEIVED" type="xs:int" minOccurs="0" />
+							<xs:element name="CONSIGNEENAME" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

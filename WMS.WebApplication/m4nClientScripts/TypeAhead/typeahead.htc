@@ -1,0 +1,1394 @@
+<!--
+Made4Net Version: 2.4
+
+-->
+<!--
+Copyright (c) 2003, Khoi Pham <khoi@progstudios.com>
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+* Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+* Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the
+distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+<PUBLIC:COMPONENT tagName="TYPEAHEAD">
+	<PUBLIC:DEFAULTS viewLinkContent="true" viewInheritStyle="true" viewMasterTab="false" tabStop="true" canHaveHTML="true"/>
+	<PUBLIC:PROPERTY name="selectedIndex" get="getSelectedIndex" put="putSelectedIndex" id="_selectedIndex" />
+	<PUBLIC:PROPERTY name="value" get="getValue" put="putValue" id="_value" />
+	<PUBLIC:PROPERTY name="options" get="getoptions" id="_options" />
+	<PUBLIC:PROPERTY name="errormessage" get="getErrorMessage" put="putErrorMessage" id="_errorMessage"/>
+	<PUBLIC:PROPERTY name="autoValidate" get="getAutoValidate" put="putAutoValidate" id="_autoValidate"/>
+	<PUBLIC:PROPERTY name="enabled" get="getEnabled" put="putEnabled" id="_enabled"/>
+	<PUBLIC:PROPERTY name="ResourcesDirectory" get="getResourcesDirectory" put="putResourcesDirectory" id="_resourcesDirectory"/>
+	<PUBLIC:PROPERTY name="size" get="getSize" put="putSize" id="_Size"/>
+	<PUBLIC:PROPERTY name="tabindex" get="getTabIndex" put="putTabIndex" id="_TabIndex"/>
+	<PUBLIC:PROPERTY name="tooltip" get="getToolTip" put="putToolTip" id="_ToolTip"/>
+	<PUBLIC:ATTACH EVENT="ondocumentready" onevent="Combobox_DocumentReady()" />
+	<PUBLIC:ATTACH EVENT="onclick" FOR="document" HANDLER="Document_Click" />
+	<PUBLIC:ATTACH EVENT="onblur" FOR="document" onevent="Combobox_Blur()" />
+	<!--<PUBLIC:ATTACH EVENT="onload" FOR="document" onevent="initialize()" />-->
+	<PUBLIC:EVENT NAME="onkeypress" ID="_keyPressEvt" />
+	<PUBLIC:EVENT NAME="onchange" ID="_changeEvt" />
+	<PUBLIC:METHOD NAME="isValid" INTERNALNAME="isValid" />
+	<PUBLIC:METHOD NAME="repaint" INTERNALNAME="repaint" />
+	<PUBLIC:METHOD NAME="expandList" INTERNALNAME="expandListExternal" />
+	<PUBLIC:METHOD NAME="collapseList" INTERNALNAME="collapseListExternal" />
+	<PUBLIC:METHOD NAME="toggleList" INTERNALNAME="toggleListExternal" />
+	<style TYPE="text/css"><!--
+      .clsTextField {
+				font-size:10px;
+				font-family: ms sans serif;
+				height:20px;
+				}
+      .clsTextFieldCell {}
+      .clsTextFieldCell_hover {}
+      .clsDropDownCell {
+				background-color:buttonface;
+				border-top:ridge 0px buttonface;
+				border-bottom:ridge 0px buttonface;
+				border-right:ridge 0px buttonface; 
+				border-left:none;
+			}
+      .clsDropDownCell_hover {
+				background-color:#B6BDD2;
+				border-top:solid 0px Highlight;
+				border-bottom:solid 0px Highlight;
+				border-right:solid 0px Highlight;
+				border-left:solid 0px Highlight;
+			}
+      .clsDropDownCell_click {
+				background-color:#CCC;
+				border-top:solid 0px Highlight;
+				border-bottom:solid 0px Highlight;
+				border-right:solid 0px Highlight;
+				border-left:solid 0px Highlight;
+			}
+	  
+	--></style>
+		<body>
+			<table unselectable="on" id="htmlTable" name="htmlTable" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+					<td unselectable="on" class="clsTextFieldCell" id="htmlTextFieldCell">
+						<input class="clsTextField" name="htmlTextField" id="htmlTextField" type="text">
+					</td>
+					<td id="dropDownArrowCell" class="clsDropDownCell">
+						<img width=5 height=3 id="htmlImgArrow" src="images/down_arrow.gif" vspace="2" hspace="5"/>
+					</td>
+				</tr>
+			</table>
+		</body>
+	<script language="JScript">
+	var resourcesDirectory;
+	var selectedIndex = -1;
+	var hoverIndex = -1;
+	var bAutoValidate = false;
+	var errorMessage = '';
+	var sValue = '';
+	var iSize = 20;
+	var bEnabled = true;
+	var listCreated = false;
+	var overlayUsed = false;
+	var lProperties;
+	var lTypeAheadLogic;
+	var lXMLData;
+	var lItemTableVisible = false;
+	var lDefaultListHeight = 250
+	var lInitComponentDone = false;	
+	var lKeyDownCount=0;
+	var lLastKey=0;
+	var lShouldFireChangeEvent;
+	var lValueBeforeChangeEvent;
+	var lHasInitFocus;
+	var lInitialValueChanged;
+	var bName;
+	var bVer;
+
+	/* -- External Object Variables -- */
+	var ItemTable, ItemList;
+	var ValueField;
+    
+
+	/******************************************************************************/
+
+	/* -- Public Methods -- */
+	function expandListExternal() {
+		ensureInitComponent();
+		expandList(true);
+	}
+	
+	function collapseListExternal() {
+		ensureInitComponent();
+		expandList(false);
+	}
+	
+	function toggleListExternal() {
+		ensureInitComponent();
+		toggleList();
+	}
+	
+	/******************************************************************************/
+
+	/* -- Property Methods -- */
+	function getAutoValidate() {
+		return bAutoValidate;
+	}
+	function putAutoValidate(val) {
+		bAutoValidate = val;
+	}
+
+	function getEnabled() {
+		return bEnabled;
+	}
+	function putEnabled(val) {
+		if (val)
+		{
+			bEnabled = true;
+		} else {
+			bEnabled = false;
+		}
+		htmlTextField.readOnly = !bEnabled;
+		htmlTextField.disabled = !bEnabled;
+	}
+
+	function getErrorMessage() {
+		return errorMessage;
+	}
+	function putErrorMessage(val) {
+		errorMessage = val;
+	}
+
+	function getSelectedIndex() {
+		return selectedIndex;
+	}
+	function putSelectedIndex(index) {
+		setSelectedIndex(index);
+	}
+
+	function getValue() {
+		ensureInitComponent();
+		return ValueField.value;
+	}
+
+	function getRecordValue(node) {
+		if (node != null) {
+			return node.firstChild.text;
+		}
+	}
+		
+	function getRecordText(node) {
+		if (node != null) {
+			if (isTextAndValueSame()) {
+				return getRecordValue(node);
+			} else {
+				return node.childNodes(1).text;
+			}
+		}
+	}
+	
+	function isTextAndValueSame() {
+		return (getProperty("value_field") == getProperty("text_field"))
+	}
+	
+	function putValue(val) {
+		//only used when a value is applied from outside the control
+		if (!lInitComponentDone) return;
+		sValue = val;
+		
+		if (val=='') {
+			setText('');
+			setValue('');
+			setSelectedIndex(-1);
+			return;
+		}
+		
+		if (ValueField != null) {
+			//create item list by the provided value
+			ValueField.value = val;
+
+			ClearList();
+			createItemList(true);
+		
+			var dataNodes = getXMLNodes();
+		
+			var bMatch = false;
+			if (dataNodes != null) {
+				var node;
+				for(var i=0; i<dataNodes.length; i++) {
+					node = dataNodes.item(i);
+					val = getRecordValue(node);
+					if (val.toString().toUpperCase() == sValue.toString().toUpperCase()) {
+						setSelectedIndex(i);
+						return;
+					}
+				}
+			}
+			setText(sValue);
+			setValue(sValue);
+			setSelectedIndex(-1);
+		}
+	}
+	
+	function getResourcesDirectory() {
+		return resourcesDirectory;
+	}
+	
+	function putResourcesDirectory(val) {
+		resourcesDirectory = val;
+	}
+	
+	function getSize() {
+		return iSize;
+	}
+	
+	function putSize(val) {
+		iSize = val;
+		htmlTextField.size = iSize;
+	}
+
+	function putTabIndex(val) {
+		htmlTextField.tabIndex = val;
+	}
+	
+	function getTabIndex() {
+		return htmlTextField.tabIndex;
+	}
+
+	function putToolTip(val) {
+		htmlTextField.title = val;
+		htmlTable.title = val;
+	}
+	
+	function getToolTip() {
+		return htmlTextField.title;
+	}
+
+/******************************************************************************/
+
+	/* -- External Event Handlers  -- */
+	function Document_Click(){
+	/*
+	try {
+		if (window.event.srcElement.id == this.id)
+			return;
+
+		//if (lItemTableVisible && overlayUsed){
+			//htmlImgArrow.src = resourcesDirectory + "images/down_arrow.gif";
+			//expandList(false);
+		//}
+	} catch(err) {
+		err.description+='>doOnClick';throw err; 
+	}	  
+	*/
+	}
+	  	
+	function ListItemCell_MouseUp(index) {
+		hoverIndex = index;
+		setSelectedIndex(index);
+		expandList(false);
+		throwChangeEvent();
+	}
+	
+	function ListItemCell_MouseOver(index) {
+		if (selectedIndex > -1) blurListItem(selectedIndex);
+		selectListItem(index);
+		hoverIndex = index;
+	}
+	
+	function ListItemCell_MouseOut(index) {
+		blurListItem(index);
+		hoverIndex = -1;
+	}
+	function ItemTable_MouseWheel() {
+		window.event.cancelBubble = true;
+		var iItemsLength = ItemList.rows.length-1;
+		var iItemTop = getPixelTop(ItemList.rows[iItemsLength],"DIV") + parseInt(ItemList.rows[iItemsLength].offsetHeight) + 1;
+		if (((iItemTop-parseInt(ItemTable.scrollTop))<=getListHeight() && event.wheelDelta <= 0)||(parseInt(ItemTable.scrollTop) <=1 && event.wheelDelta >=0))
+			event.returnValue=false;
+	}
+
+	/******************************************************************************/
+
+	/* -- Internal Event Handlers  -- */
+	function htmlTable_MouseOver(){
+		try {
+			if (!lItemTableVisible) {
+				htmlTextFieldCell.className = 'clsTextFieldCell_hover';
+				dropDownArrowCell.className = 'clsDropDownCell_hover';
+			}
+		} catch(err) { err.description+='>htmlTable_MouseOver';throw err;}
+	}
+	
+	function htmlTable_MouseOut() {
+		try {
+			if (!lItemTableVisible) {
+				htmlTextFieldCell.className = 'clsTextFieldCell';
+				dropDownArrowCell.className = 'clsDropDownCell';
+			}
+		} catch(err) { err.description+='>htmlTable_MouseOut';throw err;}
+	}
+	
+	function htmlTextField_Focus() {
+		//window.status="htmlTextField_Focus";
+		try {
+			htmlTextField.select();
+			lHasInitFocus = true;
+		} catch (e) {}
+		lKeyDownCount = 0;
+		autoExpandList();
+	}
+	
+	function autoExpandList() {
+		//window.status="autoExpandList";
+		var nodes = getXMLNodes();
+		if (nodes == null) return;
+		if (nodes.length == 0) return;
+		if (getProperty("auto_expand")=="True") {
+			expandList(true);
+		}
+	}
+	
+	function htmlTextField_KeyDown() {
+		//window.status=event.keyCode;
+		if (event.keyCode != lLastKey && event.keyCode != 16) {
+			lKeyDownCount++;
+			lLastKey = event.keyCode;
+		}
+		//window.status=lKeyDownCount;
+
+		var dataNodes = getXMLNodes();
+		if (!lItemTableVisible)
+			hoverIndex = selectedIndex;
+		switch (event.keyCode) {
+			case 40: // Down Arrow
+				ensureList();
+				if (event.altKey) {
+					toggleList();
+				} else {
+					if (dataNodes != null) {
+						if (hoverIndex < dataNodes.length-1) {
+							blurListItem(hoverIndex);
+							hoverIndex += 1;
+							var iItemTop = getPixelTop(ItemList.rows[hoverIndex],"DIV") + parseInt(ItemList.rows[hoverIndex].offsetHeight) + 1;
+							if (iItemTop >= getListHeight())
+								ItemTable.scrollTop = (parseInt(ItemTable.scrollTop) + parseInt(ItemList.rows[hoverIndex].offsetHeight) + 1).toString()+"px";
+							setSelectedIndex(hoverIndex);
+						}
+					}
+				}
+				break;
+			case 38: // Up Arrow
+				ensureList();
+				if (hoverIndex > 0) {
+					blurListItem(hoverIndex);
+					hoverIndex -= 1;
+					if (hoverIndex > -1)
+						ItemTable.scrollTop = (getPixelTop(ItemList.rows[hoverIndex],"DIV")-1).toString()+"px";
+					setSelectedIndex(hoverIndex);
+				}
+				break;
+			case 13: //enter
+				if (hoverIndex > -1 && lItemTableVisible) {
+					window.event.cancelBubble = true;
+					if (selectedIndex != hoverIndex) {
+						setSelectedIndex(hoverIndex);
+					}
+					expandList(false);
+					throwChangeEvent();
+					
+					return;
+				} else
+				if ((bName == "Explorer" && bVer > 8)) {
+				       var realevent = window.event;
+		               var evt = createEventObject();
+		                evt.altKey = realevent.altKey;
+		                evt.altLeft = realevent.altLeft;
+		                evt.cancelBubble = realevent.cancelBubble;
+		                evt.returnValue = realevent.returnValue;
+		                evt.ctrlKey = realevent.ctrlKey;
+		                evt.ctrlLeft = realevent.ctrlLeft;
+		                evt.keyCode = realevent.keyCode;
+		                evt.repeat = realevent.repeat;
+		                evt.shiftKey = realevent.shiftKey;
+		                evt.shiftLeft = realevent.shiftLeft;
+		                evt.type = realevent.type;
+		                evt.srcElement = element;
+		                evt.htcSrcElement = element;
+		                
+					    element.document.body.fireEvent("onkeydown",evt);
+					    
+					   return;
+					}
+		}
+		if (selectedIndex > -1 && event.keyCode != 13)
+			selectListItem(selectedIndex);
+	}
+
+	function setSelectedIndex(index) {
+		if (index < -1) index = -1;
+		
+		//if (index == selectedIndex) return;
+		
+		if (index == -1) {
+			selectedIndex = index;
+			if ((bName == "Explorer" && bVer > 8)) 
+			_selectedIndex.item(0).fireChange();
+			else
+			_selectedIndex.fireChange();
+		} else {
+			nodes = getXMLNodes();
+			if (nodes == null || index >= nodes.length) {
+				throw new Error("Index out of range.");
+			}
+			selectedIndex = index;
+			setValueFromSelectedIndex();
+			if ((bName == "Explorer" && bVer > 8))
+			_selectedIndex.item(0).fireChange();
+			else
+			_selectedIndex.fireChange();
+		}
+	}
+	
+	function setValueFromText() {
+		//window.status="setValueFromText";
+		setSelectedIndex(-1);
+		setValue(htmlTextField.value);
+	}
+
+	function setValue(val) {
+		if (ValueField.value != val)  {
+			lInitialValueChanged = true;
+			
+			ValueField.value = val;
+			if ((bName == "Explorer" && bVer > 8)) 
+			_value.item(0).fireChange();
+			else
+			_value.fireChange();
+			setShouldFireChangeEvent();
+		}
+	}
+	
+	function setText(txt) {
+		if (htmlTextField.value.toUpperCase() != txt.toUpperCase()) {
+			setTextIgnoreCase(txt);
+		}
+	}
+
+	function setTextIgnoreCase(txt) {
+		if (htmlTextField.value != txt) {
+			htmlTextField.value = txt;
+		}
+	}
+
+	function setValueFromSelectedIndex(ignoreCase) {
+		var val;
+		var txt;
+		
+		if (selectedIndex > -1) {
+			var nodes = getXMLNodes();
+			var node = nodes.item(selectedIndex);
+			txt = getRecordText(node);
+			val = getRecordValue(node);
+		} else {
+			txt = '';
+			val = '';
+		}
+
+		//if limit to list is false, and the value
+		//is not in the list, then the user entered
+		//a new value. do not change the text
+		if (!bAutoValidate && val == '') {
+			return;
+		}
+		
+		if (ignoreCase) {
+			setTextIgnoreCase(txt);
+		} else {
+			setText(txt);
+		}
+		setValue(val);
+	}
+	
+	function htmlTextField_KeyPress() {
+		var realevent = window.event;
+		var evt = createEventObject();
+		evt.altKey = realevent.altKey;
+		evt.altLeft = realevent.altLeft;
+		evt.cancelBubble = realevent.cancelBubble;
+		evt.returnValue = realevent.returnValue;
+		evt.ctrlKey = realevent.ctrlKey;
+		evt.ctrlLeft = realevent.ctrlLeft;
+		evt.keyCode = realevent.keyCode;
+		evt.repeat = realevent.repeat;
+		evt.shiftKey = realevent.shiftKey;
+		evt.shiftLeft = realevent.shiftLeft;
+		evt.type = realevent.type;
+		evt.srcElement = element;
+		if ((bName == "Explorer" && bVer > 8)) 
+		_keyPressEvt.item(0).fire(evt);
+		else
+		_keyPressEvt.fire(evt);
+		realevent.cancelBubble = evt.cancelBubble;
+		realevent.returnValue = evt.returnValue;
+		realevent.keyCode = evt.keyCode;
+	}
+	
+	function isNavKey(keyCode) {
+		if ((keyCode <= 40 && keyCode >= 33) || (keyCode <= 18 && keyCode >= 16) || keyCode==13 || keyCode==9 || keyCode==27) return true;
+	}
+	
+	var clr;
+	function toggleClr() {
+		if (clr=="black") {
+			document.bgColor=clr="red";
+		} else {
+			document.bgColor=clr="black";
+		}
+	}
+
+	function htmlTextField_KeyUp() {
+		//window.status=event.keyCode;
+		lKeyDownCount--;
+		if (lKeyDownCount < 0) lKeyDownCount = 0;
+		//window.status=lKeyDownCount;
+		if (lKeyDownCount > 0) return;
+		
+		if (isNavKey(event.keyCode)) return;
+		
+		var doNotSelect;
+		if (event.keyCode < 0x2f && event.keyCode != 32) {
+			doNotSelect=true;
+		}
+
+		var text = htmlTextField.value;
+		var utext = text.toUpperCase();
+
+		if (text.length < getIntProperty("minimum_chars")) {
+			setValueFromText();
+			ClearList();
+			return;		
+		}
+
+		recreateList();
+		
+		autoExpandList();
+		
+		var dataNodes = getXMLNodes();
+		
+		var bMatch = false;
+		blurListItem(selectedIndex);
+		blurListItem(hoverIndex);
+		
+		if (doNotSelect) {
+			setValueFromText();
+			return;
+		}
+		
+		var node;
+		for(var i=0; i<dataNodes.length; i++) {
+			node = dataNodes.item(i);
+			var newtxt = getRecordText(node);
+			var uopt = newtxt.toUpperCase();
+			if (uopt != utext && 0 == uopt.indexOf(utext)) {
+				bMatch = true;
+				var txtrange = event.srcElement.createTextRange();
+				event.srcElement.value = text + newtxt.substr(text.length);
+				txtrange.moveStart("character", text.length);
+				txtrange.select();
+				hoverIndex = i;
+				setSelectedIndex(i);
+				try {
+					ItemTable.scrollTop = (getPixelTop(ItemList.rows[hoverIndex],"DIV")-1).toString()+"px";
+				} catch (e) {
+				}
+				selectListItem(i);
+				break;
+			} else if (uopt == utext) {
+				bMatch=true;
+				hoverIndex = i;
+				setSelectedIndex(i);
+				try {ItemTable.scrollTop = (getPixelTop(ItemList.rows[hoverIndex],"DIV")-1).toString()+"px";} catch (e){}
+				selectListItem(i);
+			}
+		}
+		if (!bMatch) {
+			setValueFromText();
+		}
+	}
+	
+	/******************************************************************************/
+
+	/* -- Element Event Handlers -- */
+	function Combobox_DocumentReady() {
+		ensureInitComponent();
+	}
+	
+	function ComboBox_Blur() {
+		blurListItem(selectedIndex);	
+		if (this.validate()) {
+			if (htmlTextField.value !='' && lInitialValueChanged) {
+				setValueFromSelectedIndex(true);
+			}
+			expandList(false);
+			throwChangeEvent();
+		}
+	}
+	
+	function validate() {
+		// Handle Validation
+		if (!lInitialValueChanged) return true;
+		
+		if (bAutoValidate && !isValid()) {
+		    if (htmlTextField.value != '') {
+                // Added for RWMS-1286
+		        detachEvent('onblur', ComboBox_Blur);
+		        // Ended for RWMS-1286
+				if (errorMessage == '') {
+					alert("Please select an item from the list");
+				} else {
+					alert(errorMessage);
+				}
+		        // commented for RWMS-1286
+				//ValueField.value='';
+				//autoExpandList();
+		        //htmlTextField.focus();		        
+				setTimeout(function () { afterValidate(); }, 200);
+		        // ended for RWMS-1286
+				return true;
+			}
+		}
+		return true;
+	}
+	    // Added for RWMS-1286
+	function afterValidate() {   
+	       ValueField.value='';   
+	       autoExpandList();   
+	       htmlTextField.focus();   
+	       attachEvent('onblur',ComboBox_Blur);   
+	       }   
+	    // Ended for RWMS-1286
+	function throwChangeEvent() {
+		if (lShouldFireChangeEvent && this.getValue() != lValueBeforeChangeEvent) {
+			///////////////////////////////////////////////////////////////////////////////
+			//copy the select item text to an external hidden input so that it is available on server side
+			var txtId = this.id.substring(0, this.id.length - "TypeAheadBox".length) + 'IText';
+			var txtObj = element.document.getElementById(txtId);
+			txtObj.value = htmlTextField.value;
+			///////////////////////////////////////////////////////////////////////////////
+			
+			//_changeEvt.fire(createEventObject());
+			lShouldFireChangeEvent = false;
+			setValueBeforeChangeEvent();	
+		}
+	}
+	
+	function setValueBeforeChangeEvent() {
+		lValueBeforeChangeEvent = this.getValue();
+	}
+	
+	function setShouldFireChangeEvent() {
+		lShouldFireChangeEvent = true;
+	}
+
+	/******************************************************************************/
+
+	/* -- Element Methods  -- */
+	function isValid() {
+		if (htmlTextField.value.length==0) return false;
+		
+		var nodes = getXMLNodes();
+		if (nodes == null) return false;
+		
+		var txt; var val1; var val2;
+		for(var i=0;i<nodes.length;i++) {
+			txt = getRecordText(nodes.item(i));
+			val1 = txt.toUpperCase();
+			val2 = htmlTextField.value.toUpperCase();
+			//alert("val1: " + val1 + " val2: " + val2);
+			if (val1 == val2) {
+				return true;
+			}
+		}
+		return false;
+	}
+	function repaint() {
+		selectedIndex=-1;
+		ensureList();
+		var nodes = getXMLNodes();
+		var node;
+		for (var i=0; i < nodes.length; i++) {
+			node = nodes.item(i);
+			if (htmlTextField.value == getRecordValue(node)) {
+				selectedIndex=i;
+				ValueField.value = getRecordValue(node);
+			}
+		}
+	}
+
+	/******************************************************************************/
+
+	/* -- Private Methods  -- */
+	function ensureInitComponent() {
+		if (!lInitComponentDone) {
+			initComponent();
+			lInitComponentDone = true;
+		}
+	}
+	
+	function initComponent() {
+		//readProperties();
+		//alert("InitStart");
+		ensureValueField();
+		ensureOverlay();
+		setHtmlImgArrow();
+		clearSelectedIndex();
+		createItemTable();
+		setHtmlTextFieldSize();
+		attachBasicEvents();
+		initMembers();
+		ensureLogicObject();
+		setTableDir();
+		setInitialValue();
+	}
+	
+	function getXMLNodes() {
+		var nodes; var data;
+		if (lXMLData == null) return;
+		//alert(lXMLData.xml);
+		nodes = lXMLData.selectNodes("Root/Data/Record");
+		return nodes;
+	}
+	
+	function createItemList(byValueField) {
+		if (byValueField) {
+			lXMLData = lTypeAheadLogic.GetDataByValueField(ValueField.value);
+		} else {
+			lXMLData = lTypeAheadLogic.GetData(htmlTextField.value);
+		}
+		//alert(lXMLData.xml);
+		var nodes = getXMLNodes();
+		var ItemListWidth="";
+        if (!(bName == "Explorer" && bVer >= 7)) {
+		    ItemListWidth="width='100%'";
+		}
+		if ((bName == "Explorer" && bVer > 8)) {
+		    ItemList = element.document.createElement("table");
+		    //ItemList.outerHTML="<table cellspacing=0 cellpadding=2 " + ItemListWidth + " border=0 UNSELECTABLE=on />";
+		    
+            
+            ItemList.cellSpacing="0px";
+            ItemList.cellPadding="2px";
+            ItemList.border="0px";
+            ItemList.width="100%";
+            var attrib = document.createAttribute("UNSELECTABLE");
+                attrib.nodeValue = "on";
+                ItemList.attributes.setNamedItem(attrib);
+            
+		} else {
+		    ItemList = element.document.createElement("<table cellspacing=0 cellpadding=2 " + ItemListWidth + " border=0 UNSELECTABLE=on>");
+		}
+		if (nodes.length > 0) {
+			var recordNode;
+			var fieldNode;
+			for (var i=0; i < nodes.length; i++) {
+				recordNode = nodes.item(i);
+				
+				//first field is the value
+				var valueNode = recordNode.firstChild;
+				
+				//do not show records with null as value
+				if (valueNode == null) continue;
+
+				var ListItemRow = element.document.createElement("tr");
+				var fName; 
+				var fNames = lTypeAheadLogic.GetFieldNames();
+				var fieldStartIndex = 1;
+				if (isTextAndValueSame()) fieldStartIndex = 0;
+				for (n=fieldStartIndex; n<=fNames.length-1; n++) {
+					fName = fNames[n];
+					try {
+						fieldNode = recordNode.selectNodes(fName)(0);
+					} catch(e) {
+						fieldNode = null;
+					}
+					var ListItemCell = null;
+					if ((bName == "Explorer" && bVer > 8)) {
+		                ListItemCell = element.document.createElement("td");
+		                //ListItemCell.outerHTML="<td nowrap UNSELECTABLE=on onmouseout='doMouseOut("+i+")' onmouseover='doMouseOver("+i+")' onmouseup='doMouseUp("+i+")'/>";
+		                var attrib = document.createAttribute("onmouseout");
+		                attrib.nodeValue = "doMouseOut("+i+")";
+		                ListItemCell.attributes.setNamedItem(attrib);
+		                attrib = document.createAttribute("onmouseover");
+		                attrib.nodeValue = "doMouseOver("+i+")";
+		                ListItemCell.attributes.setNamedItem(attrib);
+		                attrib = document.createAttribute("onmouseup");
+		                attrib.nodeValue = "doMouseUp("+i+")";
+		                ListItemCell.attributes.setNamedItem(attrib);
+		                attrib = document.createAttribute("UNSELECTABLE");
+                        attrib.nodeValue = "on";
+                        ListItemCell.attributes.setNamedItem(attrib);
+                        attrib = document.createAttribute("nowrap");
+                        ListItemCell.attributes.setNamedItem(attrib);
+		            } else {
+					    ListItemCell=element.document.createElement("<td nowrap UNSELECTABLE=on onmouseout='doMouseOut("+i+")' onmouseover='doMouseOver("+i+")' onmouseup='doMouseUp("+i+")'>");
+					}
+					if (fieldNode == null) {
+						ListItemCell.value = valueNode.text;
+						ListItemCell.innerText = " ";
+					} else {
+						ListItemCell.value = valueNode.text;
+						ListItemCell.innerText = fieldNode.text;
+					}
+					//ListItemCell.className = 'clsListItem';
+					ListItemRow.appendChild(ListItemCell);
+					ItemList.appendChild(ListItemRow);
+					//if (optItemList.options[i].selected) selectedIndex = i;
+				}
+			}
+		} else {
+				/*
+				var ListItemRow = element.document.createElement("tr");
+				var ListItemCell = element.document.createElement("<td UNSELECTABLE=on style='background-color:Highlight;' onclick='setValue("+i+")' style='font-size:8pt;font-family:tahoma;font-weight:normal;'>");
+				ListItemCell.innerHTML = '<img src="'+resourcesDirectory+'images/dot.gif" height=10 width=10/>';
+				ListItemRow.appendChild(ListItemCell);
+				ItemList.appendChild(ListItemRow);
+				*/
+				expandList(false)
+				return;
+		}
+
+		ItemTable.innerHTML = ItemList.outerHTML;
+		ItemTable.title = this.getToolTip();
+		ItemList = ItemTable.firstChild;
+
+		ItemTable.id = this.id + '_ItemTable';
+		for (var i=0; i < ItemList.cells.length; i++) {
+			ItemList.cells[i].doMouseUp = ListItemCell_MouseUp;
+			ItemList.cells[i].doMouseOut = ListItemCell_MouseOut;
+			ItemList.cells[i].doMouseOver = ListItemCell_MouseOver;
+		}
+
+	}	
+
+	function createItemTable() {
+	    if ((bName == "Explorer" && bVer > 8)) {
+		    ItemTable = element.document.createElement("div");
+		    //ItemTable.outerHTML='<div UNSELECTABLE=on style="background-color:white;display:none;position:absolute;overflow-y:auto;border:solid 1px #DCDEDC;cursor:hand;"/>';
+		    //ItemTable.style="background-color:white;display:none;position:absolute;overflow-y:auto;border:solid 1px #DCDEDC;cursor:hand;";
+		    ItemTable.style.backgroundColor="white";
+		    ItemTable.style.display="none";
+		    ItemTable.style.position="absolute";
+		    ItemTable.style.overflowY="auto";
+		    ItemTable.style.border="solid 1px #DCDEDC";
+		    ItemTable.style.cursor="pointer";
+		    var attrib = document.createAttribute("UNSELECTABLE");
+                attrib.nodeValue = "on";
+            ItemTable.attributes.setNamedItem(attrib);
+		    
+		 } else {
+		    ItemTable = element.document.createElement('<div UNSELECTABLE=on style="background-color:white;display:none;position:absolute;overflow-y:auto;border:solid 1px #DCDEDC;cursor:hand;">');
+		}
+		element.document.body.appendChild(ItemTable);
+	}
+	
+	function getListHeight() {
+		var h = getIntProperty("list_height");
+		if (h==0) h = lDefaultListHeight;
+		return h;
+	}
+	
+	function getIntProperty(name) {
+		var i = 0;
+		try {
+			i = parseInt(getProperty(name))
+		} catch (e) {
+		}
+		return i
+	}
+	
+	function getBooleanProperty(name) {
+		val = getProperty(name);
+		if (val == null) return false;
+		val = val.toUpperCase();
+		if (val == "TRUE" || val == "1") {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	function setHtmlImgArrow() {
+		htmlImgArrow.src = resourcesDirectory + "images/down_arrow.gif";
+	}
+	
+	function clearSelectedIndex() {
+		selectedIndex = -1;
+	}
+	
+	function toggleList() {
+		if (lItemTableVisible) {
+			expandList(false);
+		} else {
+			expandList(true);
+		}
+	}
+	
+	function expandList(bool) {
+		if (!bEnabled) return;
+		
+		if (bool) {
+			if (!lItemTableVisible) {
+				ensureList();
+				if (getResultCount() > 0) {
+					ItemTable.style.display = 'block';
+					resizeItemTable();
+					ShowOverlay();
+					htmlImgArrow.src = resourcesDirectory + "images/down_arrow2.gif";
+					dropDownArrowCell.className = 'clsDropDownCell_click';
+					ItemTable.scrollTop = (getPixelTop(ItemList.cells[hoverIndex],"DIV")-1).toString()+"px";
+					lItemTableVisible = true;
+					if (event.srcElement.id != htmlTextField.id) {
+						htmlTextField.select();
+					}
+				}
+			}
+		} else {
+			ItemTable.style.display = 'none';
+			HideOverlay();
+			dropDownArrowCell.className = 'clsDropDownCell_hover';
+			htmlImgArrow.src = resourcesDirectory + "images/down_arrow.gif";
+			//htmlTextField.select();
+			lItemTableVisible = false;
+			htmlTable_MouseOut();
+		}
+
+		if (selectedIndex > -1) {
+			selectListItem(selectedIndex);
+			hoverIndex = selectedIndex;
+		}
+	}
+	
+	function resizeItemTable() {
+	    if (ItemList.offsetHeight > getListHeight()) {
+			ItemTable.runtimeStyle.height = getListHeight().toString() + "px";
+		} else {
+			ItemTable.runtimeStyle.height = '';
+		}
+		if (bName == "Explorer" && bVer >= 7)
+		{
+		    if (ItemList.offsetWidth<htmlTextField.offsetWidth)
+		    {
+		        ItemTable.style.width = htmlTextField.offsetWidth.toString()+"px";
+		        //ItemList.style.width = "100%";//ItemTable.style.width;
+		    }
+		    else if (ItemList.offsetWidth>htmlTextField.offsetWidth*2)
+		    {
+		        ItemTable.style.width = (parseInt(htmlTextField.offsetWidth)*2).toString()+"px";
+		        ItemList.style.width = ItemTable.style.width;
+		    }
+		}
+		else
+		{
+		    ItemTable.style.width = htmlTextField.offsetWidth - 17;
+		    ItemList.style.width = htmlTable.offsetWidth - 17;
+        }
+		var pixLeft = getPixelLeft(element,"BODY");
+		if (isRightToLeft()) {
+			pixLeft += htmlTable.offsetWidth - ItemTable.offsetWidth;
+		}
+		ItemTable.runtimeStyle.pixelLeft = pixLeft
+		ItemTable.runtimeStyle.pixelTop = getPixelTop(element,"BODY") + htmlTable.clientHeight;
+	}
+	
+	function attachBasicEvents() {
+		ItemTable.attachEvent("onmousewheel",ItemTable_MouseWheel);
+		htmlTable.attachEvent("onmouseover", htmlTable_MouseOver);
+		htmlTable.attachEvent("onmouseout", htmlTable_MouseOut);
+		dropDownArrowCell.attachEvent("onmousedown",toggleList);
+		htmlTextField.attachEvent("onfocus",htmlTextField_Focus);
+		htmlTextField.attachEvent("onkeyup",htmlTextField_KeyUp);
+		htmlTextField.attachEvent("onkeydown",htmlTextField_KeyDown);
+		htmlTextField.attachEvent("onkeypress", htmlTextField_KeyPress);
+		htmlTextField.attachEvent("onchange", setShouldFireChangeEvent);
+		this.attachEvent("onblur", ComboBox_Blur);
+		this.attachEvent("onfocus",handleOnFocus);
+	}	
+	
+	function handleOnFocus() {
+		try {
+			if (!lHasInitFocus) {
+				htmlTextField.focus();
+			}
+		} catch(e) {}
+	}
+	
+	function setHtmlTextFieldSize() {		
+		htmlTextField.size = iSize;		
+	}
+
+	function ensureValueField() {
+		if (ValueField == null) {
+			createValueField();
+		}
+	}
+	
+	function createValueField() {
+	    if ((bName == "Explorer" && bVer > 8)) {
+		    ValueField = element.document.createElement("input");
+		    ValueField.type="hidden";
+		    ValueField.name=element.attributes['name'].value;
+		} else {
+		    ValueField = element.document.createElement("<input type='hidden'>");
+		    ValueField.name = element.name;
+		}
+		
+		getFormElement().appendChild(ValueField);
+	}
+	
+	function initMembers() {
+		//validation
+		bAutoValidate = getBooleanProperty("limit_to_list");
+
+		//size of text box
+		putSize(getIntProperty("size"));
+		
+		//read only
+		var ena;
+		if (getProperty("readonly").toUpperCase() == "TRUE") {
+			ena = "false";
+		} else {
+			ena = "true";
+		}
+		this.putEnabled(ena);
+		
+		//Error Msg
+		this.putErrorMessage(this.getProperty("ErrorMessage"));
+		
+		//tab index
+		this.putTabIndex(this.getIntProperty("TabIndex"));
+		
+		//tool tip
+		this.putToolTip(this.getProperty("ToolTip"));
+	}
+	
+	function ensureLogicObject() {
+		if (lTypeAheadLogic == null) {
+			createLogicObject();
+			attachFormParamEvents();
+		}
+	}
+	
+	function createLogicObject() {
+		lTypeAheadLogic = new m4nTypeAhead(this.element);
+		if (lTypeAheadLogic.GetHasErrors()) {
+			this.putEnabled("False");
+		}
+	}
+	
+	function attachFormParamEvents() {
+		var params = lTypeAheadLogic.GetFormParams();
+		if (params == null) return;
+		
+		var obj; var idx;
+		for (idx=0; idx<=params.length-1; idx++) {
+			obj = lTypeAheadLogic.GetFormParamObject(idx);
+			if (obj.tagName.toUpperCase() == "INPUT") {
+				//object not loaded yet
+				//"obj.loadObject" property contains the function
+				//that loads the object
+				eval(obj.loadObject);
+			}
+			//reload the object
+			obj = lTypeAheadLogic.GetFormParamObject(idx);
+			//attach change event
+			obj.attachEvent("onchange", handleFormParamChange);
+		}
+	}
+	
+	function handleFormParamChange() {
+		this.reset();
+	}
+	
+	function reset() {
+		ClearList();
+		setSelectedIndex(-1);
+		//clear values
+		setValue("");
+		setText("");
+	}
+	
+	function getProperty(name) {
+	    if (bName == "Explorer" && bVer > 8)
+        if (element.attributes[name] == undefined)
+            return '';
+        else 
+            return element.attributes[name].value;
+    else
+		if ( eval('element.' + name) == undefined ) 
+			return '';
+		  else 
+			return eval('element.' + name)
+		
+	}
+	
+	function ensureList() {
+		if (!listCreated) {
+			createItemList();
+			listCreated = true;				
+		}
+	}
+	
+	function recreateList() {
+		ClearList();
+		ensureList();
+		resizeOverlay();
+	}
+
+	function ClearList() {
+		if (lItemTableVisible) expandList(false);
+		lXMLData = null;
+		listCreated = false;
+	}
+	
+	function getPixelTop(elem, tagName) {
+		if (elem == null)
+			return -1;
+		try {
+			var top = 0;
+			while (elem!=null && elem.tagName != tagName) {
+				top += parseInt(elem.offsetTop);
+				elem = elem.offsetParent;
+			}
+			return parseInt(top);
+		} catch(err){ err.description+='>getPixelTop';throw err;}
+	}
+	
+	function getPixelLeft(elem, tagName) {
+		try{
+			var left = 0;
+			while (elem.tagName != tagName) {
+				left += parseInt(elem.offsetLeft);
+				elem = elem.offsetParent;
+				isFirst = false;
+			}
+			return parseInt(left);
+		} catch(err){ err.description+='>getPixelLeft';throw err;}
+	}
+	
+	function getFormElement() {
+		return element.document.forms(0);
+	}
+	
+	function setInitialValue() {
+		var val = getProperty("initial_value");
+		ValueField.value = val;
+		var txt = getProperty("initial_text");
+		htmlTextField.value = txt;
+	}
+	
+	function selectListItem(index) {
+		try {
+			var item = ItemList.rows[index];
+			item.style.backgroundColor = 'Highlight';
+			item.style.color = 'HighlightText';
+		} catch (e) {
+		}
+	}
+	
+	function blurListItem(index) {
+		try {
+			if (index > -1) {
+				var item = ItemList.rows[index];
+				item.style.backgroundColor = 'transparent';
+				item.style.color = 'black';
+			}
+		} catch (e) {
+		}
+	}
+
+	function ensureOverlay() {
+		var overId = getOverlayID();
+		if (!window.document.getElementById(overId))
+		{
+			window.document.body.insertAdjacentHTML("afterBegin","<iframe id='" + overId + "' src='about:blank' style='position:absolute;left:0px;top:0x;z-index:0;display:none;' scrolling='no' frameborder='0'></iframe>");
+		}
+	}
+
+	function getOverlayID() {
+		var overId = htmlTextField.Id + getProperty("field_name") + "_over";
+		return overId;
+	}
+	
+	function ShowOverlay()
+	{	
+		//window.status="show";
+		ensureOverlay();
+		var overs = getOverlayStyleObject();
+		overs.display = 'block';
+		resizeOverlay();
+	}
+	
+	function getOverlayStyleObject() {
+		var overs = window.document.getElementById(getOverlayID()).style;
+		return overs;
+	}
+	
+	function resizeOverlay() {
+		var overs = getOverlayStyleObject();
+		overs.top = ItemTable.offsetTop.toString()+"px";
+		overs.left = ItemTable.offsetLeft.toString()+"px";
+		overs.width = ItemTable.offsetWidth.toString()+"px";
+		overs.height = ItemTable.offsetHeight.toString()+"px";
+		//window.status=("t: " + overs.top + " l: " + overs.left + " w: " + overs.width + " h: " + overs.height + " disp: " + overs.display);
+		//overs.filter = 'progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=50)';
+	}
+
+	function getResultCount() {
+		var nodes = getXMLNodes();
+		if (nodes == null) return 0;
+		return nodes.length;
+	}
+	
+	function HideOverlay()
+	{
+		//window.status="hide";
+		var overID = getOverlayID();
+		if (window.document.getElementById(overID))
+		{
+			var overs = window.document.getElementById(overID).style;
+			overs.display = 'none';
+		}
+		overlayUsed=true;
+	}
+	
+	function isRightToLeft() {
+		return (getPageOrientation().toUpperCase() == "RTL");
+	}
+	
+	function getPageOrientation() {
+		return getProperty("page_orientation");
+	}
+	
+	function setTableDir() {
+		htmlTable.dir = getPageOrientation();
+	}
+    var BrowserDetect = {
+	init: function () {
+	    this.browser = this.searchString(this.dataBrowser) || "An unknown browser";
+		this.version = this.searchVersion(navigator.userAgent)
+			|| this.searchVersion(navigator.appVersion)
+			|| "an unknown version";
+		this.OS = this.searchString(this.dataOS) || "an unknown OS";
+	},
+	searchString: function (data) {
+		for (var i=0;i<data.length;i++)	{
+			var dataString = data[i].string;
+			var dataProp = data[i].prop;
+			this.versionSearchString = data[i].versionSearch || data[i].identity;
+			if (dataString) {
+				if (dataString.indexOf(data[i].subString) != -1)
+					return data[i].identity;
+			}
+			else if (dataProp)
+				return data[i].identity;
+		}
+	},
+	searchVersion: function (dataString) {
+		var index = dataString.indexOf(this.versionSearchString);
+		if (index == -1) return;
+		return parseFloat(dataString.substring(index+this.versionSearchString.length+1));
+	},
+	dataBrowser: [
+		/*{
+			string: navigator.userAgent,
+			subString: "Chrome",
+			identity: "Chrome"
+		},
+		{
+			string: navigator.vendor,
+			subString: "Apple",
+			identity: "Safari",
+			versionSearch: "Version"
+		},
+		{
+			prop: window.opera,
+			identity: "Opera"
+		},
+		{
+			string: navigator.vendor,
+			subString: "iCab",
+			identity: "iCab"
+		},
+		{
+			string: navigator.vendor,
+			subString: "KDE",
+			identity: "Konqueror"
+		},
+		{
+			string: navigator.userAgent,
+			subString: "Firefox",
+			identity: "Firefox"
+		},
+		{
+			string: navigator.vendor,
+			subString: "Camino",
+			identity: "Camino"
+		},
+		{		// for newer Netscapes (6+)
+			string: navigator.userAgent,
+			subString: "Netscape",
+			identity: "Netscape"
+		},*/
+		{
+			string: navigator.userAgent,
+			subString: "MSIE",
+			identity: "Explorer",
+			versionSearch: "MSIE"
+		}/*,
+		{
+			string: navigator.userAgent,
+			subString: "Gecko",
+			identity: "Mozilla",
+			versionSearch: "rv"
+		},
+		{ 		// for older Netscapes (4-)
+			string: navigator.userAgent,
+			subString: "Mozilla",
+			identity: "Netscape",
+			versionSearch: "Mozilla"
+		}*/
+	],
+	dataOS : [
+		{
+			string: navigator.platform,
+			subString: "Win",
+			identity: "Windows"
+		}
+	]
+
+}
+//alert("Init")
+BrowserDetect.init()
+bName = BrowserDetect.browser
+bVer = parseInt(BrowserDetect.version)
+	</script>
+	
+</PUBLIC:COMPONENT>

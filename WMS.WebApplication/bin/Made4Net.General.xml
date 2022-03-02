@@ -1,0 +1,2658 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Made4Net.General</name>
+    </assembly>
+    <members>
+        <member name="T:Made4Net.General.Configuration.XmlParser">
+            <summary>
+            Summary description for XmlParser.
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.Constants">
+            <summary>
+            Class to hold constants
+            </summary>
+        </member>
+        <member name="F:Made4Net.General.Constants.UI_Policy">
+            <summary>
+            String literal for UI Policy
+            </summary>
+        </member>
+        <member name="F:Made4Net.General.Constants.Unhandled_Policy">
+            <summary>
+            String literal for UI Policy
+            </summary>
+        </member>
+        <member name="F:Made4Net.General.Constants.Security_Policy">
+            <summary>
+            String literal for UI Policy
+            </summary>
+        </member>
+        <member name="F:Made4Net.General.Constants.AppLogPath">
+            <summary>
+            AppLogPath is file path 
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.ExceptionConfiguration">
+            <summary>
+            Configures enterprise library for exception handling
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ExceptionConfiguration.BuildExceptionConfiguration(System.String,System.String,System.String,Microsoft.Practices.EnterpriseLibrary.Logging.Formatters.TextFormatter)">
+            <summary>
+            Builds configuration for enterprise library for exception handling
+            Params considered for logging
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.CodeAccessSecurityHelper">
+            <summary>
+            Summary description for CodeAccessSecurityHelper.
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.Helpers.DataColumnExtensions.IsDBNullOrEmpty(System.Data.DataRow,System.String)">
+            <summary>
+            Checks for empty or null value in the specified column in the provided row
+            </summary>
+            <param name="dataRow">DataRow object</param>
+            <param name="columnName">column value to be checked</param>
+            <returns>True if there is no value</returns>
+        </member>
+        <member name="T:Made4Net.General.DataSetHelper">
+            <summary>
+            Summary description for DataSetHelper.
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.DataSetHelper.SelectDistinct(System.Data.DataTable,System.String)">
+            <summary>
+            Select distinct values from source column 
+            </summary>
+            <param name="sourceTable"></param>
+            <param name="sourceColumn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.DataSetHelper.ReadXmlToDataSet(System.String,System.String)">
+            <summary>
+            Accepts the xml schema and the xml data as strings.Write them to temp files
+            and then using ReadXml and ReadXmlSchema to get the appropriate dataset 
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.DSNHelper">
+            <summary>
+            Summary description for DSNHelper.
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.DSNHelper.HandleSQLServerDSN(Made4Net.General.DSNHelper.DSNOptions)">
+            <summary>
+            using Config or Remove dsn option on a non-existed dsn will result in an error 
+            msg :The specified component could not be found.
+            </summary>
+            <param name="dsnOption"> Add - to add a new system dsn, Config/Remove - to update/remove an existing one </param>
+            <returns></returns>
+        </member>
+        <member name="T:Made4Net.General.EMailHelper">
+            <summary>
+            Summary description for EMailHelper.
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.FrameworkConfigHelper">
+            <summary>
+            Summary description for FrameworkConfigHelper.
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.ImpersonationHelper">
+            <summary>
+            Summary description for ImpersonationHelper.
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ImpersonationHelper.LogonUser(System.String,System.String,System.String,System.Int32,System.Int32,System.IntPtr@)">
+            <summary>
+            Gets the user token (phToken) for the specified username,password,domain .
+            return bool : sucess-true.
+            </summary>
+            Username : user account must have Log On Locally permission on the local computer. 
+            This permission is granted to all users on workstations and servers, 
+            but only to administrators on domain controllers.
+        </member>
+        <member name="M:Made4Net.General.ImpersonationHelper.Impersonate(System.String,System.String,System.String,System.String@)">
+            <summary>
+            Whoever user who uses this function must have sufficient permissions 
+            Therefore there is an attribute on FullTrust.
+            The username parameter can be either a local user or a domain user
+            The logon type is on what permission the user in order to access this local computer.
+            			Interactive logon: "Log on locally" 
+            			Network logon: "Access this computer from the network" 
+            			Batch logon: "Log on as a batch job" 
+            			Service logon: "Log on as a service" 
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.ProcessHelper">
+            <summary>
+            Summary description for ProcessHelper.
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.RegularExpressionHelper">
+            <summary>
+            Summary description for RegularExpressionHelpercs.
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.ServiceHelper">
+            <summary>
+            Summary description for ServiceHelper.
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.ServiceHelper.ServiceState">
+            <summary>Possible service states.</summary>
+        </member>
+        <member name="T:Made4Net.General.Installers.BaseWebInstaller">
+            <summary>
+            Summary description for CustomAction.
+            </summary>
+        </member>
+        <member name="F:Made4Net.General.Installers.BaseWebInstaller.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.Installers.BaseWebInstaller.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.Installers.BaseWebInstaller.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.Installers.BaseWebInstaller.HandleDSN(System.String,Made4Net.General.DSNHelper.DSNOptions,System.String[]@)">
+            <summary>
+            dsnParameter should be in the format of name;description;server;database
+            </summary>
+            <param name="dsnParameter"></param>
+            <param name="dsnOperation"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.Installers.BaseWebInstaller.CreateVirtualDirectory(System.String,System.String,System.String[]@,System.String[]@)">
+            <summary>
+            Creates a new virtual directory and attaches it to application pool if relevant
+            </summary>
+            <param name="virtualDirectoryDetails">Name;WebSiteNumber;NameOfServer;ApplicationPath  
+            default site number is 1</param>
+            /// <param name="appPoolDetails">Name;Auth(LocalService,NetworkService,CustomIdentity)[;User;Password]</param>
+        </member>
+        <member name="M:Made4Net.General.Installers.BaseWebInstaller.HandleDatabase(System.String,System.String,System.String,System.Boolean,System.String[]@,System.String[])">
+            <summary>
+            1.Creates a new database
+            2.Creates a new login user for the database
+            3.Run dbscripts at the right order from a known directory
+            </summary>
+            <param name="server"></param>
+            <param name="database"></param>
+            <param name="loginParameter"></param>
+        </member>
+        <member name="M:Made4Net.General.Installers.BaseWebInstaller.RunDBScripts(Made4Net.General.SQLDMO.SQLServer,System.String,System.String[])">
+            <summary>
+            The assumption is that the scripts are ordered and are depended on one another.
+            So if one script fails , all the rest can not be run
+            </summary>
+            <param name="database"></param>
+            <param name="filenames"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Made4Net.General.IOHelper">
+            <summary>
+            Summary description for IOHelper.
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.IOHelper.FileStreamToString(System.String)">
+            convert FileStream to string 
+        </member>
+        <member name="T:Made4Net.General.SortFiles">
+            <summary>
+            Summary description for SortFiles.
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.ConsoleLogger">
+            <summary>
+            Summary description for ConsoleLogger.
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ConsoleLogger.#ctor">
+            <summary>Default constructor.</summary>
+        </member>
+        <member name="M:Made4Net.General.ConsoleLogger.#ctor(Made4Net.General.LogLevel)">
+            <summary>Initializes with the minimum log level.</summary>
+            <param name="loglevel">Minimum log level.</param>
+        </member>
+        <member name="M:Made4Net.General.ConsoleLogger.#ctor(Made4Net.General.LogLevel,System.Boolean)">
+            <summary>Initializes with the minimum log level and a strict flag.</summary>
+            <param name="loglevel">Minimum log level.</param>
+            <param name="strict">Determines if levels higher than the specified minimum will be logged.  True means only logs of the minimum level with be logged.</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Made4Net.General.ConsoleLogger.DoLog(Made4Net.General.Log)" -->
+        <member name="M:Made4Net.General.ConsoleLogger.Dispose">
+            <summary>Cleans up internal resources.</summary>
+        </member>
+        <member name="T:Made4Net.General.EventLogger">
+            <summary>
+            Summary description for EventLogger.
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.EventLogger.#ctor(System.String,Made4Net.General.LogLevel)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <param name="loglevel">Minimum log level</param>
+        </member>
+        <member name="M:Made4Net.General.EventLogger.#ctor(System.String,Made4Net.General.LogLevel,System.Boolean)">
+            <summary>Initializes with the title that will be used when logging to the event log.</summary>
+            <param name="loglevel">Minimum log level.</param>
+            <param name="strict">Determines if levels higher than the specified minimum will be logged.  True means only logs of the minimum level with be logged.</param>
+        </member>
+        <member name="T:Made4Net.General.FileLogger">
+            <summary>
+            Summary description for FileLogger.
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.FileLogger.#ctor(System.String,Made4Net.General.LogLevel)">
+            <summary>Initializes with a file name.</summary>
+            <param name="filename">String file name.</param>
+            <param name="loglevel"></param>
+        </member>
+        <member name="M:Made4Net.General.FileLogger.#ctor(System.String,Made4Net.General.LogLevel,System.Boolean)">
+            <summary>Initializes with a file name.</summary>
+            <param name="filename">String file name.</param>
+            <param name="loglevel"></param>
+            <param name="strict"></param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Made4Net.General.FileLogger.DoLog(Made4Net.General.Log)" -->
+        <member name="M:Made4Net.General.FileLogger.ResetFile">
+            <summary>Resets the log file to an empty file.</summary>
+        </member>
+        <member name="M:Made4Net.General.FileLogger.Dispose">
+            <summary>Cleans up internal resources.</summary>
+        </member>
+        <member name="T:Made4Net.General.ILogger">
+            <summary>
+            Summary description for ILogger.
+            </summary>
+        </member>
+        <member name="P:Made4Net.General.ILogger.StrictLevel">
+            <summary>If true, will only log the type specified by StartLoggingLevel, 
+            otherwise will log severity greater than or equal to StartLoggingLevel.</summary>
+        </member>
+        <member name="T:Made4Net.General.Log">
+            <summary>
+            Summary description for LogMessage.
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.Log.#ctor">
+            <summary>Default initiaization constructor.</summary>
+        </member>
+        <member name="M:Made4Net.General.Log.#ctor(System.Exception)">
+            <summary></summary>
+            <param name="ex"></param>
+        </member>
+        <member name="M:Made4Net.General.Log.ToString">
+            <summary>Returns a string representation of the log entry.</summary>
+            <returns>String representation of the log entry.</returns>
+        </member>
+        <member name="T:Made4Net.General.LogConfiguration">
+            <summary>
+            Confugres enterprise library for logging
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.LogConfiguration.InitializeDiagnostics(System.String)">
+            <summary>
+            Build Logging configuration with external configuration file
+            </summary>
+            <param name="configPath">input path for configuration file location</param>
+        </member>
+        <member name="M:Made4Net.General.LogConfiguration.InitializeDiagnostics">
+            <summary>
+            Use this method to initialize enterprise lib with default configuration
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.LogConfiguration.BuildLoggingConfig(System.String,System.String,System.String,Microsoft.Practices.EnterpriseLibrary.Logging.Formatters.TextFormatter)">
+            <summary>
+            Configuration is parameterised
+            </summary>
+            <param name="filePath"></param>
+            <param name="header"></param>
+            <param name="footer"></param>
+            <param name="formatter"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Made4Net.General.LogFormatter">
+            <summary>Used to format log output.</summary>
+        </member>
+        <member name="M:Made4Net.General.LogFormatter.CreateFormat(Made4Net.General.Log,System.String)">
+            <summary>Formats a string representation of an ILog instance with the pattern specified.  
+            Patterns may include any of the following values, 
+            which will be replaced with the coresponding ILog values: 
+             "{Time}", "{Level}", "{Category}", "{Content}"</summary>
+            <param name="log">Log instance to format.</param>
+            <param name="pattern">Log format string.</param>
+            <returns>String representation of the Log instance in the specified format.</returns>
+        </member>
+        <member name="T:Made4Net.General.M4NetLogger">
+            <summary>
+            Summary description for Logger 
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Made4Net.General.M4NetLogger.Log(Made4Net.General.Log)" -->
+        <member name="T:Made4Net.General.LoggerType">
+            <summary>
+            Summary description for LoggerType.
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.LogLevel">
+            <summary>
+            Summary description for LogLevel.
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.MailLogger">
+            <summary>
+            Summary description for MailLogger.
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.MailLogger.#ctor(System.String,System.String)">
+            <summary>Initializes with from address and smtp server.</summary>
+            <param name="server">String smtp server.</param>
+            <param name="from">String from address.</param>
+        </member>
+        <member name="M:Made4Net.General.MailLogger.#ctor(System.String,System.String,Made4Net.General.LogLevel)">
+            <summary>Initializes with from address and smtp server.</summary>
+            <param name="server">String smtp server.</param>
+            <param name="from">String from address.</param>
+            <param name="loglevel"></param>
+        </member>
+        <member name="M:Made4Net.General.MailLogger.#ctor(System.String,System.String,Made4Net.General.LogLevel,System.Boolean)">
+            <summary>Initializes with from address and smtp server.</summary>
+            <param name="server">String smtp server.</param>
+            <param name="from">String from address.</param>
+            <param name="loglevel"></param>
+            <param name="strict"></param>
+        </member>
+        <member name="M:Made4Net.General.MailLogger.#ctor(System.String,System.String,System.Collections.Specialized.StringCollection)">
+            <summary>Initializes with recipient list, from address, and smtp server.</summary>
+            <param name="server">String smtp server.</param>
+            <param name="from">String from address.</param>
+            <param name="recipients">StringCollection recipient list.</param>
+        </member>
+        <member name="M:Made4Net.General.MailLogger.#ctor(System.String,System.String,System.Collections.Specialized.StringCollection,Made4Net.General.LogLevel)">
+            <summary>Initializes with recipient list, from address, and smtp server.</summary>
+            <param name="server">String smtp server.</param>
+            <param name="from">String from address.</param>
+            <param name="recipients">StringCollection recipient list.</param>
+            <param name="loglevel"></param>
+        </member>
+        <member name="M:Made4Net.General.MailLogger.#ctor(System.String,System.String,System.Collections.Specialized.StringCollection,Made4Net.General.LogLevel,System.Boolean)">
+            <summary>Initializes with recipient list, from address, and smtp server.</summary>
+            <param name="server">String smtp server.</param>
+            <param name="from">String from address.</param>
+            <param name="recipients">StringCollection recipient list.</param>
+            <param name="loglevel"></param>
+            <param name="strict"></param>
+        </member>
+        <member name="M:Made4Net.General.MailLogger.DoLog(Made4Net.General.Log)">
+            <summary>Sends a log notification email.</summary>
+            <param name="log">ILog instance.</param>
+        </member>
+        <member name="M:Made4Net.General.MailLogger.Dispose">
+            <summary>Cleans up internal resources.</summary>
+        </member>
+        <member name="T:Made4Net.General.InternetExplorerManipulator">
+            <summary>
+            Summary description for InternetExplorerManipulator
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.Serialization.HashTableWrapper">
+            <summary>
+            Summary description for HashTableWrapper.
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.Serialization.XmlDeserializer">
+            <summary>
+            Deserializes complex objects serialized with the XmlSerializer.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Made4Net.General.Serialization.XmlDeserializer.IgnoreCreationErrors" -->
+        <member name="M:Made4Net.General.Serialization.XmlDeserializer.Deserialize(System.String)">
+            <summary>
+            Deserialzes an object from XmlDocument.
+            </summary>
+            <param name="document"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.Serialization.XmlDeserializer.Deserialize(System.Xml.XmlNode)">
+            <summary>
+            Deserializes an Object from the specified XmlNode. 
+            </summary>
+            <param name="node"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.Serialization.XmlDeserializer.GetProperties(System.Object,System.Xml.XmlNode)">
+            <summary>
+            Reads the properties of the specified node and sets them an the parent object.
+            </summary>
+            <param name="parent"></param>
+            <param name="node"></param>
+            <remarks>
+            This is the central method which is called recursivly!
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.Serialization.XmlDeserializer.SetCollectionValues(System.Collections.ICollection,System.Xml.XmlNode)">
+            <summary>
+            Sets the entries on an ICollection implementation.
+            </summary>
+            <param name="coll"></param>
+            <param name="parentNode"></param>
+        </member>
+        <member name="M:Made4Net.General.Serialization.XmlDeserializer.SetListValues(System.Collections.IList,System.Xml.XmlNode)">
+            <summary>
+            Sets the entries on an IList implementation.
+            </summary>
+            <param name="list"></param>
+            <param name="parentNode"></param>
+        </member>
+        <member name="M:Made4Net.General.Serialization.XmlDeserializer.SetDictionaryValues(System.Collections.IDictionary,System.Xml.XmlNode)">
+            <summary>
+            Sets the entries of an IDictionary implementation.
+            </summary>
+            <param name="coll"></param>
+            <param name="parentNode"></param>
+        </member>
+        <member name="M:Made4Net.General.Serialization.XmlDeserializer.GetObject(System.Xml.XmlNode)">
+            <summary>
+            Creates an instance by the contents of the given XmlNode.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="M:Made4Net.General.Serialization.XmlDeserializer.CreateType(System.String,System.String)">
+            <summary>
+            Creates a type from the specified assembly and type names. In case of failure null will be returned.
+            </summary>
+            <param name="assembly"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.Serialization.XmlDeserializer.CreateArrayInstance(Made4Net.General.Serialization.ObjectInfo,System.Int32)">
+            <summary>
+            Creates an instance of an Array by the specified ObjectInfo.
+            </summary>
+            <param name="info"></param>
+            <param name="length"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.Serialization.XmlDeserializer.CreateInstance(Made4Net.General.Serialization.ObjectInfo)">
+            <summary>
+            Creates an instance by the specified ObjectInfo.
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.Serialization.XmlDeserializer.GetObjectInfo(System.Xml.XmlNode)">
+            <summary>
+            Gets an ObjectInfo instance by the attributes of the specified XmlNode.
+            </summary>
+            <param name="node"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.Serialization.XmlDeserializer.GetArrayLength(System.Xml.XmlNode)">
+            <summary>
+            Returns the length of the array of a arry-XmlNode.
+            </summary>
+            <param name="parent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.Serialization.XmlDeserializer.GetAttributeValue(System.Xml.XmlNode,System.String)">
+            <summary>
+            Returns the value or the attribute with the specified name from the given node if it is not null or empty.
+            </summary>
+            <param name="node"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Made4Net.General.Serialization.XmlSerializationTag" -->
+        <!-- Badly formed XML comment ignored for member "T:Made4Net.General.Serialization.ObjectInfo" -->
+        <member name="M:Made4Net.General.Serialization.ObjectInfo.ToString">
+            <summary>
+            ToString()
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Made4Net.General.Serialization.ObjectInfo.IsSufficient">
+            <summary>
+            Determines whether the values are sufficient to create an instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Made4Net.General.Serialization.TypeInfo">
+            <summary>
+            Helper class providing various methods returning information about types.
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.Serialization.TypeInfo.IsCollection(System.Type)">
+            <summary>
+            Determines whether a Type is a Collection type.
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.Serialization.TypeInfo.IsDictionary(System.Type)">
+            <summary>
+            Determines whether a Type is a Dictionary type.
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.Serialization.TypeInfo.IsList(System.Type)">
+            <summary>
+            Determines whether a Type is a List type.
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.Serialization.TypeInfo.IsArray(System.String)">
+            <summary>
+            Determines whether the typename describes an array.
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.SQLDMO.SQLServer.Connect(System.String,System.String,System.Boolean)">
+            <summary>
+            If the connection is trusted then the username and password can be empty.
+            If the username and password are not empty the trusted connection can be either true or false
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+            <param name="isTrustedConnection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.SQLDMO.SQLServer.CreateLogin(System.String,System.String,System.String,System.String[],System.String[])">
+            <summary>
+            1.Add Login to Security
+            2.Add User to Database
+            3.Add Login to server roles
+            4.Add User to database role
+            </summary>
+            <param name="databaseName"></param>
+            <param name="loginName"></param>
+            <param name="password"></param>
+            <param name="serverRolesNames"></param>
+            <param name="databaseRolesNames"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.SQLDMO.SQLServer.Execute(System.String,System.String)">
+            <summary>
+            Executing sql script on the database passed as a parameter.if the database name is empty then 
+            the script will run on the master database.
+            </summary>
+            <param name="filename"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.QueriesBuilders.IQuery">
+            <summary>
+            Summary description for IQuery.
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.QueriesBuilders.QueryFactory">
+            <summary>
+            Summary description for QueryFactory.
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.QueriesBuilders.SQLQueriesBuilder.SelectStatement(Made4Net.General.ObjectModel.SelectQuery,Made4Net.General.ObjectModel.SelectColumn[],Made4Net.General.ObjectModel.WhereTerm[])">
+            <summary>
+            Returns an sql statement with format : select (columns-list) from (tablename) w/o where (whereTerms)
+            </summary>
+            <param name="tableName"></param>
+            <param name="columns"></param>
+            <param name="whereTerms"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.CaseClause">
+            <summary>
+            Encapsulates SQL CASE clause
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.CaseClause.#ctor">
+            <summary>
+            Creates a new CaseClause
+            </summary>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.CaseClause.Terms">
+            <summary>
+            Gets the <see cref="T:Made4Net.General.ObjectModel.CaseTerm"/> collection for this CaseClause
+            </summary>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.CaseClause.ElseValue">
+            <summary>
+            Gets or sets the value CASE default value
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.CaseTerm">
+            <summary>
+            Encapsulates a single WHEN ... THEN ... statement
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.CaseTerm.#ctor(Made4Net.General.ObjectModel.WhereClause,Made4Net.General.ObjectModel.SqlExpression)">
+            <summary>
+            Creates a new CaseTerm
+            </summary>
+            <param name="condition">Condition for the WHEN clause</param>
+            <param name="val">Value for the THEN clause</param>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.DeleteQuery">
+            <summary>
+            Encapsulates a SQL DELETE statement
+            </summary>
+            <remarks>
+            Use DeleteQuery to delete a row in database table.
+            Set <see cref="P:Made4Net.General.ObjectModel.DeleteQuery.TableName"/> to the table you would like to delete rows from and use
+            <see cref="P:Made4Net.General.ObjectModel.DeleteQuery.WhereClause"/> to specify which rows are to be deleted.
+            </remarks>
+            <example>
+            <code>
+            DeleteQuery query = new DeleteQuery("products");
+            query.WhereClause.Terms.Add(WhereTerm.CreateCompare(SqlExpression.Field("productId"), SqlExpression.Number(999), CompareOperator.Equal));
+            RenderDelete(query);
+            </code>
+            </example>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.DeleteQuery.#ctor">
+            <summary>
+            Creates a DeleteQuery
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.DeleteQuery.#ctor(System.String)">
+            <summary>
+            Creates a DeleteQuery
+            </summary>
+            <param name="tableName">Name of the table records are to be deleted from</param>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.DeleteQuery.WhereClause">
+            <summary>
+            Specifies which rows are to be deleted
+            </summary>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.DeleteQuery.TableName">
+            <summary>
+            Gets or set the name of a table records are to be deleted from
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.DeleteQuery.Validate">
+            <summary>
+            Validates DeleteQuery
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.InvalidQueryException">
+            <summary>
+            InvalidQueryException exception can be thrown when the renderer decides that a query is invalid or incompatible with the target database.
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.InvalidQueryException.#ctor(System.String)">
+            <summary>
+            Creates a new InvalidQueryException
+            </summary>
+            <param name="text">Text of the exception</param>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.JoinType">
+            <summary>
+            Specifies what kind of join should be rendered
+            </summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.JoinType.Inner">
+            <summary>Inner Join</summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.JoinType.Left">
+            <summary>Left Outer Join</summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.JoinType.Right">
+            <summary>Right Outer Join</summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.JoinType.Full">
+            <summary>Full Join</summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.JoinType.Cross">
+            <summary>Cross Join</summary>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.Join">
+            <summary>
+            Represnts a Join between two tables.
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.FromClause">
+            <summary>
+            Represents the FROM clause of a select statement
+            </summary>
+            <remarks>
+            FromClause consists of a base table set by the <see cref="P:Made4Net.General.ObjectModel.FromClause.BaseTable">BaseTable</see> property
+            and optional joins defined using the <see cref="M:Made4Net.General.ObjectModel.FromClause.Join(Made4Net.General.ObjectModel.JoinType,Made4Net.General.ObjectModel.FromTerm,Made4Net.General.ObjectModel.FromTerm,System.String,System.String)">Join</see> method.
+            <para>
+            SqlOM supports inner, outer and cross joins. 
+            Inner join between two tables returns only rows which exist in both tables.
+            Outer (Left, Right and Full) joins return rows when at least one of the tables has a matching row. 
+            Left outer joins returns all rows from the left table and while the missing rows from the right are filled with nulls.
+            Right outer join is the opposite of left. Full outer join returns all the rows from the left and the right tables while the missing rows from the opposite table are filled with nulls.
+            Cross join does not match any keys and returns the cartesian product of both tables.
+            For more information about joins consult SQL documentation.
+            </para>	
+            </remarks>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.FromClause.BaseTable">
+            <summary>
+            Gets or sets the base table for the FromClause
+            </summary>
+            <remarks>
+            The base table begins the serie of joins. 
+            If no joins are specified for the query the base table is the only table in the select statement.
+            BaseTable must be set before <see cref="T:Made4Net.General.ObjectModel.SelectQuery">SelectQuery</see> can be rendered.
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.FromClause.TermExists(System.String)">
+            <summary>
+            Checks if a term with the specified RefName already exists in the FromClause.
+            </summary>
+            <param name="alias">The name of the term to be checked.</param>
+            <returns>true if the term exists or false otherwise</returns>
+            <remarks>
+            TermExists matches <paramref name="alias">alias</paramref> to <see cref="P:Made4Net.General.ObjectModel.FromTerm.RefName">RefName</see> of all participating FromTerms.
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.FromClause.Join(Made4Net.General.ObjectModel.JoinType,Made4Net.General.ObjectModel.FromTerm,Made4Net.General.ObjectModel.FromTerm,System.String,System.String)">
+            <overloads>Use the following methods to define a join between two FromTerms.</overloads>
+            <summary>
+            Joins two tables using on a single join condition
+            </summary>
+            <param name="type">The type of join to be created.</param>
+            <param name="leftTable">The left table</param>
+            <param name="rightTable">The right table</param>
+            <param name="leftField">Name of the field in the left table to join on</param>
+            <param name="rightField">Name of the field in the right table to join on</param>
+            <example>
+            <code>
+            query.FromClause.Join(JoinType.Left, tCustomers, tOrders, "customerId", "customerId");
+            </code>
+            </example>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.FromClause.Join(Made4Net.General.ObjectModel.JoinType,Made4Net.General.ObjectModel.FromTerm,Made4Net.General.ObjectModel.FromTerm)">
+            <summary>
+            Creates an uncoditional join
+            </summary>
+            <param name="type">Must be JoinType.CrossJoin</param>
+            <param name="leftTable"></param>
+            <param name="rightTable"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.FromClause.Join(Made4Net.General.ObjectModel.JoinType,Made4Net.General.ObjectModel.FromTerm,Made4Net.General.ObjectModel.FromTerm,Made4Net.General.ObjectModel.JoinCondition)">
+            <summary>
+            Joins two tables using on a single join condition
+            </summary>
+            <param name="type">The type of join to be created.</param>
+            <param name="leftTable">The left table</param>
+            <param name="rightTable">The right table</param>
+            <param name="cond">Equality condition to be applied on the join</param>
+            <remarks>
+            This overload is used to create the most common type of join, when two tables
+            are joined on a single equality condition.
+            </remarks>
+            <example>
+            <code>
+            query.FromClause.Join(JoinType.Inner, tCustomers, tOrders, new JoinCondition("customerId", "customerId"));
+            </code>
+            </example>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.FromClause.Join(Made4Net.General.ObjectModel.JoinType,Made4Net.General.ObjectModel.FromTerm,Made4Net.General.ObjectModel.FromTerm,Made4Net.General.ObjectModel.JoinCondition,Made4Net.General.ObjectModel.JoinCondition)">
+            <summary>
+            Joins two tables using on a double join condition
+            </summary>
+            <param name="type">The type of join to be created.</param>
+            <param name="leftTable">The left table</param>
+            <param name="rightTable">The right table</param>
+            <param name="cond1">First equality condition to be applied on the join</param>
+            <param name="cond2">Second equality condition to be applied on the join</param>
+            <remarks>
+            A logical AND will be applied on <paramref name="cond1"/> and <paramref name="cond2"/>.
+            Schematically, the resulting SQL will be ... x join y on (cond1 and cond2) ...
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.FromClause.Join(Made4Net.General.ObjectModel.JoinType,Made4Net.General.ObjectModel.FromTerm,Made4Net.General.ObjectModel.FromTerm,Made4Net.General.ObjectModel.JoinCondition,Made4Net.General.ObjectModel.JoinCondition,Made4Net.General.ObjectModel.JoinCondition)">
+            <summary>
+            Joins two tables using on a triple join condition
+            </summary>
+            <param name="type">The type of join to be created.</param>
+            <param name="leftTable">The left table</param>
+            <param name="rightTable">The right table</param>
+            <param name="cond1">First equality condition to be applied on the join</param>
+            <param name="cond2">First equality condition to be applied on the join</param>
+            <param name="cond3">First equality condition to be applied on the join</param>
+            <remarks>
+            A logical AND will be applied on all conditions.
+            Schematically, the resulting SQL will be ... x join y on (cond1 and cond2 and cond3) ...
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.FromClause.Join(Made4Net.General.ObjectModel.JoinType,Made4Net.General.ObjectModel.FromTerm,Made4Net.General.ObjectModel.FromTerm,Made4Net.General.ObjectModel.JoinCondition[])">
+            <summary>
+            Joins two tables using on an array join condition
+            </summary>
+            <param name="type">The type of join to be created.</param>
+            <param name="leftTable">The left table</param>
+            <param name="rightTable">The right table</param>
+            <param name="conditions">An array of equality condition to be applied on the join</param>
+            <remarks>
+            A logical AND will be applied on the conditions.
+            Schematically, the resulting SQL will be ... x join y on (cond1 and cond2 and cond3 and ... and condN) ...
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.FromClause.Join(Made4Net.General.ObjectModel.JoinType,Made4Net.General.ObjectModel.FromTerm,Made4Net.General.ObjectModel.FromTerm,Made4Net.General.ObjectModel.WhereClause)">
+            <summary>
+            Joins two tables using on an arbitrary join condition
+            </summary>
+            <param name="type">The type of join to be created.</param>
+            <param name="leftTable">The left table</param>
+            <param name="rightTable">The right table</param>
+            <param name="conditions">Specifies how the join should be performed</param>
+            <remarks>
+            Use this overload to create complex join conditions. 
+            Note that not all <see cref="T:Made4Net.General.ObjectModel.WhereClause"/> operators and expressions are supported in joins.
+            </remarks>
+            <example>
+            WhereClause condition = new WhereClause(WhereClauseRelationship.Or);
+            condition.Terms.Add(WhereTerm.CreateCompare(SqlExpression.Field("productId", tOrders), SqlExpression.Field("productId", tProducts), CompareOperator.Equal));
+            condition.Terms.Add(WhereTerm.CreateCompare(SqlExpression.Field("productName", tOrders), SqlExpression.Field("productName", tProducts), CompareOperator.Equal));
+            query.FromClause.Join(JoinType.Left, tOrders, tProducts, condition);
+            </example>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.FromClause.Joins">
+            <summary>
+            Gets the joins for this FromClause
+            </summary>
+            <remarks>
+            Do not use this property to modify a FromClause. Use the <see cref="M:Made4Net.General.ObjectModel.FromClause.Join(Made4Net.General.ObjectModel.JoinType,Made4Net.General.ObjectModel.FromTerm,Made4Net.General.ObjectModel.FromTerm,System.String,System.String)">Join</see> method instead.
+            </remarks>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.FromClause.IsEmpty">
+            <summary>
+            Returns true if this FromClause has no terms at all
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.FromClause.Clone">
+            <summary>
+            Creates a clone of this FromClause
+            </summary>
+            <returns>A new FromClause which exactly the same as the current one.</returns>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.FromTermType">
+            <summary>
+            Specifies the type of a FromTerm
+            </summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.FromTermType.Table">
+            <summary>The FromTerm designates a database table or view</summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.FromTermType.SubQuery">
+            <summary>The FromTerm designates a sub-query. Not all databases support sub-queries.</summary>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.FromTerm">
+            <summary>
+            Represents one term in the the FROM clause of a select statement.
+            </summary>
+            <remarks>
+            A from term can be either a table, table reference or a subquery.
+            subqueries. <see cref="M:Made4Net.General.ObjectModel.FromTerm.Table(System.String)">Table</see> is a name of a table or view with an optional alias. 
+            Use <see cref="M:Made4Net.General.ObjectModel.FromTerm.Table(System.String)">TableRef</see> to specify a reference to another term. 
+            You will usually use TableRef to specify one of the previously defined tables in a join.
+            <see cref="M:Made4Net.General.ObjectModel.FromTerm.SubQuery(System.String,System.String)">SubQuery</see> creates a term with a subquery and mandatory alias. Please note that not all databases support sub-queires.
+            </remarks>
+            <example>
+            The follwoing example selects some columns from two tables joined by a left outer join.
+            <code>
+            FromTerm tCustomers = FromTerm.Table("customers");
+            FromTerm tProducts = FromTerm.Table("products", "p");
+            FromTerm tOrders = FromTerm.Table("orders", "o");
+            
+            SelectQuery query = new SelectQuery();
+            query.Columns.Add(new SelectColumn("name", tCustomers));
+            query.Columns.Add(new SelectColumn("name", tProducts));
+            query.FromClause.BaseTable = tCustomers;
+            query.FromClause.Join(JoinType.Inner, query.FromClause.BaseTable, tOrders, "customerId", "customerId");
+            query.FromClause.Join(JoinType.Inner, tOrders, tProducts, "productId", "productId");
+            </code>
+            </example>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.FromTerm.Table(System.String)">
+            <summary>
+            Creates a FromTerm which represents a database table or view.
+            </summary>
+            <param name="name">Name of the table or view</param>
+            <returns>A FromTerm which represents a database table or view</returns>
+            <remarks>Creates a <see cref="T:Made4Net.General.ObjectModel.FromTerm">FromTerm</see> without an alias. 
+            The created term will be referenced by the table's name.</remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.FromTerm.Table(System.String,System.String)">
+            <summary>
+            Creates a FromTerm which represents a database table or view.
+            </summary>
+            <param name="tableName">Name of the table or view</param>
+            <param name="alias">Alias of the FromTerm</param>
+            <returns>A FromTerm which represents a database table or view</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.FromTerm.Table(System.String,System.String,System.String)">
+            <summary>
+            Creates a FromTerm which represents a database table or view.
+            </summary>
+            <param name="tableName">Name of the table or view</param>
+            <param name="alias">Alias of the FromTerm</param>
+            <param name="ns">Namespace of the table.</param>
+            <returns>A FromTerm which represents a database table or view</returns>
+            <remarks>Use the <paramref name="ns"/> parameter to resolve table ownership</remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.FromTerm.Table(System.String,System.String,System.String,System.String)">
+            <summary>
+            Creates a FromTerm which represents a database table or view.
+            </summary>
+            <param name="tableName">Name of the table or view</param>
+            <param name="alias">Alias of the FromTerm</param>
+            <param name="ns1">First table namespace</param>
+            <param name="ns2">Second table namespace</param>
+            <returns>A FromTerm which represents a database table or view</returns>
+            <remarks>Use the <paramref name="ns1"/> parameter to set table database and <paramref name="ns2"/> to set table owner.</remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.FromTerm.TermRef(System.String)">
+            <summary>
+            Creates a FromTerm which refernces abother FromTerm.
+            </summary>
+            <param name="name">The name of the referenced term.</param>
+            <returns>A FromTerm which refernces another FromTerm.</returns>
+            <remarks>
+            Use TermRef to reference other terms of a from clause by <see cref="P:Made4Net.General.ObjectModel.FromTerm.RefName">RefName</see>
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.FromTerm.SubQuery(System.String,System.String)">
+            <summary>
+            Creates a FromTerm which represents a sub-query.
+            </summary>
+            <param name="query">sub-query sql</param>
+            <param name="alias">term alias</param>
+            <returns>A FromTerm which represents a sub-query.</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.FromTerm.SubQuery(Made4Net.General.ObjectModel.SelectQuery,System.String)">
+            <summary>
+            Creates a FromTerm which represents a sub-query.
+            </summary>
+            <param name="query">A SelectQuery instance representing the sub query</param>
+            <param name="alias">term alias</param>
+            <returns>A FromTerm which represents a sub-query.</returns>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.FromTerm.Expression">
+            <summary>
+            Gets the expression defined for this term.
+            </summary>
+            <remarks>
+            The value of this property depends on the type of term. It will be table name
+            for Table terms, SQL for SubQueries or null for TermRefs.
+            </remarks>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.FromTerm.Alias">
+            <summary>
+            Gets the alias of the term.
+            </summary>
+            <remarks>This property can be null for some types of FromTerm</remarks>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.FromTerm.Type">
+            <summary>
+            Gets the type of the FromTerm
+            </summary>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.FromTerm.RefName">
+            <summary>
+            Gets the reference name of this term.
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.GroupByTerm">
+            <summary>
+            Represents one term in a GROUP BY clause
+            </summary>
+            <remarks>
+            Use OrderByTerm to specify how rows of a result-set should be grouped. 
+            Please note that when you use GROUP BY, your SELECT statement can only include columns which are specified in the GROUP BY clause and aggregation columns.
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.GroupByTerm.#ctor(System.String,Made4Net.General.ObjectModel.FromTerm)">
+            <summary>
+            Creates a GROUP BY term with field name and table alias
+            </summary>
+            <param name="field">Name of a field to group by</param>
+            <param name="table">The table this field belongs to</param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.GroupByTerm.#ctor(System.String)">
+            <summary>
+            Creates a GROUP BY term with field name and no FromTerm alias
+            </summary>
+            <param name="field">Name of a field to group by</param>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.GroupByTerm.Field">
+            <summary>
+            Gets the name of a field to group by
+            </summary>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.GroupByTerm.Table">
+            <summary>
+            Gets the table the field belongs to
+            </summary>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.GroupByTerm.TableAlias">
+            <summary>
+            Gets the table alias for this GroupByTerm
+            </summary>
+            <remarks>
+            Gets the name of a FromTerm the field specified by <see cref="P:Made4Net.General.ObjectModel.GroupByTerm.Field">Field</see> property.
+            </remarks>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.InsertQuery">
+            <summary>
+            Encapsulates a SQL INSERT statement
+            </summary>
+            <remarks>
+            Use InsertQuery to insert a new row into a database table.
+            Set <see cref="P:Made4Net.General.ObjectModel.InsertQuery.TableName"/> to the table you would like to insert into and use
+            the <see cref="P:Made4Net.General.ObjectModel.InsertQuery.Terms"/> collection to specify values to be inserted.
+            </remarks>
+            <example>
+            <code>
+            InsertQuery query = new InsertQuery("products");
+            query.Terms.Add(new UpdateTerm("productId", SqlExpression.Number(999)));
+            query.Terms.Add(new UpdateTerm("name", SqlExpression.String("Temporary Test Product")));
+            query.Terms.Add(new UpdateTerm("price", SqlExpression.Number(123.45)));
+            query.Terms.Add(new UpdateTerm("quantaty", SqlExpression.Number(97)));
+            RenderInsert(query);
+            </code>
+            </example>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.InsertQuery.#ctor">
+            <summary>
+            Create an InsertQuery
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.InsertQuery.#ctor(System.String)">
+            <summary>
+            Create an InsertQuery
+            </summary>
+            <param name="tableName">The name of the table to be inseserted into</param>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.InsertQuery.Terms">
+            <summary>
+            Gets the collection if column-value pairs
+            </summary>
+            <remarks>
+            Terms specify which values should be inserted into the table.
+            </remarks>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.InsertQuery.TableName">
+            <summary>
+            Gets or set the name of a table to be inserted into
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.InsertQuery.Validate">
+            <summary>
+            Validates InsertQuery
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.JoinCondition">
+            <summary>
+            Describes a simple join condition.
+            </summary>
+            <remarks>
+            <see cref="T:Made4Net.General.ObjectModel.JoinCondition"/> encapsulates a pair of fields, one from the
+            left joined table and one from the right table. 
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.JoinCondition.#ctor(System.String)">
+            <summary>
+            Creates a Natural JoinCondition
+            </summary>
+            <param name="field">Name of the field in both tables</param>
+            <remarks>
+            Natural join means that two table are joined on an identically named fields
+            in both tables
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.JoinCondition.#ctor(System.String,System.String)">
+            <summary>
+            Creates a new JoinCondition
+            </summary>
+            <param name="leftField">Name of the field in the left table to join on</param>
+            <param name="rightField">Name of the field in the right table to join on</param>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.JoinCondition.LeftField">
+            <summary>
+            Gets the name of the field in the left table to join on
+            </summary>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.JoinCondition.RightField">
+            <summary>
+            Gets the name of the field in the right table to join on
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.OrderByDirection">
+            <summary>
+            Specifies how a result set should be ordered.
+            </summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.OrderByDirection.Ascending">
+            <summary>Ascending Order</summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.OrderByDirection.Descending">
+            <summary>Descending Order</summary>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.OrderByTerm">
+            <summary>
+            Represents one term in an ORDER BY clause
+            </summary>
+            <remarks>
+            Use OrderByTerm to specify how a result-set should be ordered.
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.OrderByTerm.#ctor(System.String,Made4Net.General.ObjectModel.FromTerm,Made4Net.General.ObjectModel.OrderByDirection)">
+            <summary>
+            Creates an ORDER BY term with field name and table alias
+            </summary>
+            <param name="field">Name of a field to order by</param>
+            <param name="table">The table this field belongs to</param>
+            <param name="dir">Order by direction</param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.OrderByTerm.#ctor(System.String,Made4Net.General.ObjectModel.OrderByDirection)">
+            <summary>
+            Creates an ORDER BY term with field name and no table alias
+            </summary>
+            <param name="field">Name of a field to order by</param>
+            <param name="dir">Order by direction</param>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.OrderByTerm.Direction">
+            <summary>
+            Gets the direction for this OrderByTerm
+            </summary>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.OrderByTerm.Field">
+            <summary>
+            Gets the name of a field to order by
+            </summary>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.OrderByTerm.TableAlias">
+            <summary>
+            Gets the table alias for this OrderByTerm
+            </summary>
+            <remarks>
+            Gets the name of a FromTerm the field specified by <see cref="P:Made4Net.General.ObjectModel.OrderByTerm.Field">Field</see> property.
+            </remarks>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.OrderByTerm.Table">
+            <summary>
+            Returns the FromTerm associated with this OrderByTerm
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.SqlAggregationFunction">
+            <summary>
+            Specifies which function should be applied on a column
+            </summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.SqlAggregationFunction.None">
+            <summary>No function</summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.SqlAggregationFunction.Sum">
+            <summary>Sum</summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.SqlAggregationFunction.Count">
+            <summary>Count rows</summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.SqlAggregationFunction.Avg">
+            <summary>Avarage</summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.SqlAggregationFunction.Min">
+            <summary>Minimum</summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.SqlAggregationFunction.Max">
+            <summary>Maximum</summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.SqlAggregationFunction.Grouping">
+            <summary>Returns true is the current row is a super-aggregate row when used with ROLLUP or CUBE</summary>
+            <remarks>Grouping functions is not supported in all databases</remarks>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.SelectColumn">
+            <summary>
+            Describes a column of a select clause
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SelectColumn.#ctor(System.String)">
+            <summary>
+            Creates a SelectColumn with a column name, no table, no column alias and no function
+            </summary>
+            <param name="columnName">Name of a column</param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SelectColumn.#ctor(System.String,Made4Net.General.ObjectModel.FromTerm)">
+            <summary>
+            Creates a SelectColumn with a column name, table, no column alias and no function
+            </summary>
+            <param name="columnName">Name of a column</param>
+            <param name="table">The table this field belongs to</param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SelectColumn.#ctor(System.String,Made4Net.General.ObjectModel.FromTerm,System.String)">
+            <summary>
+            Creates a SelectColumn with a column name, table and column alias
+            </summary>
+            <param name="columnName">Name of a column</param>
+            <param name="table">The table this field belongs to</param>
+            <param name="columnAlias">Alias of the column</param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SelectColumn.#ctor(System.String,Made4Net.General.ObjectModel.FromTerm,System.String,Made4Net.General.ObjectModel.SqlAggregationFunction)">
+            <summary>
+            Creates a SelectColumn with a column name, table, column alias and optional aggregation function
+            </summary>
+            <param name="columnName">Name of a column</param>
+            <param name="table">The table this field belongs to</param>
+            <param name="columnAlias">Alias of the column</param>
+            <param name="function">Aggregation function to be applied to the column. Use SqlAggregationFunction.None to specify that no function should be applied.</param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SelectColumn.#ctor(Made4Net.General.ObjectModel.SqlExpression,System.String)">
+            <summary>
+            Creates a SelectColumn
+            </summary>
+            <param name="expr">Expression</param>
+            <param name="columnAlias">Column alias</param>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.SelectColumn.ColumnAlias">
+            <summary>
+            Gets the column alias for this SelectColumn
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.CompareOperator">
+            <summary>
+            Specifies how tow operands are to be compared
+            </summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.CompareOperator.Equal">
+            <summary>Equal</summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.CompareOperator.NotEqual">
+            <summary>Different</summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.CompareOperator.Greater">
+            <summary>Left operand is greater</summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.CompareOperator.Less">
+            <summary>Left operand is less</summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.CompareOperator.LessOrEqual">
+            <summary>Left operand is less or equal</summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.CompareOperator.GreaterOrEqual">
+            <summary>Left operand is greater or equal</summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.CompareOperator.BitwiseAnd">
+            <summary>Make a bitwise AND and check the result for being not null (ex: (a &amp; b) > 0) ) </summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.CompareOperator.Like">
+            <summary>Substring. Use '%' signs in the value to match anything</summary>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.SelectQuery">
+             <summary>
+             Encapsulates a SQL SELECT statement.
+             </summary>
+             <remarks>
+             Use SelectQuery to define and modify a query. 
+             When the query is ready to be executed it can be rendered to SQL using one of the renderers derived from <see cref="T:Made4Net.General.ObjectModel.Render.ISqlOmRenderer">ISqlOMRenderer</see>
+             and executed using standard .Net query execution methods.
+             <para>SelectQuery can be useful for dynamic SQL generation for reports and filters.</para>
+             <para>It can also be used to render SQL to retrieve pages of data from databases which do not directly support this feature (i.e. SqlServer).</para>
+             </remarks>
+             <example>
+             The following example creates a select query which returns two columns from two inner joined tables and renders it to be executed on MySql
+             <code>
+             FromTerm tCustomers = FromTerm.Table("customers");
+             FromTerm tProducts = FromTerm.Table("products", "p");
+             FromTerm tOrders = FromTerm.Table("orders", "o");
+             
+             SelectQuery query = new SelectQuery();
+             query.Columns.Add(new SelectColumn("name", tCustomers));
+             query.Columns.Add(new SelectColumn("name", tProducts));
+             query.FromClause.BaseTable = tCustomers;
+             query.FromClause.Join(JoinType.Inner, query.FromClause.BaseTable, tOrders, "customerId", "customerId");
+             query.FromClause.Join(JoinType.Inner, tOrders, tProducts, "productId", "productId");
+             
+             MySqlRenderer renderer = new MySqlRenderer();
+            	string sql = renderer.RenderSelect(query);
+            	...
+             </code>
+            </example>
+             <example>
+             This example creates a select query which returns the second page of a result-set and renders it to be executed on SqlServer
+             <code>
+             
+             int totalRows = 50; //The total number of rows can be obtained using SelectQuery as well
+             
+             SelectQuery query = new SelectQuery();
+             
+             query.Columns.Add(new SelectColumn("name"));
+             query.FromPhrase.BaseTable = FromClause.Table("customers");
+             query.OrderByClauses.Add(new OrderByClause("name", null, OrderByDirection.Descending));
+             query.OrderByClauses.Add(new OrderByClause("birthDate", null, OrderByDirection.Ascending));
+             
+             SqlServerRenderer renderer = new SqlServerRenderer();
+            	sql = renderer.RenderPage(2, 10, totalRows, query);
+            	...
+             </code>
+            </example>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SelectQuery.#ctor">
+            <summary>
+            Creates a new SelectQuery
+            </summary>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.SelectQuery.FromClause">
+            <summary>
+            Gets the FROM definition for this SelectQuery
+            </summary>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.SelectQuery.GroupByTerms">
+            <summary>
+            Gets the GROUP BY definition for this SelectQuery
+            </summary>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.SelectQuery.OrderByTerms">
+            <summary>
+            Gets the ORDER BY definition for this SelectQuery
+            </summary>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.SelectQuery.WherePhrase">
+            <summary>
+            Gets the WHERE conditions for this SelectQuery
+            </summary>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.SelectQuery.HavingPhrase">
+            <summary>
+            Gets the WHERE conditions for this SelectQuery
+            </summary>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.SelectQuery.Columns">
+            <summary>
+            Gets the collection of columns for this SelectQuery
+            </summary>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.SelectQuery.Top">
+            <summary>
+            Gets or sets the result-set row count limitation
+            </summary>
+            <remarks>
+            When Top is less then zero, no limitation will apply on the result-set. To limit
+            the number of rows returned by this query set Top to a positive integer or zero
+            </remarks>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.SelectQuery.GroupByWithRollup">
+            <summary>
+            Gets or sets the group by with rollup option for the query
+            </summary>
+            <remarks>
+            GroupByWithRollup property is only relevant for queries which perform group by and have aggregation columns.
+            When GroupByWithRollup is true the result set will include additional rows with sub total information. Consult SQL documentation for more details.
+            </remarks>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.SelectQuery.GroupByWithCube">
+            <summary>
+            Gets or sets the group by with cube option for the query. Not supported by all databases.
+            </summary>
+            <remarks>
+            GroupByWithCube property is only relevant for queries which perform group by and have aggregation columns.
+            When GroupByWithCube is true the result set will include additional rows with sub total information. GroupByWithCube even more data then <see cref="P:Made4Net.General.ObjectModel.SelectQuery.GroupByWithRollup">GroupByWithRollup</see>. Consult SQL documentation for more details.
+            <para>
+            Important! Not all databases support this option.
+            </para>
+            </remarks>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.SelectQuery.Distinct">
+            <summary>
+            Gets or sets wheather only distinct rows are to be returned.
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SelectQuery.Validate">
+            <summary>
+            Validates the SelectQuery
+            </summary>
+            <remarks>
+            Sql.Net makes its best to validate a query before it is rendered or executed. 
+            Still, some errors and inconsistancies can only be found on later stages.
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SelectQuery.Clone">
+            <summary>
+            Clones the SelectQuery
+            </summary>
+            <returns>A new instance of SelectQuery which is exactly the same as the current one.</returns>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.SelectQuery.TableSpace">
+            <summary>
+            Gets or sets the common prefix for all tables in the query
+            </summary>
+            <remarks>
+            You might want to use <see cref="P:Made4Net.General.ObjectModel.SelectQuery.TableSpace"/> property to utilize SQL Server 2000
+            execution plan cache. For the cache to work in SQL Server 2000, all database objects in a query must be fully qualified.
+            Setting <see cref="P:Made4Net.General.ObjectModel.SelectQuery.TableSpace"/> property might releive of the duty to fully qualify all table names in the query.
+            </remarks>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.SqlDataType">
+            <summary>
+            Data type of a constant value
+            </summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.SqlDataType.String">
+            <summary>String value</summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.SqlDataType.Number">
+            <summary>Numeric value (int, double, float, decimal)</summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.SqlDataType.Date">
+            <summary>DateTime object</summary>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.SqlConstant">
+            <summary>
+            Represents a typed constant value.
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SqlConstant.#ctor(Made4Net.General.ObjectModel.SqlDataType,System.Object)">
+            <summary>
+            Creates a new SqlConstant instance
+            </summary>
+            <param name="type">Constant's date type</param>
+            <param name="val">Constant's value</param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SqlConstant.Number(System.Double)">
+            <summary>
+            Creates a SqlConstant which represents a numeric value.
+            </summary>
+            <param name="val">Value of the expression</param>
+            <returns>A SqlConstant which represents a floating point value</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SqlConstant.Number(System.Decimal)">
+            <summary>
+            Creates a SqlConstant which represents a numeric value.
+            </summary>
+            <param name="val">Value of the expression</param>
+            <returns>A SqlConstant which represents a decimal value</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SqlConstant.Number(System.Int32)">
+            <summary>
+            Creates a SqlConstant which represents a numeric value.
+            </summary>
+            <param name="val">Value of the expression</param>
+            <returns>A SqlConstant which represents a numeric value</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SqlConstant.String(System.String)">
+            <summary>
+            Creates a SqlConstant which represents a textual value.
+            </summary>
+            <param name="val">Value of the expression</param>
+            <returns>A SqlConstant which represents a textual value</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SqlConstant.Date(System.DateTime)">
+            <summary>
+            Creates a SqlConstant which represents a date value.
+            </summary>
+            <param name="val">Value of the expression</param>
+            <returns>A SqlConstant which represents a date value</returns>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.SqlConstantCollection">
+            <summary>
+            A collection of elements of type SqlConstant
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.SqlExpressionType">
+            <summary>
+            Describes the type of a <see cref="T:Made4Net.General.ObjectModel.SqlExpression"/>
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.SqlExpression">
+            <summary>
+            Describes one expression of a <see cref="T:Made4Net.General.ObjectModel.WhereTerm"/>
+            </summary>
+            <remarks>
+            SqlExpression has no public constructor. Use one of the supplied static methods to create the type
+            of the expression you need. 
+            <para>
+            <see cref="T:Made4Net.General.ObjectModel.SqlExpression"/> can represent a database field, or a static value. 
+            To create a <see cref="T:Made4Net.General.ObjectModel.SqlExpression"/> represnting a field use the <seealso cref="M:Made4Net.General.ObjectModel.SqlExpression.Field(System.String,Made4Net.General.ObjectModel.FromTerm)"/> method.
+            To create a static value, use one of the methods <see cref="M:Made4Net.General.ObjectModel.SqlExpression.String(System.String)"/>, <see cref="M:Made4Net.General.ObjectModel.SqlExpression.Date(System.DateTime)"/> or <see cref="M:Made4Net.General.ObjectModel.SqlExpression.Number(System.Double)"/> accordingly to the type of the value.
+            </para>
+            </remarks>
+            <example>
+            <code>
+            ...
+            query.WherePhrase.Terms.Add(WhereTerm.CreateCompare(SqlExpression.Field("name", tCustomers), SqlExpression.String("John"), CompareOperator.Equal));
+            ...
+            </code>
+            </example>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SqlExpression.Number(System.Double)">
+            <summary>
+            Creates a SqlExpression which represents a numeric value.
+            </summary>
+            <param name="val">Value of the expression</param>
+            <returns>A SqlExpression which represents a numeric value</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SqlExpression.Number(System.Int32)">
+            <summary>
+            Creates a SqlExpression which represents a numeric value.
+            </summary>
+            <param name="val">Value of the expression</param>
+            <returns>A SqlExpression which represents a numeric value</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SqlExpression.String(System.String)">
+            <summary>
+            Creates a SqlExpression which represents a textual value.
+            </summary>
+            <param name="val">Value of the expression</param>
+            <returns>A SqlExpression which represents a textual value</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SqlExpression.Date(System.DateTime)">
+            <summary>
+            Creates a SqlExpression which represents a date value.
+            </summary>
+            <param name="val">Value of the expression</param>
+            <returns>A SqlExpression which represents a date value</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SqlExpression.Constant(Made4Net.General.ObjectModel.SqlConstant)">
+            <summary>
+            Creates a SqlExpression which represents a constant typed value.
+            </summary>
+            <param name="val">SqlConstant instance</param>
+            <returns>A SqlExpression which represents a date value</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SqlExpression.Constant(Made4Net.General.ObjectModel.SqlDataType,System.Object)">
+            <summary>
+            Creates a SqlExpression which represents a constant typed value
+            </summary>
+            <param name="dataType">Value's data type</param>
+            <param name="val">The value</param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SqlExpression.Field(System.String,Made4Net.General.ObjectModel.FromTerm)">
+            <summary>
+            Creates a SqlExpression which represents a field in a database table.
+            </summary>
+            <param name="fieldName">Name of a field</param>
+            <param name="table">The table this field belongs to</param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SqlExpression.Case(Made4Net.General.ObjectModel.CaseClause)">
+            <summary>
+            Creates a SqlExpression with a CASE statement.
+            </summary>
+            <param name="caseClause"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SqlExpression.IfNull(Made4Net.General.ObjectModel.SqlExpression,Made4Net.General.ObjectModel.SqlExpression)">
+            <summary>
+            Creates a SqlExpression with IfNull function.
+            </summary>
+            <param name="test">Expression to be checked for being NULL</param>
+            <param name="val">Substitution</param>
+            <returns></returns>
+            <remarks>
+            Works as SQL Server's ISNULL() function.
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SqlExpression.Function(Made4Net.General.ObjectModel.SqlAggregationFunction,Made4Net.General.ObjectModel.SqlExpression)">
+            <summary>
+            Creates a SqlExpression with an aggergation function
+            </summary>
+            <param name="func">Aggregation function to be applied on the supplied expression</param>
+            <param name="param">Parameter of the aggregation function</param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SqlExpression.Null">
+            <summary>
+            Creates a SqlExpression representing a NULL value
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SqlExpression.Field(System.String)">
+            <summary>
+            Creates a SqlExpression which represents a field in a database table.
+            </summary>
+            <param name="fieldName">Name of a field</param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SqlExpression.SubQuery(System.String)">
+            <summary>
+            Creates a SqlExpression which represents a subquery.
+            </summary>
+            <param name="queryText">Text of the subquery.</param>
+            <returns>A new SqlExpression</returns>
+            <remarks>
+            In many cases you can use an inner or outer JOIN instead of a subquery. 
+            If you prefer using subqueries it is recomended that you construct the subquery
+            using another instance of <see cref="T:Made4Net.General.ObjectModel.SelectQuery"/>, render it using the correct 
+            renderer and pass the resulting SQL statement to the <paramref name="queryText"/> parameter.
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SqlExpression.SubQuery(Made4Net.General.ObjectModel.SelectQuery)">
+            <summary>
+            Creates a SqlExpression which represents a subquery.
+            </summary>
+            <param name="query">A SelectQuery object</param>
+            <returns>A new SqlExpression</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SqlExpression.Parameter(System.String)">
+            <summary>
+            Create a parameter placeholder.
+            </summary>
+            <param name="paramName"></param>
+            <returns></returns>
+            <remarks>
+            Correct parameter name depends on your specifc data provider. OLEDB expects
+            all parameters to be '?' and matches parameters to values based on their index.
+            SQL Server Native driver matches parameters by names and expects to find "@paramName"
+            parameter placeholder in the query.
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SqlExpression.Raw(System.String)">
+            <summary>
+            Creates a SqlExpression with raw SQL
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.DistinctModifier">
+            <summary>
+            Encapsulates SQL DISTINCT or ALL modifiers
+            </summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.DistinctModifier.Distinct">
+            <summary>Only distinct rows will be returned</summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.DistinctModifier.All">
+            <summary>All rows will be returned</summary>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.SqlUnion">
+            <summary>
+            Encapsulates SQL UNION statement
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SqlUnion.#ctor">
+            <summary>
+            Creates a new SqlUnion
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SqlUnion.Add(Made4Net.General.ObjectModel.SelectQuery)">
+            <summary>
+            Adds a query to the UNION clause
+            </summary>
+            <param name="query">SelectQuery to be added</param>
+            <remarks>Query will be added with DistinctModifier.Distinct </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.SqlUnion.Add(Made4Net.General.ObjectModel.SelectQuery,Made4Net.General.ObjectModel.DistinctModifier)">
+            <summary>
+            Adds a query to the UNION clause with the specified DistinctModifier
+            </summary>
+            <param name="query">SelectQuery to be added</param>
+            <param name="repeatingAction">Distinct modifier</param>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.UpdateQuery">
+            <summary>
+            Encapsulates a SQL UPDATE statement
+            </summary>
+            <remarks>
+            Use UpdateQuery to update data in a database table.
+            Set <see cref="P:Made4Net.General.ObjectModel.UpdateQuery.TableName"/> to the table you would like to update, populate 
+            the <see cref="P:Made4Net.General.ObjectModel.UpdateQuery.Terms"/> collection with column-value pairs and define which rows 
+            should be affected using the <see cref="P:Made4Net.General.ObjectModel.UpdateQuery.WhereClause"/>.
+            </remarks>
+            <example>
+            <code>
+            UpdateQuery query = new UpdateQuery("products");
+            query.Terms.Add(new UpdateTerm("price", SqlExpression.Number(12.1)));
+            query.Terms.Add(new UpdateTerm("quantaty", SqlExpression.Field("quantaty")));
+            query.WhereClause.Terms.Add(WhereTerm.CreateCompare(SqlExpression.Field("productId"), SqlExpression.Number(1), CompareOperator.Equal) );
+            </code>
+            </example>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.UpdateQuery.#ctor">
+            <summary>
+            Creates a new UpdateQuery
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.UpdateQuery.#ctor(System.String)">
+            <summary>
+            Creates a new UpdateQuery
+            </summary>
+            <param name="tableName"></param>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.UpdateQuery.Terms">
+            <summary>
+            Gets the terms collection for this UpdateQuery
+            </summary>
+            <remarks>
+            Terms specify which columns should be updated and to what values.
+            </remarks>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.UpdateQuery.WhereClause">
+            <summary>
+            Spicifies which rows are to be updated
+            </summary>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.UpdateQuery.TableName">
+            <summary>
+            Gets or set the name of a table to be updated
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.UpdateQuery.Validate">
+            <summary>
+            Validates UpdateQuery
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.UpdateTerm">
+            <summary>
+            Encapsulates a column-value pair for UPDATE and INSERT statements
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.UpdateTerm.#ctor(System.String,Made4Net.General.ObjectModel.SqlExpression)">
+            <summary>
+            Creates an UpdateTerm
+            </summary>
+            <param name="fieldName">The name of the field to be updated</param>
+            <param name="val">New field value</param>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.UpdateTerm.FieldName">
+            <summary>
+            Gets the name of the field which is to be updated
+            </summary>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.UpdateTerm.Value">
+            <summary>
+            Gets the value the field will be updated to
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.WhereClauseRelationship">
+            <summary>
+            Describes the logical relationship between terms of a WHERE clause
+            </summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.WhereClauseRelationship.And">
+            <summary>Logical And</summary>
+        </member>
+        <member name="F:Made4Net.General.ObjectModel.WhereClauseRelationship.Or">
+            <summary>Logical Or</summary>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.WhereClause">
+            <summary>
+            Describes the WHERE clause of a SELECT statement
+            </summary>
+            <remarks>
+            Using WhereClause you can abstractly define most common SQL conditional expressions.
+            A WhereClause consists of individual <see cref="T:Made4Net.General.ObjectModel.WhereTerm">terms</see> and <see cref="T:Made4Net.General.ObjectModel.WhereClause">sub clauses</see>.
+            Between all terms and sub clauses of the same clause exists a single logical <see cref="T:Made4Net.General.ObjectModel.WhereClauseRelationship">relationship</see>. 
+            To create a group of terms with a different relationship, create a sub clause with the desired relationship and add it to the relevant <see cref="P:Made4Net.General.ObjectModel.WhereClause.SubClauses"/>collection.
+            Terms of a where clause are represnted by the <see cref="T:Made4Net.General.ObjectModel.WhereTerm"/> class while the sub clauses are represnted by the same <see cref="T:Made4Net.General.ObjectModel.WhereClause"/> class.
+            </remarks>
+            <example>
+            The following example attempts to demonstrate some of the most common usages of WhereClause and WhereTerm classes
+            <code>
+            FromTerm tCustomers = FromTerm.Table("customers", "c");
+            FromTerm tProducts = FromTerm.Table("products", "p");
+            FromTerm tOrders = FromTerm.Table("orders", "o");
+            
+            SelectQuery query = new SelectQuery();
+            
+            query.Columns.Add(new SelectColumn("name", tCustomers));
+            query.Columns.Add(new SelectColumn("name", tProducts));
+            query.Columns.Add(new SelectColumn("price", tProducts));
+            
+            query.FromClause.BaseTable = tCustomers;
+            query.FromClause.Join(JoinType.Left, tCustomers, tOrders, "customerId", "customerId");
+            query.FromClause.Join(JoinType.Inner, tOrders, tProducts, "productId", "productId");
+            		
+            query.WherePhrase.Terms.Add(WhereTerm.CreateCompare(SqlExpression.Field("name", tCustomers), SqlExpression.String("John"), CompareOperator.Equal));
+            query.WherePhrase.Terms.Add(WhereTerm.CreateCompare(SqlExpression.Field("name", tCustomers), SqlExpression.String("J%"), CompareOperator.Like));
+            query.WherePhrase.Terms.Add(WhereTerm.CreateCompare(SqlExpression.Date(DateTime.Now), SqlExpression.Field("date", tOrders), CompareOperator.Greater));
+            query.WherePhrase.Terms.Add(WhereTerm.CreateCompare(SqlExpression.Number(1), SqlExpression.Number(1), CompareOperator.BitwiseAnd));
+            		
+            WhereClause group = new WhereClause(WhereClauseRelationship.Or);
+            		
+            group.Terms.Add(WhereTerm.CreateBetween(SqlExpression.Field("price", tProducts), SqlExpression.Number(1), SqlExpression.Number(10)));
+            group.Terms.Add(WhereTerm.CreateIn(SqlExpression.Field("name", tProducts), new string[] {"Nail", "Hamer", "Skrewdriver"}));
+            		
+            query.WherePhrase.SubClauses.Add(group);
+            
+            ...
+            </code>
+            </example>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.WhereClause.#ctor(Made4Net.General.ObjectModel.WhereClauseRelationship)">
+            <summary>
+            Creates a new WhereClause
+            </summary>
+            <param name="relationship">Relationship between all the terms and sub clauses of this clause</param>
+            <example>
+            <code>
+            SelectQuery query = new SelectQuery();
+            ...
+            query.WherePhrase.Terms.Add(WhereTerm.CreateCompare(SqlExpression.Field("name", tCustomers), SqlExpression.String("John"), CompareOperator.Equal));
+            WhereClause group = new WhereClause(WhereClauseRelationship.Or);
+            group.Terms.Add(WhereTerm.CreateBetween(SqlExpression.Field("price", tProducts), SqlExpression.Number(1), SqlExpression.Number(10)));
+            group.Terms.Add(WhereTerm.CreateIn(SqlExpression.Field("name", tProducts), new string[] {"Nail", "Hamer", "Skrewdriver"}));
+            query.WherePhrase.SubClauses.Add(group);
+            </code>
+            </example>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.WhereClause.Relationship">
+            <summary>
+            Gets the relationship for this clause
+            </summary>
+            <remarks>
+            Where clause relationship defines what kind of logical condition exists between all terms and sub clauses of this WhereClause
+            </remarks>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.WhereClause.Terms">
+            <summary>
+            Gets the terms collection for this WherePhrase
+            </summary>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.WhereClause.SubClauses">
+            <summary>
+            Gets the sub clauses collection for this WherePhrase
+            </summary>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.WhereClause.IsEmpty">
+            <summary>
+            Returns true if this WhereClause and its descendant sub clauses have no terms
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.WhereClause.Clone">
+            <summary>
+            Creates a copy of this WhereClause
+            </summary>
+            <returns>A new WhereClause which is exactly the same as the current one</returns>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.WhereTerm">
+            <summary>
+            Represents one term in a WHERE clause
+            </summary>
+            <remarks>
+            <see cref="T:Made4Net.General.ObjectModel.WhereTerm"/> usually consists of one or more <see cref="T:Made4Net.General.ObjectModel.SqlExpression"/> objects and an a conditional operator which applies to those expressions.
+            <see cref="T:Made4Net.General.ObjectModel.WhereTerm"/> has no public constructor. Use one of the supplied static methods to create a term. 
+            <para>
+            Use <see cref="M:Made4Net.General.ObjectModel.WhereTerm.CreateCompare(Made4Net.General.ObjectModel.SqlExpression,Made4Net.General.ObjectModel.SqlExpression,Made4Net.General.ObjectModel.CompareOperator)"/> to create a comparison term. A comparison term can apply one of <see cref="T:Made4Net.General.ObjectModel.CompareOperator"/> operators on the supplied expressions.
+            Use <see cref="M:Made4Net.General.ObjectModel.WhereTerm.CreateIn(Made4Net.General.ObjectModel.SqlExpression,System.String)"/> to create a term which checks wheather an expression exists in a list of supplied values.
+            Use <see cref="M:Made4Net.General.ObjectModel.WhereTerm.CreateBetween(Made4Net.General.ObjectModel.SqlExpression,Made4Net.General.ObjectModel.SqlExpression,Made4Net.General.ObjectModel.SqlExpression)"/> to create a term which checks wheather an expression value is between a supplied lower and upper bounds.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.WhereTerm.CreateCompare(Made4Net.General.ObjectModel.SqlExpression,Made4Net.General.ObjectModel.SqlExpression,Made4Net.General.ObjectModel.CompareOperator)">
+            <summary>
+            Creates a comparison WhereTerm.
+            </summary>
+            <param name="expr1">Expression on the left side of the operator</param>
+            <param name="expr2">Expression on the right side of the operator</param>
+            <param name="op">Conditional operator to be applied on the expressions</param>
+            <returns>A new conditional WhereTerm</returns>
+            <remarks>
+            A comparison term compares two expression on the basis of their values. Expressions can be of any type but their results must be of comparible types. 
+            For instance, you can not compare a database field of type 'date' and a static value of type 'int'.
+            </remarks>
+            <example>
+            <code>
+            ...
+            query.WherePhrase.Terms.Add(WhereTerm.CreateCompare(SqlExpression.Field("name", tCustomers), SqlExpression.String("J%"), CompareOperator.Like));
+            </code>
+            </example>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.WhereTerm.CreateIn(Made4Net.General.ObjectModel.SqlExpression,System.String)">
+            <summary>
+            Creates a WhereTerm which represents SQL IN clause
+            </summary>
+            <param name="expr">Expression to be looked up</param>
+            <param name="sql">Sub query</param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.WhereTerm.CreateIn(Made4Net.General.ObjectModel.SqlExpression,Made4Net.General.ObjectModel.SqlConstantCollection)">
+            <summary>
+            Creates a WhereTerm which represents SQL IN clause
+            </summary>
+            <param name="expr">Expression to be looked up</param>
+            <param name="values">List of values</param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.WhereTerm.CreateNotIn(Made4Net.General.ObjectModel.SqlExpression,System.String)">
+            <summary>
+            Creates a WhereTerm which represents SQL NOT IN clause
+            </summary>
+            <param name="expr">Expression to be looked up</param>
+            <param name="sql">Sub query</param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.WhereTerm.CreateNotIn(Made4Net.General.ObjectModel.SqlExpression,Made4Net.General.ObjectModel.SqlConstantCollection)">
+            <summary>
+            Creates a WhereTerm which represents SQL NOT IN clause
+            </summary>
+            <param name="expr">Expression to be looked up</param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.WhereTerm.CreateIsNull(Made4Net.General.ObjectModel.SqlExpression)">
+            <summary>
+            Creates a WhereTerm which returns TRUE if an expression is NULL
+            </summary>
+            <param name="expr">Expression to be evaluated</param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.WhereTerm.CreateIsNotNull(Made4Net.General.ObjectModel.SqlExpression)">
+            <summary>
+            Creates a WhereTerm which returns TRUE if an expression is NOT NULL
+            </summary>
+            <param name="expr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.WhereTerm.CreateExists(System.String)">
+            <summary>
+            Creates a WhereTerm which encapsulates SQL EXISTS clause
+            </summary>
+            <param name="sql">Sub query for the EXISTS clause</param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.WhereTerm.CreateNotExists(System.String)">
+            <summary>
+            Creates a WhereTerm which encapsulates SQL NOT EXISTS clause
+            </summary>
+            <param name="sql">Sub query for the NOT EXISTS clause</param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.WhereTerm.CreateBetween(Made4Net.General.ObjectModel.SqlExpression,Made4Net.General.ObjectModel.SqlExpression,Made4Net.General.ObjectModel.SqlExpression)">
+            <summary>
+            Creates a WhereTerm which checks weather a value is in a specifed range.
+            </summary>
+            <param name="expr">Expression which yeilds the value to be checked</param>
+            <param name="lowBound">Expression which yeilds the low bound of the range</param>
+            <param name="highBound">Expression which yeilds the high bound of the range</param>
+            <returns>A new WhereTerm</returns>
+            <remarks>
+            CreateBetween only accepts expressions which yeild a 'Date' or 'Number' values.
+            All expressions must be of compatible types.
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.WhereTerm.Clone">
+            <summary>
+            Creates a copy of this WhereTerm
+            </summary>
+            <returns>A new WhereTerm which exactly the same as the current one.</returns>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.Render.ISqlOmRenderer">
+            <summary>
+            Defines methods common to all SqlOM renderers.
+            </summary>
+            <remarks>
+            Derive from <see cref="T:Made4Net.General.ObjectModel.Render.ISqlOmRenderer"/> when you wish to develop a brand new renderer. 
+            You can write 100% proprietery code for while implementing the interface methods but it is not advised.
+            Instead you can inherit the <see cref="T:Made4Net.General.ObjectModel.Render.SqlOmRenderer"/> class which implements 80-95% of your rendering functionality.
+            All renderers must return a string as their rendering result.
+            </remarks>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.Render.ISqlOmRenderer.DateFormat">
+            <summary>
+            Sets or returns default date format for the database
+            </summary>
+            <remarks>
+            Set DateFormat property when your database is configured to use a different date format
+            then "yyyy-MM-dd HH:mm:ss". SqlServer and MySql are configured to this format by default.
+            Oracle's default date format is "dd-MMM-yy HH:mm:ss".
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.ISqlOmRenderer.RenderSelect(Made4Net.General.ObjectModel.SelectQuery)">
+            <summary>
+            Renders a SELECT statement
+            </summary>
+            <param name="query">Query definition</param>
+            <returns>Generated SQL statement</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.ISqlOmRenderer.RenderRowCount(Made4Net.General.ObjectModel.SelectQuery)">
+            <summary>
+            Renders a row count SELECT statement. 
+            </summary>
+            <param name="query">Query definition to count rows for</param>
+            <returns>Generated SQL statement</returns>
+            <remarks>
+            Renders a SQL statement which returns a result set with one row and one cell which contains the number of rows <paramref name="query"/> can generate. 
+            The generated statement will work nicely with <see cref="M:System.Data.IDbCommand.ExecuteScalar"/> method.
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.ISqlOmRenderer.RenderPage(System.Int32,System.Int32,System.Int32,Made4Net.General.ObjectModel.SelectQuery)">
+            <summary>
+            Renders a paged SELECT statement
+            </summary>
+            <param name="pageIndex">The zero based index of the page to be returned</param>
+            <param name="pageSize">The size of a page</param>
+            <param name="totalRowCount">Total number of rows the query would yeild if not paged</param>
+            <param name="query">Query definition to apply paging on</param>
+            <returns>Generated SQL statement</returns>
+            <remarks>
+            Generating pagination SQL is different on different databases because every database offers different levels of support for such functioanality.
+            Some databases (SqlServer 2000) require the programmer to supply the total number of rows to produce a page. If your renderer does not use the totalRowCount parameter, please state so in your implementation documentation.
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.ISqlOmRenderer.RenderUpdate(Made4Net.General.ObjectModel.UpdateQuery)">
+            <summary>
+            Renders an UPDATE statement
+            </summary>
+            <param name="query">UPDATE query definition</param>
+            <returns>Generated SQL statement</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.ISqlOmRenderer.RenderInsert(Made4Net.General.ObjectModel.InsertQuery)">
+            <summary>
+            Renders an INSERT statement
+            </summary>
+            <param name="query">INSERT query definition</param>
+            <returns>Generated SQL statement</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.ISqlOmRenderer.RenderDelete(Made4Net.General.ObjectModel.DeleteQuery)">
+            <summary>
+            Renders an DELETE statement
+            </summary>
+            <param name="query">DELETE query definition</param>
+            <returns>Generated SQL statement</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.ISqlOmRenderer.RenderUnion(Made4Net.General.ObjectModel.SqlUnion)">
+            <summary>
+            Renders a UNION clause
+            </summary>
+            <param name="union">Union definition</param>
+            <returns>Generated SQL statement</returns>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.Render.RendererFactory">
+            <summary>
+            Summary description for RendererFactory.
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.Render.SqlOmRenderer">
+            <summary>
+            Provides common implementation for ISqlOmRenderer
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.#ctor(System.Char,System.Char)">
+            <summary>
+            Creates a new SqlOmRenderer
+            </summary>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.Render.SqlOmRenderer.DateFormat">
+            <summary>
+            Gets or sets a date format string
+            </summary>
+            <remarks>
+            Use <see cref="P:Made4Net.General.ObjectModel.Render.SqlOmRenderer.DateFormat"/> to specify how date values should be formatted
+            in order to be properly parsed by your database.
+            Specific renderers set this property to the appliciable default value, so you
+            only need to change this if your database is configured to use other then default date format.
+            <para>
+            DateFormat will be used to format <see cref="T:System.DateTime"/> values which have the Hour, Minute, Second and Milisecond properties set to 0.
+            Otherwise, <see cref="P:Made4Net.General.ObjectModel.Render.SqlOmRenderer.DateTimeFormat"/> will be used.
+            </para>
+            </remarks>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.Render.SqlOmRenderer.DateTimeFormat">
+            <summary>
+            Gets or sets a date-time format string
+            </summary>
+            <remarks>
+            Use <see cref="P:Made4Net.General.ObjectModel.Render.SqlOmRenderer.DateTimeFormat"/> to specify how timestamp values should be formatted
+            in order to be properly parsed by your database.
+            Specific renderers set this property to the appliciable default value, so you
+            only need to change this if your database is configured to use other then default date format.
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.RenderSelect(Made4Net.General.ObjectModel.SelectQuery)">
+            <summary>
+            Renders a SELECT statement
+            </summary>
+            <param name="query">Query definition</param>
+            <returns>Generated SQL statement</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.RenderRowCount(Made4Net.General.ObjectModel.SelectQuery)">
+            <summary>
+            Renders a row count SELECT statement. 
+            </summary>
+            <param name="query">Query definition to count rows for</param>
+            <returns>Generated SQL statement</returns>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.Render.SqlOmRenderer.UpperCaseIdentifiers">
+            <summary>
+            Specifies weather all identifiers should be converted to upper case while rendering
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.RenderUpdate(Made4Net.General.ObjectModel.UpdateQuery)">
+            <summary>
+            Renders an UPDATE statement
+            </summary>
+            <param name="query">UPDATE query definition</param>
+            <returns>Generated SQL statement</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.RenderInsert(Made4Net.General.ObjectModel.InsertQuery)">
+            <summary>
+            Renders an INSERT statement
+            </summary>
+            <param name="query">INSERT query definition</param>
+            <returns>Generated SQL statement</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.RenderDelete(Made4Net.General.ObjectModel.DeleteQuery)">
+            <summary>
+            Renders an DELETE statement
+            </summary>
+            <param name="query">DELETE query definition</param>
+            <returns>Generated SQL statement</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.RenderUnion(Made4Net.General.ObjectModel.SqlUnion)">
+            <summary>
+            Renders a UNION clause
+            </summary>
+            <param name="union">Union definition</param>
+            <returns>Generated SQL statement</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.RenderPage(System.Int32,System.Int32,System.Int32,Made4Net.General.ObjectModel.SelectQuery)">
+            <summary>
+            Renders a SELECT statement which a result-set page
+            </summary>
+            <param name="pageIndex">The zero based index of the page to be returned</param>
+            <param name="pageSize">The size of a page</param>
+            <param name="totalRowCount">Total number of rows the query would yeild if not paged</param>
+            <param name="query">Query definition to apply paging on</param>
+            <returns>Generated SQL statement</returns>
+            <remarks>
+            To generate pagination SQL you must supply <paramref name="totalRowCount"/>.
+            To aquire the total number of rows use the <see cref="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.RenderRowCount(Made4Net.General.ObjectModel.SelectQuery)"/> method.
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.Select(System.Text.StringBuilder,System.Boolean)">
+            <summary>
+            Renders a the beginning of a SELECT clause with an optional DISTINCT setting
+            </summary>
+            <param name="builder">Select statement string builder</param>
+            <param name="distinct">Turns on or off SQL distinct option</param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.SelectColumns(System.Text.StringBuilder,Made4Net.DataAccess.Collections.GenericListCollection)">
+            <summary>
+            Renders columns of SELECT clause
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.SelectColumn(System.Text.StringBuilder,Made4Net.General.ObjectModel.SelectColumn)">
+            <summary>
+            Renders a sinle select column
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.Coma(System.Text.StringBuilder)">
+            <summary>
+            Renders a separator between select columns
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.From(System.Text.StringBuilder)">
+            <summary>
+            Renders the begining of a FROM clause
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.FromClause(System.Text.StringBuilder,Made4Net.General.ObjectModel.FromClause,System.String)">
+            <summary>
+            Renders the terms of a from clause
+            </summary>
+            <param name="builder"></param>
+            <param name="fromClause"></param>
+            <param name="tableSpace">Common prefix for all tables in the clause</param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.RenderFromTerm(System.Text.StringBuilder,Made4Net.General.ObjectModel.FromTerm,System.String)">
+            <summary>
+            Renders a single FROM term
+            </summary>
+            <param name="builder"></param>
+            <param name="table"></param>
+            <param name="tableSpace">Common prefix for all tables in the term</param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.TableNamespace(System.Text.StringBuilder,System.String)">
+            <summary>
+            Renders the table namespace
+            </summary>
+            <param name="builder"></param>
+            <param name="ns"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.Where(System.Text.StringBuilder,Made4Net.General.ObjectModel.WhereClause)">
+            <summary>
+            Renders the begining of a WHERE statement
+            </summary>
+            <param name="builder"></param>
+            <param name="group"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.Having(System.Text.StringBuilder,Made4Net.General.ObjectModel.WhereClause)">
+            <summary>
+            Renders the begining of a HAVING statement
+            </summary>
+            <param name="builder"></param>
+            <param name="group"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.WhereClause(System.Text.StringBuilder,Made4Net.General.ObjectModel.WhereClause)">
+            <summary>
+            Recursivly renders a WhereClause
+            </summary>
+            <param name="builder"></param>
+            <param name="group"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.BitwiseAnd(System.Text.StringBuilder,Made4Net.General.ObjectModel.WhereTerm)">
+            <summary>
+            Renders bitwise and
+            </summary>
+            <param name="builder"></param>
+            <param name="term"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.WhereClause(System.Text.StringBuilder,Made4Net.General.ObjectModel.WhereTerm)">
+            <summary>
+            Renders a single WhereTerm
+            </summary>
+            <param name="builder"></param>
+            <param name="term"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.IfNull(System.Text.StringBuilder,Made4Net.General.ObjectModel.SqlExpression)">
+            <summary>
+            Renders IfNull SqlExpression
+            </summary>
+            <param name="builder"></param>
+            <param name="expr"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.Expression(System.Text.StringBuilder,Made4Net.General.ObjectModel.SqlExpression)">
+            <summary>
+            Renders SqlExpression
+            </summary>
+            <param name="builder"></param>
+            <param name="expr"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.Function(System.Text.StringBuilder,Made4Net.General.ObjectModel.SqlAggregationFunction,Made4Net.General.ObjectModel.SqlExpression)">
+            <summary>
+            Renders a SqlExpression of type Function 
+            </summary>
+            <param name="builder"></param>
+            <param name="func"></param>
+            <param name="param"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.Constant(System.Text.StringBuilder,Made4Net.General.ObjectModel.SqlConstant)">
+            <summary>
+            Renders a constant
+            </summary>
+            <param name="builder"></param>
+            <param name="expr"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.Operator(System.Text.StringBuilder,Made4Net.General.ObjectModel.CompareOperator)">
+            <summary>
+            Renders a comaprison operator
+            </summary>
+            <param name="builder"></param>
+            <param name="op"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.ConstantList(System.Text.StringBuilder,Made4Net.General.ObjectModel.SqlConstantCollection)">
+            <summary>
+            Renders a list of values
+            </summary>
+            <param name="builder"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.SqlEncode(System.String)">
+            <summary>
+            Encodes a textual string.
+            </summary>
+            <param name="val">Text to be encoded</param>
+            <returns>Encoded text</returns>
+            <remarks>All text string must be encoded before they are appended to a SQL statement.</remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.RelationshipOperator(System.Text.StringBuilder,Made4Net.General.ObjectModel.WhereClauseRelationship)">
+            <summary>
+            Renders a relationship operator
+            </summary>
+            <param name="builder"></param>
+            <param name="relationship"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.GroupBy(System.Text.StringBuilder,Made4Net.DataAccess.Collections.GenericListCollection)">
+            <summary>
+            Renders the begining of a GROUP BY statement.
+            </summary>
+            <param name="builder"></param>
+            <param name="groupByTerms"></param>
+            <remarks>If <paramref name="groupByTerms"/> has no items, nothing will be appended.</remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.GroupByTerms(System.Text.StringBuilder,Made4Net.DataAccess.Collections.GenericListCollection)">
+            <summary>
+            Renders GROUP BY terms 
+            </summary>
+            <param name="builder"></param>
+            <param name="groupByTerms"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.GroupByTerm(System.Text.StringBuilder,Made4Net.General.ObjectModel.GroupByTerm)">
+            <summary>
+            Renders a single GROUP BY term
+            </summary>
+            <param name="builder"></param>
+            <param name="term"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.OrderBy(System.Text.StringBuilder,Made4Net.DataAccess.Collections.GenericListCollection)">
+            <summary>
+            Renders the begining of a ORDER BY statement.
+            </summary>
+            <param name="builder"></param>
+            <param name="orderByTerms"></param>
+            <remarks>If <paramref name="orderByTerms"/> has no items, nothing will be appended.</remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.OrderByTerms(System.Text.StringBuilder,Made4Net.DataAccess.Collections.GenericListCollection)">
+            <summary>
+            Renders ORDER BY terms
+            </summary>
+            <param name="builder"></param>
+            <param name="orderByTerms"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.OrderByTerm(System.Text.StringBuilder,Made4Net.General.ObjectModel.OrderByTerm)">
+            <summary>
+            Renders a single ORDER BY term
+            </summary>
+            <param name="builder"></param>
+            <param name="term"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.Identifier(System.Text.StringBuilder,System.String)">
+            <summary>
+            Renders an identifier name.
+            </summary>
+            <param name="builder"></param>
+            <param name="name">Identifier name</param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.QualifiedIdentifier(System.Text.StringBuilder,System.String,System.String)">
+            <summary>
+            Renders a fully qualified identifer.
+            </summary>
+            <param name="builder">Select statement string builder</param>
+            <param name="qnamespace">Identifier namespace</param>
+            <param name="name">Identifier name</param>
+            <remarks>
+            <see cref="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.QualifiedIdentifier(System.Text.StringBuilder,System.String,System.String)"/> is usually to render database fields with optional table alias prefixes.
+            <paramref name="name"/> is a mandatory parameter while <paramref name="qnamespace"/> is optional.
+            If <paramref name="qnamespace"/> is null, identifier will be rendered without a namespace (aka table alias)
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.Update(System.Text.StringBuilder,System.String)">
+            <summary>
+            Renders a the beginning of an UPDATE clause with the table name
+            </summary>
+            <param name="builder"></param>
+            <param name="tableName">Name of the table to be updated</param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.UpdateTerms(System.Text.StringBuilder,Made4Net.DataAccess.Collections.GenericListCollection)">
+            <summary>
+            Renders update phrases
+            </summary>
+            <param name="builder"></param>
+            <param name="terms"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.UpdateTerm(System.Text.StringBuilder,Made4Net.General.ObjectModel.UpdateTerm)">
+            <summary>
+            Render a single update phrase
+            </summary>
+            <param name="builder"></param>
+            <param name="term"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.UpdateStatement(Made4Net.General.ObjectModel.UpdateQuery)">
+            <summary>
+            Renders the whole UPDATE statement using ANSI SQL standard
+            </summary>
+            <param name="query"></param>
+            <returns>The rendered SQL string</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.Insert(System.Text.StringBuilder,System.String)">
+            <summary>
+            Render the beginning of an INSERT statement with table name
+            </summary>
+            <param name="builder"></param>
+            <param name="tableName"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.InsertColumns(System.Text.StringBuilder,Made4Net.DataAccess.Collections.GenericListCollection)">
+            <summary>
+            Render the list of columns which are to be inserted.
+            </summary>
+            <param name="builder"></param>
+            <param name="terms"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.InsertColumn(System.Text.StringBuilder,Made4Net.General.ObjectModel.UpdateTerm)">
+            <summary>
+            Render a single column name in an INSERT statement
+            </summary>
+            <param name="builder"></param>
+            <param name="term"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.InsertValues(System.Text.StringBuilder,Made4Net.DataAccess.Collections.GenericListCollection)">
+            <summary>
+            Render the values of an INSERT statement
+            </summary>
+            <param name="builder"></param>
+            <param name="terms"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.InsertValue(System.Text.StringBuilder,Made4Net.General.ObjectModel.UpdateTerm)">
+            <summary>
+            Render a single INSERT value
+            </summary>
+            <param name="builder"></param>
+            <param name="term"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.InsertStatement(Made4Net.General.ObjectModel.InsertQuery)">
+            <summary>
+            Render the whole INSERT statement in ANSI standard
+            </summary>
+            <param name="query"></param>
+            <returns>The rendered SQL INSERT statement</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.Delete(System.Text.StringBuilder,System.String)">
+            <summary>
+            Render the beginning of a DELETE statement
+            </summary>
+            <param name="builder"></param>
+            <param name="tableName"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.DeleteStatement(Made4Net.General.ObjectModel.DeleteQuery)">
+            <summary>
+            Render the whole DELETE statement in ANSI SQL standard
+            </summary>
+            <param name="query"></param>
+            <returns>The rendered SQL statement</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.CaseClause(System.Text.StringBuilder,Made4Net.General.ObjectModel.CaseClause)">
+            <summary>
+            Renders a CaseCluase
+            </summary>
+            <param name="builder"></param>
+            <param name="clause"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlOmRenderer.CaseTerm(System.Text.StringBuilder,Made4Net.General.ObjectModel.CaseTerm)">
+            <summary>
+            Renders a CaseTerm
+            </summary>
+            <param name="builder"></param>
+            <param name="term"></param>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.Render.MySqlRenderer">
+            <summary>
+            Renderer for MySql
+            </summary>
+            <remarks>
+            Use MySqlRenderer to render SQL statements for MySql database.
+            This version of Sql.Net has been tested with MySql 4
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.MySqlRenderer.#ctor">
+            <summary>
+            Creates a new MySqlRenderer
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.MySqlRenderer.IfNull(System.Text.StringBuilder,Made4Net.General.ObjectModel.SqlExpression)">
+            <summary>
+            Renders IfNull SqlExpression
+            </summary>
+            <param name="builder"></param>
+            <param name="expr"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.MySqlRenderer.RenderSelect(Made4Net.General.ObjectModel.SelectQuery)">
+            <summary>
+            Renders a SELECT statement
+            </summary>
+            <param name="query">Query definition</param>
+            <returns>Generated SQL statement</returns>
+            <remarks>MySql 4.1 does not support GroupByWithCube option. If a query has <see cref="P:Made4Net.General.ObjectModel.SelectQuery.GroupByWithCube"/> set an <see cref="T:Made4Net.General.ObjectModel.InvalidQueryException"/> exception will be thrown. </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.MySqlRenderer.RenderRowCount(Made4Net.General.ObjectModel.SelectQuery)">
+            <summary>
+            Renders a row count SELECT statement. 
+            </summary>
+            <param name="query">Query definition to count rows for</param>
+            <returns>Generated SQL statement</returns>
+            <remarks>
+            Renders a SQL statement which returns a result set with one row and one cell which contains the number of rows <paramref name="query"/> can generate. 
+            The generated statement will work nicely with <see cref="M:System.Data.IDbCommand.ExecuteScalar"/> method.
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.MySqlRenderer.RenderPage(System.Int32,System.Int32,System.Int32,Made4Net.General.ObjectModel.SelectQuery)">
+            <summary>
+            Renders a SELECT statement which a result-set page
+            </summary>
+            <param name="pageIndex">The zero based index of the page to be returned</param>
+            <param name="pageSize">The size of a page</param>
+            <param name="totalRowCount">Total number of rows the query would yeild if not paged</param>
+            <param name="query">Query definition to apply paging on</param>
+            <returns>Generated SQL statement</returns>
+            <remarks>
+            Parameter <paramref name="totalRowCount"/> is ignored.
+            </remarks>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.Render.OracleRenderer">
+            <summary>
+            Renderer for Oracle
+            </summary>
+            <remarks>
+            Use OracleRenderer to render SQL statements for Oracle database.
+            This version of Sql.Net has been tested with Oracle 9i.
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.OracleRenderer.#ctor">
+            <summary>
+            Creates a new instance of OracleRenderer
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.OracleRenderer.IfNull(System.Text.StringBuilder,Made4Net.General.ObjectModel.SqlExpression)">
+            <summary>
+            Renders IfNull SqlExpression
+            </summary>
+            <param name="builder"></param>
+            <param name="expr"></param>
+        </member>
+        <member name="P:Made4Net.General.ObjectModel.Render.OracleRenderer.UpperCaseIdentifiers">
+            <summary>
+            Returns true. 
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.OracleRenderer.BitwiseAnd(System.Text.StringBuilder,Made4Net.General.ObjectModel.WhereTerm)">
+            <summary>
+            Renders bitwise and
+            </summary>
+            <param name="builder"></param>
+            <param name="term"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.OracleRenderer.RenderSelect(Made4Net.General.ObjectModel.SelectQuery)">
+            <summary>
+            Renders a SELECT statement
+            </summary>
+            <param name="query">Query definition</param>
+            <returns>Generated SQL statement</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.OracleRenderer.RenderRowCount(Made4Net.General.ObjectModel.SelectQuery)">
+            <summary>
+            Renders a row count SELECT statement. 
+            </summary>
+            <param name="query">Query definition to count rows for</param>
+            <returns>Generated SQL statement</returns>
+            <remarks>
+            Renders a SQL statement which returns a result set with one row and one cell which contains the number of rows <paramref name="query"/> can generate. 
+            The generated statement will work nicely with <see cref="M:System.Data.IDbCommand.ExecuteScalar"/> method.
+            </remarks>
+        </member>
+        <member name="T:Made4Net.General.ObjectModel.Render.SqlServerRenderer">
+            <summary>
+            Renderer for SqlServer
+            </summary>
+            <remarks>
+            Use SqlServerRenderer to render SQL statements for Microsoft SQL Server database.
+            This version of Sql.Net has been tested with MSSQL 2000
+            </remarks>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlServerRenderer.#ctor">
+            <summary>
+            Creates a new SqlServerRenderer
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlServerRenderer.IfNull(System.Text.StringBuilder,Made4Net.General.ObjectModel.SqlExpression)">
+            <summary>
+            Renders IfNull SqlExpression
+            </summary>
+            <param name="builder"></param>
+            <param name="expr"></param>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlServerRenderer.RenderSelect(Made4Net.General.ObjectModel.SelectQuery)">
+            <summary>
+            Renders a SELECT statement
+            </summary>
+            <param name="query">Query definition</param>
+            <returns>Generated SQL statement</returns>
+        </member>
+        <member name="M:Made4Net.General.ObjectModel.Render.SqlServerRenderer.RenderRowCount(Made4Net.General.ObjectModel.SelectQuery)">
+            <summary>
+            Renders a row count SELECT statement. 
+            </summary>
+            <param name="query">Query definition to count rows for</param>
+            <returns>Generated SQL statement</returns>
+            <remarks>
+            Renders a SQL statement which returns a result set with one row and one cell which contains the number of rows <paramref name="query"/> can generate. 
+            The generated statement will work nicely with <see cref="M:System.Data.IDbCommand.ExecuteScalar"/> method.
+            </remarks>
+        </member>
+        <member name="T:Made4Net.General.CheckM">
+            <summary>
+            Summary description for CheckM.
+            </summary>
+        </member>
+        <member name="T:Made4Net.General.VirtualDirectory.VirtualDirectoryGenerator">
+            <summary>
+            Summary description for VirtualDirectoryGenerator.
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.VirtualDirectory.VirtualDirectoryGenerator.IsIISSupportAppPools(System.String)">
+            <summary>
+            Determine version of IIS , from 6 on - there is a support in multiple app pools.
+            </summary>
+            <param name="serverName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.General.VirtualDirectory.VirtualDirectoryGenerator.CreateVirtualDirectory">
+            <summary>
+            If the IIS version is at least  6.0 and it requires a new application pool then
+            the new pool is created together with the 
+            </summary>
+        </member>
+        <member name="M:Made4Net.General.VirtualDirectory.VirtualDirectoryGenerator.RemoveVirtualDirectory">
+            <summary>
+            delete the virtual directory (Does not delete the physical directory maped to it).
+            If IIs 6.0 and up, also deletes the application pool attached to it 
+            </summary>
+        </member>
+        <member name="T:Made4Net.Interfaces.ILabel">
+            <summary>
+            Summary description for Class1.
+            </summary>
+        </member>
+    </members>
+</doc>

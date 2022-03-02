@@ -1,0 +1,21 @@
+.app-login-screen {position:absolute;top:0;bottom:0;right:0;left:0;background:#70BF60}
+.app-login-screen .app-login-container {position:absolute;top:0;left:25%;bottom:0;box-sizing:border-box;width:280px;padding:20px;background:#323332}
+.app-login-screen .app-login-container > .app-logo {height:50px;}
+.app-login-screen .app-login-container > .app-logo img {display:block;height:40px;margin:0 0 10px 0;}
+.app-login-screen .app-login-container > .app-logo > .app-logo-slogan {height:10px;line-height:10px;color:#FFF;font-size:0.8em;}
+.app-login-screen .app-login-container .app-login-form-container {position:absolute;top:40%;width:240px}
+.app-login-screen .app-login-container .app-login-form-container .field-title {padding: 0 0 5px 0;font-size: 1.2em;color:#FFF}
+.app-login-screen .app-login-container .app-login-form-container .actions-container {text-align:right}
+.app-login-screen .app-login-container .app-login-form-container .actions-container .app-button-native {margin:0 0 20px 0}
+.app-login-screen .app-login-container .app-login-form-container .actions-container .app-button-native button {color:#FFF}
+.app-login-screen .app-login-container .app-login-form-container .actions-container .app-button-native button:hover {color:#323332}
+.app-login-screen .app-login-container .app-login-form-container .actions-container .app-forgot-password {cursor:pointer;}
+.app-login-screen .app-login-container .app-login-form-container .actions-container .app-forgot-password a {color:#FFF;font-size:1em;text-decoration:underline}
+.app-login-screen .app-login-container .app-login-form-container .actions-container .app-forgot-password a:hover {text-decoration:none}
+
+@media all and (max-width:650px) {
+    .app-login-screen .app-login-container {left:0%}
+}
+@media all and (min-width:651px) and (max-width:1024px) {
+    .app-login-screen .app-login-container {}
+}

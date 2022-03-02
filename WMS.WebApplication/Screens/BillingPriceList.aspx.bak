@@ -1,0 +1,43 @@
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="BillingPriceList.aspx.vb" Inherits="WMS.WebApp.BillingPriceList"%>
+<%@ Register TagPrefix="cc3" Namespace="WMS.WebCtrls.WebCtrls" Assembly="WMS.WebCtrls" %>
+<%@ Register TagPrefix="iewc" Namespace="Microsoft.Web.UI.WebControls" Assembly="Microsoft.Web.UI.WebControls" %>
+<%@ Register TagPrefix="cc1" Namespace="ProgStudios.WebControls" Assembly="ProgStudios.WebControls" %>
+<%@ Register TagPrefix="cc2" Namespace="Made4Net.WebControls" Assembly="Made4Net.WebControls" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>BillingPriceList</title>
+		<meta name="GENERATOR" content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" content="Visual Basic .NET 7.1">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+	</HEAD>
+	<body bottomMargin="0" leftMargin="0" topMargin="0" rightMargin="0" MS_POSITIONING="FlowLayout">
+		<form id="Form1" method="post" runat="server">
+            <telerik:RadScriptManager ID="RadScriptManager2" runat="server">     </telerik:RadScriptManager> 
+			<cc3:screen id="Screen1" runat="server" ScreenID="pr"></cc3:screen>
+			<P><cc2:tableeditor id="TEBillingPriceMaster" runat="server" DefaultDT="DTBILLPRICEHEADER" ManualMode="False"
+					DefaultVS="2" DefaultMode="Search" TableName="BILLINGPRICELISTHEADER" GridPageSize="5" DESIGNTIMEDRAGDROP="14"
+					EditVS="0" ForbidRequiredFieldsInSearchMode="True" SearchDT="DTBILLPRICEHEADER" EditDT="DTBILLPRICEHEADEREDIT"
+					DisableSwitches="mnvdr" InsertDT="DTBILLPRICEHEADERInsert" AutoSelectGridItem="Never"
+					AutoSelectMode="View"></cc2:tableeditor>
+			</P>
+			<br>
+			<p>
+				<TABLE id="Table1" cellSpacing="0" cellPadding="0" border="0" runat="server">
+					<TR>
+						<TD style="WIDTH: 165px">
+							<cc2:TableEditor id="TEBillingPriceDetail" runat="server" DisableSwitches="mnvdr" TableName="BILLINGPRICELISTDETAIL"
+								DefaultMode="Grid" DefaultDT="DTBILLPRICEDETAIL" SQL="SELECT * FROM BILLINGPRICELISTDETAIL" SearchDT="DTBILLPRICEDETAIL"
+								EditDT="DTBILLPRICEDETAILEDIT" ForbidRequiredFieldsInSearchMode="True" AutoSelectGridItem="Never"
+								AutoSelectMode="View"></cc2:TableEditor>
+							<cc2:DataConnector id="DC1" runat="server" DESIGNTIMEDRAGDROP="38" MasterObjID="TEBillingPriceMaster"
+								ChildFields="PriceListName" MasterFields="Name" MasterGridID="TEBillingPriceMaster" TargetID="TEBillingPriceDetail"
+								SyncMode="Normal"></cc2:DataConnector>
+						</TD>
+					</TR>
+				</TABLE>
+			</p>
+		</form>
+	</body>
+</HTML>

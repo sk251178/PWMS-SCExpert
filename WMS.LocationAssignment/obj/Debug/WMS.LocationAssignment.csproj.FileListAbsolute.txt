@@ -1,0 +1,12 @@
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.LocationAssignment\obj\Debug\WMS.LocationAssignment.csproj.AssemblyReference.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.LocationAssignment\obj\Debug\WMS.LocationAssignment.LocationAssignement.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.LocationAssignment\obj\Debug\WMS.LocationAssignment.ProjectInstaller.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.LocationAssignment\obj\Debug\WMS.LocationAssignment.csproj.GenerateResource.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.LocationAssignment\obj\Debug\WMS.LocationAssignment.csproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\LocationAssignment\PWMS.LocationAssignment.exe.config
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\LocationAssignment\PWMS.LocationAssignment.xml
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\LocationAssignment\PWMS.LocationAssignment.exe
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\LocationAssignment\PWMS.LocationAssignment.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.LocationAssignment\obj\Debug\WMS.LocationAssignment.csproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.LocationAssignment\obj\Debug\PWMS.LocationAssignment.exe
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.LocationAssignment\obj\Debug\PWMS.LocationAssignment.pdb

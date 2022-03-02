@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="DATACOLLECTION">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="DATA">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CONSIGNEE">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="COMPANYTYPE">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="COMPANY">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="COMPANYNAME">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="OTHERCOMPANY">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="COMPANYGROUP">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="STATUS">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="MIXPICKING">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="CONTAINER">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="PREFUNLOADINGSIDE">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="DELIVERYCOMMENTS">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="SERVICETIME">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="DEFAULTCONTACT">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="CONTACTS">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="CONTACT">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="CONTACTID">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="STREET1">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="STREET2">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="CITY">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="STATE">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ZIP">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="CONTACT1NAME">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="CONTACT2NAME">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="CONTACT1PHONE">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="CONTACT2PHONE">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="CONTACT1FAX">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="CONTACT2FAX">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="CONTACT1EMAIL">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="CONTACT2EMAIL">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="POINTID">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ROUTE">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="STAGINGLANE">
+														<xs:complexType/>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

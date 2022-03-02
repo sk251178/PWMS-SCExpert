@@ -1,0 +1,9 @@
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\WMS.Lib.dll
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\WMS.Lib.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\WMS.Lib.xml
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Lib\obj\Debug\WMS.Lib.vbproj.AssemblyReference.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Lib\obj\Debug\WMS.Lib.vbproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Lib\obj\Debug\WMS.Lib.vbproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Lib\obj\Debug\WMS.Lib.dll
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Lib\obj\Debug\WMS.Lib.xml
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Lib\obj\Debug\WMS.Lib.pdb

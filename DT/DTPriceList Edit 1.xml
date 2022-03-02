@@ -1,0 +1,31 @@
+<DataTemplates>
+  <DataTemplate>
+    <ID>577</ID>
+    <Name>DTPriceList Edit 1</Name>
+    <AppID>0</AppID>
+    <Label>PriceList Edit</Label>
+    <StructureName>BILLINGPRICELISTHEADER</StructureName>
+    <ConnID>2</ConnID>
+    <FormTemplate>{all:n4}</FormTemplate>
+    <ColumnTemplates />
+    <RowAttributes />
+    <DTType>APPLICATION</DTType>
+    <ScreenId />
+    <ObjectId />
+    <Mode />
+    <User />
+    <RowsInGrid>0</RowsInGrid>
+    <UseDTConnection>False</UseDTConnection>
+    <ParentAppID>0</ParentAppID>
+    <ParentDTID>0</ParentDTID>
+    <HasClientSideExpressions>False</HasClientSideExpressions>
+    <InMemory>False</InMemory>
+    <ViewStyle>0</ViewStyle>
+    <UpdatedBy />
+    <UpdatedOn>2007-07-25 13:01:31.5470</UpdatedOn>
+    <DTHelp />
+    <IsStickyFields>False</IsStickyFields>
+    <DTFields />
+    <Expressions />
+  </DataTemplate>
+</DataTemplates>

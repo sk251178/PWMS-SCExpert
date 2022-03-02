@@ -1,0 +1,13 @@
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\WinApps\SCExpertConnectUtility\PWMSSCExpertConnectUtility.exe.config
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\WinApps\SCExpertConnectUtility\PWMSSCExpertConnectUtility.exe
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\WinApps\SCExpertConnectUtility\PWMSSCExpertConnectUtility.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\WinApps\SCExpertConnectUtility\PWMSSCExpertConnectUtility.xml
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertConnectUtility\obj\Debug\SCExpertConnectUtility.vbproj.AssemblyReference.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertConnectUtility\obj\Debug\SCExpertConnectUtility.Form1.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertConnectUtility\obj\Debug\SCExpertConnectUtility.Resources.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertConnectUtility\obj\Debug\SCExpertConnectUtility.vbproj.GenerateResource.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertConnectUtility\obj\Debug\SCExpertConnectUtility.vbproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertConnectUtility\obj\Debug\SCExpertConnectUtility.vbproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertConnectUtility\obj\Debug\PWMSSCExpertConnectUtility.exe
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertConnectUtility\obj\Debug\PWMSSCExpertConnectUtility.xml
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertConnectUtility\obj\Debug\PWMSSCExpertConnectUtility.pdb

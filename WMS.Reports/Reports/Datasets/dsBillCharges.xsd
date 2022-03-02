@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="dsBillCharges" targetNamespace="http://tempuri.org/dsBillCharges.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/dsBillCharges.xsd" xmlns:mstns="http://tempuri.org/dsBillCharges.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="dsBillCharges" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="BillCharges">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CHARGEID" type="xs:string" minOccurs="0" />
+							<xs:element name="BILLINGRUNID" type="xs:string" minOccurs="0" />
+							<xs:element name="AGREEMENTNAME" type="xs:string" minOccurs="0" />
+							<xs:element name="CONSIGNEE" type="xs:string" minOccurs="0" />
+							<xs:element name="BILLFROMDATE" type="xs:date" minOccurs="0" />
+							<xs:element name="BILLTODATE" type="xs:date" minOccurs="0" />
+							<xs:element name="CHARGELINE" type="xs:int" minOccurs="0" />
+							<xs:element name="AGREEMENTLINE" type="xs:int" minOccurs="0" />
+							<xs:element name="TRANTYPE" type="xs:string" minOccurs="0" />
+							<xs:element name="BILLBASIS" type="xs:string" minOccurs="0" />
+							<xs:element name="UNITS" type="xs:double" minOccurs="0" />
+							<xs:element name="BILLTOTAL" type="xs:double" minOccurs="0" />
+							<xs:element name="CURRENCY" type="xs:string" minOccurs="0" />
+							<xs:element name="ADDDATE" type="xs:date" minOccurs="0" />
+							<xs:element name="ADDUSER" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

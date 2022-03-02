@@ -1,0 +1,8 @@
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\CODE128GS.XML
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\CODE128GS.dll
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\CODE128GS.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\CODE128GS\obj\Debug\CODE128GS.csproj.AssemblyReference.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\CODE128GS\obj\Debug\CODE128GS.csproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\CODE128GS\obj\Debug\CODE128GS.csproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\CODE128GS\obj\Debug\CODE128GS.dll
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\CODE128GS\obj\Debug\CODE128GS.pdb

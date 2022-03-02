@@ -1,0 +1,9 @@
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\WMS.Reports.dll
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\WMS.Reports.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\WMS.Reports.xml
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Reports\obj\Debug\WMS.Reports.vbproj.AssemblyReference.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Reports\obj\Debug\WMS.Reports.vbproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Reports\obj\Debug\WMS.Reports.vbproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Reports\obj\Debug\WMS.Reports.dll
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Reports\obj\Debug\WMS.Reports.xml
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Reports\obj\Debug\WMS.Reports.pdb

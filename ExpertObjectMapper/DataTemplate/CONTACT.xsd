@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CONTACT" targetNamespace="http://tempuri.org/CONTACT.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/CONTACT.xsd" xmlns:mstns="http://tempuri.org/CONTACT.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="BUSINESSOBJECT">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="BOTYPE" type="xs:string" />
+        <xs:element name="DATACOLLECTION" type="xs:string" />
+        <xs:element name="DATA">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STREET1" type="xs:string" />
+              <xs:element name="STREET2" type="xs:string" />
+              <xs:element name="CITY" type="xs:string" />
+              <xs:element name="STATE" type="xs:string" />
+              <xs:element name="ZIP" type="xs:string" />
+              <xs:element name="CONTACT1NAME" type="xs:string" />
+              <xs:element name="CONTACT2NAME" type="xs:string" />
+              <xs:element name="CONTACT1PHONE" type="xs:string" />
+              <xs:element name="CONTACT2PHONE" type="xs:string" />
+              <xs:element name="CONTACT1FAX" type="xs:string" />
+              <xs:element name="CONTACT2FAX" type="xs:string" />
+              <xs:element name="CONTACT1EMAIL" type="xs:string" />
+              <xs:element name="CONTACT2EMAIL" type="xs:string" />
+              <xs:element name="POINTID" type="xs:string" />
+              <xs:element name="ROUTE" type="xs:string" />
+              <xs:element name="STAGINGLANE" type="xs:string" />
+              <xs:element name="STAGINGWAREHOUSEAREA" type="xs:string" />
+              <xs:element name="PICKUPCONFIRMATIONTYPE" type="xs:string" />
+              <xs:element name="DELIVERYCONFIRMATIONTYPE" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

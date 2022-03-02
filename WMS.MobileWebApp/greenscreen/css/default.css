@@ -1,0 +1,51 @@
+html {padding:0;margin:0}
+body {display:none;padding:0;margin:0;font-family:Arial;font-size:12px;background:#FFF}  
+p {margin:0;padding:0}   
+form {display:block;padding:0;margin:0}   
+table {font-size:12px}   
+span {font-size:inherit}          
+.small_screen_two_columns {}   
+
+:focus {outline:none}   
+input:focus {border:2px solid #70BF60!important}   
+select:focus {border: 2px solid #70BF60!important}   
+.field .container .input_focus {border:2px solid #70BF60!important}   
+
+
+h1,h2,h3,h4,h5 {padding:0 0 5px 0;margin:0;font-weight:normal}
+
+.header {height:2em;line-height:2em;padding:0 1em;color:#FFF;font-size:1.4em;background:#70BF60;overflow:hidden}  
+.header .main {color:#FFF;text-decoration:none}
+.header a:hover {text-decoration:underline}
+.header .logout {float:right;margin:0 0 0 2%;font-size:0.6em;color:#FFF;text-decoration:none}
+.header .back {float:right;margin:0 0 0 2%;font-size:0.6em;color:#FFF;text-decoration:none}
+
+.content {padding:1em 1em 0 1em}
+.content .table {display:table;width:100%;margin:0}  
+
+.field {float:left;padding:0 1% 1em 0}
+.field.condensed {width:31%}
+.field.very_condensed {width:33%;padding:1em 0 0 0}  
+
+.field.full {width:100%}
+.field .container {padding:0}
+.field .container h3 {display:block;line-height:1.2em;font-size:1.2em}
+.field .container input {display:block;/*height:2.4em;line-height:2.2em;*/padding:0.5em;border:2px solid #EEE;font-size:1.2em}   
+.field .container select {display:block;/*height:2.4em;line-height:2.2em;*/padding:0.5em;border:2px solid #EEE;font-size:1.2em}   
+
+
+.actions {display:table;width:100%;margin:1em 0 0 0;text-align:center}  
+.actions .button {display:block;float:left;box-sizing:border-box;padding:0;margin:0.5em 1% 0 0/*;border:2px solid #999*/}   
+      /*.actions .button.highlighted {border:2px solid #70BF60}*/            
+.actions .button input {border:2px solid #999;padding:0.5em;font-size:1.2em;text-transform:capitalize;background:transparent}   
+.actions .button input:hover {border:2px solid #70BF60!important;color:#FFF;background:#70BF60!important}   
+.actions .button input:focus {border:2px solid #70BF60!important;color:#FFF;background:#70BF60!important}   
+.actions .button input.input_focus {border:2px solid #70BF60!important;color:#FFF;background:#70BF60!important}   
+
+
+.list {display:table;width:100%}
+.list a {display:block;width:auto;font-size:1.2em;height: 2.4em;border-bottom: 2px solid #EEE;text-decoration:none;line-height: 2.4em;color: #000;padding:0 1em;cursor:pointer;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:transparent!important}   
+.list a:hover {border-bottom:2px solid #70BF60}   
+.list a:focus {border-bottom:2px solid #70BF60}   
+.list a.input_focus {border-bottom:2px solid #70BF60}   
+.small_screen_two_columns .list a {box-sizing:border-box;float:left;width:28%;padding:0;margin:0 1%}   

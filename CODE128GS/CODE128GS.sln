@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CODE128GS", "CODE128GS.csproj", "{43F4191A-8656-4F00-8DBD-996955DABE32}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccProjectUniqueName0 = CODE128GS.csproj
+		SccProjectName0 = $/Gelsons/Sourse/CODE128GS
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:SourceGear\u0020Vault\u0020Classic\u0020Client
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43F4191A-8656-4F00-8DBD-996955DABE32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43F4191A-8656-4F00-8DBD-996955DABE32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43F4191A-8656-4F00-8DBD-996955DABE32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43F4191A-8656-4F00-8DBD-996955DABE32}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

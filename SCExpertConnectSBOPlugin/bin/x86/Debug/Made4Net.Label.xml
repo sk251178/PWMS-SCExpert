@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Made4Net.Label</name>
+    </assembly>
+    <members>
+        <member name="T:Made4Net.Label.GlobalLabel">
+            <summary>
+            Summary description for LabelItem.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Label.LabelBarTender">
+            <summary>
+            Summary description for LabelBarTender.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Label.LabelBarTenderCmd">
+            <summary>
+            Summary description for LabelBarTenderCmd.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Label.LabelHandler">
+            <summary>
+            Summary description for LabelHandler.
+            // 7/25/2015: Reverted RWMS-2412 changes back to single log file.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Label.LabelLoftware">
+            <summary>
+            Summary description for LabelLoftware.
+            </summary>
+        </member>
+        <member name="M:Made4Net.Label.LabelLoftware.PrintLabel(System.String,System.String,System.Data.DataSet,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Duplicates ;//an exact copy
+            Pages  ;//an exact copy with layout 
+            PrinterNumber;//The configured device id 
+            Quantity ;//number of copies with inc/dec index
+            LabelsPath ; //- label location 
+            LayoutPath ;
+            PrinterPath ; //- path to LPS install dir or printr32.dll
+            DropDirectory ; // - WDrop directory 
+            Pass Files - The Pass File (saved as .pas) is a simple ASCII text file that has all the data 
+            for the label that is to be printed.  This type of file “passes” commands, variable field 
+            names and corresponding data to the LPS.
+             </summary>
+            <param name="templateFullPath"></param>
+            <param name="printer"></param>
+            <param name="labelData"></param>
+            <param name="labelConfiguration"></param>
+        </member>
+        <member name="T:Made4Net.Label.LabelPlaceHolders">
+            <summary>
+            Summary description for LabelZebra.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Label.LabelText">
+            <summary>
+            Summary description for LabelText.
+            </summary>
+        </member>
+        <member name="M:Made4Net.Label.LabelText.PrintLabel(System.String,System.String,System.Data.DataSet,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Printing all labels to one single file and then send it to printer
+            </summary>
+            <param name="labelTemplate"></param>
+            <param name="labelPrinterPath"></param>
+            <param name="labelData"></param>
+            <param name="labelConfiguration"></param>
+        </member>
+        <member name="T:Made4Net.Label.LabelUtils">
+            <summary>
+            Summary description for LabelUtils.
+            </summary>
+        </member>
+    </members>
+</doc>

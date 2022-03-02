@@ -1,0 +1,158 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Made4Net.Schema
+</name>
+</assembly>
+<members>
+<member name="M:Made4Net.Schema.DataTemplate.Load(System.Int32,System.String,System.Boolean)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Loads a data template (DT).
+ </summary>
+ <param name="pAppID">Application ID</param>
+ <param name="pDTName">The name of data template to load.</param>
+ <param name="DisableCache">Enables or disables data template cache (for this time only). If true, data template will NOT be loaded from the cache.</param>
+ <returns>A data template object.</returns>
+ <remarks>
+ <para>Data template (DT) loading by name uses the following logic:</para>
+ <list type="number">
+ <item>Try to load the DT from the cache unless disabled by the <paramref name="DisableCache" /> parameter.</item>
+ <item>If the "use_built_in_system_dts" system parameter is set to "True" or "1", try to load the DT from a binary file. This only works for system DTs that are stored with the assembly in the <c>SystemDataTemplates</c> directory.</item>
+ <item>Try to load the DT from the database.</item>
+ <item>If the DT is not found in one of the previous steps, try to load it from a binary file even if the "use_built_in_system_dts" system parameter is not set to "True".</item>
+</list>
+ </remarks>
+ <exception cref="T:Made4Net.Schema.DataTemplateNotFoundException">Thrown if the DT was not found.</exception>
+ <history>
+ 	[Administrator]	7/1/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Schema.DataTemplate.ClearCache">
+ -----------------------------------------------------------------------------
+ <summary>
+ Removes all data templates from the cache
+ </summary>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Schema.DataTemplate.RemoveFromCache">
+ -----------------------------------------------------------------------------
+ <summary>
+ Removes the current data template from the cache
+ </summary>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Schema.DataTemplate.ClearCache(System.Int32,System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Removes the specified data template from the cache
+ </summary>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Schema.DataTemplate.ClearCache(System.Int32,System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Removes the specified data template from the cache
+ </summary>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Schema.DataTemplate.Touch(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Updates the time the data template was last updated and the name of the user performing the update.
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	4/29/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Schema.DTFieldExpression.GetEvents">
+ -----------------------------------------------------------------------------
+ <summary>
+ Returns an array of expression event objects
+ </summary>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	8/4/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Schema.Reporting.QuickReport.CreateReportObject(Made4Net.DataAccess.Collections.GenericCollection,Made4Net.Shared.SQL.SQLSelectStatement)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Creates a report object of type Made4Net.Reporting.Report
+ </summary>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	2/26/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Schema.Reporting.Report.CopyGroupsFrom(System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Deletes the current group records and copies new group records from the source report.
+ </summary>
+ <param name="sourceReport"></param>
+ <returns>Amount of records copied</returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	2/28/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Schema.Reporting.Report.CopySortItemsFrom(System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Deletes the current sort records and copies new sort records from the source report.
+ </summary>
+ <param name="sourceReport"></param>
+ <returns>Amount of records copied</returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	2/28/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Schema.Reporting.Report.CopyGroups(System.Int32,System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Copies report group records from the source to the destination report.
+ </summary>
+ <param name="sourceReport"></param>
+ <param name="destReport"></param>
+ <returns>Amount of records copied</returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	2/28/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.Schema.Reporting.Report.CopySortItems(System.Int32,System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Copies report sort records from the source to the destination report.
+ </summary>
+ <param name="sourceReport"></param>
+ <param name="destReport"></param>
+ <returns>Amount of records copied</returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	2/28/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+</members>
+</doc>

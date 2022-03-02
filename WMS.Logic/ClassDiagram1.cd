@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="From the ORDERREQUIREMENTS table">
+    <Position X="17.844" Y="10.076" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="WMS.Logic.Planner">
+    <Position X="7.25" Y="9" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>JEiAgAAQGAEZQABiAlAAAAEEKADABAAJBgAAAAgAAIA=</HashCode>
+      <FileName>Processes\Plan\Planner.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_picklocdt" />
+      <Field Name="_stock" />
+      <Field Name="_strat" />
+      <Field Name="_wave" />
+      <Field Name="_onhandstock" />
+      <Field Name="_RequirmentsAllowedStock" />
+      <Field Name="_reqs" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WMS.Logic.VPickLocDataTable">
+    <Position X="10" Y="7" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAACAQAAEAAAAAAAAJAAAAAAAAgAAABAAAA=</HashCode>
+      <FileName>DataProvider\IndexedDataTables\VPickLocDataTable.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WMS.Logic.VPlannerInventoryDataTable" Collapsed="true">
+    <Position X="1" Y="7" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgCAQAAEAAEAAAAAAAAAgAAAAgAAAAAAAA=</HashCode>
+      <FileName>DataProvider\IndexedDataTables\VPlannerInventoryDataTable.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WMS.Logic.PlanStrategies">
+    <Position X="9" Y="13.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIAgEAAAACBABAIAAAAFAQEAAAAAAABCAJAAABCIAA=</HashCode>
+      <FileName>Processes\Plan\PlanStrategies.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WMS.Logic.Wave" Collapsed="true">
+    <Position X="2.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BMAgoRAAYQIACoIAAAAAIAEAcYEoAMIBAjAQIBFBACg=</HashCode>
+      <FileName>WHLogic\Wave.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WMS.Logic.VAllocationOnHandDataTable">
+    <Position X="2.75" Y="9" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAACAQABEAAAAAIAABAAAAAAAAgAAEAAAAA=</HashCode>
+      <FileName>DataProvider\IndexedDataTables\VAllocationOnHandDataTable.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Data.DataTable" Collapsed="true">
+    <Position X="11.25" Y="11" Width="1.75" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WMS.Logic.PlanRequirments">
+    <Position X="12.25" Y="12.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAABAAAAAAAAAAgAAAABAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Processes\Plan\PlanRequirments.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WMS.Logic.Requirments">
+    <Position X="14.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAQEAAAACAABAAAAAAFAQEAAAAAAAACEQAAABAIAA=</HashCode>
+      <FileName>Processes\Plan\PickingRequirments.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WMS.Logic.Requirment" Collapsed="true">
+    <Position X="17.25" Y="11" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>MAgBY2AC0EIMEBACr0AgZIAwByQJGSQkEkAmpFGGkJE=</HashCode>
+      <FileName>Processes\Plan\PickingRequirments.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WMS.Logic.PlanStrategy">
+    <Position X="15.5" Y="20.25" Width="1.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ARgIgAAIQIpgTAQGBAQAAlAGBQMMAEChAEIlAJFjAgI=</HashCode>
+      <FileName>Processes\Plan\PlanStrategies.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_reqbaskets" />
+      <Field Name="_parallelstratrelease" />
+      <Field Name="_picklistcollection" />
+      <Field Name="_scoring" />
+      <Field Name="_stratbreaker" />
+      <Field Name="_stratdetail" />
+      <Field Name="_stratrelease" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WMS.Logic.RequirmentsBaskets">
+    <Position X="19.5" Y="22" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAEAAAAiAABAAAgAAFAQEAAAAAAAACEAAAABAIAI=</HashCode>
+      <FileName>Processes\Plan\RequirmentsBaskets.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WMS.Logic.ParallelReleaseStrategyCollection" Collapsed="true">
+    <Position X="11.75" Y="18.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAYAgEAAAACAABAgAAAAFAQEAAAgAAAACAAAAABAIAA=</HashCode>
+      <FileName>Processes\Plan\PlanStrategies.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Collections.ArrayList" Collapsed="true">
+    <Position X="19.25" Y="18.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WMS.Logic.PlanStrategyScoring" Collapsed="true">
+    <Position X="17.5" Y="17.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AQAAgAAAAAEAAAwgAAAAAAAEAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Processes\Plan\PlanStrategies.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WMS.Logic.PicklistBreakerCollection" Collapsed="true">
+    <Position X="13.25" Y="21.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEIAgEAAAACAAhAgAAAAFAQEAAAgAAAACAACAABAICI=</HashCode>
+      <FileName>Processes\Plan\PicklistBreaker.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WMS.Logic.PlanStrategyDetailCollection" Collapsed="true">
+    <Position X="15.25" Y="24" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAwEAAAACAABAgAAAAFAQEAAAgAAAACAAAAABAIAA=</HashCode>
+      <FileName>Processes\Plan\PlanStrategies.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WMS.Logic.ReleaseStrategyCollection" Collapsed="true">
+    <Position X="19.75" Y="20.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAYAgEAAAACAABAgAAAAFAQEAAAgAAAACAAAAABAIAA=</HashCode>
+      <FileName>Processes\Plan\PlanStrategies.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WMS.Logic.PickBaskets" Collapsed="true">
+    <Position X="22" Y="14.75" Width="1.5" />
+    <NestedTypes>
+      <Class Name="WMS.Logic.PickBaskets.SubSKU" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Processes\Plan\PickBaskets.vb</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAMAAEAESAiAAhAAAAgAFAQEAEAAAAAACUcAAAFAMAI=</HashCode>
+      <FileName>Processes\Plan\PickBaskets.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_baskets" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WMS.Logic.PickingRequirments">
+    <Position X="17.75" Y="13.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAkAAAIQAAQwAAAJAAQAgEAAAABEGQGcAAAAAA=</HashCode>
+      <FileName>Processes\Plan\PickingRequirments.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WMS.Logic.PlanStrategyDetail" Collapsed="true">
+    <Position X="12.5" Y="24.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>BQoAAAAAADgECQAFABAgAAAAAIJJBEAhACQABQLAAgA=</HashCode>
+      <FileName>Processes\Plan\PlanStrategies.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

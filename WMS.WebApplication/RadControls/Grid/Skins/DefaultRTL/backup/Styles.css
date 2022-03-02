@@ -1,0 +1,75 @@
+/*Simon Changes*/
+   .MasterTable_DefaultRTL th
+    {
+      border-left:solid 0px #CECFCE;
+      border-right:solid 0px #CECFCE;
+      height:30px;
+      vertical-align:middle;
+    }
+   .MasterTable_DefaultRTL .GridHeader_DefaultRTL
+   {
+    	font-weight:bold;
+	font-size:12px;
+	font-family: MS Sans Serif;
+	text-align:right;
+   }
+   .MasterTable_DefaultRTL td
+   {
+      border-left:solid 0px #CECFCE;
+      border-right:solid 0px #CECFCE;
+      border-top:solid 0px #CECFCE;
+      height:30px;
+    }
+   .MasterTable_DefaultRTL
+   {
+      border-color: #CCCCCC;
+      border-width: 1px
+      
+    }
+   .MasterTable_DefaultRTL td
+   {
+      border-color: #CECFCE;
+      
+    }
+   .MasterTable_DefaultRTL th
+   {
+      border-color: #CECFCE;
+      
+    }
+   .MasterTable_DefaultRTL table
+   {
+      border-color: red;
+   }
+/*-------------*/
+
+.GridRow_DefaultRTL 
+{
+background-color:#EFEFF7;
+}
+.GridAltRow_DefaultRTL 
+{
+background-color:#D6D7DE;
+}
+.GridRow_DefaultRTL td
+{
+                /*background-color:#EFEFF7;*/
+                color:#333366;
+                font-size:xx-small;
+                font-family: MS Sans Serif;
+}
+.GridAltRow_DefaultRTL td
+{
+        /*background-color:#D6D7DE;*/
+                color:#333366;
+                font-size:xx-small;
+                font-family: MS Sans Serif;
+}
+
+.SelectedRow_DefaultRTL,
+{
+        background-color:#6699aa;
+	color:#FFFFFF;
+	/*font-weight:bold;*/
+	font-size:12px;
+	font-family: MS Sans Serif;
+}

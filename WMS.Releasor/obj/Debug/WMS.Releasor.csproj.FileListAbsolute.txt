@@ -1,0 +1,12 @@
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Releasor\obj\Debug\WMS.Releasor.ProjectInstaller.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Releasor\obj\Debug\WMS.Releasor.ReleaseService.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Releasor\obj\Debug\WMS.Releasor.csproj.GenerateResource.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Releasor\obj\Debug\WMS.Releasor.csproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\Releasor\PWMS.Releasor.exe.config
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\Releasor\PWMS.Releasor.xml
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\Releasor\PWMS.Releasor.exe
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\Releasor\PWMS.Releasor.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Releasor\obj\Debug\WMS.Releasor.csproj.AssemblyReference.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Releasor\obj\Debug\WMS.Releasor.csproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Releasor\obj\Debug\PWMS.Releasor.exe
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Releasor\obj\Debug\PWMS.Releasor.pdb

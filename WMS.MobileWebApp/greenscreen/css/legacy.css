@@ -1,0 +1,16 @@
+body {}   
+
+
+.field .container table {width:100%}  
+.field .container table.condensed {width:auto}  
+.field .container td:nth-child(3) p.label {font-weight:bold}
+.field .container p.label {display:block;line-height:1.2em;font-size:1.2em;/*white-space:nowrap;overflow:hidden*/}  
+.field .container input.button {color:#CCC;width:40px;margin:0;background:transparent!important}
+.field .container td[align="left"] input.button {margin-right:10px}
+.field .container td[align="right"] input.button {margin-left:10px}
+
+.field.full {width:100%;padding:0;clear:both}
+
+/*.field.very_condensed .container p.label {line-height:0.9em;font-size:0.9em} --RWMS-2927*/
+/*.field.very_condensed .container input {height:2.2em;font-size:0.9em}--RWMS--2927*/
+.field.very_condensed .container select {height:2.2em;line-height:2.2em;font-size:0.9em}

@@ -1,0 +1,448 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Made4Net.Algorithms</name>
+    </assembly>
+    <members>
+        <member name="T:Made4Net.Algorithms.ConcurrentHelpers.ConcurrentCollectionHelper">
+            <summary>
+            Concurrent Datastructures helper, provides method to convert ADO.NET result set to concurrent collections.
+            </summary>
+        </member>
+        <member name="M:Made4Net.Algorithms.ConcurrentHelpers.ConcurrentCollectionHelper.ConvertDataTableToConcurrentCollection(System.Data.DataTable)">
+            <summary>
+            Converts a given datatable to a concurrent collection having concurrent dictionary with keyvalue pairs of row values. The values can be access in a similar manner to datarow by indexing with column name.
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Made4Net.Algorithms.Constants">
+            <summary>
+            Class that holds constant values for Algorithms assembly
+            </summary>
+        </member>
+        <member name="F:Made4Net.Algorithms.Constants.Height">
+            <summary>
+            Constant string literal for Clearence
+            </summary>
+        </member>
+        <member name="F:Made4Net.Algorithms.Constants.Equipment">
+            <summary>
+            Constant string literal for Equipment
+            </summary>
+        </member>
+        <member name="F:Made4Net.Algorithms.Constants.UniDirection">
+            <summary>
+            Constant string literal for UniDirection
+            </summary>
+        </member>
+        <member name="F:Made4Net.Algorithms.Constants.UniDirectionAndHeight">
+            <summary>
+            When both needs to be taken into account for calculaiton of path
+            </summary>
+        </member>
+        <member name="T:Made4Net.Algorithms.Interfaces.IGeneticDataModel">
+            <summary>
+            Summary description for IGeneticDataModel.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Algorithms.Interfaces.IShortestPathProvider">
+            <summary>
+            Interface for shortest distance for a location
+            The application needs the ability to specifiy a Start Location and/or an End Location for a specific task type.
+            For selection, the distance from the last pick location to the staging lane should be accounted for, and then, if an End Location is configured, the distance from the Staging Lane to the End Location should be calculated.  This start and end location are used in labor standard to calculate an accurate distance for the task
+            </summary>
+        </member>
+        <member name="M:Made4Net.Algorithms.Interfaces.IShortestPathProvider.GetShortestPath(System.Data.DataRow,System.Data.DataRow,System.String,System.String,System.Boolean)">
+            <summary>
+            gets the shortest distance b/w 2 locations without any rule checks/ constarints
+            The task types handled are NEGTREPL, LOCCNT,LOCBLKCNT,LOADDEL,CONTDEL,CONTLOAD,LOADLOAD,MISC,FULLPICK,PARPICK,LOADPW,LDCOUNT,CONTPW,CONTLDPW
+            </summary>
+            <param name="sourceLocation">based on tasktype, for putaway and replenishmentsource fill edge co-ordinates considered, default is pick edge for source location</param>
+            <param name="destinationLocation">based on tasktype, for putaway and replenishmentsource fill edge co-ordinates considered, default is pick edge for destination location</param>
+            <param name="prevTaskType">previous tasktype used to figure the start coordinates</param>
+            <param name="nextTaskType">next tasktype used to figure the destination  coordinates</param>
+            <param name="getTraversedPath">boolean to depict whether to retrive traversed path along with distance</param>
+            <returns><see cref="T:DataManager.ServiceModel.Path"/> includes distance and traversed path</returns>
+        </member>
+        <member name="M:Made4Net.Algorithms.Interfaces.IShortestPathProvider.GetShortestPathWithContsraints(System.Data.DataRow,System.Data.DataRow,System.String,System.String,System.Boolean,System.Collections.Generic.List{DataManager.ServiceModel.Rules},Made4Net.Shared.ILogHandler)">
+            <summary>
+             gets the shortest distance b/w 2 locations with rule checks/ constarints
+             The task types handled are NEGTREPL, LOCCNT,LOCBLKCNT,LOADDEL,CONTDEL,CONTLOAD,LOADLOAD,MISC,FULLPICK,PARPICK,LOADPW,LDCOUNT,CONTPW,CONTLDPW
+            </summary>
+            <param name="sourceLocation">based on tasktype, for putaway and replenishmentsource fill edge co-ordinates considered, default is pick edge for source location</param>
+            <param name="prevTaskType">previous tasktype used to figure the start coordinates</param>
+            <param name="nextTaskType">next tasktype used to figure the destination  coordinates</param>
+            <param name="destinationLocation">based on tasktype, for putaway and replenishmentsource fill edge co-ordinates considered, default is pick edge for destination location</param>
+            <param name="getTraversedPath">boolean to depict whether to retrive traversed path along with distance</param>
+            <param name="rules"><see cref="T:DataManager.ServiceModel.Rules"/> that user defines to be considered while calculating shorted path</param>
+            <returns><see cref="T:DataManager.ServiceModel.Path"/>Path includes distance and traversed path</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Made4Net.Algorithms.Interfaces.IShortestPathProvider.GetShortestPath(System.Collections.Concurrent.ConcurrentDictionary{System.String,System.Object},System.Collections.Concurrent.ConcurrentDictionary{System.String,System.Object},System.String,System.String,System.Boolean)" -->
+        <member name="M:Made4Net.Algorithms.PriorityQueueB`1.Contains(`0)">
+            <summary>
+            Push an object onto the PQ
+            </summary>
+            <param name="O">The new object</param>
+            <returns>The index in the list where the object is _now_. This will change when objects are taken from or put onto the PQ.</returns>
+        </member>
+        <member name="M:Made4Net.Algorithms.PriorityQueueB`1.Pop">
+            <summary>
+            Get the smallest object and remove it.
+            </summary>
+            <returns>The smallest object</returns>
+        </member>
+        <member name="M:Made4Net.Algorithms.PriorityQueueB`1.Update(System.Int32)">
+            <summary>
+            Notify the PQ that the object at position i has changed
+            and the PQ needs to restore order.
+            Since you dont have access to any indexes (except by using the
+            explicit IList.this) you should not call this function without knowing exactly
+            what you do.
+            </summary>
+            <param name="i">The index of the changed object.</param>
+        </member>
+        <member name="M:Made4Net.Algorithms.PriorityQueueB`1.Peek">
+            <summary>
+            Get the smallest object without removing it.
+            </summary>
+            <returns>The smallest object</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Made4Net.Algorithms.DTO.LocationDTO" -->
+        <member name="M:Made4Net.Algorithms.DTO.LocationDTO.getIntValueByFieldName(System.String)">
+            <summary>
+            Gets the values of fields of type int by a given name, note of a new field is added then the code of this methods needs to be changed.
+            </summary>
+            <param name="fieldName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.Algorithms.DTO.LocationDTO.getDoubleValueByFieldName(System.String)">
+            <summary>
+            Gets the values of fields of type double by a given name, note of a new field is added then the code of this methods needs to be changed.
+            </summary>
+            <param name="fieldName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.Algorithms.DTO.LocationDTO.getBooleanValueByFieldName(System.String)">
+            <summary>
+            Gets the values of fields of type bool by a given name, note of a new field is added then the code of this methods needs to be changed.
+            </summary>
+            <param name="fieldName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.Algorithms.DTO.LocationDTO.getStringValueByFieldName(System.String)">
+            <summary>
+            Gets the values of fields of type string by a given name, note of a new field is added then the code of this methods needs to be changed.
+            </summary>
+            <param name="fieldName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.Algorithms.DTO.LocationDTO.getValueByFieldNameAsObject(System.String)">
+            <summary>
+            Generic method irrespective of type
+            </summary>
+            <param name="fieldName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Made4Net.Algorithms.GeneticAlgorithm.InsertObject">
+            <summary>
+            Summary description for GeneticSolver.
+            </summary>
+            
+        </member>
+        <member name="M:Made4Net.Algorithms.GeneticAlgorithm.BinaryPriorityQueue.Push(System.Object)">
+            <summary>
+            Push an object onto the PQ
+            </summary>
+            <param name="O">The new object</param>
+            <returns>The index in the list where the object is _now_. This will change when objects are taken from or put onto the PQ.</returns>
+        </member>
+        <member name="M:Made4Net.Algorithms.GeneticAlgorithm.BinaryPriorityQueue.Pop">
+            <summary>
+            Get the smallest object and remove it.
+            </summary>
+            <returns>The smallest object</returns>
+        </member>
+        <member name="M:Made4Net.Algorithms.GeneticAlgorithm.BinaryPriorityQueue.Update(System.Int32)">
+            <summary>
+            Notify the PQ that the object at position i has changed
+            and the PQ needs to restore order.
+            Since you dont have access to any indexes (except by using the
+            explicit IList.this) you should not call this function without knowing exactly
+            what you do.
+            </summary>
+            <param name="i">The index of the changed object.</param>
+        </member>
+        <member name="M:Made4Net.Algorithms.GeneticAlgorithm.BinaryPriorityQueue.Peek">
+            <summary>
+            Get the smallest object without removing it.
+            </summary>
+            <returns>The smallest object</returns>
+        </member>
+        <member name="T:Made4Net.Algorithms.KMeans">
+            <summary>
+            This class implement a KMeans clustering algorithm
+            </summary>
+        </member>
+        <member name="M:Made4Net.Algorithms.KMeans.EuclideanDistance(System.Double[],System.Double[])">
+            <summary>
+            Calculates the Euclidean Distance Measure between two data points
+            </summary>
+            <param name="X">An array with the values of an object or datapoint</param>
+            <param name="Y">An array with the values of an object or datapoint</param>
+            <returns>Returns the Euclidean Distance Measure Between Points X and Points Y</returns>
+        </member>
+        <member name="M:Made4Net.Algorithms.KMeans.ManhattanDistance(System.Double[],System.Double[])">
+            <summary>
+            Calculates the Manhattan Distance Measure between two data points
+            </summary>
+            <param name="X">An array with the values of an object or datapoint</param>
+            <param name="Y">An array with the values of an object or datapoint</param>
+            <returns>Returns the Manhattan Distance Measure Between Points X and Points Y</returns>
+            
+        </member>
+        <member name="M:Made4Net.Algorithms.KMeans.ClusterMean(System.Double[0:,0:])">
+            <summary>
+            Calculates The Mean Of A Cluster OR The Cluster Center
+            </summary>
+            <param name="cluster">
+            A two-dimensional array containing a dataset of numeric values
+            </param>
+            <returns>
+            Returns an Array Defining A Data Point Representing The Cluster Mean or Centroid
+            </returns>
+        </member>
+        <member name="M:Made4Net.Algorithms.KMeans.ClusterDataSet(System.Int32,System.Double[0:,0:])">
+            <summary>
+            Seperates a dataset into clusters or groups with similar characteristics
+            </summary>
+            <param name="clusterCount">The number of clusters or groups to form</param>
+            <param name="data">An array containing data that will be clustered</param>
+            <returns>A collection of clusters of data</returns>
+        </member>
+        <member name="M:Made4Net.Algorithms.KMeans.ClusterDataSet(Made4Net.Algorithms.ClusterCollection,System.Double[0:,0:])">
+            <summary>
+            Seperates a dataset into clusters or groups with similar characteristics
+            </summary>
+            <param name="clusters">A collection of data clusters</param>
+            <param name="data">An array containing data to b eclustered</param>
+            <returns>A collection of clusters of data</returns>
+        </member>
+        <member name="M:Made4Net.Algorithms.KMeans.ConvertDataTableToArray(System.Data.DataTable)">
+            <summary>
+            Converts a System.Data.DataTable to a 2-dimensional array
+            </summary>
+            <param name="data">A System.Data.DataTable containing data to cluster</param>
+            <returns>A 2-dimensional array containing data to cluster</returns>
+        </member>
+        <member name="T:Made4Net.Algorithms.Cluster">
+            <summary>
+            A class containing a group of data with similar characteristics (cluster)
+            </summary>
+        </member>
+        <member name="P:Made4Net.Algorithms.Cluster.ClusterSum">
+            <summary>
+            The sum of all the data in the cluster
+            </summary>
+        </member>
+        <member name="P:Made4Net.Algorithms.Cluster.ClusterMean">
+            <summary>
+            The mean of all the data in the cluster
+            </summary>
+        </member>
+        <member name="M:Made4Net.Algorithms.Cluster.Add(System.Double[])">
+            <summary>
+            Adds a single dimension array data to the cluster
+            </summary>
+            <param name="data">A 1-dimensional array containing data that will be added to the cluster</param>
+        </member>
+        <member name="P:Made4Net.Algorithms.Cluster.Item(System.Int32)">
+            <summary>
+            Returns the one dimensional array data located at the index
+            </summary>
+        </member>
+        <member name="T:Made4Net.Algorithms.ClusterCollection">
+            <summary>
+            A collection of Cluster objects or Clusters
+            </summary>
+        </member>
+        <member name="M:Made4Net.Algorithms.ClusterCollection.Add(Made4Net.Algorithms.Cluster)">
+            <summary>
+            Adds a Cluster to the collection of Clusters
+            </summary>
+            <param name="cluster">A Cluster to be added to the collection of clusters</param>
+        </member>
+        <member name="P:Made4Net.Algorithms.ClusterCollection.Item(System.Int32)">
+            <summary>
+            Returns the Cluster at this index
+            </summary>
+        </member>
+        <member name="M:Made4Net.Algorithms.Scoring.PutAwayScoreSetter.Sort(System.Collections.Generic.List{Made4Net.Algorithms.DTO.LocationDTO}@,System.String,Made4Net.Algorithms.SortingAlgorithms.SortOrder)">
+            <summary>
+            Only includes the column from PUTAWAYPOLICYSCORING table
+            </summary>
+            <param name="locationsList"></param>
+            <param name="sFieldName"></param>
+            <param name="eSortOrder"></param>
+        </member>
+        <member name="T:Made4Net.Algorithms.DistanceCalculation">
+            <summary>
+            Calculates the shortest distance b/w the nodes in warehouse
+            </summary>
+        </member>
+        <member name="F:Made4Net.Algorithms.DistanceCalculation.lstNodes">
+            <summary>
+            List varaible which holds all the Nodes in the warehouse.
+            </summary>
+        </member>
+        <member name="F:Made4Net.Algorithms.DistanceCalculation.lstEdges">
+            <summary>
+            List variable which holds all the Edges in the warehouse.
+            </summary>
+        </member>
+        <member name="M:Made4Net.Algorithms.DistanceCalculation.CalculateSP(Made4Net.Shared.ILogHandler)">
+            <summary>
+            Calculate the Shortest path between each node and destination node and also populate the previous node and clearance for that path.
+            </summary>
+        </member>
+        <member name="M:Made4Net.Algorithms.DistanceCalculation.Reset">
+            <summary>
+            Resets the costs from this instance.
+            </summary>
+        </member>
+        <member name="M:Made4Net.Algorithms.DistanceCalculation.PerformCalculationForSourceAndTarget(System.String,System.String,System.Boolean)">
+            <summary>
+            Provides shortestpath b/w 2 nodes
+            </summary>
+            <param name="currentNodeId">Node Id for source location</param>
+            <param name="targetNodeId">Node Id for target location</param>
+            <param name="getTraversedPath">Boolean to indicate whether to get traversed path</param>
+        </member>
+        <member name="M:Made4Net.Algorithms.DistanceCalculation.PerformCalculationForSourceAndTarget(System.String,System.String,System.Boolean,System.Collections.Generic.List{DataManager.ServiceModel.Rules})">
+            <summary>
+            On the fly
+            </summary>
+            <param name="currentNodeId">Node Id for source location</param>
+            <param name="targetNodeId">Node Id for target location</param>
+            <param name="getTraversedPath">Boolean to indicate whether to get traversed path</param>
+            <param name="rules">a param define rules, <see cref="T:DataManager.ServiceModel.Rules"/></param>
+        </member>
+        <member name="M:Made4Net.Algorithms.DistanceCalculation.PerformCalculationForAllNodes(System.String,System.String)">
+            <summary>
+            On 
+            </summary>
+            <param name="currentNodeId"></param>
+            <param name="targetNodeId"></param>
+        </member>
+        <member name="M:Made4Net.Algorithms.DistanceCalculation.CalculateShortestPathBetweenSourceAndTarget(Made4Net.Shared.ILogHandler)">
+            <summary>
+            Call the the methods to populate nodes and edges and also call the method which will calaulate the shortest path
+            </summary>
+        </member>
+        <member name="M:Made4Net.Algorithms.EdgeCalculation.LocationsEdgeCalculation.UpdateEdgeIdForLocations(System.Data.DataRow[],Made4Net.Shared.Logging.LogFile)">
+            <summary>
+            Calculates and updates the PickEdge and FillEdge of locations.
+            </summary>
+            <param name="locations"></param>
+            <param name="oLogger"></param>
+        </member>
+        <member name="M:Made4Net.Algorithms.EdgeCalculation.LocationsEdgeCalculation.distancePointToASegment(System.Windows.Point,Made4Net.Algorithms.EdgeCalculation.LocationsEdgeCalculation.Segment)">
+            <summary>
+            distancePointToASegment(): get the distance of a point to a segment
+               Input:  a Point P and a Segment S (in any dimension)
+               Return: the shortest distance from P to S
+            </summary>
+            <param name="P">Start Point</param>
+            <param name="S">End Point</param>
+            <returns>Least Distance</returns>
+            <remarks>Source from : http://geomalgorithms.com/a02-_lines.html </remarks>
+        </member>
+        <member name="F:Made4Net.Algorithms.ShortestPath.FromLoc">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Made4Net.Algorithms.ShortestPath.CalcShortestPathDist(System.Data.DataRow,System.Data.DataRow,System.String,System.String,System.Boolean)">
+             <summary>
+            
+             </summary>
+             <param name="fromLoc"></param>
+             <param name="toLoc"></param>
+             <param name="prevTaskType"></param>
+             <param name="nextTaskType"></param>
+             <param name="getTraversedPath"></param>
+             <returns> <see cref="T:DataManager.ServiceModel.Path"/> that holdds distance n traversed path</returns>
+        </member>
+        <member name="M:Made4Net.Algorithms.ShortestPath.GetShortestPathWithContsraints(System.Data.DataRow,System.Data.DataRow,System.String,System.String,System.Boolean,System.Collections.Generic.List{DataManager.ServiceModel.Rules},Made4Net.Shared.ILogHandler)">
+            <summary>
+            Done
+            </summary>
+            <param name="sourceLocation"></param>
+            <param name="destinationLocation"></param>
+            <param name="prevTaskType"></param>
+            <param name="nextTaskType"></param>
+            <param name="getTraversedPath"></param>
+            <param name="rules"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Made4Net.Algorithms.SortingAlgorithms.QuicksortParallel">
+            <summary>
+            Parallel implementation of quicksort using .NET TPL
+            </summary>
+        </member>
+        <member name="T:HHAlgorithm.NodeList">
+            <summary>
+            The NodeList class represents a collection of nodes.  Internally, it uses a Hashtable instance to provide
+            fast lookup via a <see cref="T:HHAlgorithm.Node"/> class's <b>Key</b> value.  The <see cref="T:HHAlgorithm.Graph"/> class maintains its
+            list of nodes via this class.
+            </summary>
+        </member>
+        <member name="M:HHAlgorithm.NodeList.Add(HHAlgorithm.Node)">
+            <summary>
+            Adds a new Node to the NodeList.
+            </summary>
+        </member>
+        <member name="M:HHAlgorithm.NodeList.Remove(HHAlgorithm.Node)">
+            <summary>
+            Removes a Node from the NodeList.
+            </summary>
+        </member>
+        <member name="M:HHAlgorithm.NodeList.ContainsKey(System.String)">
+            <summary>
+            Determines if a node with a specified <b>Key</b> value exists in the NodeList.
+            </summary>
+            <param name="key">The <b>Key</b> value to search for.</param>
+            <returns><b>True</b> if a Node with the specified <b>Key</b> exists in the NodeList; <b>False</b> otherwise.</returns>
+        </member>
+        <member name="M:HHAlgorithm.NodeList.Clear">
+            <summary>
+            Clears out all of the nodes from the NodeList.
+            </summary>
+        </member>
+        <member name="M:HHAlgorithm.NodeList.GetEnumerator">
+            <summary>
+            Returns an enumerator that can be used to iterate through the Nodes.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:HHAlgorithm.NodeList.Item(System.String)">
+            <summary>
+            Returns a particular <see cref="T:HHAlgorithm.Node"/> instance by index.
+            </summary>
+        </member>
+        <member name="P:HHAlgorithm.NodeList.Count">
+            <summary>
+            Returns the number of nodes in the NodeList.
+            </summary>
+        </member>
+        <member name="T:HHAlgorithm.NodeList.NodeListEnumerator">
+            <summary>
+            The NodeListEnumerator method is a custom enumerator for the NodeList object.  It essentially serves
+            as an enumerator over the NodeList's Hashtable class, but rather than returning DictionaryEntry values,
+            it returns just the Node object.
+            <p />
+            This allows for a developer using the Graph class to use a foreach to enumerate the Nodes in the graph.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RECEIPT" targetNamespace="http://tempuri.org/RECEIPT.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/RECEIPT.xsd" xmlns:mstns="http://tempuri.org/RECEIPT.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="BUSINESSOBJECT">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="BOTYPE" type="xs:string" />
+        <xs:element name="DATACOLLECTION" type="xs:string" />
+        <xs:element name="DATA">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RECEIPT" type="xs:string" />
+              <xs:element name="SCHEDULEDDATE" type="xs:dateTime" />
+              <xs:element name="STATUS" type="xs:string" />
+              <xs:element name="BOL" type="xs:string" />
+              <xs:element name="NOTES" type="xs:string" />
+              <xs:element name="CARRIERCOMPANY" type="xs:string" />
+              <xs:element name="STARTRECEIPTDATE" type="xs:dateTime" />
+              <xs:element name="TRAILER" type="xs:string" />
+              <xs:element name="VEHICLE" type="xs:string" />
+              <xs:element name="CLOSERECEIPTDATE" type="xs:dateTime" />
+              <xs:element name="DRIVER1" type="xs:string" />
+              <xs:element name="DRIVER2" type="xs:string" />
+              <xs:element name="SEAL1" type="xs:string" />
+              <xs:element name="SEAL2" type="xs:string" />
+              <xs:element name="TRANSPORTREFERENCE" type="xs:string" />
+              <xs:element name="TRANSPORTTYPE" type="xs:string" />
+              <xs:element name="DOOR" type="xs:string" />
+              <xs:element name="ESTUNLOADINGTIME" type="xs:decimal" />
+              <xs:element name="YARDENTRYID" type="xs:string" />
+              <xs:element name="HANDLINGUNITS">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="HANDLINGUNIT">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="HUTYPE" type="xs:string" />
+                          <xs:element name="HUQTY" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="LINES">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="LINE">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="RECEIPTLINE" type="xs:integer" />
+                          <xs:element name="CONSIGNEE" type="xs:string" />
+                          <xs:element name="SKU" type="xs:string" />
+                          <xs:element name="ORDERID" type="xs:string" />
+                          <xs:element name="ORDERLINE" type="xs:integer" />
+                          <xs:element name="ORDERTYPE" type="xs:string" />
+                          <xs:element name="QTYORIGINAL" type="xs:decimal" />
+                          <xs:element name="QTYEXPECTED" type="xs:decimal" />
+                          <xs:element name="QTYRECEIVED" type="xs:decimal" />
+                          <xs:element name="DOCUMENTTYPE" type="xs:string" />
+                          <xs:element name="UNITPRICE" type="xs:double" />
+                          <xs:element name="INPUTQTY" type="xs:decimal" />
+                          <xs:element name="INPUTSKU" type="xs:string" />
+                          <xs:element name="INPUTUOM" type="xs:string" />
+                          <xs:element name="REFERENCEORDER" type="xs:string" />
+                          <xs:element name="REFERENCEORDERLINE" type="xs:string" />
+                          <xs:element name="INVENTORYSTATUS" type="xs:string" />
+                          <xs:element name="COMPANY" type="xs:string" />
+                          <xs:element name="COMPANYTYPE" type="xs:string" />
+                          <xs:element name="AVGWEIGHT" type="xs:decimal" />
+                          <xs:element name="AVGWEIGHTUOM" type="xs:string" />
+                          <xs:element name="RECEIVEDWEIGHT" type="xs:decimal" />
+                          <xs:element name="ATTRIBUTES">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ATTRIBUTE">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="ATTNAME" type="xs:string" />
+                                      <xs:element name="ATTVALUE" type="xs:string" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ASNS">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ASN">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="ASNID" type="xs:string" />
+                                      <xs:element name="CONTAINER" type="xs:string" />
+                                      <xs:element name="LOADID" type="xs:string" />
+                                      <xs:element name="UOM" type="xs:string" />
+                                      <xs:element name="STATUS" type="xs:string" />
+                                      <xs:element name="UNITS" type="xs:decimal" />
+                                      <xs:element name="ASNATTRIBUTES">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="ASNATTRIBUTE">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="NAME" type="xs:string" />
+                                                  <xs:element name="VALUE" type="xs:string" />
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="LOADS">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="LOAD">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="LOADID" type="xs:string" />
+                                      <xs:element name="UOM" type="xs:string" />
+                                      <xs:element name="QTY" type="xs:decimal" />
+                                      <xs:element name="STATUS" type="xs:string" />
+                                      <xs:element name="LOADATTRIBUTES">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="LOADATTRIBUTE">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="NAME" type="xs:string" />
+                                                  <xs:element name="VALUE" type="xs:string" />
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="RECEIVINGEXCEPTIONS">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="RECEIVINGEXCEPTION">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="QTY" type="xs:decimal" />
+                                      <xs:element name="REASONCODE" type="xs:string" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

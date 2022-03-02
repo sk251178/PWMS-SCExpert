@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Made4Net.LayoutViewer</name>
+    </assembly>
+    <members>
+        <member name="T:Made4Net.LayoutViewer.DBDiagramConfigurator">
+            <summary>
+            Summary description for DBDiagramConfigurator.
+            </summary>
+        </member>
+        <member name="T:Made4Net.LayoutViewer.DiagramConfiguration">
+            <summary>
+            Summary description for DiagramConfiguration.
+            </summary>
+        </member>
+        <member name="T:Made4Net.LayoutViewer.DiagramConfigurator">
+            <summary>
+            Summary description for DiagramConfigurator.
+            </summary>
+        </member>
+        <member name="M:Made4Net.LayoutViewer.DiagramConfigurator.#ctor(Made4Net.LayoutViewer.ObjectTemplateParams[],System.String,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Boolean)">
+            <summary>
+            Initialize the Diagram Configurator
+            </summary>
+            <param name="pDiagramTemplates">The Templates of objects being used by the diagram viewer</param>
+            <returns></returns>
+        </member>
+        <member name="T:Made4Net.LayoutViewer.DiagramManager">
+            <summary>
+            Summary description for DiagramManager.
+            </summary>
+        </member>
+        <member name="M:Made4Net.LayoutViewer.DiagramManager.CreateDiagram">
+            <summary>
+            Creates all static objects in the diagram.
+            </summary>
+        </member>
+        <member name="M:Made4Net.LayoutViewer.DiagramManager.RefreshDiagram">
+            <summary>
+            Creates only the dynamic (moving) objects in the diagram.
+            </summary>
+        </member>
+        <member name="T:Made4Net.LayoutViewer.DocumentRenderer">
+            <summary>
+            Summary description for DocumentRenderer.
+            </summary>
+        </member>
+        <member name="T:Made4Net.LayoutViewer.GoWeb.BasicDynamicObject">
+            <summary>
+            A basic implementation of DynamicObject.
+            Contains an image and a rectangle.
+            The rectangle is shown when no image is specified.
+            </summary>
+        </member>
+        <member name="T:Made4Net.LayoutViewer.GoWeb.Document">
+            <summary>
+            Summary description for Document.
+            </summary>
+        </member>
+        <member name="T:Made4Net.LayoutViewer.GoWeb.DynamicObject">
+            <summary>
+            An abstract class that encapsulates the logic for dynamic objects.
+            Provides logic for rotating objects, matching objects' position and angle.
+            </summary>
+        </member>
+        <member name="M:Made4Net.LayoutViewer.GoWeb.DynamicObject.CreateChildren">
+            <summary>
+            Override this method to create the objects that this object will contain
+            </summary>
+        </member>
+        <member name="T:Made4Net.LayoutViewer.GoWeb.Grid">
+            <summary>
+            Summary description for Grid.
+            </summary>
+        </member>
+        <member name="P:Made4Net.LayoutViewer.GoWeb.Grid.OriginCoordinates">
+            <summary>
+            The real-world coordinates at the grid's origin
+            </summary>
+        </member>
+        <member name="M:Made4Net.LayoutViewer.GoWeb.Grid.Reset">
+            <summary>
+            Resets all members to their default values
+            </summary>
+        </member>
+        <member name="M:Made4Net.LayoutViewer.GoWeb.Grid.GetPoint(System.Single,System.Single)">
+            <summary>
+            Returns a point on the document for the provided real-world coordinates
+            </summary>
+            <param name="gridXPosition"></param>
+            <param name="gridYPosition"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.LayoutViewer.GoWeb.Grid.GetPoint(System.Drawing.PointF)">
+            <summary>
+            Returns a point on the document for the provided real-world point
+            </summary>
+            <param name="gridPosition"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.LayoutViewer.GoWeb.Grid.GetSize(System.Single,System.Single)">
+            <summary>
+            Returns a size on the document for the provided real-world width and height
+            </summary>
+            <param name="width"></param>
+            <param name="height"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Made4Net.LayoutViewer.GoWeb.Grid.GetSize(System.Drawing.SizeF)">
+            <summary>
+            Returns a size on the document for the provided real-world size
+            </summary>
+            <param name="gridSize"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Made4Net.LayoutViewer.GoWeb.InfoObject">
+            <summary>
+            Summary description for InfoObject.
+            </summary>
+        </member>
+        <member name="T:Made4Net.LayoutViewer.GoWeb.IRotatable">
+            <summary>
+            Summary description for IRotate.
+            </summary>
+        </member>
+        <member name="T:Made4Net.LayoutViewer.GoWeb.UnitTest">
+            <summary>
+            Summary description for YardSample.
+            </summary>
+        </member>
+        <member name="T:Made4Net.LayoutViewer.GoWeb.EnumParser">
+            <summary>
+            Summary description for EnumUtil.
+            </summary>
+        </member>
+        <member name="T:Made4Net.LayoutViewer.IDataLoader">
+            <summary>
+            Summary description for DataLoader.
+            </summary>
+        </member>
+        <member name="T:Made4Net.LayoutViewer.IDiagramConfigurator">
+            <summary>
+            Summary description for IDocumentConfigurator.
+            </summary>
+        </member>
+        <member name="T:Made4Net.LayoutViewer.ObjectTemplate">
+            <summary>
+            Summary description for ObjectTemplate.
+            </summary>
+        </member>
+        <member name="T:Made4Net.LayoutViewer.ObjectTemplateParams">
+            <summary>
+            Summary description for ObjectTemplateParams.
+            </summary>
+        </member>
+        <member name="T:Made4Net.LayoutViewer.ObjectType">
+            <summary>
+            Summary description for ObjectType.
+            </summary>
+        </member>
+        <member name="T:Made4Net.LayoutViewer.UI.DiagramViewer">
+            <summary>
+            Summary description for DiagramViewer.
+            </summary>
+        </member>
+        <member name="T:Made4Net.LayoutViewer.UI.DiagramViewerDesigner">
+            <summary>
+            Summary description for DiagramViewerDesigner.
+            </summary>
+        </member>
+    </members>
+</doc>

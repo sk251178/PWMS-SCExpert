@@ -1,0 +1,1986 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C9B9920-F22E-4EB5-8B34-81D60A438D2E}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>WMS.MobileWebApp</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Flow</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>WMS.MobileWebApp</RootNamespace>
+    <StartupObject>WMS.MobileWebApp.%28None%29</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WMS.MobileWebApp.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42030,42032,42104,42108,42109,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WMS.MobileWebApp.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42030,42032,42104,42108,42109,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+    <IncludeIisSettings>true</IncludeIisSettings>
+    <IncludeAppPool>true</IncludeAppPool>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CODE128GS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\SCExpert\Libraries\CODE128GS.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.6.2.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\System\Version0.0.0.0\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ATLCLIENTLib">
+      <HintPath>..\..\Assemblies\System\Version0.0.0.0\Interop.ATLCLIENTLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Made4Net.AppSessionManagement, Version=6.14.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.AppSessionManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.DataAccess, Version=6.14.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.General, Version=6.14.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.General.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.GeoData, Version=6.14.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.GeoData.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Integration, Version=6.14.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Integration.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Mobile, Version=6.14.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Net.TCPIP, Version=6.14.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Net.TCPIP.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Schema, Version=6.14.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Schema.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Shared, Version=6.14.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.WebControls, Version=6.14.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\Microsoft.EnterpriseLibrary\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\Microsoft.EnterpriseLibrary\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\Microsoft.EnterpriseLibrary\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Name>Microsoft.VisualBasic</Name>
+    </Reference>
+    <Reference Include="Microsoft.Web.UI.WebControls, Version=1.0.2.226, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\System\Version0.0.0.0\Microsoft.Web.UI.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="ProcessValidators">
+      <HintPath>..\..\Assemblies\SCExpert\Libraries\ProcessValidators.dll</HintPath>
+    </Reference>
+    <Reference Include="RWMS.Logic">
+      <HintPath>..\..\Assemblies\SCExpert\Libraries\RWMS.Logic.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\..\Assemblies\Telerik\Version2014.1.403.45\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="WMS.Lib, Version=5.0.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\SCExpert\Libraries\WMS.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="WMS.Logic, Version=5.0.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\SCExpert\Libraries\WMS.Logic.dll</HintPath>
+    </Reference>
+    <Reference Include="WMS.WebCtrls, Version=5.0.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\SCExpert\Libraries\WMS.WebCtrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.HtmlControls" />
+    <Import Include="System.Web.UI.WebControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyVersionVB.vb">
+      <Link>AssemblyVersionVB.vb</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\HandheldPopupNAlertMessageHandler.vb" />
+    <Compile Include="Classes\ManageMutliUOMUnits.vb" />
+    <Compile Include="Classes\ProcessController.vb" />
+    <Compile Include="Classes\PWMSBaseLogger.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes\PWMSRDTBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes\RDTLogHandler.vb" />
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GTINBarcodeParser.vb" />
+    <Compile Include="m4nScreens\HRT.aspx.vb">
+      <DependentUpon>HRT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\LoginHQT.aspx.vb">
+      <DependentUpon>LoginHQT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\LoginSaCh.aspx.designer.vb">
+      <DependentUpon>LoginSaCh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m4nScreens\LoginSaCh.aspx.vb">
+      <DependentUpon>LoginSaCh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\LoginWH.aspx.vb">
+      <DependentUpon>LoginWH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\LogOffSession.aspx.designer.vb">
+      <DependentUpon>LogOffSession.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m4nScreens\LogOffSession.aspx.vb">
+      <DependentUpon>LogOffSession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\TRT.aspx.vb">
+      <DependentUpon>TRT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MobileUtils.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\MultiContPick.vb" />
+    <Compile Include="Screens\AddQty.aspx.designer.vb">
+      <DependentUpon>AddQty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\AddQty.aspx.vb">
+      <DependentUpon>AddQty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\AddQty2.aspx.designer.vb">
+      <DependentUpon>AddQty2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\AddQty2.aspx.vb">
+      <DependentUpon>AddQty2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ASNLOAD1.aspx.vb">
+      <DependentUpon>ASNLOAD1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ASNLOAD2.aspx.vb">
+      <DependentUpon>ASNLOAD2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\BagOutCloseContainer.aspx.designer.vb">
+      <DependentUpon>BagOutCloseContainer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\BagOutCloseContainer.aspx.vb">
+      <DependentUpon>BagOutCloseContainer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\BATCHREPLPRINT.aspx.designer.vb">
+      <DependentUpon>BATCHREPLPRINT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\BATCHREPLPRINT.aspx.vb">
+      <DependentUpon>BATCHREPLPRINT.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Screens\BATCHRPL.aspx.vb">
+      <DependentUpon>BATCHRPL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\BATCHRPL1.aspx.vb">
+      <DependentUpon>BATCHRPL1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\BATCHRPU1.aspx.vb">
+      <DependentUpon>BATCHRPU1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\BLKDRCV.aspx.vb">
+      <DependentUpon>BLKDRCV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\BLKDRCV0.aspx.vb">
+      <DependentUpon>BLKDRCV0.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\BLKDRCV1.aspx.vb">
+      <DependentUpon>BLKDRCV1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\BLKRCV.aspx.vb">
+      <DependentUpon>BLKRCV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\BLKRCV1.aspx.vb">
+      <DependentUpon>BLKRCV1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\BLKRCVPRNT.aspx.vb">
+      <DependentUpon>BLKRCVPRNT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CASELABELPRINT.aspx.designer.vb">
+      <DependentUpon>CASELABELPRINT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\CASELABELPRINT.aspx.vb">
+      <DependentUpon>CASELABELPRINT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CLD.aspx.vb">
+      <DependentUpon>CLD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CLD1.aspx.vb">
+      <DependentUpon>CLD1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CLD2.aspx.vb">
+      <DependentUpon>CLD2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CLD3.aspx.vb">
+      <DependentUpon>CLD3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CLD4.aspx.vb">
+      <DependentUpon>CLD4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CLDBLD.aspx.vb">
+      <DependentUpon>CLDBLD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CLDBLD1.aspx.vb">
+      <DependentUpon>CLDBLD1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CLDBLD2.aspx.vb">
+      <DependentUpon>CLDBLD2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CLDBLD3.aspx.vb">
+      <DependentUpon>CLDBLD3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CLDGTIN.aspx.designer.vb">
+      <DependentUpon>CLDGTIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\CLDGTIN.aspx.vb">
+      <DependentUpon>CLDGTIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CLDGTIN1.aspx.designer.vb">
+      <DependentUpon>CLDGTIN1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\CLDGTIN1.aspx.vb">
+      <DependentUpon>CLDGTIN1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CLDInfo.aspx.vb">
+      <DependentUpon>CLDInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CMX.aspx.vb">
+      <DependentUpon>CMX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CMX1.aspx.vb">
+      <DependentUpon>CMX1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CNT.aspx.vb">
+      <DependentUpon>CNT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CNT2.aspx.vb">
+      <DependentUpon>CNT2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CNTCreateLoad.aspx.designer.vb">
+      <DependentUpon>CNTCreateLoad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\CNTCreateLoad.aspx.vb">
+      <DependentUpon>CNTCreateLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CNTCreateLoad1.aspx.designer.vb">
+      <DependentUpon>CNTCreateLoad1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\CNTCreateLoad1.aspx.vb">
+      <DependentUpon>CNTCreateLoad1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CNTLDPW.aspx.designer.vb">
+      <DependentUpon>CNTLDPW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\CNTLDPW.aspx.vb">
+      <DependentUpon>CNTLDPW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CNTPW.aspx.vb">
+      <DependentUpon>CNTPW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CNTPW1.aspx.designer.vb">
+      <DependentUpon>CNTPW1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\CNTPW1.aspx.vb">
+      <DependentUpon>CNTPW1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CNTPWCNF.aspx.designer.vb">
+      <DependentUpon>CNTPWCNF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\CNTPWCNF.aspx.vb">
+      <DependentUpon>CNTPWCNF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CNTTASK.aspx.vb">
+      <DependentUpon>CNTTASK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CNTTASK0.aspx.designer.vb">
+      <DependentUpon>CNTTASK0.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\CNTTASK0.aspx.vb">
+      <DependentUpon>CNTTASK0.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CNTTASK1.aspx.vb">
+      <DependentUpon>CNTTASK1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CNTTASKVERFICATION.aspx.designer.vb">
+      <DependentUpon>CNTTASKVERFICATION.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\CNTTASKVERFICATION.aspx.vb">
+      <DependentUpon>CNTTASKVERFICATION.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CONS.aspx.vb">
+      <DependentUpon>CONS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CONSContainers.aspx.vb">
+      <DependentUpon>CONSContainers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CONSDEL.aspx.vb">
+      <DependentUpon>CONSDEL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CONSDELPRN.aspx.vb">
+      <DependentUpon>CONSDELPRN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CONTASK.aspx.vb">
+      <DependentUpon>CONTASK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CONTASK1.aspx.vb">
+      <DependentUpon>CONTASK1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CONTDEL.aspx.vb">
+      <DependentUpon>CONTDEL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CLD1_OVERRIDE.aspx.vb">
+      <DependentUpon>CLD1_OVERRIDE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CLD1_OVERRIDEHUTYPE.aspx.vb">
+      <DependentUpon>CLD1_OVERRIDEHUTYPE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\BARCODE128.aspx.designer.vb">
+      <DependentUpon>barcode128.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\BARCODE128.aspx.vb">
+      <DependentUpon>barcode128.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CloseContConfirm.aspx.designer.vb">
+      <DependentUpon>CloseContConfirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\CloseContConfirm.aspx.vb">
+      <DependentUpon>CloseContConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CLD1_OVERRIDEWEIGHT.aspx.designer.vb">
+      <DependentUpon>CLD1_OVERRIDEWEIGHT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\CLD1_OVERRIDEWEIGHT.aspx.vb">
+      <DependentUpon>CLD1_OVERRIDEWEIGHT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CASELBLPRNT.aspx.vb">
+      <DependentUpon>CASELBLPRNT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CreateRepl.aspx.designer.vb">
+      <DependentUpon>CreateRepl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\CreateRepl.aspx.vb">
+      <DependentUpon>CreateRepl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\MISCTASK.aspx.designer.vb">
+      <DependentUpon>MISCTASK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\MISCTASK.aspx.vb">
+      <DependentUpon>MISCTASK.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Screens\NewQty.aspx.designer.vb">
+      <DependentUpon>NewQty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\NewQty.aspx.vb">
+      <DependentUpon>NewQty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\NewQty2.aspx.designer.vb">
+      <DependentUpon>NewQty2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\NewQty2.aspx.vb">
+      <DependentUpon>NewQty2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PCKBagOut.aspx.designer.vb">
+      <DependentUpon>PCKBagOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\PCKBagOut.aspx.vb">
+      <DependentUpon>PCKBagOut.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PCKBagOutManager.aspx.designer.vb">
+      <DependentUpon>PCKBagOutManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\PCKBagOutManager.aspx.vb">
+      <DependentUpon>PCKBagOutManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PCKBAGOUTPRINT.aspx.designer.vb">
+      <DependentUpon>PCKBAGOUTPRINT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\PCKBAGOUTPRINT.aspx.vb">
+      <DependentUpon>PCKBAGOUTPRINT.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PCKCOMMENTS.aspx.designer.vb">
+      <DependentUpon>PCKCOMMENTS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\PCKCOMMENTS.aspx.vb">
+      <DependentUpon>PCKCOMMENTS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\RcvByID.aspx.designer.vb">
+      <DependentUpon>RcvByID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\RcvByID.aspx.vb">
+      <DependentUpon>RcvByID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PCKLBLREPRNT.aspx.designer.vb">
+      <DependentUpon>PCKLBLREPRNT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\PCKLBLREPRNT.aspx.vb">
+      <DependentUpon>PCKLBLREPRNT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\BATCHRPU.aspx.vb">
+      <DependentUpon>BATCHRPU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\RPK2Multi.aspx.vb">
+      <DependentUpon>RPK2Multi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\MPPW.aspx.vb">
+      <DependentUpon>MPPW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\SplitPickedContainer2.aspx.designer.vb">
+      <DependentUpon>SplitPickedContainer2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\SplitPickedContainer2.aspx.vb">
+      <DependentUpon>SplitPickedContainer2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\SplitPickedContainer1.aspx.designer.vb">
+      <DependentUpon>SplitPickedContainer1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\SplitPickedContainer1.aspx.vb">
+      <DependentUpon>SplitPickedContainer1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\StatusWait.aspx.designer.vb">
+      <DependentUpon>StatusWait.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\StatusWait.aspx.vb">
+      <DependentUpon>StatusWait.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\VERIFYCANCELALL.aspx.designer.vb">
+      <DependentUpon>VERIFYCANCELALL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\VERIFYCANCELALL.aspx.vb">
+      <DependentUpon>VERIFYCANCELALL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\vrfi1.aspx.designer.vb">
+      <DependentUpon>vrfi1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\vrfi1.aspx.vb">
+      <DependentUpon>vrfi1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\TwoStepReplenishment3.aspx.vb">
+      <DependentUpon>TwoStepReplenishment3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\TwoStepReplenishment4.aspx.vb">
+      <DependentUpon>TwoStepReplenishment4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\TwoStepReplenishment2.aspx.designer.vb">
+      <DependentUpon>TwoStepReplenishment2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\TwoStepReplenishment2.aspx.vb">
+      <DependentUpon>TwoStepReplenishment2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\TwoStepReplenishment.aspx.designer.vb">
+      <DependentUpon>TwoStepReplenishment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\TwoStepReplenishment.aspx.vb">
+      <DependentUpon>TwoStepReplenishment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LOADING2DiffShip2.aspx.vb">
+      <DependentUpon>LOADING2DiffShip2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LOADING2DiffShip1.aspx.designer.vb">
+      <DependentUpon>LOADING2DiffShip1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LOADING2DiffShip1.aspx.vb">
+      <DependentUpon>LOADING2DiffShip1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LOADING2DiffShip.aspx.vb">
+      <DependentUpon>LOADING2DiffShip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\DELConsolidation.aspx.vb">
+      <DependentUpon>DELConsolidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PCKCLOSECONTAINER.aspx.designer.vb">
+      <DependentUpon>PCKCLOSECONTAINER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\PCKCLOSECONTAINER.aspx.vb">
+      <DependentUpon>PCKCLOSECONTAINER.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PCKPickMulti.aspx.designer.vb">
+      <DependentUpon>PCKPickMulti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\PCKPickMulti.aspx.vb">
+      <DependentUpon>PCKPickMulti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PCKPARTMULTICONT.aspx.designer.vb">
+      <DependentUpon>PCKPARTMULTICONT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\PCKPARTMULTICONT.aspx.vb">
+      <DependentUpon>PCKPARTMULTICONT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\StaUpd.aspx.designer.vb">
+      <DependentUpon>StaUpd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\StaUpd.aspx.vb">
+      <DependentUpon>StaUpd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\StaUpd2.aspx.designer.vb">
+      <DependentUpon>StaUpd2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\StaUpd2.aspx.vb">
+      <DependentUpon>StaUpd2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\SubQty.aspx.designer.vb">
+      <DependentUpon>SubQty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\SubQty.aspx.vb">
+      <DependentUpon>SubQty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\SubQty2.aspx.designer.vb">
+      <DependentUpon>SubQty2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\SubQty2.aspx.vb">
+      <DependentUpon>SubQty2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PCKPickShort.aspx.designer.vb">
+      <DependentUpon>PCKPickShort.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\PCKPickShort.aspx.vb">
+      <DependentUpon>PCKPickShort.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PCKOVERRIDEWEIGHT.aspx.designer.vb">
+      <DependentUpon>PCKOVERRIDEWEIGHT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\PCKOVERRIDEWEIGHT.aspx.vb">
+      <DependentUpon>PCKOVERRIDEWEIGHT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CreateLoad.aspx.vb">
+      <DependentUpon>CreateLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CreateLoad1.aspx.vb">
+      <DependentUpon>CreateLoad1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CreateLoad2.aspx.vb">
+      <DependentUpon>CreateLoad2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CreateLoadSelectCRN.aspx.vb">
+      <DependentUpon>CreateLoadSelectCRN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CreateLoadSelectRCNLine.aspx.vb">
+      <DependentUpon>CreateLoadSelectRCNLine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CreateReceiptLoad.aspx.vb">
+      <DependentUpon>CreateReceiptLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\DEL.aspx.vb">
+      <DependentUpon>DEL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\DELLBLPRNT.aspx.vb">
+      <DependentUpon>DELLBLPRNT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\DELCLPRNT.aspx.vb">
+      <DependentUpon>DELCLPRNT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\EVACHU.aspx.designer.vb">
+      <DependentUpon>EVACHU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\EVACHU.aspx.vb">
+      <DependentUpon>EVACHU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\EVACHU1.aspx.designer.vb">
+      <DependentUpon>EVACHU1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\EVACHU1.aspx.vb">
+      <DependentUpon>EVACHU1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Flowthrough.aspx.vb">
+      <DependentUpon>Flowthrough.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\FULLREPL.aspx.vb">
+      <DependentUpon>FULLREPL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\HUStacking.aspx.designer.vb">
+      <DependentUpon>HUStacking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\HUStacking.aspx.vb">
+      <DependentUpon>HUStacking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\HUStacking2.aspx.designer.vb">
+      <DependentUpon>HUStacking2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\HUStacking2.aspx.vb">
+      <DependentUpon>HUStacking2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LDDEL.aspx.vb">
+      <DependentUpon>LDDEL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LDPW.aspx.vb">
+      <DependentUpon>LDPW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LDPWCNF.aspx.designer.vb">
+      <DependentUpon>LDPWCNF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LDPWCNF.aspx.vb">
+      <DependentUpon>LDPWCNF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LOADING.aspx.vb">
+      <DependentUpon>LOADING.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Loading0.aspx.designer.vb">
+      <DependentUpon>Loading0.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Loading0.aspx.vb">
+      <DependentUpon>Loading0.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LOADING1.aspx.vb">
+      <DependentUpon>LOADING1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LoadInq.aspx.vb">
+      <DependentUpon>LoadInq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LoadInq1.aspx.vb">
+      <DependentUpon>LoadInq1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LocationCountClearProblem.aspx.designer.vb">
+      <DependentUpon>LocationCountClearProblem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LocationCountClearProblem.aspx.vb">
+      <DependentUpon>LocationCountClearProblem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LOCBLKCNT.aspx.designer.vb">
+      <DependentUpon>LOCBLKCNT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LOCBLKCNT.aspx.vb">
+      <DependentUpon>LOCBLKCNT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LOCBLKCNTTASK.aspx.designer.vb">
+      <DependentUpon>LOCBLKCNTTASK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LOCBLKCNTTASK.aspx.vb">
+      <DependentUpon>LOCBLKCNTTASK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LOCBLKCNTTASK1.aspx.designer.vb">
+      <DependentUpon>LOCBLKCNTTASK1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LOCBLKCNTTASK1.aspx.vb">
+      <DependentUpon>LOCBLKCNTTASK1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LOCCNT.aspx.designer.vb">
+      <DependentUpon>LOCCNT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LOCCNT.aspx.vb">
+      <DependentUpon>LOCCNT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LOCCONT1.aspx.designer.vb">
+      <DependentUpon>LOCCONT1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LOCCONT1.aspx.vb">
+      <DependentUpon>LOCCONT1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LOCCONT2.aspx.designer.vb">
+      <DependentUpon>LOCCONT2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LOCCONT2.aspx.vb">
+      <DependentUpon>LOCCONT2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LOCCONTTASK.aspx.designer.vb">
+      <DependentUpon>LOCCONTTASK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LOCCONTTASK.aspx.vb">
+      <DependentUpon>LOCCONTTASK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LOCCONTTASK1.aspx.designer.vb">
+      <DependentUpon>LOCCONTTASK1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LOCCONTTASK1.aspx.vb">
+      <DependentUpon>LOCCONTTASK1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LOCCONTTASK2.aspx.designer.vb">
+      <DependentUpon>LOCCONTTASK2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LOCCONTTASK2.aspx.vb">
+      <DependentUpon>LOCCONTTASK2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LOCCONTTASK3.aspx.designer.vb">
+      <DependentUpon>LOCCONTTASK3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LOCCONTTASK3.aspx.vb">
+      <DependentUpon>LOCCONTTASK3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Main.aspx.vb">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Mov.aspx.vb">
+      <DependentUpon>Mov.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Mov2.aspx.vb">
+      <DependentUpon>Mov2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\MOVCNT.aspx.vb">
+      <DependentUpon>MOVCNT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\MOVCNT1.aspx.vb">
+      <DependentUpon>MOVCNT1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\MVX.aspx.vb">
+      <DependentUpon>MVX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\NEGREPL.aspx.vb">
+      <DependentUpon>NEGREPL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\NSPICKUP.aspx.designer.vb">
+      <DependentUpon>NSPICKUP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\NSPICKUP.aspx.vb">
+      <DependentUpon>NSPICKUP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Packing.aspx.designer.vb">
+      <DependentUpon>Packing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Packing.aspx.vb">
+      <DependentUpon>Packing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Packing1.aspx.designer.vb">
+      <DependentUpon>Packing1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Packing1.aspx.vb">
+      <DependentUpon>Packing1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PARPCK1.aspx.vb">
+      <DependentUpon>PARPCK1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PARPCK2.aspx.vb">
+      <DependentUpon>PARPCK2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PARPCKLBLPRNT.aspx.vb">
+      <DependentUpon>PARPCKLBLPRNT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PARTREPL.aspx.vb">
+      <DependentUpon>PARTREPL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PCK.aspx.vb">
+      <DependentUpon>PCK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PCKF.aspx.vb">
+      <DependentUpon>PCKF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PCKFULL.aspx.vb">
+      <DependentUpon>PCKFULL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PCKLBLPRNT.aspx.vb">
+      <DependentUpon>PCKLBLPRNT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PCKORD.aspx.vb">
+      <DependentUpon>PCKORD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PCKORD1.aspx.vb">
+      <DependentUpon>PCKORD1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PCKP.aspx.vb">
+      <DependentUpon>PCKP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PCKPART.aspx.vb">
+      <DependentUpon>PCKPART.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PCKWEIGHTNEEDED.aspx.designer.vb">
+      <DependentUpon>PCKWEIGHTNEEDED.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\PCKWEIGHTNEEDED.aspx.vb">
+      <DependentUpon>PCKWEIGHTNEEDED.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PRNLD.aspx.vb">
+      <DependentUpon>PRNLD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PRNLD1.aspx.vb">
+      <DependentUpon>PRNLD1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\QCLOAD1.aspx.designer.vb">
+      <DependentUpon>QCLOAD1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\QCLOAD1.aspx.vb">
+      <DependentUpon>QCLOAD1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\QCLOAD2.aspx.designer.vb">
+      <DependentUpon>QCLOAD2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\QCLOAD2.aspx.vb">
+      <DependentUpon>QCLOAD2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\QCLOAD3.aspx.designer.vb">
+      <DependentUpon>QCLOAD3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\QCLOAD3.aspx.vb">
+      <DependentUpon>QCLOAD3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\RCVTRNS.aspx.vb">
+      <DependentUpon>RCVTRNS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\RCVTRNS1.aspx.vb">
+      <DependentUpon>RCVTRNS1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ReceiveByID.aspx.vb">
+      <DependentUpon>ReceiveByID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ReceiveById1.aspx.vb">
+      <DependentUpon>ReceiveById1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ReceiveById2.aspx.vb">
+      <DependentUpon>ReceiveById2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ReceiveFlowthrough.aspx.vb">
+      <DependentUpon>ReceiveFlowthrough.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\REPL.aspx.vb">
+      <DependentUpon>REPL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\REPL1.aspx.vb">
+      <DependentUpon>REPL1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\REPL2.aspx.vb">
+      <DependentUpon>REPL2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\REPLT.aspx.vb">
+      <DependentUpon>REPLT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\RePrintLbl.aspx.vb">
+      <DependentUpon>RePrintLbl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ReqRepl.aspx.designer.vb">
+      <DependentUpon>ReqRepl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ReqRepl.aspx.vb">
+      <DependentUpon>ReqRepl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\RPK.aspx.vb">
+      <DependentUpon>RPK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\RPK2.aspx.vb">
+      <DependentUpon>RPK2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\RPKC.aspx.vb">
+      <DependentUpon>RPKC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\RPKC1.aspx.vb">
+      <DependentUpon>RPKC1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ShipOrder.aspx.vb">
+      <DependentUpon>ShipOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ShipOrder1.aspx.vb">
+      <DependentUpon>ShipOrder1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ShipShipment.aspx.vb">
+      <DependentUpon>ShipShipment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ShipShipment1.aspx.vb">
+      <DependentUpon>ShipShipment1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ShipTransShipment.aspx.vb">
+      <DependentUpon>ShipTransShipment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ShipTransShipment1.aspx.vb">
+      <DependentUpon>ShipTransShipment1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ShowMode.aspx.vb">
+      <DependentUpon>ShowMode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ShowScreen.aspx.vb">
+      <DependentUpon>ShowScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\SkuInq.aspx.vb">
+      <DependentUpon>SkuInq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\SkuInq2.aspx.vb">
+      <DependentUpon>SkuInq2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\SPECPCK.aspx.vb">
+      <DependentUpon>SPECPCK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\SpecPickup.aspx.designer.vb">
+      <DependentUpon>SpecPickup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\SpecPickup.aspx.vb">
+      <DependentUpon>SpecPickup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Staging.aspx.designer.vb">
+      <DependentUpon>Staging.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Staging.aspx.vb">
+      <DependentUpon>Staging.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\TaskManager.aspx.vb">
+      <DependentUpon>TaskManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\TaskSummary.aspx.designer.vb">
+      <DependentUpon>TaskSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\TaskSummary.aspx.vb">
+      <DependentUpon>TaskSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\TransShipment.aspx.vb">
+      <DependentUpon>TransShipment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\UNLOADING.aspx.designer.vb">
+      <DependentUpon>UNLOADING.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\UNLOADING.aspx.vb">
+      <DependentUpon>UNLOADING.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\VehicleMov.aspx.vb">
+      <DependentUpon>VehicleMov.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\MultiSelectForm.aspx.designer.vb">
+      <DependentUpon>MultiSelectForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\MultiSelectForm.aspx.vb">
+      <DependentUpon>MultiSelectForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\vrfi.aspx.designer.vb">
+      <DependentUpon>vrfi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\vrfi.aspx.vb">
+      <DependentUpon>vrfi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\VRFI2.aspx.designer.vb">
+      <DependentUpon>VRFI2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\VRFI2.aspx.vb">
+      <DependentUpon>VRFI2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\VRFI3.aspx.designer.vb">
+      <DependentUpon>VRFI3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\VRFI3.aspx.vb">
+      <DependentUpon>VRFI3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\VRFICONFIRM.aspx.designer.vb">
+      <DependentUpon>VRFICONFIRM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\VRFICONFIRM.aspx.vb">
+      <DependentUpon>VRFICONFIRM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\VRFICONFITEM.aspx.designer.vb">
+      <DependentUpon>VRFICONFITEM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\VRFICONFITEM.aspx.vb">
+      <DependentUpon>VRFICONFITEM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\VRFIReverse.aspx.designer.vb">
+      <DependentUpon>VRFIReverse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\VRFIReverse.aspx.vb">
+      <DependentUpon>VRFIReverse.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Screens\WeightCaptureNeeded.aspx.designer.vb">
+      <DependentUpon>WeightCaptureNeeded.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\WeightCaptureNeeded.aspx.vb">
+      <DependentUpon>WeightCaptureNeeded.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\WeightCaptureNeededCLD1.aspx.designer.vb">
+      <DependentUpon>WeightCaptureNeededCLD1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\WeightCaptureNeededCLD1.aspx.vb">
+      <DependentUpon>WeightCaptureNeededCLD1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserSessionManager.vb" />
+    <Compile Include="WebCtrls\Screen.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="greenscreen\css\default.css" />
+    <Content Include="greenscreen\css\ie.css" />
+    <Content Include="greenscreen\css\legacy.css" />
+    <Content Include="greenscreen\css\mobile.css" />
+    <Content Include="greenscreen\html\head-legacy.html" />
+    <Content Include="greenscreen\html\head.html" />
+    <Content Include="greenscreen\javascript\wms.js" />
+    <Content Include="greenscreen\javascript\wms_legacy.js" />
+    <Content Include="greenscreen\resources\jquery-1.12.4.min.js" />
+    <Content Include="greenscreen\resources\respond.js" />
+    <Content Include="Images\a.gif" />
+    <Content Include="Images\spacer.gif" />
+    <Content Include="Images\wait.gif" />
+    <Content Include="m4nScreens\HRT.aspx" />
+    <Content Include="m4nScreens\Login.aspx" />
+    <Content Include="m4nScreens\LoginHQT.aspx" />
+    <Content Include="m4nScreens\LoginSaCh.aspx" />
+    <Content Include="m4nScreens\LoginWH.aspx" />
+    <Content Include="m4nScreens\LogOffSession.aspx" />
+    <Content Include="m4nScreens\TRT.aspx" />
+    <Content Include="m4nSkins\DefaultRTL\CSS\RadMenu.css" />
+    <Content Include="m4nSkins\DefaultRTL\CSS\Styles.css" />
+    <Content Include="m4nSkins\DefaultRTL\SkinConfig.xml" />
+    <Content Include="m4nSkins\Default\CSS\RadMenu.css" />
+    <Content Include="m4nSkins\Default\CSS\Styles.css" />
+    <Content Include="m4nSkins\Default\SkinConfig.xml" />
+    <Content Include="m4nSkins\HRT\CSS\RadMenu.css" />
+    <Content Include="m4nSkins\HRT\CSS\Styles.css" />
+    <Content Include="m4nSkins\HRT\SkinConfig.xml" />
+    <Content Include="m4nSkins\TRT\CSS\RadMenu.css" />
+    <Content Include="m4nSkins\TRT\CSS\Styles.css" />
+    <Content Include="m4nSkins\TRT\SkinConfig.xml" />
+    <Content Include="Screens\AddQty.aspx" />
+    <Content Include="Screens\AddQty2.aspx" />
+    <Content Include="Screens\ASNLOAD1.aspx" />
+    <Content Include="Screens\ASNLOAD2.aspx" />
+    <Content Include="Screens\BagOutCloseContainer.aspx" />
+    <Content Include="Screens\BATCHREPLPRINT.aspx" />
+    <Content Include="Screens\BATCHRPL.aspx" />
+    <Content Include="Screens\BATCHRPL1.aspx" />
+    <Content Include="Screens\BATCHRPU1.aspx" />
+    <Content Include="Screens\BLKDRCV.aspx" />
+    <Content Include="Screens\BLKDRCV0.aspx" />
+    <Content Include="Screens\BLKDRCV1.aspx" />
+    <Content Include="Screens\BLKRCV.aspx" />
+    <Content Include="Screens\BLKRCV1.aspx" />
+    <Content Include="Screens\BLKRCVPRNT.aspx" />
+    <Content Include="Screens\CASELABELPRINT.aspx" />
+    <Content Include="Screens\CLD.aspx" />
+    <Content Include="Screens\CLD1.aspx" />
+    <Content Include="Screens\CLD2.aspx" />
+    <Content Include="Screens\CLD3.aspx" />
+    <Content Include="Screens\CLD4.aspx" />
+    <Content Include="Screens\CLD5.aspx" />
+    <Content Include="Screens\CLDBLD.aspx" />
+    <Content Include="Screens\CLDBLD1.aspx" />
+    <Content Include="Screens\CLDBLD2.aspx" />
+    <Content Include="Screens\CLDBLD3.aspx" />
+    <Content Include="Screens\CLDGTIN.aspx" />
+    <Content Include="Screens\CLDGTIN1.aspx" />
+    <Content Include="Screens\CLDInfo.aspx" />
+    <Content Include="Screens\CMX.aspx" />
+    <Content Include="Screens\CMX1.aspx" />
+    <Content Include="Screens\CNT.aspx" />
+    <Content Include="Screens\CNT2.aspx" />
+    <Content Include="Screens\CNTCreateLoad.aspx" />
+    <Content Include="Screens\CNTCreateLoad1.aspx" />
+    <Content Include="Screens\CNTLDPW.aspx" />
+    <Content Include="Screens\CNTPW.aspx" />
+    <Content Include="Screens\CNTPW1.aspx" />
+    <Content Include="Screens\CNTPWCNF.aspx" />
+    <Content Include="Screens\CNTTASK.aspx" />
+    <Content Include="Screens\CNTTASK0.aspx" />
+    <Content Include="Screens\CNTTASK1.aspx" />
+    <Content Include="Screens\CNTTASKVERFICATION.aspx" />
+    <Content Include="Screens\CONS.aspx" />
+    <Content Include="Screens\CONSContainers.aspx" />
+    <Content Include="Screens\CONSDEL.aspx" />
+    <Content Include="Screens\CONSDELPRN.aspx" />
+    <Content Include="Screens\CONTASK.aspx" />
+    <Content Include="Screens\CONTASK1.aspx" />
+    <Content Include="Screens\CONTDEL.aspx" />
+    <Content Include="Screens\CLD1_OVERRIDE.aspx" />
+    <Content Include="Screens\CLD1_OVERRIDEHUTYPE.aspx" />
+    <Content Include="Screens\barcode128.aspx" />
+    <Content Include="Screens\CloseContConfirm.aspx" />
+    <Content Include="Screens\CLD1_OVERRIDEWEIGHT.aspx" />
+    <Content Include="Screens\CASELBLPRNT.aspx" />
+    <Content Include="Screens\CreateRepl.aspx" />
+    <Content Include="Screens\MISCTASK.aspx" />
+    <Content Include="Screens\NewQty.aspx" />
+    <Content Include="Screens\NewQty2.aspx" />
+    <Content Include="Screens\PCKBagOut.aspx" />
+    <Content Include="Screens\PCKBagOutManager.aspx" />
+    <Content Include="Screens\PCKBAGOUTPRINT.aspx" />
+    <Content Include="Screens\PCKCOMMENTS.aspx" />
+    <Content Include="Screens\RcvByID.aspx" />
+    <Content Include="Screens\PCKLBLREPRNT.aspx" />
+    <Content Include="Screens\BATCHRPU.aspx" />
+    <Content Include="Screens\RPK2Multi.aspx" />
+    <Content Include="Screens\MPPW.aspx" />
+    <Content Include="Screens\SplitPickedContainer2.aspx" />
+    <Content Include="Screens\SplitPickedContainer1.aspx" />
+    <Content Include="Screens\StatusWait.aspx" />
+    <Content Include="Screens\VERIFYCANCELALL.aspx" />
+    <Content Include="Screens\vrfi1.aspx" />
+    <Content Include="Screens\TwoStepReplenishment3.aspx" />
+    <Content Include="Screens\TwoStepReplenishment4.aspx" />
+    <Content Include="Screens\TwoStepReplenishment2.aspx" />
+    <Content Include="Screens\TwoStepReplenishment.aspx" />
+    <Content Include="Screens\LOADING2DiffShip2.aspx" />
+    <Content Include="Screens\LOADING2DiffShip1.aspx" />
+    <Content Include="Screens\LOADING2DiffShip.aspx" />
+    <Content Include="Screens\DELConsolidation.aspx" />
+    <Content Include="Screens\PCKCLOSECONTAINER.aspx" />
+    <Content Include="Screens\PCKPickMulti.aspx" />
+    <Content Include="Screens\PCKPARTMULTICONT.aspx" />
+    <Content Include="Screens\StaUpd.aspx" />
+    <Content Include="Screens\StaUpd2.aspx" />
+    <Content Include="Screens\SubQty.aspx" />
+    <Content Include="Screens\SubQty2.aspx" />
+    <Content Include="Screens\PCKPickShort.aspx" />
+    <Content Include="Screens\PCKOVERRIDEWEIGHT.aspx" />
+    <Content Include="Screens\CreateLoad.aspx" />
+    <Content Include="Screens\CreateLoad1.aspx" />
+    <Content Include="Screens\CreateLoad2.aspx" />
+    <Content Include="Screens\CreateLoadSelectCRN.aspx" />
+    <Content Include="Screens\CreateLoadSelectRCNLine.aspx" />
+    <Content Include="Screens\CreateReceiptLoad.aspx" />
+    <Content Include="Screens\DEL.aspx" />
+    <Content Include="Screens\DELLBLPRNT.aspx" />
+    <Content Include="Screens\DELCLPRNT.aspx" />
+    <Content Include="Screens\EVACHU.aspx" />
+    <Content Include="Screens\EVACHU1.aspx" />
+    <Content Include="Screens\Flowthrough.aspx" />
+    <Content Include="Screens\FULLREPL.aspx" />
+    <Content Include="Screens\HUStacking.aspx" />
+    <Content Include="Screens\HUStacking2.aspx" />
+    <Content Include="Screens\LDDEL.aspx" />
+    <Content Include="Screens\LDPW.aspx" />
+    <Content Include="Screens\LDPWCNF.aspx" />
+    <Content Include="Screens\LOADING.aspx" />
+    <Content Include="Screens\Loading0.aspx" />
+    <Content Include="Screens\LOADING1.aspx" />
+    <Content Include="Screens\LoadInq.aspx" />
+    <Content Include="Screens\LoadInq1.aspx" />
+    <Content Include="Screens\LocationCountClearProblem.aspx" />
+    <Content Include="Screens\LOCBLKCNT.aspx" />
+    <Content Include="Screens\LOCBLKCNTTASK.aspx" />
+    <Content Include="Screens\LOCBLKCNTTASK1.aspx" />
+    <Content Include="Screens\LOCCNT.aspx" />
+    <Content Include="Screens\LOCCONT1.aspx" />
+    <Content Include="Screens\LOCCONT2.aspx" />
+    <Content Include="Screens\LOCCONTTASK.aspx" />
+    <Content Include="Screens\LOCCONTTASK1.aspx" />
+    <Content Include="Screens\LOCCONTTASK2.aspx" />
+    <Content Include="Screens\LOCCONTTASK3.aspx" />
+    <Content Include="Screens\Main.aspx" />
+    <Content Include="Screens\Mov.aspx" />
+    <Content Include="Screens\Mov2.aspx" />
+    <Content Include="Screens\MOVCNT.aspx" />
+    <Content Include="Screens\MOVCNT1.aspx" />
+    <Content Include="Screens\MVX.aspx" />
+    <Content Include="Screens\NEGREPL.aspx" />
+    <Content Include="Screens\NSPICKUP.aspx" />
+    <Content Include="Screens\Packing.aspx" />
+    <Content Include="Screens\Packing1.aspx" />
+    <Content Include="Screens\PARPCK1.aspx" />
+    <Content Include="Screens\PARPCK2.aspx" />
+    <Content Include="Screens\PARPCKLBLPRNT.aspx" />
+    <Content Include="Screens\PARTREPL.aspx" />
+    <Content Include="Screens\PCK.aspx" />
+    <Content Include="Screens\PCKF.aspx" />
+    <Content Include="Screens\PCKFULL.aspx" />
+    <Content Include="Screens\PCKLBLPRNT.aspx" />
+    <Content Include="Screens\PCKORD.aspx" />
+    <Content Include="Screens\PCKORD1.aspx" />
+    <Content Include="Screens\PCKP.aspx" />
+    <Content Include="Screens\PCKPART.aspx" />
+    <Content Include="Screens\PCKPARTUOM.aspx" />
+    <Content Include="Screens\PCKWEIGHTNEEDED.aspx" />
+    <Content Include="Screens\PRNLD.aspx" />
+    <Content Include="Screens\PRNLD1.aspx" />
+    <Content Include="Screens\QCLOAD1.aspx" />
+    <Content Include="Screens\QCLOAD2.aspx" />
+    <Content Include="Screens\QCLOAD3.aspx" />
+    <Content Include="Screens\RCVTRNS.aspx" />
+    <Content Include="Screens\RCVTRNS1.aspx" />
+    <Content Include="Screens\ReceiveByID.aspx" />
+    <Content Include="Screens\ReceiveById1.aspx" />
+    <Content Include="Screens\ReceiveById2.aspx" />
+    <Content Include="Screens\ReceiveFlowthrough.aspx" />
+    <Content Include="Screens\REPL.aspx" />
+    <Content Include="Screens\REPL1.aspx" />
+    <Content Include="Screens\REPL2.aspx" />
+    <Content Include="Screens\REPLT.aspx" />
+    <Content Include="Screens\RePrintLbl.aspx" />
+    <Content Include="Screens\ReqRepl.aspx" />
+    <Content Include="Screens\RPK.aspx" />
+    <Content Include="Screens\RPK2.aspx" />
+    <Content Include="Screens\RPKC.aspx" />
+    <Content Include="Screens\RPKC1.aspx" />
+    <Content Include="Screens\ShipOrder.aspx" />
+    <Content Include="Screens\ShipOrder1.aspx" />
+    <Content Include="Screens\ShipShipment.aspx" />
+    <Content Include="Screens\ShipShipment1.aspx" />
+    <Content Include="Screens\ShipTransShipment.aspx" />
+    <Content Include="Screens\ShipTransShipment1.aspx" />
+    <Content Include="Screens\ShowMode.aspx" />
+    <Content Include="Screens\ShowScreen.aspx" />
+    <Content Include="Screens\SkuInq.aspx" />
+    <Content Include="Screens\SkuInq2.aspx" />
+    <Content Include="Screens\SPECPCK.aspx" />
+    <Content Include="Screens\SPECPCK0.aspx" />
+    <Content Include="Screens\SPECPCK01.aspx" />
+    <Content Include="Screens\SPECPCK1.aspx" />
+    <Content Include="Screens\SPECPCK2.aspx" />
+    <Content Include="Screens\SpecPickup.aspx" />
+    <Content Include="Screens\Staging.aspx" />
+    <Content Include="Screens\TaskManager.aspx" />
+    <Content Include="Screens\TaskSummary.aspx" />
+    <Content Include="Screens\TransShipment.aspx" />
+    <Content Include="Screens\UNLOADING.aspx" />
+    <Content Include="Screens\VehicleMov.aspx" />
+    <Content Include="Screens\vrfi.aspx" />
+    <Content Include="Screens\VRFI2.aspx" />
+    <Content Include="Screens\VRFI3.aspx" />
+    <Content Include="Screens\VRFICONFIRM.aspx" />
+    <Content Include="Screens\VRFICONFITEM.aspx" />
+    <Content Include="Screens\VRFIReverse.aspx" />
+    <Content Include="Screens\WeightCaptureNeeded.aspx" />
+    <Content Include="Screens\WeightCaptureNeededCLD1.aspx" />
+    <Content Include="Styles.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Screens\MultiSelectForm.aspx" />
+    <EmbeddedResource Include="Default.aspx.resx">
+      <DependentUpon>Default.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\HRT.aspx.resx">
+      <DependentUpon>HRT.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\Login.aspx.resx">
+      <DependentUpon>Login.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\LoginHQT.aspx.resx">
+      <DependentUpon>LoginHQT.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\LoginWH.aspx.resx">
+      <DependentUpon>LoginWH.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\TRT.aspx.resx">
+      <DependentUpon>TRT.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ASNLOAD1.aspx.resx">
+      <DependentUpon>ASNLOAD1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ASNLOAD2.aspx.resx">
+      <DependentUpon>ASNLOAD2.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\BATCHRPL.aspx.resx">
+      <DependentUpon>BATCHRPL.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\BATCHRPL1.aspx.resx">
+      <DependentUpon>BATCHRPL1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\BATCHRPU1.aspx.resx">
+      <DependentUpon>BATCHRPU1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\BLKDRCV.aspx.resx">
+      <DependentUpon>BLKDRCV.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\BLKDRCV0.aspx.resx">
+      <DependentUpon>BLKDRCV0.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\BLKDRCV1.aspx.resx">
+      <DependentUpon>BLKDRCV1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\BLKRCV.aspx.resx">
+      <DependentUpon>BLKRCV.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\BLKRCV1.aspx.resx">
+      <DependentUpon>BLKRCV1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\BLKRCVPRNT.aspx.resx">
+      <DependentUpon>BLKRCVPRNT.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CLD.aspx.resx">
+      <DependentUpon>CLD.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CLD1.aspx.resx">
+      <DependentUpon>CLD1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CLD2.aspx.resx">
+      <DependentUpon>CLD2.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CLD3.aspx.resx">
+      <DependentUpon>CLD3.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CLD4.aspx.resx">
+      <DependentUpon>CLD4.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CLDBLD.aspx.resx">
+      <DependentUpon>CLDBLD.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CLDBLD1.aspx.resx">
+      <DependentUpon>CLDBLD1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CLDBLD2.aspx.resx">
+      <DependentUpon>CLDBLD2.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CLDBLD3.aspx.resx">
+      <DependentUpon>CLDBLD3.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CLDInfo.aspx.resx">
+      <DependentUpon>CLDInfo.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CMX.aspx.resx">
+      <DependentUpon>CMX.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CMX1.aspx.resx">
+      <DependentUpon>CMX1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CNT.aspx.resx">
+      <DependentUpon>CNT.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CNT2.aspx.resx">
+      <DependentUpon>CNT2.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CNTPW.aspx.resx">
+      <DependentUpon>CNTPW.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CNTTASK.aspx.resx">
+      <DependentUpon>CNTTASK.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CNTTASK1.aspx.resx">
+      <DependentUpon>CNTTASK1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CONS.aspx.resx">
+      <DependentUpon>CONS.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CONSContainers.aspx.resx">
+      <DependentUpon>CONSContainers.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CONSDEL.aspx.resx">
+      <DependentUpon>CONSDEL.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CONSDELPRN.aspx.resx">
+      <DependentUpon>CONSDELPRN.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CONTASK.aspx.resx">
+      <DependentUpon>CONTASK.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CONTASK1.aspx.resx">
+      <DependentUpon>CONTASK1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CONTDEL.aspx.resx">
+      <DependentUpon>CONTDEL.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CLD1_OVERRIDE.aspx.resx">
+      <DependentUpon>CLD1_OVERRIDE.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CLD1_OVERRIDEHUTYPE.aspx.resx">
+      <DependentUpon>CLD1_OVERRIDEHUTYPE.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CASELBLPRNT.aspx.resx">
+      <DependentUpon>CASELBLPRNT.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\BATCHRPU.aspx.resx">
+      <DependentUpon>BATCHRPU.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\TwoStepReplenishment3.aspx.resx">
+      <DependentUpon>TwoStepReplenishment3.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\TwoStepReplenishment4.aspx.resx">
+      <DependentUpon>TwoStepReplenishment4.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LOADING2DiffShip2.aspx.resx">
+      <DependentUpon>LOADING2DiffShip2.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LOADING2DiffShip.aspx.resx">
+      <DependentUpon>LOADING2DiffShip.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\DELConsolidation.aspx.resx">
+      <DependentUpon>DELConsolidation.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CreateLoad.aspx.resx">
+      <DependentUpon>CreateLoad.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CreateLoad1.aspx.resx">
+      <DependentUpon>CreateLoad1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CreateLoad2.aspx.resx">
+      <DependentUpon>CreateLoad2.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CreateLoadSelectCRN.aspx.resx">
+      <DependentUpon>CreateLoadSelectCRN.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CreateLoadSelectRCNLine.aspx.resx">
+      <DependentUpon>CreateLoadSelectRCNLine.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CreateReceiptLoad.aspx.resx">
+      <DependentUpon>CreateReceiptLoad.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\DEL.aspx.resx">
+      <DependentUpon>DEL.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\DELLBLPRNT.aspx.resx">
+      <DependentUpon>DELLBLPRNT.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\DELCLPRNT.aspx.resx">
+      <DependentUpon>DELCLPRNT.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Flowthrough.aspx.resx">
+      <DependentUpon>Flowthrough.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\FULLREPL.aspx.resx">
+      <DependentUpon>FULLREPL.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LDDEL.aspx.resx">
+      <DependentUpon>LDDEL.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LDPW.aspx.resx">
+      <DependentUpon>LDPW.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LOADING.aspx.resx">
+      <DependentUpon>LOADING.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LOADING1.aspx.resx">
+      <DependentUpon>LOADING1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LoadInq.aspx.resx">
+      <DependentUpon>LoadInq.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LoadInq1.aspx.resx">
+      <DependentUpon>LoadInq1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LOCBLKCNT.aspx.resx">
+      <DependentUpon>LOCBLKCNT.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LOCBLKCNTTASK.aspx.resx">
+      <DependentUpon>LOCBLKCNTTASK.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LOCBLKCNTTASK1.aspx.resx">
+      <DependentUpon>LOCBLKCNTTASK1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LOCCNT.aspx.resx">
+      <DependentUpon>LOCCNT.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LOCCONT1.aspx.resx">
+      <DependentUpon>LOCCONT1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LOCCONT2.aspx.resx">
+      <DependentUpon>LOCCONT2.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LOCCONTTASK.aspx.resx">
+      <DependentUpon>LOCCONTTASK.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LOCCONTTASK1.aspx.resx">
+      <DependentUpon>LOCCONTTASK1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LOCCONTTASK2.aspx.resx">
+      <DependentUpon>LOCCONTTASK2.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LOCCONTTASK3.aspx.resx">
+      <DependentUpon>LOCCONTTASK3.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Main.aspx.resx">
+      <DependentUpon>Main.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Mov.aspx.resx">
+      <DependentUpon>Mov.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Mov2.aspx.resx">
+      <DependentUpon>Mov2.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\MOVCNT.aspx.resx">
+      <DependentUpon>MOVCNT.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\MOVCNT1.aspx.resx">
+      <DependentUpon>MOVCNT1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\MVX.aspx.resx">
+      <DependentUpon>MVX.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\NEGREPL.aspx.resx">
+      <DependentUpon>NEGREPL.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PARPCK1.aspx.resx">
+      <DependentUpon>PARPCK1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PARPCK2.aspx.resx">
+      <DependentUpon>PARPCK2.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PARPCKLBLPRNT.aspx.resx">
+      <DependentUpon>PARPCKLBLPRNT.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PARTREPL.aspx.resx">
+      <DependentUpon>PARTREPL.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PCK.aspx.resx">
+      <DependentUpon>PCK.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PCKF.aspx.resx">
+      <DependentUpon>PCKF.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PCKFULL.aspx.resx">
+      <DependentUpon>PCKFULL.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PCKLBLPRNT.aspx.resx">
+      <DependentUpon>PCKLBLPRNT.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PCKORD.aspx.resx">
+      <DependentUpon>PCKORD.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PCKORD1.aspx.resx">
+      <DependentUpon>PCKORD1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PCKP.aspx.resx">
+      <DependentUpon>PCKP.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PCKPART.aspx.resx">
+      <DependentUpon>PCKPART.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PRNLD.aspx.resx">
+      <DependentUpon>PRNLD.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PRNLD1.aspx.resx">
+      <DependentUpon>PRNLD1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\RCVTRNS.aspx.resx">
+      <DependentUpon>RCVTRNS.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\RCVTRNS1.aspx.resx">
+      <DependentUpon>RCVTRNS1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ReceiveByID.aspx.resx">
+      <DependentUpon>ReceiveByID.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ReceiveById1.aspx.resx">
+      <DependentUpon>ReceiveById1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ReceiveById2.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ReceiveFlowthrough.aspx.resx">
+      <DependentUpon>ReceiveFlowthrough.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\REPL.aspx.resx">
+      <DependentUpon>REPL.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\REPL1.aspx.resx">
+      <DependentUpon>REPL1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\REPL2.aspx.resx">
+      <DependentUpon>REPL2.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\REPLT.aspx.resx">
+      <DependentUpon>REPLT.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\RePrintLbl.aspx.resx">
+      <DependentUpon>RePrintLbl.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\RPK.aspx.resx">
+      <DependentUpon>RPK.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\RPK2.aspx.resx">
+      <DependentUpon>RPK2.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\RPKC.aspx.resx">
+      <DependentUpon>RPKC.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\RPKC1.aspx.resx">
+      <DependentUpon>RPKC1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ShipOrder.aspx.resx">
+      <DependentUpon>ShipOrder.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ShipOrder1.aspx.resx">
+      <DependentUpon>ShipOrder1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ShipShipment.aspx.resx">
+      <DependentUpon>ShipShipment.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ShipShipment1.aspx.resx">
+      <DependentUpon>ShipShipment1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ShipTransShipment.aspx.resx">
+      <DependentUpon>ShipTransShipment.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ShipTransShipment1.aspx.resx">
+      <DependentUpon>ShipTransShipment1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ShowMode.aspx.resx">
+      <DependentUpon>ShowMode.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ShowScreen.aspx.resx">
+      <DependentUpon>ShowScreen.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\SkuInq.aspx.resx">
+      <DependentUpon>SkuInq.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\SkuInq2.aspx.resx">
+      <DependentUpon>SkuInq2.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\SPECPCK.aspx.resx">
+      <DependentUpon>SPECPCK.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\TaskManager.aspx.resx">
+      <DependentUpon>TaskManager.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\TransShipment.aspx.resx">
+      <DependentUpon>TransShipment.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\VehicleMov.aspx.resx">
+      <DependentUpon>VehicleMov.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="m4nSkins\DefaultRTL\Images\" />
+    <Folder Include="m4nSkins\Default\Images\" />
+    <Folder Include="m4nSkins\HRT\Images\" />
+    <Folder Include="m4nSkins\TRT\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\PublishProfiles\Greenscreen.pubxml" />
+    <None Include="My Project\PublishProfiles\LaBodega RDT.pubxml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

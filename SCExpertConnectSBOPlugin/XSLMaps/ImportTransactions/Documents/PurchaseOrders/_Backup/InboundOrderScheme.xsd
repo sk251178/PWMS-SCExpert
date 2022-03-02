@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="DATACOLLECTION">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="DATA">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CONSIGNEE">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="ORDERID">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="ORDERTYPE">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="REFERENCEORD">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="SOURCECOMPANY">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="COMPANYTYPE">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="STATUS">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="CREATEDATE">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="NOTES">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="HOSTORDERID">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="DOCUMENTTYPE">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="EXPECTEDDATE">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="RECEIVEDFROM">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="LINES">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="LINE">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="ORDERLINE">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="REFERENCEORDLINE">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="EXPECTEDDATE">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="LASTRECEIPTDATE">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="SKU">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="QTYORDERED">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="QTYADJUSTED">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="QTYRECEIVED">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="INPUTUOM">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="INPUTQTY">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="INPUTSKU">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="INVENTORYSTATUS">
+														<xs:complexType/>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

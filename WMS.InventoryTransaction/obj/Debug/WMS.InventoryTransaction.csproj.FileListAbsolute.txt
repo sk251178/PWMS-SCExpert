@@ -1,0 +1,11 @@
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.InventoryTransaction\obj\Debug\WMS.InventoryTransaction.ProjectInstaller.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.InventoryTransaction\obj\Debug\WMS.InventoryTransaction.csproj.GenerateResource.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.InventoryTransaction\obj\Debug\WMS.InventoryTransaction.csproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\InventoryTransaction\PWMS.InventoryTransaction.exe.config
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\InventoryTransaction\PWMS.InventoryTransaction.xml
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\InventoryTransaction\PWMS.InventoryTransaction.exe
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\InventoryTransaction\PWMS.InventoryTransaction.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.InventoryTransaction\obj\Debug\WMS.InventoryTransaction.csproj.AssemblyReference.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.InventoryTransaction\obj\Debug\WMS.InventoryTransaction.csproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.InventoryTransaction\obj\Debug\PWMS.InventoryTransaction.exe
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.InventoryTransaction\obj\Debug\PWMS.InventoryTransaction.pdb

@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Made4Net.Reporting</name>
+    </assembly>
+    <members>
+        <member name="T:Made4Net.Reporting.Common.IQuickReportHandler">
+            <summary>
+            Summary description for IQuickReportHandler.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Reporting.Common.IReport">
+            <summary>
+            Summary description for IReport.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Reporting.Common.IReportGenerator">
+            <summary>
+            Summary description for IReportGenerator.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Reporting.Common.LabelInfo">
+            <summary>
+            Summary description for LabelInfo.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Reporting.Common.LabelType">
+            <summary>
+            Summary description for LabelType.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Reporting.Common.LogHandler">
+            <summary>
+            Summary description for LogHandler.
+            7/25/2015: Reverted RWMS-2412 changes back to single log file.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Reporting.Common.NoDataFoundException">
+            <summary>
+            This exception should be thrown when there is no data to display when the user is generating a report.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Reporting.Common.QuickReportBase">
+            <summary>
+            Summary description for QuickReport.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Reporting.Common.QuickReportException">
+            <summary>
+            Summary description for QuickReportException.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Reporting.Common.CustomQuickReportParams">
+            <summary>
+            This class is used for loading and evaluating custom parameters for the quick report.
+            The parameters are saved in the sys_quick_report_param table.
+            </summary>
+        </member>
+        <member name="P:Made4Net.Reporting.Common.CustomQuickReportParams.Value">
+            <summary>
+            Use this property to get the value of the parameter.
+            The parameter will be evaluated the first time this property is used.
+            </summary>
+        </member>
+        <member name="P:Made4Net.Reporting.Common.CustomQuickReportParams.Code">
+            <summary>
+            Returns the code of this parameter.
+            </summary>
+        </member>
+        <member name="M:Made4Net.Reporting.Common.CustomQuickReportParams.LoadAsSingleRow">
+            <summary>
+            This method is used by the quick report to get the parameters as a single data row.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Made4Net.Reporting.Common.StandardQuickReportParams">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Made4Net.Reporting.Common.Report">
+            <summary>
+            Summary description for Report.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Reporting.Common.ReportActionType">
+            <summary>
+            Summary description for ReportActionType.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Reporting.Common.ReportExportFormat">
+            <summary>
+            Summary description for ReportExportFormat.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Reporting.Common.ReportInfo">
+            <summary>
+            Summary description for ReportInfo.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Reporting.Common.ReportParam">
+            <summary>
+            Summary description for ReportParam.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Reporting.Common.ReportPrinter">
+            <summary>
+            Summary description for ReportPrinter.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Reporting.Common.ReportTypes">
+            <summary>
+            Summary description for ReportTypes.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Reporting.Common.ReportViewContentNotSupportedException">
+            <summary>
+            Summary description for ReportViewContentNotSupportedException.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Reporting.Common.ReportViewOptions">
+            <summary>
+            Summary description for ReportViewOptions.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Reporting.Common.ReportWizardException">
+            <summary>
+            Summary description for ReportWizardException.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Reporting.Common.ReportWizardFieldInfo">
+            <summary>
+            Summary description for ReportWizardFieldInfo.
+            </summary>
+        </member>
+        <member name="T:Made4Net.Reporting.Common.UserInfo">
+            <summary>
+            Summary description for UserInfo.
+            </summary>
+        </member>
+    </members>
+</doc>

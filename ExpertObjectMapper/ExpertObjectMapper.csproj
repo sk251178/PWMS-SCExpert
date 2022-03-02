@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{32252593-3501-4454-AE0D-322C336FA253}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>ExpertObjectMapper</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ExpertObjectMapper</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\Assemblies\SCExpert\Libraries\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>..\..\Assemblies\SCExpert\Libraries\ExpertObjectMapper.XML</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>1591</NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\Assemblies\SCExpert\Libraries\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>..\..\Assemblies\SCExpert\Libraries\ExpertObjectMapper.XML</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>1591</NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Made4Net.AppSessionManagement, Version=6.14.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.AppSessionManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.DataAccess, Version=6.11.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.General, Version=6.11.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.General.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Net.TCPIP, Version=6.11.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Net.TCPIP.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Schema, Version=6.11.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Schema.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Shared, Version=6.11.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Shared.Net.FTP, Version=6.11.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Shared.Net.FTP.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyVersionInfo.cs">
+      <Link>AssemblyVersionInfo.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataTemplate\ASSEMBLYWORKORDER.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ASSEMBLYWORKORDER.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplate\CARRIER.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CARRIER.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplate\CHARGE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHARGE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplate\COMPANY.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>COMPANY.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplate\CONSUME.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CONSUME.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplate\CONTACT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CONTACT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplate\DISASSEMBLYWORKORDER.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DISASSEMBLYWORKORDER.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplate\FLOWTHROUGH.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FLOWTHROUGH.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplate\INBOUND.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>INBOUND.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplate\INVSNAPSHOT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>INVSNAPSHOT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplate\INVTRANS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>INVTRANS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplate\LOAD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LOAD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplate\OUTBOUND.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>OUTBOUND.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplate\PACKINGLIST.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PACKINGLIST.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplate\PRODUCE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRODUCE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplate\RECEIPT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RECEIPT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplate\SHIPMENT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SHIPMENT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplate\SKU.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SKU.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplate\TRANSSHIPMENT.Designer.cs" />
+    <Compile Include="DataTemplate\VALUEADDEDSERVICES.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VALUEADDEDSERVICES.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectProcessor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="DataTemplate\ASSEMBLYWORKORDER.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>ASSEMBLYWORKORDER.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTemplate\CHARGE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CHARGE.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTemplate\COMPANY.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>COMPANY.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTemplate\CONTACT.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>CONTACT.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTemplate\DISASSEMBLYWORKORDER.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DISASSEMBLYWORKORDER.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTemplate\INBOUND.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>INBOUND.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTemplate\INVSNAPSHOT.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>INVSNAPSHOT.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTemplate\INVTRANS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>INVTRANS.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTemplate\OUTBOUND.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>OUTBOUND.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTemplate\RECEIPT.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>RECEIPT.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTemplate\SKU.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>SKU.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTemplate\VALUEADDEDSERVICES.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VALUEADDEDSERVICES.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="DataTemplate\ASSEMBLYWORKORDER.xsx">
+      <DependentUpon>ASSEMBLYWORKORDER.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplate\CARRIER.xsx">
+      <DependentUpon>CARRIER.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplate\CHARGE.xsx">
+      <DependentUpon>CHARGE.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplate\COMPANY.xsx">
+      <DependentUpon>COMPANY.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplate\CONSUME.xsx">
+      <DependentUpon>CONSUME.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplate\CONTACT.xsx">
+      <DependentUpon>CONTACT.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplate\DISASSEMBLYWORKORDER.xsx">
+      <DependentUpon>DISASSEMBLYWORKORDER.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplate\FLOWTHROUGH.xsx">
+      <DependentUpon>FLOWTHROUGH.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplate\INBOUND.xsx">
+      <DependentUpon>INBOUND.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplate\INVSNAPSHOT.xsx">
+      <DependentUpon>INVSNAPSHOT.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplate\INVTRANS.xsx">
+      <DependentUpon>INVTRANS.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplate\LOAD.xsx">
+      <DependentUpon>LOAD.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplate\OUTBOUND.xsx">
+      <DependentUpon>OUTBOUND.xsd</DependentUpon>
+    </None>
+    <EmbeddedResource Include="DataTemplate\PACKINGLIST.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PACKINGLIST.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="DataTemplate\PACKINGLIST.xsx">
+      <DependentUpon>PACKINGLIST.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplate\PRODUCE.xsx">
+      <DependentUpon>PRODUCE.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplate\RECEIPT.xsx">
+      <DependentUpon>RECEIPT.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplate\SHIPMENT.xsx">
+      <DependentUpon>SHIPMENT.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplate\SKU.xsx">
+      <DependentUpon>SKU.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplate\TRANSSHIPMENT.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataTemplate\TRANSSHIPMENT.xsx">
+      <DependentUpon>TRANSSHIPMENT.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplate\VALUEADDEDSERVICES.xsx">
+      <DependentUpon>VALUEADDEDSERVICES.xsd</DependentUpon>
+    </None>
+    <Content Include="DataTemplate\CARRIER.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CARRIER.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataTemplate\CONSUME.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CONSUME.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataTemplate\FLOWTHROUGH.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>FLOWTHROUGH.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="DataTemplate\LOAD.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>LOAD.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="DataTemplate\PRODUCE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRODUCE.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataTemplate\SHIPMENT.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>SHIPMENT.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WMS.Lib\WMS.Lib.vbproj">
+      <Project>{B02C5864-60D8-4933-8426-38EA626FA03B}</Project>
+      <Name>WMS.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WMS.Logic\WMS.Logic.vbproj">
+      <Project>{11398692-D59E-4395-834A-5674F61489D6}</Project>
+      <Name>WMS.Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

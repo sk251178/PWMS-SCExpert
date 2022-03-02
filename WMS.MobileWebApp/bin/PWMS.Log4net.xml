@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PWMS.Log4net</name>
+    </assembly>
+    <members>
+        <member name="M:PWMS.Log4net.Logging.OverrideFileAppender(System.Collections.Specialized.NameValueCollection,log4net.ILog)">
+            <summary>
+            Override the logging options related to Rolling by local config section values.
+            </summary>
+            <param name="configSectionsValues"></param>
+            <param name="_log"></param>
+        </member>
+    </members>
+</doc>

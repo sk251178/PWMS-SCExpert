@@ -1,0 +1,10 @@
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Counting\obj\Debug\WMS.Counting.Conuting.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Counting\obj\Debug\WMS.Counting.ProjectInstaller.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Counting\obj\Debug\WMS.Counting.csproj.GenerateResource.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Counting\obj\Debug\WMS.Counting.csproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\Counting\PWMS.Counting.exe.config
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\Counting\PWMS.Counting.exe
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\Counting\PWMS.Counting.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Counting\obj\Debug\WMS.Counting.csproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Counting\obj\Debug\PWMS.Counting.exe
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Counting\obj\Debug\PWMS.Counting.pdb

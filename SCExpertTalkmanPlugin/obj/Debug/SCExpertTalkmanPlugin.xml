@@ -1,0 +1,31 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SCExpertTalkmanPlugin
+</name>
+</assembly>
+<members>
+<member name="T:SCExpertTalkmanPlugin.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:SCExpertTalkmanPlugin.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:SCExpertTalkmanPlugin.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:SCExpertTalkmanPlugin.ClientMessage.ReceivedMessage">
+ <summary>
+ the received message before manipulating
+ </summary>
+</member>
+</members>
+</doc>

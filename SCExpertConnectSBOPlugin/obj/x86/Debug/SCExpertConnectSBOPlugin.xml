@@ -1,0 +1,43 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SCExpertConnectSBOPlugin
+</name>
+</assembly>
+<members>
+<member name="T:SCExpertConnectSBOPlugin.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:SCExpertConnectSBOPlugin.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:SCExpertConnectSBOPlugin.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:SCExpertConnectSBOPlugin.SBOCompanyHelper">
+ <summary>
+  A Singleton class to provides SBO company objects to the transactions plugins clients
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:SCExpertConnectSBOPlugin.SBOCompanyHelper.GetSBOCompanyHelper">
+ <summary>
+ Instanciate the helper object
+ </summary>
+ <returns>The Only(!!!) instance of the SBOCompanyHelper Object</returns>
+</member>
+<member name="M:SCExpertConnectSBOPlugin.SBOPlugin.Disconnect">
+ <summary>
+ Disconnects from the DI API
+ </summary>
+</member>
+</members>
+</doc>

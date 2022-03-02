@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<PARAMETERS>
+	<TITLE value="Routing Map Viewer" />
+	<REQUEST_URL path="http://localhost/WMS2/Routing/map.aspx" />
+	<MAP instance_name="Map"
+		 host="localhost"
+		 serverobject="world"
+		 dataframe="MainMap"
+		 map_index="0" 
+		 map_type="map" 
+		 image_width="705" 
+		 image_height="400" 
+		 three_d_look="true" 
+		 unique_url=""
+		 map_to_overview_connection="Overview"
+		 overview_to_map_connection=""
+		 map_to_map_connection=""
+		 data_display="DataDisplay"
+	/>
+	<IMAGE format="JPG" />
+	<TOLERANCE value="3" />
+	<MAP instance_name="Overview"
+		 host="localhost"
+		 serverobject="world"
+		 dataframe="LocationMap"
+		 map_index="1" 
+		 map_type="overview" 
+		 image_width="300" 
+		 image_height="300" 
+		 three_d_look="true" 
+		 unique_url=""
+		 map_to_overview_connection=""
+		 overview_to_map_connection="Map"
+		 map_to_map_connection=""
+		 data_display=""
+	/>
+</PARAMETERS>

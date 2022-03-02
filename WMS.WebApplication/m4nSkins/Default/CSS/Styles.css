@@ -1,0 +1,448 @@
+/*Default*/
+BODY
+{
+	background-color:#F6F6F8;
+    FONT-SIZE: 0.8em;
+    FONT-FAMILY: ms sans serif, Verdana, Helvetica, sans-serif;
+}
+TABLE
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    WORD-SPACING: normal;
+    TEXT-TRANSFORM: none;
+    FONT-FAMILY: ms sans serif, Verdana, Helvetica, sans-serif;
+    LETTER-SPACING: normal
+}
+H4
+{
+    COLOR: #003366
+}
+H5
+{
+    COLOR: #003366
+}
+TH
+{
+    COLOR: white
+}
+THEAD
+{
+    COLOR: white
+}
+TFOOT
+{
+    COLOR: #003366
+}
+H1
+{
+	COLOR: #315D8C;
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 13px;
+    MARGIN: 0px 10px 0px 10px;
+    WORD-SPACING: normal;
+    TEXT-TRANSFORM: none;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    LETTER-SPACING: normal;
+    TEXT-DECORATION: none
+}
+H2
+{
+    COLOR: #21517B;
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 12px;
+    MARGIN: 5px 0px;
+    WORD-SPACING: normal;
+    TEXT-TRANSFORM: none;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    LETTER-SPACING: normal;
+    TEXT-DECORATION: none
+}
+H3
+{
+    COLOR: #000066;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 1.28em;
+    WORD-SPACING: normal;
+    TEXT-TRANSFORM: none;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    LETTER-SPACING: normal;
+    TEXT-DECORATION: none;
+    margin:0;
+}
+H4
+{
+    FONT-WEIGHT: 500;
+    FONT-SIZE: 1.33em;
+    WORD-SPACING: normal;
+    TEXT-TRANSFORM: none;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    LETTER-SPACING: normal;
+    TEXT-DECORATION: none
+}
+H5
+{
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 1em;
+    WORD-SPACING: normal;
+    TEXT-TRANSFORM: none;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    LETTER-SPACING: normal;
+    TEXT-DECORATION: none
+}
+DT
+{
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 1em;
+    WORD-SPACING: normal;
+    TEXT-TRANSFORM: none;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    LETTER-SPACING: normal;
+    TEXT-DECORATION: none
+}
+H6
+{
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 0.8em;
+    WORD-SPACING: normal;
+    TEXT-TRANSFORM: none;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    LETTER-SPACING: normal;
+    TEXT-DECORATION: none
+}
+TFOOT
+{
+    FONT-SIZE: 1em;
+    WORD-SPACING: normal;
+    TEXT-TRANSFORM: none;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    LETTER-SPACING: normal
+}
+THEAD
+{
+    FONT-SIZE: 1em;
+    WORD-SPACING: normal;
+    TEXT-TRANSFORM: none;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    LETTER-SPACING: normal
+}
+TH
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 1em;
+    WORD-SPACING: normal;
+    VERTICAL-ALIGN: baseline;
+    TEXT-TRANSFORM: none;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    LETTER-SPACING: normal
+}
+A
+{
+    FONT-WEIGHT: normal;
+    COLOR: #0000ff;
+    TEXT-DECORATION: none
+}
+A:link
+{
+}
+A:visited
+{
+}
+A:active
+{
+}
+A:hover
+{
+    COLOR: #0000ff;
+    TEXT-DECORATION: underline
+}
+SMALL
+{
+    FONT-SIZE: 0.7em
+}
+BIG
+{
+    FONT-SIZE: 1.17em
+}
+BLOCKQUOTE
+{
+    FONT-FAMILY: Courier New, monospace
+}
+PRE
+{
+    FONT-FAMILY: Courier New, monospace
+}
+UL LI
+{
+    LIST-STYLE-TYPE:none;
+}
+UL LI LI
+{
+    LIST-STYLE-TYPE: disc
+}
+UL LI LI LI
+{
+    LIST-STYLE-TYPE: circle
+}
+OL LI
+{
+    LIST-STYLE-TYPE: decimal
+}
+OL OL LI
+{
+    LIST-STYLE-TYPE: lower-alpha
+}
+OL OL OL LI
+{
+    LIST-STYLE-TYPE: lower-roman
+}
+IMG
+{
+    MARGIN-TOP: 0px;
+    MARGIN-LEFT: 0px;
+    MARGIN-RIGHT: 0px
+}
+P
+{
+    MARGIN: 2px 0px 0px
+}
+P.label
+{
+    FONT-SIZE: 10px;
+    MARGIN: 1px 0px 2px;
+    COLOR: #315173;
+    FONT-FAMILY: arial,ms Sans serif
+}
+INPUT
+{
+    FONT-SIZE: 10px;
+    FONT-FAMILY: ms Sans serif
+}
+.readonly
+{
+    BORDER: #666666 1px solid;
+    BACKGROUND-COLOR: #eeeeee;
+    margin-bottom:1px
+}
+
+INPUT.Checkbox {
+}
+
+INPUT.CheckboxInGrid {
+	height:12px;
+}
+
+TEXTAREA
+{
+    FONT-SIZE: 10px;
+    FONT-FAMILY: ms Sans serif
+}
+SELECT
+{
+    FONT-SIZE: 10px;
+    FONT-FAMILY: ms Sans serif;
+	margin-bottom:1px;
+}
+SPAN.accesskey
+{
+    FONT-SIZE: 10px;
+    BACKGROUND: #BBBBBB	;
+    COLOR: black
+}
+
+TABLE.Left
+{
+	background-color:#EAF1F3; 
+	border-right:solid 1 #AAAAAA;
+	width: 228px;
+}
+
+input.button {
+}
+
+P.comment 
+{
+	color:#FF6500;
+	font-weight:normal;
+	margin-bottom: 15px;
+}
+
+TABLE.grid 
+{
+	
+}
+	
+TR.GridItem {
+    background-color:#EBEEF1;
+	color:#333366;
+	font-size:10px;
+	font-family: MS Sans Serif;
+}
+
+.GridAltItem {
+	background-color:#D0D6DD;
+	color:#333366;
+	font-size:xx-small;
+	font-family: MS Sans Serif;
+}
+
+.GridSelectedItem {
+	background-color:#E6EDF4;
+	color:#333366;
+	font-weight:bold;
+	font-size:xx-small;
+	font-family: MS Sans Serif;
+}
+
+TD.TabContent {
+	background-color:white;
+	BORDER-RIGHT: gray 1px solid; 
+	BORDER-LEFT: gray 1px solid; 
+	BORDER-BOTTOM: gray 1px solid; 
+	HEIGHT: 300px;
+	WIDTH: 720px;
+	VERTICAL-ALIGN:top;
+}
+
+/*TABLE.ActionBar {
+	background-image: url(/wms/m4nSkins/Default/Images/ActionBar/BG.gif);
+	border: solid 1 #AAAAAA;
+	background-color:White;
+}
+
+TABLE.ReportActionBar {
+	background-color:white;
+	border: solid 1 #888888;
+}*/
+table.ActionBar {
+	background-color:white;
+	border: solid 1px #aaaaaa;
+}
+table.ReportActionBar {
+	background-color:white;
+	border: solid 1px #888888;
+}
+
+INPUT.GotoScreenTextBox {
+	font-family:Verdana;
+	font-size:10px;
+	background-color:#E2F9FC;
+	WIDTH: 35px;
+}
+
+A.LastScreen {
+	color:#444488;
+}
+
+A.LastScreen:hover {
+	color:#4444FF;
+}
+
+/*IMG.SortImage {
+	margin:2px;
+	margin-right:10px;
+	margin-left:-15px;
+}*/
+A.GridHeaderLink  {
+	color:#333366;
+	margin-right:20px;
+	font-weight:bold;
+}
+
+A.GridHeaderLink:visited  {
+	color:#333366;
+}
+
+A.GridHeaderLink:hover  {
+	color:black;
+	text-decoration:none;
+}
+TH.GridHeader {
+	background-image: url(/wms/m4nSkins/Default/Images/TableContentBg.jpg);
+	height:10px;
+	background-color:White;
+	background-repeat:repeat-x;	
+}
+DIV.TopInfo{
+	color:White;
+	margin:12px 0px 0px 0px;
+	text-align:right;
+	width:190px;
+}
+SPAN.UserName {
+	font-weight:bold;
+}
+A.TopLinks, A.TopLinks:hover, A.TopLinks:visited {
+	color:White;
+	text-decoration:underline;
+}
+P.AppInfo {
+	color:White;
+}
+/*SPAN.GridPager 
+{
+	background:white;	
+	border:solid 1 #CCCCCC;
+}
+TD.GridPager 
+{
+}
+SPAN.RecordPager 
+{
+	background:white;	
+	border:solid 1 #CCCCCC;
+}
+TD.RecordPager 
+{
+	font-family:ms sans serif;
+}*/
+span.GridPager 
+{
+	/*background:white;	
+              border: medium double rgb(250,0,55);
+	border-width:1px;
+              border-color:#CCCCCC;
+              border-style:solid;*/
+              font-family:Georgia;
+}
+td.GridPager 
+{
+	font-family:ms sans serif;
+}
+span.RecordPager 
+{
+	/*background:white;	
+	border:solid 1px #CCCCCC;*/
+	font-family:Georgia;
+}
+td.RecordPager 
+{
+	font-family:ms sans serif;
+}
+/*.AppComponent td
+{
+	vertical-align:top;
+        border-width:2px;
+}*/
+/*.AppComponent,
+.AppComponent table,
+.AppComponent div,
+.AppComponent span,
+.AppComponent td
+{
+        vertical-align:top;
+        border-width:2px;
+}*/
+.DockingLayoutTable
+{
+}
+.DockingLayoutCell
+{
+  vertical-align:top;
+}

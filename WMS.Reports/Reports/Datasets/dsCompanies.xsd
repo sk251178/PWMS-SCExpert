@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="dsCompanies" targetNamespace="http://tempuri.org/dsCompanies.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/dsCompanies.xsd" xmlns:mstns="http://tempuri.org/dsCompanies.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="dsCompanies" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="COMPANYBYCONSIGNEE">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="COMPANY" type="xs:string" minOccurs="0" />
+							<xs:element name="COMPANYNAME" type="xs:string" minOccurs="0" />
+							<xs:element name="COMPANYTYPE" type="xs:string" minOccurs="0" />
+							<xs:element name="OTHERCOMPANY" type="xs:string" minOccurs="0" />
+							<xs:element name="COMPANYGROUP" type="xs:string" minOccurs="0" />
+							<xs:element name="STREET1" type="xs:string" minOccurs="0" />
+							<xs:element name="CITY" type="xs:string" minOccurs="0" />
+							<xs:element name="STATE" type="xs:string" minOccurs="0" />
+							<xs:element name="ZIP" type="xs:string" minOccurs="0" />
+							<xs:element name="CONSIGNEE" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

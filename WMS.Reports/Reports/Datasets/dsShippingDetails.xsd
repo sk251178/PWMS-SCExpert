@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="dsShippingDetails" targetNamespace="http://tempuri.org/dsShippingDetails.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/dsShippingDetails.xsd"
+	xmlns:mstns="http://tempuri.org/dsShippingDetails.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="dsShippingDetails" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ShippingDetails">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CONSIGNEE" type="xs:string" minOccurs="0" />
+							<xs:element name="ORDERID" type="xs:string" minOccurs="0" />
+							<xs:element name="ORDERLINE" type="xs:int" minOccurs="0" />
+							<xs:element name="REFERENCEORDLINE" type="xs:int" minOccurs="0" />
+							<xs:element name="SKU" type="xs:string" minOccurs="0" />
+							<xs:element name="QTYORIGINAL" type="xs:int" minOccurs="0" />
+							<xs:element name="QTYMODIFIED" type="xs:int" minOccurs="0" />
+							<xs:element name="QTYALLOCATED" type="xs:int" minOccurs="0" />
+							<xs:element name="QTYPICKED" type="xs:int" minOccurs="0" />
+							<xs:element name="QTYSTAGED" type="xs:int" minOccurs="0" />
+							<xs:element name="QTYLOADED" type="xs:int" minOccurs="0" />
+							<xs:element name="QTYSHIPPED" type="xs:int" minOccurs="0" />
+							<xs:element name="EXPLOADEDFLAG" type="xs:long" minOccurs="0" />
+							<xs:element name="ADDDATE" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ADDUSER" type="xs:string" minOccurs="0" />
+							<xs:element name="EDITDATE" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="EDITUSER" type="xs:string" minOccurs="0" />
+							<xs:element name="ordertype" type="xs:string" minOccurs="0" />
+							<xs:element name="referenceord" type="xs:string" minOccurs="0" />
+							<xs:element name="targetcompany" type="xs:string" minOccurs="0" />
+							<xs:element name="companytype" type="xs:string" minOccurs="0" />
+							<xs:element name="status" type="xs:string" minOccurs="0" />
+							<xs:element name="createdate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="notes" type="xs:string" minOccurs="0" />
+							<xs:element name="staginglane" type="xs:string" minOccurs="0" />
+							<xs:element name="requesteddate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="scheduleddate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="shippeddate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="shipment" type="xs:string" minOccurs="0" />
+							<xs:element name="stopnumber" type="xs:int" minOccurs="0" />
+							<xs:element name="wave" type="xs:string" minOccurs="0" />
+							<xs:element name="statusdate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="companyName" type="xs:string" minOccurs="0" />
+							<xs:element name="consigneeName" type="xs:string" minOccurs="0" />
+							<xs:element name="skudesc" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

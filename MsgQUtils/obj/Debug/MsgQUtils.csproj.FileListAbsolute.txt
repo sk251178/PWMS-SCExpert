@@ -1,0 +1,10 @@
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\WinApps\MsqQUtils\MsgQUtils.exe.config
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\WinApps\MsqQUtils\MsgQUtils.XML
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\WinApps\MsqQUtils\MsgQUtils.exe
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\WinApps\MsqQUtils\MsgQUtils.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\MsgQUtils\obj\Debug\MsgQUtils.MsgReaderForm.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\MsgQUtils\obj\Debug\MsgQUtils.csproj.GenerateResource.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\MsgQUtils\obj\Debug\MsgQUtils.csproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\MsgQUtils\obj\Debug\MsgQUtils.csproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\MsgQUtils\obj\Debug\MsgQUtils.exe
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\MsgQUtils\obj\Debug\MsgQUtils.pdb

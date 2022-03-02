@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="PACKINGLIST" targetNamespace="http://tempuri.org/PACKINGLIST.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/PACKINGLIST.xsd" xmlns:mstns="http://tempuri.org/PACKINGLIST.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="BUSINESSOBJECT">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="BOTYPE" type="xs:string" />
+				<xs:element name="DATACOLLECTION" type="xs:string" />
+				<xs:element name="DATA">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PACKINGLISTID" type="xs:string" />
+							<xs:element name="CONSIGNEE" type="xs:string" />
+							<xs:element name="COMPANY" type="xs:string" />
+							<xs:element name="COMPANYTYPE" type="xs:string" />
+							<xs:element name="CONTACTID" type="xs:string" />
+							<xs:element name="STATUS" type="xs:string" />
+							<xs:element name="NUMPACKAGES" type="xs:string" />
+							<xs:element name="CONTACT">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="STREET1" type="xs:string" />
+										<xs:element name="STREET2" type="xs:string" />
+										<xs:element name="CITY" type="xs:string" />
+										<xs:element name="STATE" type="xs:string" />
+										<xs:element name="ZIP" type="xs:string" />
+										<xs:element name="CONTACT1NAME" type="xs:string" />
+										<xs:element name="CONTACT2NAME" type="xs:string" />
+										<xs:element name="CONTACT1PHONE" type="xs:string" />
+										<xs:element name="CONTACT2PHONE" type="xs:string" />
+										<xs:element name="CONTACT1FAX" type="xs:string" />
+										<xs:element name="CONTACT2FAX" type="xs:string" />
+										<xs:element name="CONTACT1EMAIL" type="xs:string" />
+										<xs:element name="CONTACT2EMAIL" type="xs:string" />
+										<xs:element name="POINTID" type="xs:string" />
+                    <xs:element name="ROUTE" type="xs:string" />
+                    <xs:element name="STAGINGLANE" type="xs:string" />
+                    <xs:element name="PICKUPCONFIRMATIONTYPE" type="xs:string" />
+                    <xs:element name="DELIVERYCONFIRMATIONTYPE" type="xs:string" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="LOADS">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="LOAD">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="LOADID" type="xs:string" />
+													<xs:element name="CONSIGNEE" type="xs:string" />
+													<xs:element name="SKU" type="xs:string" />													
+													<xs:element name="UOM" type="xs:string" />
+													<xs:element name="QTY" type="xs:string" />
+													<xs:element name="STATUS" type="xs:string" />
+													<xs:element name="LOADATTRIBUTES">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="LOADATTRIBUTE">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="NAME" type="xs:string" />
+																			<xs:element name="VALUE" type="xs:string" />
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

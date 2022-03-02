@@ -1,0 +1,97 @@
+.RadDockingZone
+{
+	b_ackground-color: infobackground;
+	border:1px solid #d3d3d3;
+	font-family: ms sans serif;
+	font-size: 12px;
+}
+
+.RadDockableObjectFixed, .RadDockableObjectDisabled
+{
+	border: 1px solid #cccccc;	
+	background-color: #ece9d8;
+}
+
+.RadDockableObjectResizeable
+{
+	border: 2px solid #cccccc;	
+	background-color: #ece9d8;
+}
+
+.RadDockableObjectTitleBarLeft
+{
+	width:9px;
+	height:27px;
+	background-image:url(img/titleBarLeft.gif);
+}
+
+.RadDockableObjectTitleBarRight
+{
+}
+
+.RadDockableObjectTitleBar
+{
+	height: 20px;
+	color: white;
+	font-family: ms sans serif;
+	font-size: 12px;	
+	background-image:url(img/titleBarBg.gif);
+}
+
+.RadDockableObjectTitle
+{
+	padding-left:4px;
+	font-weight:bold;
+	vertical-align:middle;
+}
+
+.RadDockableObjectCommandButton
+{
+	width: 18px;
+	height: 18px;
+	background-color: #cccccc;
+}
+
+.RadDockableObjectHorizontalGrip
+{
+	height: 5px;
+	background-color: gray;
+	font-size: 1px;
+	line-height:1px;
+}
+
+.RadDockableObjectVerticalGrip
+{
+	width: 5px;
+	background-color: gray;
+	font-size: 1px;
+}
+
+.RadDockableObjectInnerContainer
+{
+	vertical-align: top;
+	font-family:Verdana;
+	font-size:10px;
+	padding:0px 5px 5px 5px;
+}
+
+.RadDragHelper
+{
+	background-color: orange;
+}
+
+.RadDragHelperTooltip
+{
+	border: 1px solid black;
+	padding: 2px 2px 2px 2px;
+	background-color: infobackground;
+	font-family:MS Sans Serif;
+	font-size:6px;
+}
+.DockingLayoutTable
+{
+}
+.DockingLayoutCell
+{
+  vertical-align:top;
+}

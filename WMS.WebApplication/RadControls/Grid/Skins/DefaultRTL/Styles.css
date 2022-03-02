@@ -1,0 +1,107 @@
+/*Simon Changes*/
+   .RadGrid_DefaultRTL
+   {
+	border:solid 0px #adaa9c;
+   }
+   .MasterTable_DefaultRTL
+   {
+	border-collapse:separate !important;
+	border:solid 1px #adaa9c;
+   }
+   .MasterTable_DefaultRTL th
+    {
+		border-left:none;
+	border-right:none;
+	border-bottom:solid 1px white;
+	border-top:none;
+      /*border-left:none;solid 0px #CECFCE;*/
+      /*border-right:none;solid 0px #CECFCE;*/
+      height:25px;
+      vertical-align:middle;
+      /*padding-left:20px;*/
+      margin:0px;
+    }
+   
+   .MasterTable_DefaultRTL .GridHeader_DefaultRTL
+   {
+    font-weight:bold;
+	font-size:12px;
+	font-family: MS Sans Serif;
+	text-align:right;
+   }
+   .MasterTable_DefaultRTL .GridHeader_DefaultRTL .GridHeaderLink
+   {
+	margin-right:0px;
+	margin-left:20px;
+   }
+   .OLDIE .GridHeader_DefaultRTL .GridHeaderLink
+   {
+	margin-right:20px;
+	margin-left:0px;
+   }
+   .MasterTable_DefaultRTL td
+   {
+	border-left:none;
+	border-right:none;
+	border-bottom:solid 1px white;
+	border-top:solid 1px gray;
+      /*border-left:none;solid 0px #CECFCE;*/
+      /*border-right:none;solid 0px #CECFCE;*/
+      /*border-top:none;solid 0px #CECFCE;*/
+      height:20px;
+      padding-left:2px;
+    }
+    
+   /*.MasterTable_DefaultRTL
+   {
+      border-color: #CCCCCC;
+      border-width: 1px
+      
+    }*/
+   /*.MasterTable_DefaultRTL td
+   {
+      border-color: #CECFCE;
+      
+    }
+   .MasterTable_DefaultRTL th
+   {
+      border-color: #CECFCE;
+      
+    }*/
+   .MasterTable_DefaultRTL table
+   {
+      border-color: red;
+   }
+/*-------------*/
+
+.GridRow_DefaultRTL 
+{
+background-color:#EFEFF7;
+}
+.GridAltRow_DefaultRTL 
+{
+background-color:#D6D7DE;
+}
+.GridRow_DefaultRTL td
+{
+                /*background-color:#EFEFF7;*/
+                color:#333366;
+                font-size:12px;
+                font-family: MS Sans Serif;
+}
+.GridAltRow_DefaultRTL td
+{
+        /*background-color:#D6D7DE;*/
+                color:#333366;
+                font-size:12px;
+                font-family: MS Sans Serif;
+}
+
+.SelectedRow_DefaultRTL
+{
+        background-color:#6699aa;
+	color:#FFFFFF;
+	/*font-weight:bold;*/
+	font-size:12px;
+	font-family: MS Sans Serif;
+}

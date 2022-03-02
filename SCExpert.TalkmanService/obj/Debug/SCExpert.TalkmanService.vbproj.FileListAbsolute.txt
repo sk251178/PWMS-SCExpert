@@ -1,0 +1,14 @@
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpert.TalkmanService\obj\Debug\SCExpert.TalkmanService.vbproj.AssemblyReference.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpert.TalkmanService\obj\Debug\Made4Net.TalkmanService.Resources.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpert.TalkmanService\obj\Debug\Made4Net.TalkmanService.ServiceInstaller.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpert.TalkmanService\obj\Debug\Made4Net.TalkmanService.ServiceTester.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpert.TalkmanService\obj\Debug\SCExpert.TalkmanService.vbproj.GenerateResource.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpert.TalkmanService\obj\Debug\SCExpert.TalkmanService.vbproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\TalkmanService\PWMS.TalkmanService.exe.config
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\TalkmanService\PWMS.TalkmanService.exe
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\TalkmanService\PWMS.TalkmanService.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\TalkmanService\SCExpert.xml
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpert.TalkmanService\obj\Debug\SCExpert.TalkmanService.vbproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpert.TalkmanService\obj\Debug\PWMS.TalkmanService.exe
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpert.TalkmanService\obj\Debug\SCExpert.xml
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpert.TalkmanService\obj\Debug\PWMS.TalkmanService.pdb

@@ -1,0 +1,11 @@
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.BillingChargePosted\obj\Debug\WMS.Billing.ChargeDetailPosted.csproj.AssemblyReference.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.BillingChargePosted\obj\Debug\BillingChargePostedService.ProjectInstaller.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.BillingChargePosted\obj\Debug\WMS.Billing.ChargeDetailPosted.csproj.GenerateResource.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.BillingChargePosted\obj\Debug\WMS.Billing.ChargeDetailPosted.csproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\BillingChargePosted\PWMS.Billing.ChargeDetailPosted.exe.config
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\BillingChargePosted\PWMS.Billing.ChargeDetailPosted.xml
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\BillingChargePosted\PWMS.Billing.ChargeDetailPosted.exe
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\BillingChargePosted\PWMS.Billing.ChargeDetailPosted.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.BillingChargePosted\obj\Debug\WMS.Billing.ChargeDetailPosted.csproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.BillingChargePosted\obj\Debug\PWMS.Billing.ChargeDetailPosted.exe
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.BillingChargePosted\obj\Debug\PWMS.Billing.ChargeDetailPosted.pdb

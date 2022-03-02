@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="INVTRANS" targetNamespace="http://tempuri.org/INVTRANS.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/INVTRANS.xsd" xmlns:mstns="http://tempuri.org/INVTRANS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="BUSINESSOBJECT">
+    <xs:complexType>
+    <xs:sequence>
+      <xs:element name="BOTYPE" type="xs:string" />
+      <xs:element name="DATACOLLECTION" type="xs:string" />
+      <xs:element name="DATA">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="INVTRANSID" type="xs:string" />
+            <xs:element name="CONSIGNEE" type="xs:string" />
+            <xs:element name="SKU" type="xs:string" />
+            <xs:element name="ACTIVITYTYPE" type="xs:string" />
+            <xs:element name="ACTIVITYDATE" type="xs:dateTime" />
+            <xs:element name="EDITUSER" type="xs:string" />
+            <xs:element name="FROMLOAD" type="xs:string" />
+            <xs:element name="UOM" type="xs:string" />
+            <xs:element name="FROMQTY" type="xs:decimal" />
+            <xs:element name="TOQTY" type="xs:decimal" />
+            <xs:element name="FROMSTATUS" type="xs:string" />
+            <xs:element name="TOSTATUS" type="xs:string" />
+            <xs:element name="REASONCODE" type="xs:string" />
+            <xs:element name="UNITPRICE" type="xs:double" />
+            <xs:element name="RECEIPT" type="xs:string" />
+            <xs:element name="RECEIPTLINE" type="xs:integer" />
+            <xs:element name="ORDERID" type="xs:string" />
+            <xs:element name="ORDERLINE" type="xs:integer" />
+            <xs:element name="ORDERTYPE" type="xs:string" />
+            <xs:element name="CORRELATIONID" type="xs:string" />
+            <xs:element name="HOSTREFERENCEID" type="xs:string" />
+            <xs:element name="NOTES" type="xs:string" />
+            <xs:element name="ATTRIBUTES">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ATTRIBUTE">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="NAME" type="xs:string" />
+                        <xs:element name="VALUE" type="xs:string" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  </xs:element>
+</xs:schema>

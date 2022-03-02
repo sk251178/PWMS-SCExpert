@@ -1,0 +1,94 @@
+BODY	{
+	background-color:#F6F6F8;
+	FONT-SIZE: 11px;
+	FONT-FAMILY: ms sans serif, Verdana, Helvetica, sans-serif; 
+	COLOR: #315173;
+	}
+
+TABLE	{
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 11px;
+	WORD-SPACING: normal;
+	TEXT-TRANSFORM: none;
+	FONT-FAMILY: ms sans serif, Verdana, Helvetica, sans-serif;
+	LETTER-SPACING: normal:
+	}
+
+INPUT
+	{
+	FONT-SIZE: 14px;
+	FONT-FAMILY: ms Sans serif;
+	font-weight:bold;
+	}
+
+TD
+	{
+	FONT-SIZE: 14px;
+	FONT-FAMILY: ms Sans serif;
+	font-weight:bold;
+	}
+
+
+P
+	{
+	MARGIN: 0px 0px 0px 0px;
+	}
+
+A
+	{
+	FONT-SIZE: 11px;
+	font-weight:bold;
+	COLOR: #0000ff;
+	TEXT-DECORATION: none
+	}
+
+.label
+	{
+	FONT-SIZE: 11px;
+	font-weight:bold;
+	MARGIN: 0px 0px 0px 0px;
+	COLOR: #315173;
+	FONT-FAMILY: arial,ms Sans serif
+	}
+
+.ActionBtnClass 
+	{
+	font-weight:bold;
+	width:65px wrap='True';
+	height:30px;
+	WORD-SPACING:-1px;
+	LETTER-SPACING:0px;
+	font-family: MS Sans Serif;
+	font-size:10px;
+	}
+
+.MobilePage
+	{
+	border-style:solid;
+	border-color:Black;
+	}
+
+.RDTContentTable
+	{
+	font-size:large;
+	margin:0px 0px 0px 0px;
+	}
+
+.RDTTitleCell
+	{
+	height:20px;
+	}
+
+.RDTTitleLabel
+	{
+	font-weight:bold;
+	font-size:15px;
+	color:red;
+	}
+
+.RDTMenu
+	{
+	height:50px;
+	width:240px;
+	color:GREEN; 
+	}

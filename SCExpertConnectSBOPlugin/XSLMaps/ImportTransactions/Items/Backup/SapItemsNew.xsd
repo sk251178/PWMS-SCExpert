@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="BOM">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="BO">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="AdmInfo">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Object" type="xs:byte"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="OITM">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="row">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="ItemCode" type="xs:string"/>
+													<xs:element name="ItemName" type="xs:string"/>
+													<xs:element name="FrgnName">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ItmsGrpCod" type="xs:byte"/>
+													<xs:element name="CstGrpCode" type="xs:byte"/>
+													<xs:element name="VatGourpSa">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="CodeBars">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="VATLiable" type="xs:string"/>
+													<xs:element name="PrchseItem" type="xs:string"/>
+													<xs:element name="SellItem" type="xs:string"/>
+													<xs:element name="InvntItem" type="xs:string"/>
+													<xs:element name="OnHand" type="xs:decimal"/>
+													<xs:element name="IsCommited" type="xs:decimal"/>
+													<xs:element name="OnOrder" type="xs:decimal"/>
+													<xs:element name="IncomeAcct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ExmptIncom">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="MaxLevel" type="xs:decimal"/>
+													<xs:element name="DfltWH">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="CardCode" type="xs:string"/>
+													<xs:element name="SuppCatNum">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="BuyUnitMsr">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="NumInBuy" type="xs:decimal"/>
+													<xs:element name="ReorderQty" type="xs:decimal"/>
+													<xs:element name="MinLevel" type="xs:decimal"/>
+													<xs:element name="LstEvlPric" type="xs:decimal"/>
+													<xs:element name="LstEvlDate">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="CustomPer" type="xs:decimal"/>
+													<xs:element name="Canceled" type="xs:string"/>
+													<xs:element name="MnufctTime" type="xs:byte"/>
+													<xs:element name="WholSlsTax">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="RetilrTax">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="SpcialDisc" type="xs:decimal"/>
+													<xs:element name="DscountCod" type="xs:byte"/>
+													<xs:element name="TrackSales" type="xs:string"/>
+													<xs:element name="SalUnitMsr">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="NumInSale" type="xs:decimal"/>
+													<xs:element name="Consig" type="xs:decimal"/>
+													<xs:element name="QueryGroup" type="xs:byte"/>
+													<xs:element name="Counted" type="xs:decimal"/>
+													<xs:element name="OpenBlnc" type="xs:decimal"/>
+													<xs:element name="EvalSystem" type="xs:string"/>
+													<xs:element name="UserSign" type="xs:byte"/>
+													<xs:element name="FREE" type="xs:string"/>
+													<xs:element name="PicturName">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="Transfered" type="xs:string"/>
+													<xs:element name="BlncTrnsfr" type="xs:string"/>
+													<xs:element name="UserText">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="SerialNum">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="CommisPcnt" type="xs:decimal"/>
+													<xs:element name="CommisSum" type="xs:decimal"/>
+													<xs:element name="CommisGrp" type="xs:byte"/>
+													<xs:element name="TreeType" type="xs:string"/>
+													<xs:element name="TreeQty" type="xs:decimal"/>
+													<xs:element name="LastPurPrc" type="xs:decimal"/>
+													<xs:element name="LastPurCur" type="xs:string"/>
+													<xs:element name="LastPurDat" type="xs:int"/>
+													<xs:element name="ExitCur">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ExitPrice" type="xs:decimal"/>
+													<xs:element name="ExitWH">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="AssetItem" type="xs:string"/>
+													<xs:element name="WasCounted" type="xs:string"/>
+													<xs:element name="ManSerNum" type="xs:string"/>
+													<xs:element name="SHeight1" type="xs:decimal"/>
+													<xs:element name="SHght1Unit" type="xs:byte"/>
+													<xs:element name="SHeight2" type="xs:decimal"/>
+													<xs:element name="SHght2Unit" type="xs:byte"/>
+													<xs:element name="SWidth1" type="xs:decimal"/>
+													<xs:element name="SWdth1Unit" type="xs:byte"/>
+													<xs:element name="SWidth2" type="xs:decimal"/>
+													<xs:element name="SWdth2Unit" type="xs:byte"/>
+													<xs:element name="SLength1" type="xs:decimal"/>
+													<xs:element name="SLen1Unit" type="xs:byte"/>
+													<xs:element name="Slength2" type="xs:decimal"/>
+													<xs:element name="SLen2Unit" type="xs:byte"/>
+													<xs:element name="SVolume" type="xs:decimal"/>
+													<xs:element name="SVolUnit" type="xs:byte"/>
+													<xs:element name="SWeight1" type="xs:decimal"/>
+													<xs:element name="SWght1Unit" type="xs:byte"/>
+													<xs:element name="SWeight2" type="xs:decimal"/>
+													<xs:element name="SWght2Unit" type="xs:byte"/>
+													<xs:element name="BHeight1" type="xs:decimal"/>
+													<xs:element name="BHght1Unit" type="xs:byte"/>
+													<xs:element name="BHeight2" type="xs:decimal"/>
+													<xs:element name="BHght2Unit" type="xs:byte"/>
+													<xs:element name="BWidth1" type="xs:decimal"/>
+													<xs:element name="BWdth1Unit" type="xs:byte"/>
+													<xs:element name="BWidth2" type="xs:decimal"/>
+													<xs:element name="BWdth2Unit" type="xs:byte"/>
+													<xs:element name="BLength1" type="xs:decimal"/>
+													<xs:element name="BLen1Unit" type="xs:byte"/>
+													<xs:element name="Blength2" type="xs:decimal"/>
+													<xs:element name="BLen2Unit" type="xs:byte"/>
+													<xs:element name="BVolume" type="xs:decimal"/>
+													<xs:element name="BVolUnit" type="xs:byte"/>
+													<xs:element name="BWeight1" type="xs:decimal"/>
+													<xs:element name="BWght1Unit" type="xs:byte"/>
+													<xs:element name="BWeight2" type="xs:decimal"/>
+													<xs:element name="BWght2Unit" type="xs:byte"/>
+													<xs:element name="FixCurrCms">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="FirmCode" type="xs:byte"/>
+													<xs:element name="LstSalDate">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="QryGroup1" type="xs:string"/>
+													<xs:element name="QryGroup2" type="xs:string"/>
+													<xs:element name="QryGroup3" type="xs:string"/>
+													<xs:element name="QryGroup4" type="xs:string"/>
+													<xs:element name="QryGroup5" type="xs:string"/>
+													<xs:element name="QryGroup6" type="xs:string"/>
+													<xs:element name="QryGroup7" type="xs:string"/>
+													<xs:element name="QryGroup8" type="xs:string"/>
+													<xs:element name="QryGroup9" type="xs:string"/>
+													<xs:element name="QryGroup10" type="xs:string"/>
+													<xs:element name="QryGroup11" type="xs:string"/>
+													<xs:element name="QryGroup12" type="xs:string"/>
+													<xs:element name="QryGroup13" type="xs:string"/>
+													<xs:element name="QryGroup14" type="xs:string"/>
+													<xs:element name="QryGroup15" type="xs:string"/>
+													<xs:element name="QryGroup16" type="xs:string"/>
+													<xs:element name="QryGroup17" type="xs:string"/>
+													<xs:element name="QryGroup18" type="xs:string"/>
+													<xs:element name="QryGroup19" type="xs:string"/>
+													<xs:element name="QryGroup20" type="xs:string"/>
+													<xs:element name="QryGroup21" type="xs:string"/>
+													<xs:element name="QryGroup22" type="xs:string"/>
+													<xs:element name="QryGroup23" type="xs:string"/>
+													<xs:element name="QryGroup24" type="xs:string"/>
+													<xs:element name="QryGroup25" type="xs:string"/>
+													<xs:element name="QryGroup26" type="xs:string"/>
+													<xs:element name="QryGroup27" type="xs:string"/>
+													<xs:element name="QryGroup28" type="xs:string"/>
+													<xs:element name="QryGroup29" type="xs:string"/>
+													<xs:element name="QryGroup30" type="xs:string"/>
+													<xs:element name="QryGroup31" type="xs:string"/>
+													<xs:element name="QryGroup32" type="xs:string"/>
+													<xs:element name="QryGroup33" type="xs:string"/>
+													<xs:element name="QryGroup34" type="xs:string"/>
+													<xs:element name="QryGroup35" type="xs:string"/>
+													<xs:element name="QryGroup36" type="xs:string"/>
+													<xs:element name="QryGroup37" type="xs:string"/>
+													<xs:element name="QryGroup38" type="xs:string"/>
+													<xs:element name="QryGroup39" type="xs:string"/>
+													<xs:element name="QryGroup40" type="xs:string"/>
+													<xs:element name="QryGroup41" type="xs:string"/>
+													<xs:element name="QryGroup42" type="xs:string"/>
+													<xs:element name="QryGroup43" type="xs:string"/>
+													<xs:element name="QryGroup44" type="xs:string"/>
+													<xs:element name="QryGroup45" type="xs:string"/>
+													<xs:element name="QryGroup46" type="xs:string"/>
+													<xs:element name="QryGroup47" type="xs:string"/>
+													<xs:element name="QryGroup48" type="xs:string"/>
+													<xs:element name="QryGroup49" type="xs:string"/>
+													<xs:element name="QryGroup50" type="xs:string"/>
+													<xs:element name="QryGroup51" type="xs:string"/>
+													<xs:element name="QryGroup52" type="xs:string"/>
+													<xs:element name="QryGroup53" type="xs:string"/>
+													<xs:element name="QryGroup54" type="xs:string"/>
+													<xs:element name="QryGroup55" type="xs:string"/>
+													<xs:element name="QryGroup56" type="xs:string"/>
+													<xs:element name="QryGroup57" type="xs:string"/>
+													<xs:element name="QryGroup58" type="xs:string"/>
+													<xs:element name="QryGroup59" type="xs:string"/>
+													<xs:element name="QryGroup60" type="xs:string"/>
+													<xs:element name="QryGroup61" type="xs:string"/>
+													<xs:element name="QryGroup62" type="xs:string"/>
+													<xs:element name="QryGroup63" type="xs:string"/>
+													<xs:element name="QryGroup64" type="xs:string"/>
+													<xs:element name="CreateDate" type="xs:int"/>
+													<xs:element name="UpdateDate" type="xs:int"/>
+													<xs:element name="ExportCode">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="SalFactor1" type="xs:decimal"/>
+													<xs:element name="SalFactor2" type="xs:decimal"/>
+													<xs:element name="SalFactor3" type="xs:decimal"/>
+													<xs:element name="SalFactor4" type="xs:decimal"/>
+													<xs:element name="PurFactor1" type="xs:decimal"/>
+													<xs:element name="PurFactor2" type="xs:decimal"/>
+													<xs:element name="PurFactor3" type="xs:decimal"/>
+													<xs:element name="PurFactor4" type="xs:decimal"/>
+													<xs:element name="SalFormula">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="PurFormula">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="VatGroupPu">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="AvgPrice" type="xs:decimal"/>
+													<xs:element name="PurPackMsr">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="PurPackUn" type="xs:decimal"/>
+													<xs:element name="SalPackMsr">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="SalPackUn" type="xs:decimal"/>
+													<xs:element name="SCNCounter" type="xs:byte"/>
+													<xs:element name="ManBtchNum" type="xs:string"/>
+													<xs:element name="ManOutOnly" type="xs:string"/>
+													<xs:element name="DataSource" type="xs:string"/>
+													<xs:element name="validFor" type="xs:string"/>
+													<xs:element name="validFrom">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="validTo">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="frozenFor" type="xs:string"/>
+													<xs:element name="frozenFrom">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="frozenTo">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="BlockOut" type="xs:string"/>
+													<xs:element name="ValidComm">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="FrozenComm">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="LogInstanc" type="xs:byte"/>
+													<xs:element name="ObjType" type="xs:byte"/>
+													<xs:element name="SWW">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="Deleted" type="xs:string"/>
+													<xs:element name="DocEntry" type="xs:byte"/>
+													<xs:element name="ExpensAcct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="FrgnInAcct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ShipType" type="xs:byte"/>
+													<xs:element name="GLMethod" type="xs:string"/>
+													<xs:element name="ECInAcct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="FrgnExpAcc">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ECExpAcc">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="TaxType" type="xs:string"/>
+													<xs:element name="ByWh" type="xs:string"/>
+													<xs:element name="WTLiable" type="xs:string"/>
+													<xs:element name="ItemType" type="xs:string"/>
+													<xs:element name="WarrntTmpl">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="BaseUnit">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="CountryOrg">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="StockValue" type="xs:decimal"/>
+													<xs:element name="Phantom" type="xs:string"/>
+													<xs:element name="IssueMthd" type="xs:string"/>
+													<xs:element name="FREE1">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="PricingPrc" type="xs:decimal"/>
+													<xs:element name="MngMethod" type="xs:string"/>
+													<xs:element name="ReorderPnt" type="xs:decimal"/>
+													<xs:element name="InvntryUom">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="PlaningSys" type="xs:string"/>
+													<xs:element name="PrcrmntMtd" type="xs:string"/>
+													<xs:element name="OrdrIntrvl" type="xs:byte"/>
+													<xs:element name="OrdrMulti" type="xs:decimal"/>
+													<xs:element name="MinOrdrQty" type="xs:decimal"/>
+													<xs:element name="LeadTime" type="xs:byte"/>
+													<xs:element name="IndirctTax" type="xs:string"/>
+													<xs:element name="TaxCodeAR">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="TaxCodeAP">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="OSvcCode" type="xs:byte"/>
+													<xs:element name="ISvcCode" type="xs:byte"/>
+													<xs:element name="ServiceGrp" type="xs:byte"/>
+													<xs:element name="NCMCode" type="xs:byte"/>
+													<xs:element name="MatType" type="xs:byte"/>
+													<xs:element name="MatGrp" type="xs:byte"/>
+													<xs:element name="ProductSrc" type="xs:byte"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="ITM1">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="row" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="ItemCode" type="xs:string"/>
+													<xs:element name="PriceList" type="xs:byte"/>
+													<xs:element name="Price" type="xs:decimal"/>
+													<xs:element name="Currency" type="xs:string"/>
+													<xs:element name="Ovrwritten" type="xs:string"/>
+													<xs:element name="Factor" type="xs:decimal"/>
+													<xs:element name="LogInstanc" type="xs:byte"/>
+													<xs:element name="ObjType" type="xs:byte"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="OITW">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="row" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="ItemCode" type="xs:string"/>
+													<xs:element name="WhsCode" type="xs:byte"/>
+													<xs:element name="OnHand" type="xs:decimal"/>
+													<xs:element name="IsCommited" type="xs:decimal"/>
+													<xs:element name="OnOrder" type="xs:decimal"/>
+													<xs:element name="Consig" type="xs:decimal"/>
+													<xs:element name="Counted" type="xs:decimal"/>
+													<xs:element name="WasCounted" type="xs:string"/>
+													<xs:element name="UserSign" type="xs:byte"/>
+													<xs:element name="MinStock" type="xs:decimal"/>
+													<xs:element name="MaxStock" type="xs:decimal"/>
+													<xs:element name="MinOrder" type="xs:decimal"/>
+													<xs:element name="AvgPrice" type="xs:decimal"/>
+													<xs:element name="Locked" type="xs:string"/>
+													<xs:element name="BalInvntAc">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="SaleCostAc">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="TransferAc">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="RevenuesAc">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="VarianceAc">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="DecreasAc">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="IncreasAc">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ReturnAc">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ExpensesAc">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="EURevenuAc">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="EUExpensAc">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="FrRevenuAc">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="FrExpensAc">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ExmptIncom">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="PriceDifAc">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ExchangeAc">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="BalanceAcc">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="PurchaseAc">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="PAReturnAc">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="PurchOfsAc">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ShpdGdsAct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="VatRevAct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="StockValue" type="xs:decimal"/>
+													<xs:element name="DecresGlAc">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="IncresGlAc">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="StokRvlAct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="StkOffsAct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="WipAcct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="WipVarAcct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="CostRvlAct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="CstOffsAct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ExpClrAct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ExpOfstAct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="Object" type="xs:byte"/>
+													<xs:element name="logInstanc" type="xs:byte"/>
+													<xs:element name="createDate" type="xs:int"/>
+													<xs:element name="userSign2" type="xs:byte"/>
+													<xs:element name="updateDate" type="xs:int"/>
+													<xs:element name="ARCMAct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ARCMFrnAct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ARCMEUAct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="ARCMExpAct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="APCMAct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="APCMFrnAct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="APCMEUAct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="RevRetAct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="NegStckAct">
+														<xs:complexType/>
+													</xs:element>
+													<xs:element name="StkInTnAct">
+														<xs:complexType/>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

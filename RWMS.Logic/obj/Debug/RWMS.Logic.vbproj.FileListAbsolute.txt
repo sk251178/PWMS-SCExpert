@@ -1,0 +1,11 @@
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\RWMS.Logic\obj\Debug\RWMS.Logic.vbproj.AssemblyReference.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\RWMS.Logic\obj\Debug\RWMS.Logic.Resources.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\RWMS.Logic\obj\Debug\RWMS.Logic.vbproj.GenerateResource.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\RWMS.Logic\obj\Debug\RWMS.Logic.vbproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\RWMS.Logic.dll
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\RWMS.Logic.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\RWMS.Logic.xml
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\RWMS.Logic\obj\Debug\RWMS.Logic.vbproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\RWMS.Logic\obj\Debug\RWMS.Logic.dll
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\RWMS.Logic\obj\Debug\RWMS.Logic.xml
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\RWMS.Logic\obj\Debug\RWMS.Logic.pdb

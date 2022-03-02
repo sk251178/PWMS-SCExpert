@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="dsTransShipmentDetail" targetNamespace="http://tempuri.org/dsTransShipmentDetail.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/dsTransShipmentDetail.xsd"
+	xmlns:mstns="http://tempuri.org/dsTransShipmentDetail.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="dsTransShipmentDetail" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="TransShipmentDetail">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CONSIGNEE" type="xs:string" minOccurs="0" />
+							<xs:element name="TRANSSHIPMENT" type="xs:string" minOccurs="0" />
+							<xs:element name="EXPECTEDQTY" type="xs:int" minOccurs="0" />
+							<xs:element name="RECEIVEDQTY" type="xs:int" minOccurs="0" />
+							<xs:element name="TARGETCOMPANY" type="xs:string" minOccurs="0" />
+							<xs:element name="SOURCECOMPANY" type="xs:string" minOccurs="0" />
+							<xs:element name="SCHEDULEDARRIVALDATE" type="xs:date" minOccurs="0" />
+							<xs:element name="SHIPPEDDATE" type="xs:date" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

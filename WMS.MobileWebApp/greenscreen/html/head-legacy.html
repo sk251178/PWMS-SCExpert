@@ -1,0 +1,47 @@
+<meta name="mobileoptimized" content="0" />
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="-1" />
+
+<link href="../greenscreen/css/default.css?v=1.8" rel="stylesheet" />
+<link href="../greenscreen/css/legacy.css?v=1.8" rel="stylesheet" />
+<!--[if lt IE 7]>
+    <link href="../greenscreen/css/ie.css?v1.1" rel="stylesheet" />
+<![endif]-->
+
+<script>
+	var ie6 = false;
+</script>
+<!--[if IE 6]>
+	<script>
+		var ie6 = true;
+	</script>
+<![endif]-->
+
+<script src="../greenscreen/resources/jquery-1.12.4.min.js"></script>
+<!-- <script src="../greenscreen/resources/respond.js"></script> --> <!-- Must come after jQuery -->
+<script src="../greenscreen/javascript/wms_legacy.js?v=1.8"></script>
+<script type="text/javascript">
+        history.pushState(null, null, location.href);
+        history.back();
+        history.forward();
+        window.onpopstate = function () { history.go(1); };
+</script>
+<script type="text/javascript">
+	var session = '<# Response.Write(Session.SessionID) #>';
+    
+	wms_legacy.toggle_loader();
+	
+	$(document).ready(function() {
+        wms_legacy.init();
+	});
+    
+</script>
+
+<script type="application/javascript">
+    $(window).unload(function () {
+         window.location.href = '../m4nScreens/LogOffSession.aspx?closeBrowserWindow=true';
+     });
+     
+</script>

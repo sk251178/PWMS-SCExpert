@@ -1,0 +1,396 @@
+body {font-family:Lato, Verdana!important;color:#323332;font-size:12px;background:#FFF!important}
+body *:focus {outline:0}
+
+body table.header * {background-image:none}
+body table.header td > img {opacity:0}
+
+body div {margin:0;padding:0}
+body p {margin:0;padding:0}
+
+body > form > div {margin:0!important}
+body > form > div > table {width:100%}
+
+.label {font-family:Lato, Verdana!important;font-size:12px;color:#323332!important}
+/*input, select, textarea {font-family:Lato, Verdana!important;font-size:12px;color:#323332}*/
+
+input, select, textarea {font: normal 12px/23px "Segoe UI", Arial, sans-serif;font-size:12px;color:#323332}
+/* COLORS */
+
+.light_0 {color:#FFF} /* White */
+.light_0.background {color:#323332;background:#FFF}
+.dark_0 {color:#000} /* Black */
+.dark_0.background {color:#FFF;background:#000}
+.dark_1 {color:#323332} /* Charcoal */
+.dark_1.background {color:#FFF;background:#323332}
+.dark_2 {color:#535453} /* Pewter */
+.dark_2.background {color:#FFF;background:#535453}
+.dark_3 {color:#BBB} /* Smoke Dark */
+.dark_3.background {color:#FFF;background:#AAA}
+.dark_4 {color:#DCDEDC} /* Smoke */
+.dark_4.background {color:#FFF;background:#DCDEDC}
+.dark_5 {color:#EBEDEB} /* Silver */
+.dark_5.background {color:#FFF;background:#EBEDEB}
+.color_1 {color:#3FAE29} /* NCR Green */
+.color_1.background {color:#FFF;background:#3FAE29}
+.color_2 {color:#70BF60} /* Mantis */
+.color_2.background {color:#FFF;background:#70BF60}
+.color_3 {color:#B3D550} /* Pistachio */
+.color_3.background {color:#323332;background:#B3D550}
+.color_4 {color:#B50010} /* Fire */
+.color_4.background {color:#FFF;background:#B50010}
+.color_5 {color:#E69900} /* Gold */
+.color_5.background {color:#FFF;background:#E69900}
+.color_6 {color:#FF7A75} /* Rose */
+.color_6.background {background:#FF7A75}
+
+/* HEADER */
+
+header {box-sizing:border-box;position:absolute;z-index:10;top:0;left:0;width:100%;height:70px;padding:10px}
+header * {color:#FFF}
+header > .logo {float:left;width:230px;cursor:pointer}
+header > .logo > .image {height:35px;margin:0 0 5px 0}
+header > .logo > .image > img {height:100%}
+header > .logo > .slogan {height:10px;line-height:10px;color:#FFF;font-size:0.8em}
+header > .titles h1 {white-space:nowrap}
+header > .titles h3 {white-space:nowrap}
+header > .titles span {font-size:0.6em}
+header > .actions {float:right;position:relative;top:0;left:0;height:50px;line-height:50px}
+header > .actions .button {height:50px;line-height:50px}
+header > .actions .button > span {height:50px;line-height:50px}
+header > .actions .search_container {
+	position:absolute;top:10px;left:-320px;z-index:1;
+	-webkit-transition:all 0.2s ease-in-out 0s;-ms-transition:all 0.2s ease-in-out 0s;transition:all 0.2s ease-in-out 0s;
+}
+header > .actions .search_container .field {width:350px}
+header > .actions .search_container .field * {color:#323332}
+header > .actions .search_container .field > .input_container {width:350px}
+header > .actions .search_container .field > .input_container > span {position:absolute;top:0;left:0;display:block;width:30px;height:28px;line-height:28px;text-align:center;font-size:1.4em}
+header > .actions .search_container .field > .input_container > span.icon-cross {left:auto;right:2px;font-size:1.4em;cursor:pointer}
+header > .actions .search_container .field > .input_container > input {left:30px;width:280px}
+
+#pnlImages {display:none}
+
+#LoginBox1 > table {width:100%}
+#LoginBox1 tbody {display:block}
+#LoginBox1 tr {display:block}
+#LoginBox1 td {display:block}
+#LoginBox1 span {color:#FFF}
+#LoginBox1 .LoginWhite {display:block;padding:0 0 5px 0;font-size:1.2em;color: #FFF;}
+#LoginBox1 input {box-sizing:border-box;width:100%;height: 35px;padding:0px 10px;border:1px solid #CCC;margin:0 0 20px 0;font-size:1em}
+#LoginBox1 #LoginBox1_LoginImageButton {float:right;width:120px;height:auto;padding:0;border:none}
+
+.app-login-form .LoginWhite {display:block;padding:0 0 5px 0;font-size:1.2em;color: #FFF;}
+.app-login-form input {box-sizing:border-box;width:100%;height: 35px;padding:0px 10px;border:1px solid #CCC;margin:0 0 20px 0;font-size:1em}
+.app-login-form select {height:35px;margin:10px 0 20px 0;font-size:1em;background:#323332!important;color:#FFF}
+.app-login-form select option {font-size:1em;color:#FFF;background:#323332}
+.app-login-form #lstWareHouse {width:100%;height:100px;}
+.app-login-form.form-fields #btnGo {float:right;width:120px;height:auto;padding:0;border:none}
+.app-login-form select#lstWareHouse {height:35px;margin:10px 0 20px 0;color:#FFF}
+
+body .info_box {position:absolute;z-index:100;top:20px;right:30px}
+body .info_box .TopInfo {margin:0;width:auto}
+body .info_box .TopInfo a {text-decoration:none}
+body .info_box .TopInfo * {font-size:14px}
+body .info_box .TopInfo span[class*=icon] {font-size:18px}
+
+/* MENU */
+
+body #Navbar {position:absolute;z-index:10;top:70px;height:50px;background:#DCDEDC}
+body #Navbar * {border:none;background:transparent}
+body #Navbar #GotoScreen {margin-right:10px;background:#FFF}
+body #Navbar .rmRootGroup.rmHorizontal {}
+
+body #Navbar > tbody > tr > td {padding:0;height:50px;line-height:50px;background:transparent!important}
+body #Navbar  .RadMenu {height:50px;line-height:50px;background:transparent} 
+body #Navbar  .RadMenu > ul {height:50px;line-height:50px;background:transparent}
+body #Navbar  .RadMenu > ul > li {height:50px}
+body #Navbar  .RadMenu > ul > li > a {display:block;width:auto;height:45px;line-height:40px;margin:0;padding:0 20px;border-top:5px solid #DCDEDC;color:#535453;text-align:center;cursor:pointer;color:#535453;background:#DCDEDC}
+body #Navbar  .RadMenu > ul > li > a:hover {line-height:45px;border-top: 5px solid #535453}
+body #Navbar  .RadMenu > ul > li > a.expanded {line-height:45px;border-top: 5px solid #535453}
+body #Navbar  .RadMenu > ul > li > a > span {padding:0;line-height:inherit;font-size:1.2em;color:#535453;background:transparent}
+body #Navbar  .RadMenu > ul > li .rmSlide {box-sizing:border-box;margin:0;padding:0}
+body #Navbar  .RadMenu > ul > li .rmSlide > ul {box-sizing:border-box;box-shadow:8px 10px 16px rgba(0,0,0,0.2);background:#DCDEDC}
+body #Navbar  .RadMenu > ul > li .rmSlide > ul > li {width:100%;height:30px}
+body #Navbar  .RadMenu > ul > li .rmSlide > ul > li > a {display:block;box-sizing:border-box;width:auto!important;height:30px;line-height:30px;margin:0;padding:0 10px;text-align:left;white-space:nowrap;text-overflow:ellipsis;overflow:overflow}
+body #Navbar  .RadMenu > ul > li .rmSlide > ul > li > a > span {padding:0;line-height:inherit;color:#535453;background:transparent}
+body #Navbar  .RadMenu > ul > li .rmSlide > ul > li > a:hover {border-left:5px solid #535453;background:#BBB}
+
+body #Navbar > tbody > tr > td[align="right"] a {display:inline-block;width:24px;height:24px;margin:0 3px;border:1px solid #000;border-radius:25px;text-align:center;white-space: nowrap;}
+body #Navbar > tbody > tr > td[align="right"] a > img {margin:4px auto;width:auto;height:16px;/* float: left; */}
+
+body h1 {position:absolute;z-index:10;top:15px;left:240px;color:#FFF;font-size:2em;text-align:left;font-weight:normal}
+body h1 * {font-size:1em;color:#FFF;font-weight:normal}
+
+body h2 {font-size:1.4em;text-align:left;font-weight:normal;color:#000}
+body h2 * {font-size:1em;text-align:left;font-weight:normal;color:#000}
+
+/*
+body .RadMenu .rmGroup {padding:10px!important}
+body .RadMenu .rmItem {padding:0 25px 5px 0!important}
+*/
+/*
+.RadMenu .rmItem .rmLink {height:55px;line-height:55px;border-top:5px solid #EBEDEB} 
+.RadMenu .rmItem .rmLink.rmSelected {border-top:5px solid 3B3D550}
+*/
+/*
+body .RadMenu .rmItem .rmText {font-size:1.4em;padding:0!important}
+body .RadMenu .rmItem .rmSlide {top:38px!important;box-shadow: 18px 20px 30px #999;}
+body .RadMenu .rmItem .rmSlide .rmSlide {top:0!important;left:107%!important;}
+body .RadMenu .rmItem .rmSlide > ul {border:none}
+body .RadMenu .rmItem .rmSlide > ul .rmText {font-size:1.2em}
+body .RadMenu .rmItem .rmText:hover {opacity:0.7;}
+
+body #_ctl8 .rmLink.rmImageOnly.rmRootLink{display:none}
+body #_ctl8 {position:absolute;top:70px}
+body .rmExpanded {display:inline;top:0;padding-top:4px;border-top: solid #535453;}
+body #_ctl8 .rmLink.rmRootLink{padding-top:8px!important}
+body .RadMenu .rmLink {padding:0px}
+body .TopInfo > nowrap {display: inline-flex;padding-top: 8px;}
+body .TopInfo > nowrap > a{padding-left:5px}
+body #Navbar  table{position: relative;right:30px;top:8px;}
+body .rmSlide .rmItem:hover{left: -10px !important;border-left:5px solid #535453;padding-left: 10px!important;}
+body .rmSlide .rmItem .rmText .rmExpandRight:hover{margin-left: 11px;}
+*/
+
+/* CONTENT */
+
+/*#ACCONTROL1__ctl0_B_TB > * {border:none}
+#ACCONTROL1__ctl0_B_TB  img {display: none}
+body .DockingLayoutTable *{border:none}
+body .RadToolBar_Default .rtbMiddle {background:#F6F6F8;border:none}
+body .RadToolBar_Default.rtbItemHovered.rtbWrap{background-image:none}
+body .rtbItem.rtbBtn.rtbItemHovered .rtbIn {background:#EBEDEB!important;background-image:none}
+*/
+
+/* DASHBOARD */
+
+body .RadDockableObjectTitleBar {background:#E69900}
+body .RadDockableObjectTitleBar .RadDockableObjectTitleBarLeft {background:transparent}
+body .RadDockableObjectTitleBar .RadDockableObjectTitle {background:transparent}
+
+body .default_radtoolbar_left, body .default_radtoolbar_right {background:transparent}
+body .default_radtoolbar_horizontal {background:transparent}
+
+body .RadToolBar .rtbIcon {-webkit-filter:saturate(0);-moz-filter:saturate(0);filter:saturate(0)}
+
+body #Screen1 {position:absolute;z-index:10;top:0;left:0;display:block;height:110px}
+body #Screen1 > span:first-child > div {
+	position:absolute!important;top:0;left:50%!important;
+	transform:translate(-50%,0);
+	width:auto!important;padding:10px 20px;margin:0;
+}
+body #Screen1 > span:first-child > div[style*="LightGreen"] {background:#3FAE29!important;color:#FFF}
+body #Screen1 > span:first-child > div[style*="LightPink"] {background:#B50010!important;color:#FFF}
+
+body #ACCONTROL1 {width:100%!important}
+body #ACCONTROL1__ctl0 {display:block!important;width:100%!important;height:50px!important}
+body #ACCONTROL1__ctl0 > #ACCONTROL1__ctl0_B {display:block;position:relative;top:0;left:0;width:100%;height:50px;margin:0 0 10px 0}
+body #ACCONTROL1__ctl0 > #ACCONTROL1__ctl0_B > #ACCONTROL1__ctl0_B_TB {display:block;position:absolute;z-index:0!important;top:0;left:0;right:0;width:auto;height:50px;margin:0;padding:0;background:#EBEDEB}
+body #ACCONTROL1__ctl0 > #ACCONTROL1__ctl0_B > #ACCONTROL1__ctl0_B_TB #ACCONTROL1__ctl0_B_TBtoolbar {position:absolute;top:8px;right:15px}
+
+body .AppComponentControl {width:100%!important}
+body #_ctl14__ctl0 {display:block!important;width:100%!important;height:60px!important}
+body #_ctl14__ctl0 > #_ctl14__ctl0_B {display:block;position:relative;top:0;left:0;width:100%;height:60px;margin:0 0 10px 0}
+body #_ctl14__ctl0 > #_ctl14__ctl0_B > #_ctl14__ctl0_B_TB {display:block;position:absolute;z-index:0!important;top:0;left:0;right:0;width:auto;height:60px;margin:0;padding:0;background:#EBEDEB}
+body #_ctl14__ctl0 > #_ctl14__ctl0_B > #_ctl14__ctl0_B_TB #_ctl14__ctl0_B_TBtoolbar {position:absolute;top:15px;right:15px}
+
+body .RadToolBar_Default  .rtbOuter {float:right;height:60px;border:none;background:transparent}
+body .RadToolBar_Default  .rtbOuter .rtbMiddle {height:30px;margin:10px;background:transparent}
+
+body #ACCONTROL1__ctl0 > .DockingLayoutTable {}
+
+body .RadDockingZone {border:none;background:transparent/*#EBEDEB*/}
+body .RadDockableObjectFixed, body .RadDockableObjectDisabled {width:100%!important;border:none;background:transparent}
+body .RadDockableObjectInnerContainer {padding:0}
+body .RadDockableObjectInnerContainer table table:first-child {display:none}
+body .RadDockableObjectInnerContainer table {width:100%}
+body .RadDockableObjectInnerContainer > span > span > div {box-sizing:border-box;width:100%!important;text-align:center;padding:0}
+body .RadDockableObjectInnerContainer > span > span > div > img {display:block;margin:0 auto;width:100%;height:100%}
+body .RadDockableObjectInnerContainer > span > span > table[bordercolor="#AAAAAA"] {display:none}
+
+body .RadDockZone.rdVertical {border:none}
+body .RadDockZone_Default {border:none}
+
+body .RadDock.RadDock_Default {margin:0 0 10px 0}
+
+body .rgMasterTable {border:none;border-collapse:collapse!important}
+body .rgMasterTable td, body .rgMasterTable th {height:20px;background:transparent}
+body .rgMasterTable .rgHeader, body .rgMasterTable .ResizeHeader_Default {height:20px;line-height:20px;background:transparent}
+
+body .SelectedRow_Default {background:#EBEDEB}
+body .SelectedRow_Default * {color:#323332}
+body .SelectedRow_Default > td:first-child {border-left:5px solid #70BF60}
+
+body .RadGrid_Default {border:none}
+body .RadGrid_Default .rgHeader a {background:transparent}
+body .RadGrid_Default th.rgHeader {padding:0 5px;color:#323332;border:1px solid #EBEDEB}
+body .RadGrid_Default  .rgRow, body .RadGrid_Default  .rgAltRow {background:transparent}
+
+body .RadGrid_Default  .rgRow:hover, body .RadGrid_Default  .rgAltRow:hover {background:#F6F6F6}
+body .RadGrid_Default  .rgRow:hover > td:first-child, body .RadGrid_Default  .rgAltRow:hover > td:first-child {border-left:5px solid #DCDEDC}
+
+body .RadGrid_Default  .rgRow.rgSelectedRow, body .RadGrid_Default  .rgAltRow.rgSelectedRow {background:#F6F6F6}
+body .RadGrid_Default  .rgRow.rgSelectedRow > td:first-child, body .RadGrid_Default  .rgAltRow.rgSelectedRow > td:first-child {border-left:5px solid #DCDEDC}
+
+body .RadGrid_Default  .rgRow > td {padding:0 5px;color:#323332;border:1px solid #EBEDEB}
+body .RadGrid_Default  .rgAltRow > td {padding:0 5px;color:#323332;border:1px solid #EBEDEB}
+body .DockingLayoutCell {padding:0 10px 0 0!important}
+
+.page {display:block;box-sizing:border-box;width:100%;margin:0!important;padding:10px!important}
+.page:not(.app-login-screen) {position:absolute;z-index:0;top:0;left:0;margin-top:170px!important}
+.dashboard .page {margin-top:120px!important;padding:0!important}
+.no_actions_bar .page {margin-top:115px!important;padding:0!important}
+.page > p {margin:0;padding:0}
+.page > table {width:100%}
+.page table td, .page table th {font-family:Lato, Verdana;}
+.page input[type="text"] {width:160px;padding:5px;border:1px solid #DCDEDC}
+.page input[type="text"].readonly {background:1px solid #DCDEDC}
+.page input[name*="DATE"] {width:70px}
+.page select {width:172px;height:23px;padding:0;border:1px solid #DCDEDC;border-radius:0!important;background:#FFF}
+.page select[multiple=multiple] {height:auto}
+/*.page input[type="submit"].button {cursor:pointer;min-width:120px;height:25px;padding:0 20px;border:2px solid #70BF60;font-size:14px;border-radius:8px;background:transparent}
+*/
+.page input[type="submit"].button {cursor:pointer;min-width:70px;height:25px;padding:0;border:2px solid #70BF60;font-size:1.2em;border-radius:8px;background:transparent}
+
+body .RadGrid_Default th.rgSorted {background:#EEE}
+body .RadGrid_Default .rgAltRow .rgSorted {background:#EEE}
+body .RadGrid_Default .rgRow .rgSorted {background:#EEE}
+
+body A.GridHeaderLink:visited {color:#323332}
+body A.GridHeaderLink:hover {color:#323332}
+
+body #TEConsignee {}
+
+body .RadGrid_Default {}
+
+.actions_bar {position:absolute;z-index:9;top:-50px;left:0;width:100%;height:50px;background:#EBEDEB}
+.actions_bar.not_fixed {position:relative;top:0;z-index:8}
+.actions_bar > tbody > tr > td {position:relative;top:0;left:0}
+.actions_bar > tbody > tr > td > span {display:block;position:absolute;z-index:0;top:8px;right:0;padding:0;margin:0}
+.actions_bar > tbody > tr > td > span > .ActionBar {display:block;border:none;background:transparent}
+.actions_bar > tbody > tr > td:first-child > span {left:0;right:auto}
+
+/*
+.actions_bar > tbody > tr > td > span > .ActionBar td > span {box-sizing:border-box;display:block;width:30px;height:30px;line-height:30px;padding:0;margin:0 5px;text-align:center;border-radius:100%;border:2px solid #000;}
+*/
+.actions_bar > tbody > tr > td > span > .ActionBar td {padding:0 5px}
+.actions_bar > tbody > tr > td > span > .ActionBar td > span {box-sizing:border-box;display:block;height:30px;line-height:30px;padding:0;margin:0!important;text-align:center}
+.actions_bar > tbody > tr > td > span > .ActionBar td[background*="gif"] {display:none}
+.actions_bar > tbody > tr > td > span > .ActionBar input[type=image] {
+	box-sizing:border-box;display:block;width:30px;height:30px;line-height:30px;padding:6px;margin:0;border-radius:100%;border:2px solid #323332;
+	-webkit-filter:grayscale(100%);-ms-filter:grayscale(100%)filter:grayscale(100%);
+}
+.actions_bar > tbody > tr > td > span > .ActionBar a {
+	box-sizing:border-box;display:block;min-width:30px;width:auto;height:30px;line-height:16px;padding:6px;margin:0;border-radius:100%;border:2px solid #323332;color:#323332;text-decoration:none;
+	-webkit-filter:grayscale(100%);-ms-filter:grayscale(100%)filter:grayscale(100%);
+}
+.actions_bar > tbody > tr > td > span > .ActionBar a:hover {text-decoration:none}
+.actions_bar > tbody > tr > td > span > .ActionBar a > img {
+	position:relative;top:0;left:-1px;
+	max-width:16px;max-height:16px;
+}
+.actions_bar > tbody > tr > td > span > .ActionBar img {-webkit-filter:grayscale(100%);-ms-filter:grayscale(100%)filter:grayscale(100%)}
+
+.actions_bar #TEMaster_ActionBar_Pager {position:relative;top:-2px;margin-top:0!important}
+
+body .RadGrid_Default .rgHeader a, body .RadGrid_Default  .rgAltRow a, body .GridEditForm_Default table a {background:transparent}
+body .RadDockableObjectCommandButton {background:transparent}
+
+body table.ReportActionBar {border:none}
+body table.ReportActionBar td {padding:0 5px 0 0}
+
+/* DATE PICKER */
+
+body tr[bgcolor="#0000aa"] {background:#70BF60!important}
+body tr[bgcolor="#0000aa"] img {margin:0 2px;/*-webkit-filter:grayscale(100%);-ms-filter:grayscale(100%)filter:grayscale(100%)*/}
+body tr[bgcolor="#0000aa"] * {border:none!important}
+
+/* TABS */
+
+body #DTC {}
+
+body .tabs {position:relative;top:4px;left:5px;border:none!important}
+body .tabs td {padding:0!important;background:transparent!important;border:none!important;cursor:pointer}
+body .tabs td * {text-align:center;font-weight:normal}
+body .tabs td > font {display:block;min-width:150px;height:40px}
+/* selected */
+body .tabs td > font > b {display:block;position:relative;top:0;left:0;box-sizing:border-box;border-top:5px solid #535453!important;min-width:150px;height:40px;line-height:30px;padding:0 20px;margin:0 1px 0 0;background:#EBEDEB!important;color:#323332}
+/* Not selected */
+body .tabs td > font > b > a {display:block;position:absolute;top:-5px;left:0;box-sizing:border-box;border-top:5px solid #DCDEDC!important;width:150px;height:40px;line-height:30px;padding:0 20px;margin:0 1px 0 0;background:#EBEDEB!important;font-weight:normal;color:#535453}
+body .tabs td > font > b > a:hover {border-color:#535453!important;text-decoration:none}
+body .tabs td > font > b > a * {display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+body .tabs td font b {}
+body .tabs td img {display:none}
+
+body #DTC_TS {position:relative;top:4px;left:5px}
+body #DTC_TS td {padding:0!important;background:transparent!important;cursor:pointer}
+body #DTC_TS td * {text-align:center;font-weight:normal}
+body #DTC_TS td > font {display:block;min-width:150px;height:40px}
+/* selected */
+body #DTC_TS td > font > b {display:block;position:relative;top:0;left:0;box-sizing:border-box;border-top:5px solid #535453!important;min-width:150px;height:40px;line-height:30px;padding:0 20px;margin:0 1px 0 0;background:#EBEDEB!important;color:#323332}
+/* Not selected */
+body #DTC_TS td > font > b > a {display:block;position:absolute;top:-5px;left:0;box-sizing:border-box;border-top:5px solid #DCDEDC!important;width:150px;height:40px;line-height:30px;padding:0 20px;margin:0 1px 0 0;background:#EBEDEB!important;font-weight:normal;color:#535453}
+body #DTC_TS td > font > b > a:hover {border-color:#535453!important;text-decoration:none}
+body #DTC_TS td > font > b > a * {display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+body #DTC_TS td font b {}
+body #DTC_TS td img {display:none}
+
+body #DTC_ts {position:relative;top:4px;left:5px}
+body #DTC_ts td {padding:0!important;background:transparent!important;cursor:pointer}
+body #DTC_ts td * {text-align:center;font-weight:normal}
+body #DTC_ts td > font {display:block;min-width:150px;height:40px}
+/* selected */
+body #DTC_ts td > font > b {display:block;position:relative;top:0;left:0;box-sizing:border-box;border-top:5px solid #535453!important;min-width:150px;height:40px;line-height:30px;padding:0 20px;margin:0 1px 0 0;background:#EBEDEB!important;color:#323332}
+/* Not selected */
+body #DTC_ts td > font > b > a {display:block;position:absolute;top:-5px;left:0;box-sizing:border-box;border-top:5px solid #DCDEDC!important;width:150px;height:40px;line-height:30px;padding:0 20px;margin:0 1px 0 0;background:#EBEDEB!important;font-weight:normal;color:#535453}
+body #DTC_ts td > font > b > a:hover {border-color:#535453!important;text-decoration:none}
+body #DTC_ts td > font > b > a * {display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+body #DTC_ts td font b {}
+body #DTC_ts td img {display:none}
+
+body TD.TabContent {border:none}
+
+body #DTC_TBC {position:relative;top:4px;left:6px}
+body #DTC_TBC td {padding:0!important;background:transparent!important;cursor:pointer}
+body #DTC_TBC td * {text-align:center;font-weight:normal}
+body #DTC_TBC td > font {display:block;width:151px;height:40px}
+/* selected */
+body #DTC_TBC td > font > b {display:block;position:relative;top:0;left:0;box-sizing:border-box;border-top:5px solid #535453!important;min-width:150px;height:40px;line-height:30px;padding:0 20px;margin:0 1px 0 0;background:#EBEDEB!important;color:#323332}
+/* Not selected */
+body #DTC_TBC td > font > b > a {display:block;position:absolute;top:-5px;left:0;box-sizing:border-box;border-top:5px solid #DCDEDC!important;width:150px;height:40px;line-height:30px;padding:0 20px;margin:0 1px 0 0;background:#EBEDEB!important;font-weight:normal;color:#535453}
+body #DTC_TBC td > font > b > a:hover {border-color:#535453!important;text-decoration:none}
+body #DTC_TBC td font b {}
+body #DTC_TBC td img {display:none}
+
+body #DTC_Table1 {width:100%}
+body #DTC_Table1 >tbody > tr > td {border:none!important}
+body #DTC_Tbl {width:100%}
+body #DTC_Tbl table {width:100%}
+body #DTC_Tbl table td {}
+
+body #DTC_TESkuAtt_re_Form > table {width:auto}
+
+body #tblClockIn {border:none!important}
+body #tblClockIn td {border:none!important}
+body #tblTask {border:none!important}
+body #tblTask > tbody > tr > td {border:none!important}
+
+/* PAGING */
+
+.GridPager * {color:#535453;cursor:pointer}
+.GridPager a[disabled="disabled"] {opacity:0.5}
+.GridPager a:hover {color:#000;text-decoration:none}
+
+/* MODAL */
+
+.RadWWrapperModal {border:none}
+.RadWWrapperModal .RadWTitleText {padding-left:10px}
+.RadWWrapperModal > tbody > tr:last-child {display:none}
+.RadWWrapperModal .RadWHeaderTopResizer {display:none}
+.RadWWrapperModal .RadWWrapperHeaderLeft {background:#70BF60}
+.RadWWrapperModal .RadWWrapperHeaderCenter {background:#70BF60}
+.RadWWrapperModal .RadWWrapperHeaderRight {background:#70BF60}
+.RadWWrapperModal .RadWWrapperBodyLeft {display:none}
+.RadWWrapperModal .RadWWrapperBodyRight {display:none}
+
+/* TypeAhead - in IE */

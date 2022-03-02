@@ -1,0 +1,733 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EFDFEB50-4F28-4C30-8277-48B7135B0124}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>WMS.Reports</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>WMS.Reports</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\Assemblies\SCExpert\Libraries\</OutputPath>
+    <DocumentationFile>WMS.Reports.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\Assemblies\SCExpert\Libraries\</OutputPath>
+    <DocumentationFile>WMS.Reports.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\System\Version0.0.0.0\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource">
+      <HintPath>..\..\Assemblies\System\Version0.0.0.0\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\System\Version0.0.0.0\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Web">
+      <HintPath>..\..\Assemblies\System\Version0.0.0.0\CrystalDecisions.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.DataAccess">
+      <Name>Made4Net.DataAccess</Name>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Shared">
+      <Name>Made4Net.Shared</Name>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\WMS.Lib\WMS.Lib.vbproj">
+      <Name>WMS.Lib</Name>
+      <Project>{B02C5864-60D8-4933-8426-38EA626FA03B}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyVersionVB.vb">
+      <Link>AssemblyVersionVB.vb</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsBillCharges.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBillCharges.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsCompanies.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCompanies.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsFlowthroughDetail.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsFlowthroughDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsFlowthroughDiscrepancies.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsFlowthroughDiscrepancies.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsFlowthroughSummary.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsFlowthroughSummary.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsInvBySku.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsInvBySku.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsInvByStatus.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsInvByStatus.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsInvOnHold.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsInvOnHold.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsInvTrans.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsInvTrans.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsLoadByStatus.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLoadByStatus.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsLocationContent.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLocationContent.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsLocations.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLocations.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsPick.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPick.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsPickdetail.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPickdetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsPickerEfficiency.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPickerEfficiency.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsPickLoc.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPickLoc.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsPicks.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPicks.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsRecByCons.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRecByCons.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsReceipt.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReceipt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsReceiptDetail.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReceiptDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsReceivingDetails.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReceivingDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsReceivingSummary.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReceivingSummary.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsReplenishment.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReplenishment.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsRetShipSKu.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRetShipSKu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsSecondaryPick.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSecondaryPick.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsShipedOrders.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsShipedOrders.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsShippingDetails.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsShippingDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsShippingManifestDetail.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsShippingManifestDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsShippingManifestHeader.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsShippingManifestHeader.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsShippingSummary.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsShippingSummary.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsSku.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSku.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsSKUReceipt.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSKUReceipt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsTestReport1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTestReport1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsTransShipmentDetail.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTransShipmentDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\dsTransShipmentSummary.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTransShipmentSummary.xsd</DependentUpon>
+    </Compile>
+    <Content Include="Reports\Datasets\dsBillCharges.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBillCharges.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsCompanies.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCompanies.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsFlowthroughDetail.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFlowthroughDetail.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsFlowthroughDiscrepancies.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFlowthroughDiscrepancies.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsFlowthroughSummary.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFlowthroughSummary.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsInvBySku.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsInvBySku.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsInvByStatus.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsInvByStatus.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsInvOnHold.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsInvOnHold.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsInvTrans.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsInvTrans.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsLoadByStatus.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLoadByStatus.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsLocationContent.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLocationContent.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsLocations.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLocations.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsPick.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPick.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsPickdetail.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPickdetail.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsPickerEfficiency.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPickerEfficiency.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsPickLoc.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPickLoc.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsPicks.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPicks.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsRecByCons.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRecByCons.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsReceipt.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReceipt.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsReceiptDetail.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReceiptDetail.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsReceivingDetails.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReceivingDetails.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsReceivingSummary.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReceivingSummary.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsReplenishment.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReplenishment.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsRetShipSKu.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRetShipSKu.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsSecondaryPick.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSecondaryPick.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsShipedOrders.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsShipedOrders.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsShippingDetails.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsShippingDetails.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsShippingManifestDetail.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsShippingManifestDetail.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsShippingManifestHeader.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsShippingManifestHeader.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsShippingSummary.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsShippingSummary.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsSku.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSku.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsSKUReceipt.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSKUReceipt.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsSkuRetShip.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsTestReport1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTestReport1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsTransShipmentDetail.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTransShipmentDetail.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Datasets\dsTransShipmentSummary.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTransShipmentSummary.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\View\repCompanyByConsignee.sql" />
+    <Content Include="Reports\View\repFlowthrowghDelNote.sql" />
+    <Content Include="Reports\View\repInvByLoc.sql" />
+    <Content Include="Reports\View\repInvBySku.sql" />
+    <Content Include="Reports\View\repInvByStatus.sql" />
+    <Content Include="Reports\View\repInvOnHold.sql" />
+    <Content Include="Reports\View\repInvTrans.sql" />
+    <Content Include="Reports\View\repLoadByStatus.sql" />
+    <Content Include="Reports\View\repLoadingDiagram.sql" />
+    <Content Include="Reports\View\repLocationStat.sql" />
+    <Content Include="Reports\View\repOutboundDelNote.sql" />
+    <Content Include="Reports\View\repPickByItem.sql" />
+    <Content Include="Reports\View\repPickByOrder.sql" />
+    <Content Include="Reports\View\repPickerEfficiency.sql" />
+    <Content Include="Reports\View\repPickingPlanShort.sql" />
+    <Content Include="Reports\View\repPickList.sql" />
+    <Content Include="Reports\View\repPickLoc.sql" />
+    <Content Include="Reports\View\repProforma.sql" />
+    <Content Include="Reports\View\repReceivingByConsignee.sql" />
+    <Content Include="Reports\View\repReceivingBySKU.sql" />
+    <Content Include="Reports\View\repReceivingDetails.sql" />
+    <Content Include="Reports\View\repReceivingDisrepancies.sql" />
+    <Content Include="Reports\View\repReceivingManifest.sql" />
+    <Content Include="Reports\View\repReceivingSummary.sql" />
+    <Content Include="Reports\View\repReceivingWorksheet.sql" />
+    <Content Include="Reports\View\repRerShipSku.sql" />
+    <Content Include="Reports\View\repShipBranch.sql" />
+    <Content Include="Reports\View\repShipDesc.sql" />
+    <Content Include="Reports\View\repShipDetail.sql" />
+    <Content Include="Reports\View\repShipMan.sql" />
+    <Content Include="Reports\View\repShippedOrders.sql" />
+    <Content Include="Reports\View\repShipSum.sql" />
+    <Content Include="Reports\View\repTranshipmentDelNote.sql" />
+    <None Include="Reports\Datasets\dsBillCharges.xsx">
+      <DependentUpon>dsBillCharges.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsCompanies.xsx">
+      <DependentUpon>dsCompanies.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsFlowthroughDetail.xsx">
+      <DependentUpon>dsFlowthroughDetail.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsFlowthroughDiscrepancies.xsx">
+      <DependentUpon>dsFlowthroughDiscrepancies.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsFlowthroughSummary.xsx">
+      <DependentUpon>dsFlowthroughSummary.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsInvBySku.xsx">
+      <DependentUpon>dsInvBySku.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsInvByStatus.xsx">
+      <DependentUpon>dsInvByStatus.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsInvOnHold.xsx">
+      <DependentUpon>dsInvOnHold.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsInvTrans.xsx">
+      <DependentUpon>dsInvTrans.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsLoadByStatus.xsx">
+      <DependentUpon>dsLoadByStatus.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsLocationContent.xsx">
+      <DependentUpon>dsLocationContent.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsLocations.xsx">
+      <DependentUpon>dsLocations.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsPick.xsx">
+      <DependentUpon>dsPick.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsPickdetail.xsx">
+      <DependentUpon>dsPickdetail.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsPickerEfficiency.xsx">
+      <DependentUpon>dsPickerEfficiency.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsPickLoc.xsx">
+      <DependentUpon>dsPickLoc.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsPicks.xsx">
+      <DependentUpon>dsPicks.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsRecByCons.xsx">
+      <DependentUpon>dsRecByCons.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsReceipt.xsx">
+      <DependentUpon>dsReceipt.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsReceiptDetail.xsx">
+      <DependentUpon>dsReceiptDetail.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsReceivingDetails.xsx">
+      <DependentUpon>dsReceivingDetails.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsReceivingSummary.xsx">
+      <DependentUpon>dsReceivingSummary.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsReplenishment.xsx">
+      <DependentUpon>dsReplenishment.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsRetShipSKu.xsx">
+      <DependentUpon>dsRetShipSKu.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsSecondaryPick.xsx">
+      <DependentUpon>dsSecondaryPick.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsShipedOrders.xsx">
+      <DependentUpon>dsShipedOrders.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsShippingDetails.xsx">
+      <DependentUpon>dsShippingDetails.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsShippingManifestDetail.xsx">
+      <DependentUpon>dsShippingManifestDetail.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsShippingManifestHeader.xsx">
+      <DependentUpon>dsShippingManifestHeader.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsShippingSummary.xsc">
+      <DependentUpon>dsShippingSummary.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsShippingSummary.xss">
+      <DependentUpon>dsShippingSummary.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsShippingSummary.xsx">
+      <DependentUpon>dsShippingSummary.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsSku.xsx">
+      <DependentUpon>dsSku.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsSKUReceipt.xsx">
+      <DependentUpon>dsSKUReceipt.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsSkuRetShip.xsx">
+      <DependentUpon>dsSkuRetShip.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsTestReport1.xsx">
+      <DependentUpon>dsTestReport1.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsTransShipmentDetail.xsx">
+      <DependentUpon>dsTransShipmentDetail.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\dsTransShipmentSummary.xsx">
+      <DependentUpon>dsTransShipmentSummary.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Templates\CompanyByConsignee_LTR.rst" />
+    <None Include="Reports\Templates\CycleCountAgingSummary_LTR.rst" />
+    <None Include="Reports\Templates\CycleCountDetail_LTR.rst" />
+    <None Include="Reports\Templates\CycleCountSummary_LTR.rst" />
+    <None Include="Reports\Templates\FlowthrowghDelNote_LTR.rst" />
+    <None Include="Reports\Templates\FlowthrowghDelNote_RTL.rst" />
+    <None Include="Reports\Templates\InvByLoc_LTR.rst" />
+    <None Include="Reports\Templates\InvByLoc_RTL.rst" />
+    <None Include="Reports\Templates\InvBySku_LTR.rst" />
+    <None Include="Reports\Templates\InvBySku_RTL.rst" />
+    <None Include="Reports\Templates\InvByStatus_LTR.rst" />
+    <None Include="Reports\Templates\InvByStatus_RTL.rst" />
+    <None Include="Reports\Templates\InvOnHold_LTR.rst" />
+    <None Include="Reports\Templates\InvOnHold_RTL.rst" />
+    <None Include="Reports\Templates\InvTrans_LTR.rst" />
+    <None Include="Reports\Templates\InvTrans_RTL.rst" />
+    <None Include="Reports\Templates\LoadByStatus_LTR.rst" />
+    <None Include="Reports\Templates\LoadByStatus_RTL.rst" />
+    <None Include="Reports\Templates\LocationStat_LTR.rst" />
+    <None Include="Reports\Templates\LocationStat_RTL.rst" />
+    <None Include="Reports\Templates\OutboundDelNoteAlpine_LTR.rst" />
+    <None Include="Reports\Templates\OutboundDelNote_LTR.rst" />
+    <None Include="Reports\Templates\OutboundDelNote_RTL.rst" />
+    <None Include="Reports\Templates\PackingList_LTR.rst" />
+    <None Include="Reports\Templates\PickByItem_LTR.rst" />
+    <None Include="Reports\Templates\PickByItem_RTL.rst" />
+    <None Include="Reports\Templates\PickByOrder_LTR.rst" />
+    <None Include="Reports\Templates\PickByOrder_RTL.rst" />
+    <None Include="Reports\Templates\PickerEfficiency_LTR.rst" />
+    <None Include="Reports\Templates\PickingPlanShort_LTR.rst" />
+    <None Include="Reports\Templates\PickingPlanShort_RTL.rst" />
+    <None Include="Reports\Templates\PickList_LTR.rst" />
+    <None Include="Reports\Templates\PickList_LTRold.rst" />
+    <None Include="Reports\Templates\PickList_RTL.rst" />
+    <None Include="Reports\Templates\PickLoc_LTR.rst" />
+    <None Include="Reports\Templates\PickLoc_RTL.rst" />
+    <None Include="Reports\Templates\ProformaDetailed_LTR.rst" />
+    <None Include="Reports\Templates\ProformaReoccuringStorage_LTR.rst" />
+    <None Include="Reports\Templates\Proforma_LTR.rst" />
+    <None Include="Reports\Templates\Proforma_RTL.rst" />
+    <None Include="Reports\Templates\PutAwayWorkSheet.rst" />
+    <None Include="Reports\Templates\PutAwayWorkSheet_LTR.rst" />
+    <None Include="Reports\Templates\ReceivingByConsignee_LTR.rst" />
+    <None Include="Reports\Templates\ReceivingByConsignee_RTL.rst" />
+    <None Include="Reports\Templates\ReceivingBySKU_LTR.rst" />
+    <None Include="Reports\Templates\ReceivingBySKU_RTL.rst" />
+    <None Include="Reports\Templates\ReceivingDetails_LTR.rst" />
+    <None Include="Reports\Templates\ReceivingDetails_RTL.rst" />
+    <None Include="Reports\Templates\ReceivingDiscrepancies_LTR.rst" />
+    <None Include="Reports\Templates\ReceivingDiscrepancies_RTL.rst" />
+    <None Include="Reports\Templates\ReceivingManifest_LTR.rst" />
+    <None Include="Reports\Templates\ReceivingManifest_RTL.rst" />
+    <None Include="Reports\Templates\ReceivingSummary_LTR.rst" />
+    <None Include="Reports\Templates\ReceivingSummary_RTL.rst" />
+    <None Include="Reports\Templates\ReceivingWorksheet_LTR.rst" />
+    <None Include="Reports\Templates\ReceivingWorksheet_RTL.rst" />
+    <None Include="Reports\Templates\repLaborPerformance.rst" />
+    <None Include="Reports\Templates\repLaborPerformSum.rst" />
+    <None Include="Reports\Templates\repLoadingDiagram_LTR.rst" />
+    <None Include="Reports\Templates\RerShipSku_LTR.rst" />
+    <None Include="Reports\Templates\RerShipSku_RTL.rst" />
+    <None Include="Reports\Templates\ShipAudit_LTR.rst" />
+    <None Include="Reports\Templates\ShipBranch_LTR.rst" />
+    <None Include="Reports\Templates\ShipBranch_RTL.rst" />
+    <None Include="Reports\Templates\ShipDetail_LTR.rst" />
+    <None Include="Reports\Templates\ShipDetail_RTL.rst" />
+    <None Include="Reports\Templates\ShipDiscrepancies_LTR.rst" />
+    <None Include="Reports\Templates\ShipDiscrepancies_RTL.rst" />
+    <None Include="Reports\Templates\ShipMan_LTR.rst" />
+    <None Include="Reports\Templates\ShipMan_RTL.rst" />
+    <None Include="Reports\Templates\ShippedOrders_LTR.rst" />
+    <None Include="Reports\Templates\ShippedOrders_RTL.rst" />
+    <None Include="Reports\Templates\ShipSum_LTR.rst" />
+    <None Include="Reports\Templates\ShipSum_RTL.rst" />
+    <None Include="Reports\Templates\TranshipmentDelNote_LTR.rst" />
+    <None Include="Reports\Templates\TranshipmentDelNote_RTL.rst" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

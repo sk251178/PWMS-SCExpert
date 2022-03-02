@@ -1,0 +1,10 @@
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Billing.ChargeExport\obj\Debug\WMS.Billing.ChargeExport.ProjectInstaller.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Billing.ChargeExport\obj\Debug\WMS.Billing.ChargeExport.csproj.GenerateResource.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Billing.ChargeExport\obj\Debug\WMS.Billing.ChargeExport.csproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\BillingChargeExport\PWMS.Billing.ChargeExport.exe.config
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\BillingChargeExport\PWMS.Billing.ChargeExport.xml
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\BillingChargeExport\PWMS.Billing.ChargeExport.exe
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Services\BillingChargeExport\PWMS.Billing.ChargeExport.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Billing.ChargeExport\obj\Debug\WMS.Billing.ChargeExport.csproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Billing.ChargeExport\obj\Debug\PWMS.Billing.ChargeExport.exe
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\WMS.Billing.ChargeExport\obj\Debug\PWMS.Billing.ChargeExport.pdb

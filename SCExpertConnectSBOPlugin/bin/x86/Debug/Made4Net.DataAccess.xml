@@ -1,0 +1,35 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Made4Net.DataAccess
+</name>
+</assembly>
+<members>
+<member name="P:Made4Net.DataAccess.CachedTable.CacheTimeout">
+ -----------------------------------------------------------------------------
+ <summary>
+ Gets or sets the timeout period for the cached data. null = infinity
+ </summary>
+ <returns>The timeout period for the cached data</returns>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.DataAccess.DataProvider.setAdditionalQueryParams(System.String)">
+ <summary>
+ The additional parameters are needed where the query result depends on query result of first Query.
+ </summary>
+ <param name="reportId">Report Id used in sys_reportparams</param>
+ <remarks></remarks>
+</member>
+<member name="M:Made4Net.DataAccess.DefaultDataImplementation.ConvertOdbDbTypeToSqlDbType(System.Data.Odbc.OdbcType)">
+ <summary>
+ Refer to
+ https://msdn.microsoft.com/en-us/library/system.data.odbc.odbctype(v=vs.110).aspx
+ https://msdn.microsoft.com/en-us/library/system.data.dbtype(v=vs.110).aspx
+ </summary>
+ <param name="odbcType"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

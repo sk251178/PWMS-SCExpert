@@ -1,0 +1,11 @@
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertTalkmanPlugin\obj\Debug\SCExpertTalkmanPlugin.vbproj.AssemblyReference.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertTalkmanPlugin\obj\Debug\SCExpertTalkmanPlugin.Resources.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertTalkmanPlugin\obj\Debug\SCExpertTalkmanPlugin.vbproj.GenerateResource.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertTalkmanPlugin\obj\Debug\SCExpertTalkmanPlugin.vbproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\SCExpertTalkmanPlugin.dll
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\SCExpertTalkmanPlugin.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\SCExpertTalkmanPlugin.xml
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertTalkmanPlugin\obj\Debug\SCExpertTalkmanPlugin.vbproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertTalkmanPlugin\obj\Debug\SCExpertTalkmanPlugin.dll
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertTalkmanPlugin\obj\Debug\SCExpertTalkmanPlugin.xml
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\SCExpertTalkmanPlugin\obj\Debug\SCExpertTalkmanPlugin.pdb

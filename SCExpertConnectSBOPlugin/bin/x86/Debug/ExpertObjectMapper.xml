@@ -1,0 +1,2383 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExpertObjectMapper</name>
+    </assembly>
+    <members>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.BUSINESSOBJECTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.DATADataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.ATTRIBUTESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.ATTRIBUTEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.SKUCOMPONENTSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.SKUCOMPONENTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.LOADSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.LOADDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.LOADATTRIBUTESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.LOADATTRIBUTEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.BUSINESSOBJECTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.DATARow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.ATTRIBUTESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.ATTRIBUTERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.SKUCOMPONENTSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.SKUCOMPONENTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.LOADSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.LOADRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.LOADATTRIBUTESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.LOADATTRIBUTERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.BUSINESSOBJECTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.DATARowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.ATTRIBUTESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.ATTRIBUTERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.SKUCOMPONENTSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.SKUCOMPONENTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.LOADSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.LOADRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.LOADATTRIBUTESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.ASSEMBLYWORKORDER.LOADATTRIBUTERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CARRIER">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CARRIER.BUSINESSOBJECTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CARRIER.DATADataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CARRIER.CONTACTSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CARRIER.CONTACTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CARRIER.BUSINESSOBJECTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CARRIER.DATARow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CARRIER.CONTACTSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CARRIER.CONTACTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CARRIER.BUSINESSOBJECTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CARRIER.DATARowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CARRIER.CONTACTSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CARRIER.CONTACTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CHARGE">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CHARGE.BUSINESSOBJECTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CHARGE.DATADataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CHARGE.CONSIGNEEDATADataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CHARGE.LINESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CHARGE.LINEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CHARGE.BUSINESSOBJECTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CHARGE.DATARow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CHARGE.CONSIGNEEDATARow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CHARGE.LINESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CHARGE.LINERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CHARGE.BUSINESSOBJECTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CHARGE.DATARowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CHARGE.CONSIGNEEDATARowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CHARGE.LINESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CHARGE.LINERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.COMPANY">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.COMPANY.BUSINESSOBJECTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.COMPANY.DATADataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.COMPANY.CONTACTSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.COMPANY.CONTACTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.COMPANY.BUSINESSOBJECTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.COMPANY.DATARow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.COMPANY.CONTACTSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.COMPANY.CONTACTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.COMPANY.BUSINESSOBJECTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.COMPANY.DATARowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.COMPANY.CONTACTSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.COMPANY.CONTACTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CONSUME">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CONSUME.BUSINESSOBJECTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CONSUME.DATADataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CONSUME.ATTRIBUTESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CONSUME.ATTRIBUTEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CONSUME.BUSINESSOBJECTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CONSUME.DATARow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CONSUME.ATTRIBUTESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CONSUME.ATTRIBUTERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CONSUME.BUSINESSOBJECTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CONSUME.DATARowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CONSUME.ATTRIBUTESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CONSUME.ATTRIBUTERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CONTACT">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CONTACT.BUSINESSOBJECTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CONTACT.DATADataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CONTACT.BUSINESSOBJECTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CONTACT.DATARow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CONTACT.BUSINESSOBJECTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.CONTACT.DATARowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.BUSINESSOBJECTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.DATADataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.ATTRIBUTESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.ATTRIBUTEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.SKUCOMPONENTSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.SKUCOMPONENTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.LOADSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.LOADDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.LOADATTRIBUTESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.LOADATTRIBUTEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.BUSINESSOBJECTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.DATARow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.ATTRIBUTESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.ATTRIBUTERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.SKUCOMPONENTSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.SKUCOMPONENTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.LOADSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.LOADRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.LOADATTRIBUTESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.LOADATTRIBUTERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.BUSINESSOBJECTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.DATARowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.ATTRIBUTESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.ATTRIBUTERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.SKUCOMPONENTSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.SKUCOMPONENTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.LOADSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.LOADRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.LOADATTRIBUTESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.DISASSEMBLYWORKORDER.LOADATTRIBUTERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.BUSINESSOBJECTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.DATADataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.CONTACTSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.CONTACTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.LINESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.LINEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.ATTRIBUTESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.ATTRIBUTEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.LOADSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.LOADDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.LOADATTRIBUTESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.LOADATTRIBUTEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.CONTAINERDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.BUSINESSOBJECTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.DATARow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.CONTACTSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.CONTACTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.LINESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.LINERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.ATTRIBUTESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.ATTRIBUTERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.LOADSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.LOADRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.LOADATTRIBUTESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.LOADATTRIBUTERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.CONTAINERRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.BUSINESSOBJECTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.DATARowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.CONTACTSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.CONTACTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.LINESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.LINERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.ATTRIBUTESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.ATTRIBUTERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.LOADSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.LOADRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.LOADATTRIBUTESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.LOADATTRIBUTERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.FLOWTHROUGH.CONTAINERRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INBOUND">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INBOUND.BUSINESSOBJECTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INBOUND.DATADataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INBOUND.CONTACTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INBOUND.LINESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INBOUND.LINEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INBOUND.ATTRIBUTESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INBOUND.ATTRIBUTEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INBOUND.BUSINESSOBJECTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INBOUND.DATARow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INBOUND.CONTACTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INBOUND.LINESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INBOUND.LINERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INBOUND.ATTRIBUTESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INBOUND.ATTRIBUTERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INBOUND.BUSINESSOBJECTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INBOUND.DATARowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INBOUND.CONTACTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INBOUND.LINESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INBOUND.LINERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INBOUND.ATTRIBUTESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INBOUND.ATTRIBUTERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVSNAPSHOT">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVSNAPSHOT.BUSINESSOBJECTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVSNAPSHOT.DATADataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVSNAPSHOT.STATUSESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVSNAPSHOT.STATUSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVSNAPSHOT.ATTRIBUTESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVSNAPSHOT.ATTRIBUTEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVSNAPSHOT.BUSINESSOBJECTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVSNAPSHOT.DATARow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVSNAPSHOT.STATUSESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVSNAPSHOT.STATUSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVSNAPSHOT.ATTRIBUTESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVSNAPSHOT.ATTRIBUTERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVSNAPSHOT.BUSINESSOBJECTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVSNAPSHOT.DATARowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVSNAPSHOT.STATUSESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVSNAPSHOT.STATUSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVSNAPSHOT.ATTRIBUTESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVSNAPSHOT.ATTRIBUTERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVTRANS">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVTRANS.BUSINESSOBJECTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVTRANS.DATADataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVTRANS.ATTRIBUTESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVTRANS.ATTRIBUTEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVTRANS.BUSINESSOBJECTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVTRANS.DATARow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVTRANS.ATTRIBUTESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVTRANS.ATTRIBUTERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVTRANS.BUSINESSOBJECTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVTRANS.DATARowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVTRANS.ATTRIBUTESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.INVTRANS.ATTRIBUTERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.LOAD">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.BUSINESSOBJECTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.DATADataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.CONTACTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.LINESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.LINEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.ATTRIBUTESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.ATTRIBUTEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.LOADSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.LOADDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.LOADATTRIBUTESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.LOADATTRIBUTEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.CONTAINERDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.LOADDETWEIGHTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.DETWEIGHTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.BUSINESSOBJECTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.DATARow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.CONTACTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.LINESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.LINERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.ATTRIBUTESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.ATTRIBUTERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.LOADSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.LOADRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.LOADATTRIBUTESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.LOADATTRIBUTERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.CONTAINERRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.LOADDETWEIGHTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.DETWEIGHTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.BUSINESSOBJECTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.DATARowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.CONTACTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.LINESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.LINERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.ATTRIBUTESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.ATTRIBUTERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.LOADSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.LOADRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.LOADATTRIBUTESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.LOADATTRIBUTERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.CONTAINERRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.LOADDETWEIGHTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.OUTBOUND.DETWEIGHTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PACKINGLIST">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PACKINGLIST.BUSINESSOBJECTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PACKINGLIST.DATADataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PACKINGLIST.CONTACTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PACKINGLIST.LOADSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PACKINGLIST.LOADDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PACKINGLIST.LOADATTRIBUTESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PACKINGLIST.LOADATTRIBUTEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PACKINGLIST.BUSINESSOBJECTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PACKINGLIST.DATARow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PACKINGLIST.CONTACTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PACKINGLIST.LOADSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PACKINGLIST.LOADRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PACKINGLIST.LOADATTRIBUTESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PACKINGLIST.LOADATTRIBUTERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PACKINGLIST.BUSINESSOBJECTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PACKINGLIST.DATARowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PACKINGLIST.CONTACTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PACKINGLIST.LOADSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PACKINGLIST.LOADRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PACKINGLIST.LOADATTRIBUTESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PACKINGLIST.LOADATTRIBUTERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PRODUCE">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PRODUCE.BUSINESSOBJECTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PRODUCE.DATADataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PRODUCE.ATTRIBUTESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PRODUCE.ATTRIBUTEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PRODUCE.BUSINESSOBJECTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PRODUCE.DATARow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PRODUCE.ATTRIBUTESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PRODUCE.ATTRIBUTERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PRODUCE.BUSINESSOBJECTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PRODUCE.DATARowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PRODUCE.ATTRIBUTESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.PRODUCE.ATTRIBUTERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.BUSINESSOBJECTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.DATADataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.HANDLINGUNITSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.HANDLINGUNITDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.LINESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.LINEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.ATTRIBUTESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.ATTRIBUTEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.ASNSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.ASNDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.ASNATTRIBUTESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.ASNATTRIBUTEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.LOADSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.LOADDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.LOADATTRIBUTESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.LOADATTRIBUTEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.RECEIVINGEXCEPTIONSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.RECEIVINGEXCEPTIONDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.BUSINESSOBJECTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.DATARow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.HANDLINGUNITSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.HANDLINGUNITRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.LINESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.LINERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.ATTRIBUTESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.ATTRIBUTERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.ASNSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.ASNRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.ASNATTRIBUTESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.ASNATTRIBUTERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.LOADSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.LOADRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.LOADATTRIBUTESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.LOADATTRIBUTERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.RECEIVINGEXCEPTIONSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.RECEIVINGEXCEPTIONRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.BUSINESSOBJECTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.DATARowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.HANDLINGUNITSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.HANDLINGUNITRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.LINESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.LINERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.ATTRIBUTESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.ATTRIBUTERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.ASNSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.ASNRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.ASNATTRIBUTESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.ASNATTRIBUTERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.LOADSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.LOADRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.LOADATTRIBUTESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.LOADATTRIBUTERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.RECEIVINGEXCEPTIONSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.RECEIPT.RECEIVINGEXCEPTIONRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.BUSINESSOBJECTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.DATADataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.HANDLINGUNITSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.HANDLINGUNITDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.DOCUMENTSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.DOCUMENTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.CONTACTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.LINESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.LINEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.ATTRIBUTESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.ATTRIBUTEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.LOADSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.LOADDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.LOADATTRIBUTESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.LOADATTRIBUTEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.CONTAINERDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.BUSINESSOBJECTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.DATARow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.HANDLINGUNITSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.HANDLINGUNITRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.DOCUMENTSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.DOCUMENTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.CONTACTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.LINESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.LINERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.ATTRIBUTESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.ATTRIBUTERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.LOADSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.LOADRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.LOADATTRIBUTESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.LOADATTRIBUTERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.CONTAINERRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.BUSINESSOBJECTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.DATARowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.HANDLINGUNITSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.HANDLINGUNITRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.DOCUMENTSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.DOCUMENTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.CONTACTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.LINESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.LINERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.ATTRIBUTESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.ATTRIBUTERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.LOADSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.LOADRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.LOADATTRIBUTESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.LOADATTRIBUTERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SHIPMENT.CONTAINERRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.BUSINESSOBJECTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.DATADataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.UOMCOLLECTIONDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.UOMOBJDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.BOMCOLLECTIONDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.BOMOBJDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.SKUCLASSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.ATTRIBUTESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.ATTRIBUTEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.SKUATTRIBUTESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.SKUATTRIBUTEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.BUSINESSOBJECTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.DATARow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.UOMCOLLECTIONRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.UOMOBJRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.BOMCOLLECTIONRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.BOMOBJRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.SKUCLASSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.ATTRIBUTESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.ATTRIBUTERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.SKUATTRIBUTESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.SKUATTRIBUTERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.BUSINESSOBJECTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.DATARowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.UOMCOLLECTIONRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.UOMOBJRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.BOMCOLLECTIONRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.BOMOBJRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.SKUCLASSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.ATTRIBUTESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.ATTRIBUTERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.SKUATTRIBUTESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.SKU.SKUATTRIBUTERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.TRANSHIPMENT">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.TRANSHIPMENT.BUSINESSOBJECTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.TRANSHIPMENT.DATADataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.TRANSHIPMENT.CONTACTSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.TRANSHIPMENT.CONTACTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.TRANSHIPMENT.BUSINESSOBJECTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.TRANSHIPMENT.DATARow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.TRANSHIPMENT.CONTACTSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.TRANSHIPMENT.CONTACTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.TRANSHIPMENT.BUSINESSOBJECTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.TRANSHIPMENT.DATARowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.TRANSHIPMENT.CONTACTSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.TRANSHIPMENT.CONTACTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.VALUEADDEDSERVICES">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.VALUEADDEDSERVICES.BUSINESSOBJECTDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.VALUEADDEDSERVICES.DATADataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.VALUEADDEDSERVICES.ATTRIBUTESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.VALUEADDEDSERVICES.ATTRIBUTEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.VALUEADDEDSERVICES.LOADSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.VALUEADDEDSERVICES.LOADDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.VALUEADDEDSERVICES.LOADATTRIBUTESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.VALUEADDEDSERVICES.LOADATTRIBUTEDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.VALUEADDEDSERVICES.BUSINESSOBJECTRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.VALUEADDEDSERVICES.DATARow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.VALUEADDEDSERVICES.ATTRIBUTESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.VALUEADDEDSERVICES.ATTRIBUTERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.VALUEADDEDSERVICES.LOADSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.VALUEADDEDSERVICES.LOADRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.VALUEADDEDSERVICES.LOADATTRIBUTESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.VALUEADDEDSERVICES.LOADATTRIBUTERow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.VALUEADDEDSERVICES.BUSINESSOBJECTRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.VALUEADDEDSERVICES.DATARowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.VALUEADDEDSERVICES.ATTRIBUTESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.VALUEADDEDSERVICES.ATTRIBUTERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.VALUEADDEDSERVICES.LOADSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.VALUEADDEDSERVICES.LOADRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.VALUEADDEDSERVICES.LOADATTRIBUTESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.DataTemplate.VALUEADDEDSERVICES.LOADATTRIBUTERowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.ObjectProcessor">
+            <summary>
+            Summary description for ObjectProcessor.
+            </summary>
+        </member>
+        <member name="T:ExpertObjectMapper.Utilities">
+            <summary>
+            Summary description for Utilities.
+            </summary>
+        </member>
+    </members>
+</doc>

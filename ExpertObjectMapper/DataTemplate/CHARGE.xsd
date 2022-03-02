@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="CHARGE" targetNamespace="http://tempuri.org/CHARGE.xsd" elementFormDefault="qualified"
+	xmlns="http://tempuri.org/CHARGE.xsd" xmlns:mstns="http://tempuri.org/CHARGE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="BUSINESSOBJECT">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="BOTYPE" type="xs:string" />
+				<xs:element name="DATACOLLECTION" type="xs:string" />
+				<xs:element name="DATA">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CHARGEID" type="xs:string" />
+							<xs:element name="BILLINGRUNID" type="xs:string" />
+							<xs:element name="AGREEMENTNAME" type="xs:string" />
+							<xs:element name="BILLFROMDATE" type="xs:date" />
+							<xs:element name="BILLTOTAL" type="xs:decimal" />
+							<xs:element name="STATUS" type="xs:string" />
+							<xs:element name="CONSIGNEEDATA">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="CONSIGNEE" type="xs:string" />
+										<xs:element name="CONSIGNEENAME" type="xs:string" />
+										<xs:element name="BILLINGACCOUNT" type="xs:string" />
+										<xs:element name="STREET1" type="xs:string" />
+										<xs:element name="STREET2" type="xs:string" />
+										<xs:element name="CITY" type="xs:string" />
+										<xs:element name="STATE" type="xs:string" />
+										<xs:element name="ZIP" type="xs:string" />
+										<xs:element name="CONTACT1NAME" type="xs:string" />
+										<xs:element name="CONTACT2NAME" type="xs:string" />
+										<xs:element name="CONTACT1PHONE" type="xs:string" />
+										<xs:element name="CONTACT2PHONE" type="xs:string" />
+										<xs:element name="CONTACT1FAX" type="xs:string" />
+										<xs:element name="CONTACT2FAX" type="xs:string" />
+										<xs:element name="CONTACT1EMAIL" type="xs:string" />
+										<xs:element name="CONTACT2EMAIL" type="xs:string" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="LINES">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="LINE">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="CHARGELINE" type="xs:string" />
+													<xs:element name="AGREEMENTLINE" type="xs:string" />
+													<xs:element name="AGREEMENTNAME" type="xs:string" />
+													<xs:element name="UNITS" type="xs:decimal" />
+													<xs:element name="BILLTOTAL" type="xs:decimal" />
+													<xs:element name="CURRENCY" type="xs:string" />
+													<xs:element name="BILLFROMDATE" type="xs:date" />
+													<xs:element name="BILLTODATE" type="xs:date" />
+													<xs:element name="STATUS" type="xs:string" />
+													<xs:element name="CHARGETEXT" type="xs:string" />
+													<xs:element name="BILLBASIS" type="xs:string" />
+													<xs:element name="PRICEPERUNIT" type="xs:decimal" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

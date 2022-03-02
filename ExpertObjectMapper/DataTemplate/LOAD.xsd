@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LOAD" targetNamespace="http://tempuri.org/LOAD.xsd" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/LOAD.xsd" xmlns:mstns="http://tempuri.org/LOAD.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:complexType name="BUSINESSOBJECT">
+    <xs:sequence>
+      <xs:element name="DATACOLLECTION" type="xs:string" />
+      <xs:element name="DATA">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="LOADID" type="xs:string" />
+            <xs:element name="CONSIGNEE" type="xs:string" />
+            <xs:element name="SKU" type="xs:string" />
+            <xs:element name="UNITPRICE" type="xs:double" />
+            <xs:element name="CONTAINERID" type="xs:string" />
+            <xs:element name="LOADUOM" type="xs:string" />
+            <xs:element name="LOCATION" type="xs:string" />
+            <xs:element name="DESTINATIONLOCATION" type="xs:string" />
+            <xs:element name="HOLDRC" type="xs:string" />
+            <xs:element name="STATUS" type="xs:string" />
+            <xs:element name="ACTIVITYSTATUS" type="xs:string" />
+            <xs:element name="UNITS" type="xs:decimal" />
+            <xs:element name="UNITSALLOCATED" type="xs:decimal" />
+            <xs:element name="UNITSPICKED" type="xs:decimal" />
+            <xs:element name="RECEIPT">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="RECEIPT" type="xs:string" />
+                  <xs:element name="SCHEDULEDDATE" type="xs:dateTime" />
+                  <xs:element name="STATUS" type="xs:string" />
+                  <xs:element name="BOL" type="xs:string" />
+                  <xs:element name="NOTES" type="xs:string" />
+                  <xs:element name="CARRIERCOMPANY" type="xs:string" />
+                  <xs:element name="STARTRECEIPTDATE" type="xs:dateTime" />
+                  <xs:element name="TRANSPORTREFERENCE" type="xs:string" />
+                  <xs:element name="TRANSPORTTYPE" type="xs:string" />
+                  <xs:element name="RECEIPTLINE" type="xs:integer" />
+                  <xs:element name="ORDERID" type="xs:string" />
+                  <xs:element name="ORDERLINE" type="xs:integer" />
+                  <xs:element name="ORDERTYPE" type="xs:string" />
+                  <xs:element name="REFERENCEORDER" type="xs:string" />
+                  <xs:element name="REFERENCEORDERLINE" type="xs:string" />
+                  <xs:element name="QTYORIGINAL" type="xs:decimal" />
+                  <xs:element name="QTYEXPECTED" type="xs:decimal" />
+                  <xs:element name="QTYRECEIVED" type="xs:decimal" />
+                  <xs:element name="DOCUMENTTYPE" type="xs:string" />
+                  <xs:element name="ATTRIBUTES">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="ATTRIBUTE">
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element name="NAME" type="xs:string" />
+                              <xs:element name="VALUE" type="xs:string" />
+                            </xs:sequence>
+                          </xs:complexType>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

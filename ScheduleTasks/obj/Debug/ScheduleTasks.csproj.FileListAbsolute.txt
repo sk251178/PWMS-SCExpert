@@ -1,0 +1,8 @@
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\ScheduleTasks\obj\Debug\ScheduleTasks.csproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\ScheduleTasks.xml
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\ScheduleTasks.dll
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\ScheduleTasks.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\ScheduleTasks\obj\Debug\ScheduleTasks.csproj.AssemblyReference.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\ScheduleTasks\obj\Debug\ScheduleTasks.csproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\ScheduleTasks\obj\Debug\ScheduleTasks.dll
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\ScheduleTasks\obj\Debug\ScheduleTasks.pdb

@@ -1,0 +1,375 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Made4Net.WebControls
+</name>
+</assembly>
+<members>
+<member name="F:Made4Net.WebControls.ExecutionButtonBehavior.GoToURL">
+ -----------------------------------------------------------------------------
+ <summary>
+ Navigates to a new URL
+ </summary>
+ -----------------------------------------------------------------------------
+</member>
+<member name="F:Made4Net.WebControls.ExecutionButtonBehavior.OpenURL">
+ -----------------------------------------------------------------------------
+ <summary>
+ Opens a new window with the specified URL
+ </summary>
+ -----------------------------------------------------------------------------
+</member>
+<member name="F:Made4Net.WebControls.ExecutionButtonBehavior.OpenRadWindow">
+ -----------------------------------------------------------------------------
+ <summary>
+ Opens a new RadWindow
+ </summary>
+ -----------------------------------------------------------------------------
+</member>
+<member name="F:Made4Net.WebControls.ExecutionButtonBehavior.CloseRadWindow">
+ -----------------------------------------------------------------------------
+ <summary>
+ Closes the current RadWindow
+ </summary>
+ -----------------------------------------------------------------------------
+</member>
+<member name="P:Made4Net.WebControls.TableEditor.NewRecordEditMode">
+ -----------------------------------------------------------------------------
+ <summary>
+ NewRecordEditMode is true when editing or viewing a record that was just inserted in insert mode.
+ This record is not necessarily part of the search result set and therefore the record pager cannot be used correctly.
+ </summary>
+ <value></value>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	2/27/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.WebControls.TableEditor.GetRelatedTableAlias(Made4Net.WebControls.TableEditorMode,System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Returns the alias of the related table from the SQL statement for the provided field.
+ </summary>
+ <param name="pTargetMode"></param>
+ <param name="FieldName"></param>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	10/6/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="P:Made4Net.WebControls.DisplayTypes.BaseDisplayType.ValueCtrlRangeFrom">
+ -----------------------------------------------------------------------------
+ <summary>
+ Returns the "From" control in range search mode.
+ </summary>
+ <value></value>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	10/6/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="P:Made4Net.WebControls.DisplayTypes.BaseDisplayType.ValueCtrlRangeTo">
+ -----------------------------------------------------------------------------
+ <summary>
+ Returns the "To" control in range search mode.
+ </summary>
+ <value></value>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	10/6/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="P:Made4Net.WebControls.DisplayTypes.BaseDisplayType.RequiresClientSideInstance">
+ -----------------------------------------------------------------------------
+ <summary>
+ Determines whether a display type requires the creation of a client side instance.
+ </summary>
+ <value></value>
+ <remarks>
+ Override this property in an inherited class. Return true if the display type requires the creation of a client side instance in order to run initialization scripts.
+ A client side instance is created regardless for all display types when needed for client side functionality like expressions.
+ </remarks>
+ <history>
+ 	[Administrator]	7/17/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="P:Made4Net.WebControls.DisplayTypes.BaseDisplayType.ClientSideScriptFile">
+ -----------------------------------------------------------------------------
+ <summary>
+ Returns the file name for the client side script to be included for this display type.
+ </summary>
+ <value></value>
+ <remarks>
+ This property returns the file name only, excluding the directory path. Use the ClientSideScriptDirectory property to override the default directory for script files.
+ </remarks>
+ <history>
+ 	[Administrator]	7/17/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="P:Made4Net.WebControls.DisplayTypes.BaseDisplayType.ClientSideScriptDirectory">
+ -----------------------------------------------------------------------------
+ <summary>
+ Returns the default directory for display type script files.
+ </summary>
+ <value></value>
+ <remarks>
+ The default is [WebSiteRoot]/m4nClientScripts/DisplayTypes.
+ </remarks>
+ <history>
+ 	[Administrator]	7/17/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="P:Made4Net.WebControls.DisplayTypes.BaseDisplayType.RangeSearchValueCopyEvents">
+ -----------------------------------------------------------------------------
+ <summary>
+ Returns a comma-separated list of events of the "From" control in range search to attach to when copying the value to the "To" control.
+ </summary>
+ <value></value>
+ <remarks>
+ i.e. "onchange,onpropertychange,onmouseover".
+ The "onchange" event is the default.
+ Override this property in a display type if its value changes without trigerring the onchange event.
+ </remarks>
+ <history>
+ 	[Administrator]	10/7/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.WebControls.DisplayTypes.BaseDisplayType.ApplyDefaultValue">
+ -----------------------------------------------------------------------------
+ <summary>
+ Sets the value of the display type to the current default value.
+ </summary>
+ <remarks>
+ Override this method if a display type requires setting the value in a different manner.
+ </remarks>
+ <history>
+ 	[Administrator]	10/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.WebControls.DisplayTypes.BaseDisplayType.GetClientScript">
+ -----------------------------------------------------------------------------
+ <summary>
+ Returns a client side script to run for each instance of the display type.
+ </summary>
+ <returns></returns>
+ <remarks>
+ Override this method and return a script to be rendered after the display type.
+ </remarks>
+ <history>
+ 	[Administrator]	7/17/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.WebControls.DisplayTypes.BaseDisplayType.GetClientCommonScript">
+ -----------------------------------------------------------------------------
+ <summary>
+ Returns a client side script common to all display types.
+ </summary>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	10/6/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.WebControls.DisplayTypes.BaseDisplayType.GetRangeSearchCopyValueScript">
+ -----------------------------------------------------------------------------
+ <summary>
+ Returns a script that copies the "From" value to the "To" value in a range search.
+ </summary>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	10/6/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.WebControls.DisplayTypes.BaseDisplayType.GetClientCommonScriptForHighCost">
+ -----------------------------------------------------------------------------
+ <summary>
+ Returns a client side script common to all display types.
+ </summary>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	10/6/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.WebControls.DisplayTypes.BaseDisplayType.GetRangeSearchCopyValueScriptForHighCost">
+ -----------------------------------------------------------------------------
+ <summary>
+ Returns a script that copies the "From" value to the "To" value in a range search.
+ </summary>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	10/6/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.WebControls.DisplayTypes.BaseDisplayType.GetClientCommonScriptForLowqty">
+ -----------------------------------------------------------------------------
+ <summary>
+ Returns a client side script common to all display types.
+ </summary>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	10/6/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.WebControls.DisplayTypes.BaseDisplayType.GetRangeSearchCopyValueScriptForLowQty">
+ -----------------------------------------------------------------------------
+ <summary>
+ Returns a script that copies the "From" value to the "To" value in a range search.
+ </summary>
+ <returns></returns>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	10/6/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.WebControls.DisplayTypes.BaseDisplayType.RegisterClientSideGlobalVariable">
+ -----------------------------------------------------------------------------
+ <summary>
+ Registers a global client side variable to be used as the instance of the display type.
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	7/17/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.WebControls.DisplayTypes.BaseDisplayType.GetClientSideDisplayTypeInfoScript">
+ -----------------------------------------------------------------------------
+ <summary>
+ Registers a script that adds the name of the client side class of the display type to the m4nDisplayTypeInformation instance.
+ </summary>
+ <remarks>
+ The main purpose of the m4nDisplayTypeInformation class is to maintain mapping between server side classes and client side classes.
+ This is a sample of the script this method might register: <c>m4nDisplayTypeInfo.add("Made4Net.WebControls.DisplayTypes.NumericTextBox", "ClientSideClass", "m4nNumericTextBox");</c>
+ </remarks>
+ <history>
+ 	[Administrator]	7/17/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.WebControls.DisplayTypes.BaseDisplayType.RegisterClientSideScriptBlocks">
+ -----------------------------------------------------------------------------
+ <summary>
+ Registers script blocks required by a display type
+ </summary>
+ <remarks>
+ Override this method in an inherited class to register all client script blocks that are required for the operation of the display type.
+ </remarks>
+ <history>
+ 	[Administrator]	7/17/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.WebControls.DisplayTypes.BaseDisplayType.RegisterBaseClientSideScriptBlocks">
+ -----------------------------------------------------------------------------
+ <summary>
+ Registers a set of script blocks that are essensial to the funtionality of all display types.
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	7/17/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.WebControls.DisplayTypes.BaseDisplayType.GetDisplayTypeInfoInitScript">
+ -----------------------------------------------------------------------------
+ <summary>
+ Retunrs a script that initializes an instance of m4nDisplayTypeInformation.
+ </summary>
+ <returns></returns>
+ <remarks>
+ The main purpose of the m4nDisplayTypeInformation class is to maintain mapping between server side classes and client side classes.
+ </remarks>
+ <history>
+ 	[Administrator]	7/17/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.WebControls.DisplayTypes.BaseDisplayType.GetClientSideDisplayTypeInfoInstanceName">
+ -----------------------------------------------------------------------------
+ <summary>
+ Retunrs the name of the client side instance of the m4nDisplayTypeInformation class.
+ </summary>
+ <returns></returns>
+ <remarks>
+ The main purpose of the m4nDisplayTypeInformation class is to maintain mapping between server side classes and client side classes.
+ </remarks>
+ <history>
+ 	[Administrator]	7/17/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:Made4Net.WebControls.DisplayTypes.BaseDisplayType.RegisterClientScriptBlock(System.String,System.String,System.String,System.Boolean)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Registeres a client side script include file as a script block.
+ </summary>
+ <param name="key">The unique name of the script block.</param>
+ <param name="directory">The directory where the script resides.</param>
+ <param name="filename">The file name of the script to include</param>
+ <remarks>
+ This method registeres a script include file. i.e. <script language="JavaScript" src="mydir/myfile.js"></script>.
+ </remarks>
+ <history>
+ 	[Administrator]	7/17/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="T:Made4Net.WebControls.IJSCustomValidation">
+ <summary>
+ Interface which is implemented by Control which provide custom client side javascript code insertion.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Made4Net.WebControls.SchedulingApplications.TESchedulerApplications_BeforeItemCommand(System.Object,System.Web.UI.WebControls.CommandEventArgs)">
+Encrption of password coming from user so it will be saved to database in 
+its encrypted form 
+</member>
+<member name="P:Made4Net.WebControls.Skins.SkinManager.CurrentSkinImageDirectoryAbsolute">
+ -----------------------------------------------------------------------------
+ <summary>
+ Do not use. For backward compatibility only.
+ </summary>
+ <value></value>
+ <remarks>
+ </remarks>
+ <history>
+ 	[Administrator]	10/17/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+</members>
+</doc>

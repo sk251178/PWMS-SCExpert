@@ -1,0 +1,647 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{11398692-D59E-4395-834A-5674F61489D6}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>WMS.Logic</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>WMS.Logic</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\Assemblies\SCExpert\Libraries\</OutputPath>
+    <DocumentationFile>WMS.Logic.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>40000,40031,42016,42017,42018,42019,42020,42021,42022,42024,42030,42032,42036,42104,42105,42106,42107,42108,42109,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\Assemblies\SCExpert\Libraries\</OutputPath>
+    <DocumentationFile>WMS.Logic.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>40000,40031,42016,42017,42018,42019,42020,42021,42022,42024,42030,42032,42036,42104,42105,42106,42107,42108,42109,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\DataManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Algorithms">
+      <Name>Made4Net.Algorithms</Name>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.DataAccess">
+      <Name>Made4Net.DataAccess</Name>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.General, Version=6.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.General.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.GeoData">
+      <Name>Made4Net.GeoData</Name>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.GeoData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Made4Net.Label, Version=8.0.2.15184, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Label.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.LayoutViewer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.LayoutViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Maps">
+      <Name>Made4Net.Maps</Name>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Maps.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Net.TCPIP">
+      <Name>Made4Net.Net.TCPIP</Name>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Net.TCPIP.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Scheduler, Version=6.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Scheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Schema">
+      <Name>Made4Net.Schema</Name>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Schema.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Shared, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Shared.Net.FTP">
+      <Name>Made4Net.Shared.Net.FTP</Name>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Shared.Net.FTP.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\Microsoft.EnterpriseLibrary\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\Microsoft.EnterpriseLibrary\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\Microsoft.EnterpriseLibrary\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Messaging">
+      <Name>System.Messaging</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyVersionVB.vb">
+      <Link>AssemblyVersionVB.vb</Link>
+    </Compile>
+    <Compile Include="AdditionalCharges.vb" />
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\AttributeBase.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\AttributeValidator.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\InventoryAttributeBase.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\LoadAttribute.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\SkuAttribute.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\SkuClass.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\BaseBusinessObject.vb" />
+    <Compile Include="Base\DBTableAttribute.vb" />
+    <Compile Include="Base\DBFieldAttribute.vb" />
+    <Compile Include="BillingLogic\Agreement.vb" />
+    <Compile Include="BillingLogic\AgreementDetailBase.vb" />
+    <Compile Include="BillingLogic\AgreementDetailCollection.vb" />
+    <Compile Include="BillingLogic\BillingLoad.vb" />
+    <Compile Include="BillingLogic\BillingUtils.vb" />
+    <Compile Include="BillingLogic\InboundAgreementDetail.vb" />
+    <Compile Include="BillingLogic\OutboundAgreementDetail.vb" />
+    <Compile Include="BillingLogic\PriceFactorCalc.vb" />
+    <Compile Include="BillingLogic\StorageBillingInventory.vb" />
+    <Compile Include="Charge.vb" />
+    <Compile Include="CrossDock\Flowtrowgh.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CrossDock\TransShipment.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataProvider\IndexedDataTables\PlanStrategyDetailDataTable.vb" />
+    <Compile Include="DataProvider\IndexedDataTables\VAllocationOnHandDataTable.vb" />
+    <Compile Include="DataProvider\IndexedDataTables\VPickLocDataTable.vb" />
+    <Compile Include="DataProvider\IndexedDataTables\VPlannerInventoryDataTable.vb" />
+    <Compile Include="DataProvider\MasterDao.vb" />
+    <Compile Include="DataProvider\MultipayloadsDao.vb" />
+    <Compile Include="DataProvider\OrderDao.vb" />
+    <Compile Include="DataProvider\ReplenishmentDao.vb" />
+    <Compile Include="DataProvider\SqlQueries.vb" />
+    <Compile Include="EventManagerQ\EventManagerQ.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventManagerQ\EventManagerQFactory.vb" />
+    <Compile Include="EventManagerQ\IEventManagerQ.vb" />
+    <Compile Include="EventManagerQ\IEventManagerQFactory.vb" />
+    <Compile Include="Events.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces\IContainerContentList.vb" />
+    <Compile Include="Printing\ContentListPrint.vb" />
+    <Compile Include="InventoryTransactionQ\IInventoryTransactionQ.vb" />
+    <Compile Include="InventoryTransactionQ\IInventoryTransactionQFactory.vb" />
+    <Compile Include="InventoryTransactionQ\InventoryTransactionQ.vb" />
+    <Compile Include="InventoryTransactionQ\InventoryTransactionQFactory.vb" />
+    <Compile Include="LogHandler.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LogicException.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PolicyMatcher.vb" />
+    <Compile Include="PriceList.vb" />
+    <Compile Include="Processes\Algorithms\CalcDistances.vb" />
+    <Compile Include="Processes\BatchReplenishment\BatchReplenBreaker.vb" />
+    <Compile Include="Processes\BatchReplenishment\BatchReplenFilter.vb" />
+    <Compile Include="Processes\BatchReplenishment\BatchReplenPlanner.vb" />
+    <Compile Include="Processes\Conuting\LoadsCycleCounts.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Conuting\LocationCycleCounts.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Delivery\Consolidation.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\LaborPerformance\LaborMeeting.vb" />
+    <Compile Include="Processes\LaborPerformance\LaborPerformance.vb" />
+    <Compile Include="Processes\LaborPerformance\PerformanceSummary.vb" />
+    <Compile Include="Processes\Loading\Loading.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Merge.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\MultiPayloadPutaway.vb" />
+    <Compile Include="Processes\OrdersAutomation\OrdersAutomationDataProvider.vb" />
+    <Compile Include="Processes\OrdersAutomation\ShipmentAssignment.vb" />
+    <Compile Include="Processes\OrdersAutomation\WaveAssignment.vb" />
+    <Compile Include="Processes\Picking.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Plan\Allocate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Plan\PickBaskets.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Plan\PickBatchStrategy.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Plan\PickByCompanyGroupStrategy.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Plan\PickByCustomerStrategy.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Plan\PickByItemStrategy.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Plan\PickByOrderStrategy.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Plan\PickByRouteStrategy.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Plan\PickByShipToStrategy.vb" />
+    <Compile Include="Processes\Plan\PickByTruckStrategy.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Plan\PickDiscreetStrategy.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Plan\PickingRequirments.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Plan\PicklistBreaker.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Plan\PickParalelStrategy.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Plan\PicksObject.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Plan\Planner.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Plan\PlanRequirments.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Plan\PlanStrategies.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Plan\RequirmentsBaskets.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Plan\StockSelector.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Prioritization\Prioritize.vb" />
+    <Compile Include="Processes\Prioritization\PrioritizeReplenishments.vb" />
+    <Compile Include="Processes\ProcessValidator.vb" />
+    <Compile Include="Processes\Putaway.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Receiving.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Releasor\OrdersReleasor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Releasor\OrdersShipper.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Releasor\ParallelPicksBasket.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Releasor\PicklistList.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Releasor\ReleasePickListCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Releasor\Releasor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Replenishment\BatchReplenishment.vb" />
+    <Compile Include="Processes\Replenishment\ManualReplenishment.vb" />
+    <Compile Include="Processes\Replenishment\NormalReplenish.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Replenishment\Replenishment.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Replenishment\ReplenishmentDueDate.vb" />
+    <Compile Include="Processes\Replenishment\ReplenishmentManager.vb" />
+    <Compile Include="Processes\Replenishment\ZoneReplenish.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\Shipping.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\SnapShot.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\StagingLaneAssignment\StagingLaneAssignmentSetter.vb" />
+    <Compile Include="Processes\Staging\Staging.vb" />
+    <Compile Include="Processes\TaskManager\ConsolidationDeliveryTask.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\TaskManager\ConsolidationTask.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\TaskManager\CountTask.vb" />
+    <Compile Include="Processes\TaskManager\DeliveryTask.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\TaskManager\EmptyHUPickupTask.vb" />
+    <Compile Include="Processes\TaskManager\LoadingTask.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\TaskManager\MiscTask.vb" />
+    <Compile Include="Processes\TaskManager\NotSpecifiedPickupTask.vb" />
+    <Compile Include="Processes\TaskManager\ParallelPicking.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\TaskManager\ParallelPickTask.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\TaskManager\PickJob.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\TaskManager\PickTask.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\TaskManager\PutawayTask.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\TaskManager\ReplenishmentTask.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\TaskManager\SpecificPickupTask.vb" />
+    <Compile Include="Processes\TaskManager\Task.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\TaskManager\TaskConfirmation.vb" />
+    <Compile Include="Processes\TaskManager\TaskManager.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\TaskManager\TaskPolicies.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\TaskManager\BatchReplenUnloadTask.vb" />
+    <Compile Include="Processes\TaskManager\UnloadingTask.vb" />
+    <Compile Include="SchedExecuter.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SchedJobBase.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SystemLogic\Common.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SystemLogic\Cryptor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SystemLogic\LabelPrinter.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SystemLogic\LicenseManager.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SystemLogic\ReportPrinter.vb" />
+    <Compile Include="SystemLogic\User.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TaxRight\TaxRightDetail.vb" />
+    <Compile Include="TaxRight\TaxRightFile.vb" />
+    <Compile Include="TaxRight\TaxRightHeader.vb" />
+    <Compile Include="Utilities\ABC.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\DaysOfInventory.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\Extensions.vb" />
+    <Compile Include="Utilities\ReplenishmentByAvgSales.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\ViewStateParser.vb" />
+    <Compile Include="Utils.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Warehouse.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WarehouseParams.vb" />
+    <Compile Include="WHLogic\ASN.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\Attachment.vb" />
+    <Compile Include="WHLogic\Audit.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\BatchReplenDetail.vb" />
+    <Compile Include="WHLogic\Carrier.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\CaseId.vb" />
+    <Compile Include="WHLogic\Company.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\CompanyDelivery.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\Consignee.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\Contact.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\Container.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\CountBook.vb" />
+    <Compile Include="WHLogic\Counting.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\DistanceApplied.vb" />
+    <Compile Include="WHLogic\HandelingUnit.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\HandlingEquipment.vb" />
+    <Compile Include="WHLogic\HandlingUnitTransaction.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\InboundOrderDetail.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\InboundOrderDetailCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\InboundOrderHeader.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\Inventory.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\InventoryTransaction.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\BatchReplenHeader.vb" />
+    <Compile Include="WHLogic\Load.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\Location.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\MheEdgeType.vb" />
+    <Compile Include="WHLogic\OrderLoads.vb" />
+    <Compile Include="WHLogic\OutboundOrderHeader.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\PackingList.vb" />
+    <Compile Include="WHLogic\PickList.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\PickLoc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\ReceiptDetail.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\ReceiptDetailCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\ReceiptHeader.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\ReceivingException.vb" />
+    <Compile Include="WHLogic\Shift.vb" />
+    <Compile Include="WHLogic\Shipment.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\SKU.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\SKUGroup.vb" />
+    <Compile Include="WHLogic\Vehicles.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\Wave.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\WHActivity.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\WHActivityViewerDataLoader.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\WHMapViewerDataLoader.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLogic\WorkOrderHeader.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WMSEvents.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="YardLogic\YardEntry.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WMS.Lib\WMS.Lib.vbproj">
+      <Project>{B02C5864-60D8-4933-8426-38EA626FA03B}</Project>
+      <Name>WMS.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

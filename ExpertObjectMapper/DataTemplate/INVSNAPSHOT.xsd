@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="INVSNAPSHOT" targetNamespace="http://tempuri.org/INVSNAPSHOT.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/INVSNAPSHOT.xsd" xmlns:mstns="http://tempuri.org/INVSNAPSHOT.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="BUSINESSOBJECT">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DATACOLLECTION" type="xs:string" />
+        <xs:element name="DATA">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CONSIGNEE" type="xs:string" />
+              <xs:element name="SKU" type="xs:string" />
+              <xs:element name="STATUSES">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="STATUS">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="STATUS" type="xs:string" />
+                          <xs:element name="QTY" type="xs:decimal" />
+                          <xs:element name="UNITPRICE" type="xs:decimal" />
+                          <xs:element name="ATTRIBUTES">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ATTRIBUTE">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="NAME" type="xs:string" />
+                                      <xs:element name="VALUE" type="xs:string" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

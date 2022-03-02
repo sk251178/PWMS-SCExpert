@@ -1,0 +1,11 @@
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\Assignments\obj\Debug\Assignments.Resources.resources
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\Assignments\obj\Debug\Assignments.vbproj.GenerateResource.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\Assignments\obj\Debug\Assignments.vbproj.CoreCompileInputs.cache
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\Assignments\obj\Debug\Assignments.vbproj.AssemblyReference.cache
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\Assignments.dll
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\Assignments.pdb
+C:\SVN\trunk\NCR\NCR.NWMS\Assemblies\SCExpert\Libraries\Assignments.xml
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\Assignments\obj\Debug\Assignments.vbproj.CopyComplete
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\Assignments\obj\Debug\Assignments.dll
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\Assignments\obj\Debug\Assignments.xml
+C:\SVN\trunk\NCR\NCR.NWMS\SCExpert\Assignments\obj\Debug\Assignments.pdb

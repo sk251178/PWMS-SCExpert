@@ -1,0 +1,2420 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WMS.MobileWebApp
+</name>
+</assembly>
+<members>
+<member name="M:WMS.MobileWebApp.RDTLogHandler.CheckAndInitiateLogging(System.String)">
+ <summary>
+ In the sys_param, if RDTLogging=1 then only we will creating the new logs else there will be no logs for the RDT.
+ </summary>
+ <param name="pUserid"></param>
+ <remarks></remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LoginSaCh._Form2">
+<summary>
+Form2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.AddQty._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.AddQty._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.AddQty._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.AddQty2._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.AddQty2._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.AddQty2._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.AddQty2._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.BagOutCloseContainer._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.BagOutCloseContainer._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.BagOutCloseContainer._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.BagOutCloseContainer._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.BATCHREPLPRINT._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.BATCHREPLPRINT._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CASELABELPRINT._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CASELABELPRINT._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CASELABELPRINT._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CASELABELPRINT._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CLDGTIN._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CLDGTIN._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CLDGTIN._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CLDGTIN1._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CLDGTIN1._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CLDGTIN1._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CNTCreateLoad._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CNTCreateLoad._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CNTCreateLoad._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CNTCreateLoad1._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CNTCreateLoad1._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CNTCreateLoad1._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CNTLDPW._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CNTLDPW._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CNTLDPW._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CNTPW1._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CNTPW1._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CNTPW1._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CNTPWCNF._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CNTPWCNF._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CNTPWCNF._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CNTTASK0._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CNTTASK0._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CNTTASK0._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CNTTASKVERFICATION._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CNTTASKVERFICATION._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CNTTASKVERFICATION._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.BARCODE128._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.BARCODE128._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.BARCODE128._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CloseContConfirm._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CloseContConfirm._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CloseContConfirm._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CLD1_OVERRIDEWEIGHT._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CLD1_OVERRIDEWEIGHT._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CLD1_OVERRIDEWEIGHT._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:WMS.MobileWebApp.CreateRepl">
+<summary>
+CreateRepl class.
+</summary>
+<remarks>
+Auto-generated class.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CreateRepl._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CreateRepl._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.CreateRepl._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.MISCTASK._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.MISCTASK._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.MISCTASK._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.MISCTASK._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.NewQty._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.NewQty._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.NewQty._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.NewQty._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.NewQty2._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.NewQty2._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.NewQty2._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.NewQty2._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKBagOut._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKBagOut._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="M:WMS.MobileWebApp.PCKBagOut.IsTaskAssigned(System.String)">
+ <summary>
+ RWMS-2362
+ </summary>
+ <param name="pUser"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.MobileWebApp.PCKBagOut.GetAssignerTask(System.String)">
+ <summary>
+ RWMS-2362
+ </summary>
+ <param name="UserId"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKBagOutManager._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKBagOutManager._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKBAGOUTPRINT._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKBAGOUTPRINT._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKBAGOUTPRINT._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKBAGOUTPRINT._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKCOMMENTS._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKCOMMENTS._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKCOMMENTS._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKCOMMENTS._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.RcvByID._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.RcvByID._RadScriptManager1">
+<summary>
+RadScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.RcvByID._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.RcvByID._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKLBLREPRNT._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKLBLREPRNT._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKLBLREPRNT._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKLBLREPRNT._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.SplitPickedContainer1._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.SplitPickedContainer1._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.SplitPickedContainer1._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.SplitPickedContainer2._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.SplitPickedContainer2._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.SplitPickedContainer2._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:WMS.MobileWebApp.StatusWait">
+<summary>
+StatusWait class.
+</summary>
+<remarks>
+Auto-generated class.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.StatusWait._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.StatusWait._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.StatusWait._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.StatusWait._ImageStatus">
+<summary>
+ImageStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.StatusWait._lblStatus">
+<summary>
+lblStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.VERIFYCANCELALL._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.VERIFYCANCELALL._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.VERIFYCANCELALL._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.VERIFYCANCELALL._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.vrfi1._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.vrfi1._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.vrfi1._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.vrfi1._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.TwoStepReplenishment2._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.TwoStepReplenishment2._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.TwoStepReplenishment2._DOVerify">
+<summary>
+DOVerify control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.TwoStepReplenishment._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.TwoStepReplenishment._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.TwoStepReplenishment._DOVerify">
+<summary>
+DOVerify control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LOADING2DiffShip1._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LOADING2DiffShip1._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LOADING2DiffShip1._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKCLOSECONTAINER._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKCLOSECONTAINER._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKCLOSECONTAINER._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKPickMulti._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKPickMulti._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKPickMulti._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKPARTMULTICONT._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKPARTMULTICONT._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKPARTMULTICONT._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.StaUpd._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.StaUpd._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.StaUpd._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.StaUpd2._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.StaUpd2._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.StaUpd2._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.StaUpd2._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.SubQty._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.SubQty._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.SubQty._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.SubQty2._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.SubQty2._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.SubQty2._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.SubQty2._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKPickShort._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKPickShort._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKPickShort._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKOVERRIDEWEIGHT._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKOVERRIDEWEIGHT._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKOVERRIDEWEIGHT._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.EVACHU._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.EVACHU._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.EVACHU._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.EVACHU1._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.EVACHU1._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.EVACHU1._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.HUStacking._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.HUStacking._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.HUStacking._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.HUStacking2._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.HUStacking2._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.HUStacking2._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.HUStacking2._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LDPWCNF._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LDPWCNF._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LDPWCNF._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.Loading0._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.Loading0._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.Loading0._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LocationCountClearProblem._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LocationCountClearProblem._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LocationCountClearProblem._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LOCBLKCNT._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LOCBLKCNT._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LOCBLKCNTTASK._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LOCBLKCNTTASK._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LOCBLKCNTTASK1._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LOCBLKCNTTASK1._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LOCCNT._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LOCCNT._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LOCCONT1._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LOCCONT1._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LOCCONT2._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LOCCONT2._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LOCCONTTASK._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LOCCONTTASK._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LOCCONTTASK1._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LOCCONTTASK1._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LOCCONTTASK2._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LOCCONTTASK2._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LOCCONTTASK3._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.LOCCONTTASK3._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.NSPICKUP._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.NSPICKUP._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.NSPICKUP._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.Packing._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.Packing._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.Packing._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.Packing1._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.Packing1._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.Packing1._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="M:WMS.MobileWebApp.PCK.IsTaskAssigned(System.String)">
+ <summary>
+ </summary>
+ <param name="pUser"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.MobileWebApp.PCK.GetAssignerTask(System.String)">
+ <summary>
+ RWMS-2362
+ </summary>
+ <param name="UserId"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKWEIGHTNEEDED._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKWEIGHTNEEDED._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.PCKWEIGHTNEEDED._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="M:WMS.MobileWebApp.PCKWEIGHTNEEDED.updateToLoadWeight(System.String,System.Decimal)">
+ <summary>
+ Modified the code for the JIRA item RWMS-671
+ </summary>
+ <param name="Loadid"></param>
+ <param name="Weight"></param>
+ <remarks></remarks>
+</member>
+<member name="F:WMS.MobileWebApp.QCLOAD1._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.QCLOAD1._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.QCLOAD1._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.QCLOAD2._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.QCLOAD2._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.QCLOAD2._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.QCLOAD3._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.QCLOAD3._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.QCLOAD3._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.ReqRepl._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.ReqRepl._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.ReqRepl._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.SpecPickup._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.SpecPickup._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.SpecPickup._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.Staging._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.Staging._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.Staging._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.TaskSummary._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.TaskSummary._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.TaskSummary._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.UNLOADING._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.UNLOADING._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.UNLOADING._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.MultiSelectForm._Form2">
+<summary>
+Form2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.MultiSelectForm._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.MultiSelectForm._ValueList">
+<summary>
+ValueList control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.MultiSelectForm._SelectValue">
+<summary>
+SelectValue control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.MultiSelectForm._Up">
+<summary>
+Up control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.MultiSelectForm._Down">
+<summary>
+Down control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.vrfi._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.vrfi._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.vrfi._DO1">
+<summary>
+DOVerify control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="M:WMS.MobileWebApp.vrfi.doNext">
+ <summary>
+ Method is modified for RWMS-705, RWMS-816
+ Checking the Container Status initially and then Loads status for that container.
+ For partial pick we have to consider the Container id and for Full Pick we have to use the Loadid while verifiying
+ JIRA Items - RWMS-705, RWMS-816
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WMS.MobileWebApp.vrfi.GetPickType(System.String)">
+ <summary>
+ 'New Method to get the Picktype from Pickheader by joining with pickdetail and passing the TOLOADID - RWMS-705
+ </summary>
+ <param name="pLabelId"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:WMS.MobileWebApp.VRFI2._Form2">
+<summary>
+Form2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.VRFI2._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.VRFI2._Screen2">
+<summary>
+Screen2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.VRFI2._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.VRFI3._Form2">
+<summary>
+Form2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.VRFI3._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.VRFI3._Screen2">
+<summary>
+Screen2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.VRFI3._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.VRFICONFIRM._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.VRFICONFIRM._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.VRFICONFIRM._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.VRFICONFITEM._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.VRFICONFITEM._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.VRFICONFITEM._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.VRFIReverse._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.VRFIReverse._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.VRFIReverse._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.VRFIReverse._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.WeightCaptureNeeded._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.WeightCaptureNeeded._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.WeightCaptureNeeded._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.WeightCaptureNeeded._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.WeightCaptureNeededCLD1._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.WeightCaptureNeededCLD1._RadScriptManager2">
+<summary>
+RadScriptManager2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.WeightCaptureNeededCLD1._Screen1">
+<summary>
+Screen1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WMS.MobileWebApp.WeightCaptureNeededCLD1._DO1">
+<summary>
+DO1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,3074 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{14F7E4EC-7E55-4002-B072-6381386CEAEC}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>WMS.WebApp</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Flow</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>WMS.WebApp</RootNamespace>
+    <StartupObject>WMS.WebApp.%28None%29</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WMS.WebApp.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42030,42032,42104,42108,42109,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WMS.WebApp.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42030,42032,42104,42108,42109,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataManager, Version=9.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\DataManager.dll</HintPath>
+    </Reference>
+    <Reference Include="dotnetCHARTING, Version=4.4.2848.18022, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\System\Version0.0.0.0\dotnetCHARTING.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=4.1.6.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\System\Version0.0.0.0\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Algorithms, Version=8.0.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.AppSessionManagement, Version=6.14.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.AppSessionManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.DataAccess, Version=6.14.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.General, Version=9.9.9.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.General.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.GeoData, Version=9.9.9.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.GeoData.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.LayoutViewer, Version=6.11.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.LayoutViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Licensing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Maps">
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Maps.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Net.TCPIP, Version=9.9.9.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Net.TCPIP.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Reporting, Version=9.9.9.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Scheduler, Version=9.9.9.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Scheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Schema, Version=8.0.2.17150, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Schema.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Shared, Version=9.9.9.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.Shared.Net.FTP, Version=9.9.9.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.Shared.Net.FTP.dll</HintPath>
+    </Reference>
+    <Reference Include="Made4Net.WebControls, Version=9.9.9.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\M4NLibs\Libraries\Made4Net.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="mapscript_csharp, Version=1.0.3684.3419, Culture=neutral, PublicKeyToken=80087771edd02926, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\System\Version0.0.0.0\mapscript_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\Microsoft.EnterpriseLibrary\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\Microsoft.EnterpriseLibrary\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.UI.WebControls, Version=1.0.2.226, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\System\Version0.0.0.0\Microsoft.Web.UI.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.GoWeb, Version=5.1.0.45, Culture=neutral, PublicKeyToken=a4e3b7b70161cfe8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\NorthWoods\Version2.6.2.1\Northwoods.GoWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.GoWeb.Instruments, Version=5.1.0.45, Culture=neutral, PublicKeyToken=a4e3b7b70161cfe8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\NorthWoods\Version2.6.2.1\Northwoods.GoWeb.Instruments.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.GoWeb.Layout, Version=5.1.0.45, Culture=neutral, PublicKeyToken=a4e3b7b70161cfe8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\NorthWoods\Version2.6.2.1\Northwoods.GoWeb.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.GoWeb.Svg, Version=5.1.0.45, Culture=neutral, PublicKeyToken=a4e3b7b70161cfe8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\NorthWoods\Version2.6.2.1\Northwoods.GoWeb.Svg.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.GoWeb.Xml, Version=5.1.0.45, Culture=neutral, PublicKeyToken=a4e3b7b70161cfe8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\NorthWoods\Version2.6.2.1\Northwoods.GoWeb.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="ProcessValidators">
+      <HintPath>..\..\Assemblies\SCExpert\Libraries\ProcessValidators.dll</HintPath>
+    </Reference>
+    <Reference Include="ProgStudios.WebControls, Version=1.1.0.22635, Culture=neutral, PublicKeyToken=22f63b6b9967d5e6">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\System\Version0.0.0.0\ProgStudios.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="RWMS.Logic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\SCExpert\Libraries\RWMS.Logic.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Messaging">
+      <Name>System.Messaging</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\..\Assemblies\Telerik\Version2014.1.403.45\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="WMS.Lib, Version=5.0.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\SCExpert\Libraries\WMS.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="WMS.Logic, Version=5.0.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\SCExpert\Libraries\WMS.Logic.dll</HintPath>
+    </Reference>
+    <Reference Include="WMS.WebCtrls, Version=5.0.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\SCExpert\Libraries\WMS.WebCtrls.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph, Version=4.6.2.777, Culture=neutral, PublicKeyToken=02a83cbd123fcd60">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\System\Version0.0.0.0\ZedGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph.resources, Version=4.6.2.777, Culture=es, PublicKeyToken=02a83cbd123fcd60">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\System\Version0.0.0.0\ZedGraph.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph.Web, Version=4.6.2.780, Culture=neutral, PublicKeyToken=02a83cbd123fcd60">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\System\Version0.0.0.0\ZedGraph.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.HtmlControls" />
+    <Import Include="System.Web.UI.WebControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="826824.lic" />
+    <None Include="ClassDiagram1.cd" />
+    <Content Include="Images\warehouse layout.pdf" />
+    <None Include="My Project\PublishProfiles\LaBodega WMS.pubxml" />
+    <None Include="RadControls\Chart\Intellisense\RadChart.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="..\AssemblyVersionVB.vb">
+      <Link>AssemblyVersionVB.vb</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\WMSLogHandler.vb" />
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\AppComponentCloneOptions.aspx.vb">
+      <DependentUpon>AppComponentCloneOptions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\AppComponentDockConfig.aspx.vb">
+      <DependentUpon>AppComponentDockConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\AppComponentDockList.aspx.vb">
+      <DependentUpon>AppComponentDockList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\AppComponentEditor.ascx.vb">
+      <DependentUpon>AppComponentEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\AppComponentEditor.aspx.vb">
+      <DependentUpon>AppComponentEditor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\BaseAppComponentEditor.ascx.vb">
+      <DependentUpon>BaseAppComponentEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\BaseAppComponentEditor.aspx.vb">
+      <DependentUpon>BaseAppComponentEditor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\ChartViewer.aspx.vb">
+      <DependentUpon>ChartViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\CustomViews.aspx.vb">
+      <DependentUpon>CustomViews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\DOCSVExport.aspx.vb">
+      <DependentUpon>DOCSVExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\DocViewer.aspx.vb">
+      <DependentUpon>DocViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\DODataImport.aspx.vb">
+      <DependentUpon>DODataImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\DOReportExport.aspx.vb">
+      <DependentUpon>DOReportExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\DTEditor.aspx.vb">
+      <DependentUpon>DTEditor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\dtHelp.aspx.vb">
+      <DependentUpon>dtHelp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\ExpressionProvider.aspx.vb">
+      <DependentUpon>ExpressionProvider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\GroupManagement.aspx.vb">
+      <DependentUpon>GroupManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\HelpScreen.aspx.vb">
+      <DependentUpon>HelpScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\ImagePopup.aspx.vb">
+      <DependentUpon>ImagePopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\ImportManagerRun.ascx.vb">
+      <DependentUpon>ImportManagerRun.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\LabelPrinters.aspx.designer.vb">
+      <DependentUpon>LabelPrinters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m4nScreens\LabelPrinters.aspx.vb">
+      <DependentUpon>LabelPrinters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\LabelTypes.aspx.vb">
+      <DependentUpon>LabelTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\LangManagement.aspx.vb">
+      <DependentUpon>LangManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\LibImageRotator.aspx.vb">
+      <DependentUpon>LibImageRotator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\LicCreator.aspx.vb">
+      <DependentUpon>LicCreator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\LicManScr.aspx.vb">
+      <DependentUpon>LicManScr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\LoginWarehouse.aspx.designer.vb">
+      <DependentUpon>LoginWarehouse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m4nScreens\LoginWarehouse.aspx.vb">
+      <DependentUpon>LoginWarehouse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\MenuEditor.aspx.vb">
+      <DependentUpon>MenuEditor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\RadComboBoxDataProvider.aspx.vb">
+      <DependentUpon>RadComboBoxDataProvider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\ReportPrinters.aspx.designer.vb">
+      <DependentUpon>ReportPrinters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m4nScreens\ReportPrinters.aspx.vb">
+      <DependentUpon>ReportPrinters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\Reports.aspx.vb">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\ReportSetup.aspx.vb">
+      <DependentUpon>ReportSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\SavedSearch.ascx.vb">
+      <DependentUpon>SavedSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\SavedSearch.aspx.vb">
+      <DependentUpon>SavedSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\SchedulingApplications.aspx.vb">
+      <DependentUpon>SchedulingApplications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\SchedulingTriggers.aspx.vb">
+      <DependentUpon>SchedulingTriggers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\SGImport.aspx.designer.vb">
+      <DependentUpon>SGImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m4nScreens\SGImport.aspx.vb">
+      <DependentUpon>SGImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\SQLQuery.aspx.vb">
+      <DependentUpon>SQLQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\SysApplications.aspx.vb">
+      <DependentUpon>SysApplications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\SysDynReport.aspx.vb">
+      <DependentUpon>SysDynReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\SysParam.aspx.vb">
+      <DependentUpon>SysParam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\TableMaintenance.aspx.vb">
+      <DependentUpon>TableMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\TypeAheadDataProvider.aspx.vb">
+      <DependentUpon>TypeAheadDataProvider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\UserManagement.aspx.vb">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m4nScreens\wc1.ascx.vb">
+      <DependentUpon>wc1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ArchiveDetails.aspx.designer.vb">
+      <DependentUpon>ArchiveDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ArchiveDetails.aspx.vb">
+      <DependentUpon>ArchiveDetails.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ArchiveMaster.aspx.designer.vb">
+      <DependentUpon>ArchiveMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ArchiveMaster.aspx.vb">
+      <DependentUpon>ArchiveMaster.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Screens\BatchReplenishmentTasks.aspx.designer.vb">
+      <DependentUpon>BatchReplenishmentTasks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\BatchReplenishmentTasks.aspx.vb">
+      <DependentUpon>BatchReplenishmentTasks.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Screens\BillingAgreement.aspx.vb">
+      <DependentUpon>BillingAgreement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\BillingCharges.aspx.vb">
+      <DependentUpon>BillingCharges.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\BillingPriceList.aspx.vb">
+      <DependentUpon>BillingPriceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CheckDistance.aspx.designer.vb">
+      <DependentUpon>CheckDistance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\CheckDistance.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>CheckDistance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LaborMeetings.aspx.designer.vb">
+      <DependentUpon>LaborMeetings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LaborMeetings.aspx.vb">
+      <DependentUpon>LaborMeetings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LaborTaskDurationDelay.aspx.vb">
+      <DependentUpon>LaborTaskDurationDelay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\REPLENISHMENTSUBTYPE.aspx.designer.vb">
+      <DependentUpon>REPLENISHMENTSUBTYPE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\REPLENISHMENTSUBTYPE.aspx.vb">
+      <DependentUpon>REPLENISHMENTSUBTYPE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LocationCountSchedule.aspx.vb">
+      <DependentUpon>LocationCountSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LocationCount.aspx.vb">
+      <DependentUpon>LocationCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\SkuGroup.aspx.vb">
+      <DependentUpon>SkuGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\UserPickRegion.aspx.vb">
+      <DependentUpon>UserPickRegion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\WeightInventory.aspx.vb">
+      <DependentUpon>WeightInventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CrossDockDeliveryLoc.aspx.designer.vb">
+      <DependentUpon>CrossDockDeliveryLoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\CrossDockDeliveryLoc.aspx.vb">
+      <DependentUpon>CrossDockDeliveryLoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\DelLocDynamicAssign.aspx.designer.vb">
+      <DependentUpon>DelLocDynamicAssign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\DelLocDynamicAssign.aspx.vb">
+      <DependentUpon>DelLocDynamicAssign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\DelLocFixAssign.aspx.designer.vb">
+      <DependentUpon>DelLocFixAssign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\DelLocFixAssign.aspx.vb">
+      <DependentUpon>DelLocFixAssign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\DocTimeCalculationMethods.aspx.vb">
+      <DependentUpon>DocTimeCalculationMethods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\DynamicDeliveryLocation.aspx.designer.vb">
+      <DependentUpon>DynamicDeliveryLocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\DynamicDeliveryLocation.aspx.vb">
+      <DependentUpon>DynamicDeliveryLocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LocationProblemRC.aspx.designer.vb">
+      <DependentUpon>LocationProblemRC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LocationProblemRC.aspx.vb">
+      <DependentUpon>LocationProblemRC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\MiscTasks.aspx.vb">
+      <DependentUpon>MiscTasks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\OutboundManagement.aspx.designer.vb">
+      <DependentUpon>OutboundManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\OutboundManagement.aspx.vb">
+      <DependentUpon>OutboundManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PriceFactorCalcParam.aspx.designer.vb">
+      <DependentUpon>PriceFactorCalcParam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\PriceFactorCalcParam.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>PriceFactorCalcParam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\AddMatcher.aspx.vb">
+      <DependentUpon>AddMatcher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\AdjustCustomized.aspx.vb">
+      <DependentUpon>AdjustCustomized.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\AdjustmentDocument.aspx.vb">
+      <DependentUpon>AdjustmentDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Adjustments.aspx.vb">
+      <DependentUpon>Adjustments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Agreement.aspx.vb">
+      <DependentUpon>Agreement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\AssemblyWorkOrder.aspx.vb">
+      <DependentUpon>AssemblyWorkOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Audit.aspx.vb">
+      <DependentUpon>Audit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\BlindReceipt.aspx.vb">
+      <DependentUpon>BlindReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\BlindReceiving.aspx.vb">
+      <DependentUpon>BlindReceiving.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Carrier.aspx.vb">
+      <DependentUpon>Carrier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Clear.aspx.vb">
+      <DependentUpon>Clear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CLTest.aspx.vb">
+      <DependentUpon>CLTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Company.aspx.vb">
+      <DependentUpon>Company.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CompleteWave.aspx.vb">
+      <DependentUpon>CompleteWave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Consignee.aspx.vb">
+      <DependentUpon>Consignee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Consolidation.aspx.vb">
+      <DependentUpon>Consolidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ConsolidationTasks.aspx.vb">
+      <DependentUpon>ConsolidationTasks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ContactManagement.aspx.designer.vb">
+      <DependentUpon>ContactManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ContactManagement.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>ContactManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ContainerContent.aspx.vb">
+      <DependentUpon>ContainerContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CountBooks.aspx.designer.vb">
+      <DependentUpon>CountBooks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\CountBooks.aspx.vb">
+      <DependentUpon>CountBooks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CountingSchedule.aspx.vb">
+      <DependentUpon>CountingSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CreateLoad.aspx.vb">
+      <DependentUpon>CreateLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CreateLoads.aspx.vb">
+      <DependentUpon>CreateLoads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CustData.aspx.vb">
+      <DependentUpon>CustData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CustPoint.aspx.vb">
+      <DependentUpon>CustPoint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\CycleCount.aspx.vb">
+      <DependentUpon>CycleCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Deliveries.aspx.vb">
+      <DependentUpon>Deliveries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\DeliveryProgress.aspx.designer.vb">
+      <DependentUpon>DeliveryProgress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\DeliveryProgress.aspx.vb">
+      <DependentUpon>DeliveryProgress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\DisAssemblyWorkOrder.aspx.vb">
+      <DependentUpon>DisAssemblyWorkOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Driver.aspx.vb">
+      <DependentUpon>Driver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\DriversPoint.aspx.vb">
+      <DependentUpon>DriversPoint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\DTEditor.aspx.vb">
+      <DependentUpon>DTEditor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\EmprtyHUPickup.aspx.designer.vb">
+      <DependentUpon>EmprtyHUPickup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\EmprtyHUPickup.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>EmprtyHUPickup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Equipment.aspx.vb">
+      <DependentUpon>Equipment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Flowthrough.aspx.vb">
+      <DependentUpon>Flowthrough.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\getmapimg.aspx.vb">
+      <DependentUpon>getmapimg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\GoWebImage.aspx.vb">
+      <DependentUpon>GoWebImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\HandelingUnitType.aspx.vb">
+      <DependentUpon>HandelingUnitType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\HandlingUnitStorageTemplate.aspx.designer.vb">
+      <DependentUpon>HandlingUnitStorageTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\HandlingUnitStorageTemplate.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>HandlingUnitStorageTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\HandOffSetup.aspx.vb">
+      <DependentUpon>HandOffSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ImportManager.aspx.vb">
+      <DependentUpon>ImportManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\InboundOrder.aspx.vb">
+      <DependentUpon>InboundOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\InvArea.aspx.vb">
+      <DependentUpon>InvArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\InvConsignee.aspx.vb">
+      <DependentUpon>InvConsignee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\InvCount.aspx.vb">
+      <DependentUpon>InvCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\InventoryAdjustment.aspx.vb">
+      <DependentUpon>InventoryAdjustment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\InventoryHold.aspx.vb">
+      <DependentUpon>InventoryHold.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\InventoryMove.aspx.vb">
+      <DependentUpon>InventoryMove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\InvLocation.aspx.vb">
+      <DependentUpon>InvLocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\InvOrders.aspx.vb">
+      <DependentUpon>InvOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\InvSKU.aspx.vb">
+      <DependentUpon>InvSKU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\InvTrans.aspx.vb">
+      <DependentUpon>InvTrans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LaborCalcMethod.aspx.vb">
+      <DependentUpon>LaborCalcMethod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LaborCalcParam.aspx.vb">
+      <DependentUpon>LaborCalcParam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LaborPerfAudit.aspx.vb">
+      <DependentUpon>LaborPerfAudit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LaborTaskCalc.aspx.vb">
+      <DependentUpon>LaborTaskCalc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LaborUserInfo.aspx.vb">
+      <DependentUpon>LaborUserInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LangSkinSetup.aspx.vb">
+      <DependentUpon>LangSkinSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LimboAdjustments.aspx.vb">
+      <DependentUpon>LimboAdjustments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Load.aspx.vb">
+      <DependentUpon>Load.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LoadAtt.aspx.vb">
+      <DependentUpon>LoadAtt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LoadCountSchedule.aspx.designer.vb">
+      <DependentUpon>LoadCountSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LoadCountSchedule.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>LoadCountSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LoadingPlan.aspx.vb">
+      <DependentUpon>LoadingPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LoadingPlanPolicies.aspx.vb">
+      <DependentUpon>LoadingPlanPolicies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LoadsLocation.aspx.vb">
+      <DependentUpon>LoadsLocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Location.aspx.vb">
+      <DependentUpon>Location.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LocationCountingSchedule.aspx.vb">
+      <DependentUpon>LocationCountingSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\LocationManagementSummary.aspx.designer.vb">
+      <DependentUpon>LocationManagementSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LocationManagementSummary.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>LocationManagementSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LocationOccupancy.aspx.designer.vb">
+      <DependentUpon>LocationOccupancy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LocationOccupancy.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>LocationOccupancy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Main.aspx.vb">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Menu.aspx.vb">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\MHE.aspx.vb">
+      <DependentUpon>MHE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\NewMDScreen.aspx.vb">
+      <DependentUpon>NewMDScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\OrderAutomationShipmentAssign.aspx.designer.vb">
+      <DependentUpon>OrderAutomationShipmentAssign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\OrderAutomationShipmentAssign.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>OrderAutomationShipmentAssign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\OrderAutomationWaveAssign.aspx.designer.vb">
+      <DependentUpon>OrderAutomationWaveAssign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\OrderAutomationWaveAssign.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>OrderAutomationWaveAssign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\OutboundHandlingUnits.aspx.vb">
+      <DependentUpon>OutboundHandlingUnits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\OutboundOrder.aspx.vb">
+      <DependentUpon>OutboundOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\OutboundOrderStatuses.aspx.vb">
+      <DependentUpon>OutboundOrderStatuses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\OutordRoutes.aspx.vb">
+      <DependentUpon>OutordRoutes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Packing.aspx.vb">
+      <DependentUpon>Packing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PackingLists.aspx.designer.vb">
+      <DependentUpon>PackingLists.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\PackingLists.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>PackingLists.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Pick.aspx.vb">
+      <DependentUpon>Pick.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PickContainer.aspx.vb">
+      <DependentUpon>PickContainer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PickingPolicy.aspx.vb">
+      <DependentUpon>PickingPolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PickList.aspx.vb">
+      <DependentUpon>PickList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PickLists.aspx.vb">
+      <DependentUpon>PickLists.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PickLoc.aspx.vb">
+      <DependentUpon>PickLoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PickUps.aspx.vb">
+      <DependentUpon>PickUps.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PlanPolicy.aspx.vb">
+      <DependentUpon>PlanPolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PoliciesLookup.aspx.vb">
+      <DependentUpon>PoliciesLookup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PostCharges.aspx.vb">
+      <DependentUpon>PostCharges.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\PriceList.aspx.vb">
+      <DependentUpon>PriceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ProblemLocation.aspx.designer.vb">
+      <DependentUpon>ProblemLocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ProblemLocation.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>ProblemLocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\PutawayPolicies.aspx.vb">
+      <DependentUpon>PutawayPolicies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\QCLoads.aspx.designer.vb">
+      <DependentUpon>QCLoads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\QCLoads.aspx.vb">
+      <DependentUpon>QCLoads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\QCSetup.aspx.designer.vb">
+      <DependentUpon>QCSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\QCSetup.aspx.vb">
+      <DependentUpon>QCSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\RealTableMaintenance.aspx.vb">
+      <DependentUpon>RealTableMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Receipt.aspx.vb">
+      <DependentUpon>Receipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Replenishment.aspx.vb">
+      <DependentUpon>Replenishment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ReplPolicy.aspx.vb">
+      <DependentUpon>ReplPolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ReplTasks.aspx.vb">
+      <DependentUpon>ReplTasks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ReportGenerator.aspx.vb">
+      <DependentUpon>ReportGenerator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ReturnLoads.aspx.designer.vb">
+      <DependentUpon>ReturnLoads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ReturnLoads.aspx.vb">
+      <DependentUpon>ReturnLoads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\RouteMaster.aspx.designer.vb">
+      <DependentUpon>RouteMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\RouteMaster.aspx.vb">
+      <DependentUpon>RouteMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\RoutePolicy.aspx.vb">
+      <DependentUpon>RoutePolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\SCExpertConnectPluginSetup.aspx.designer.vb">
+      <DependentUpon>SCExpertConnectPluginSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\SCExpertConnectPluginSetup.aspx.vb">
+      <DependentUpon>SCExpertConnectPluginSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\SCExpertConnectSetupPluginTypes.aspx.designer.vb">
+      <DependentUpon>SCExpertConnectSetupPluginTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\SCExpertConnectSetupPluginTypes.aspx.vb">
+      <DependentUpon>SCExpertConnectSetupPluginTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\SCExpertConnectTransactions.aspx.designer.vb">
+      <DependentUpon>SCExpertConnectTransactions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\SCExpertConnectTransactions.aspx.vb">
+      <DependentUpon>SCExpertConnectTransactions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\SCExpertTransactionData.aspx.designer.vb">
+      <DependentUpon>SCExpertTransactionData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\SCExpertTransactionData.aspx.vb">
+      <DependentUpon>SCExpertTransactionData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Scheduler.aspx.vb">
+      <DependentUpon>Scheduler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ScreenGenerator.aspx.designer.vb">
+      <DependentUpon>ScreenGenerator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenGenerator.aspx.vb">
+      <DependentUpon>ScreenGenerator.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Services.aspx.vb">
+      <DependentUpon>Services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Shift.aspx.vb">
+      <DependentUpon>Shift.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ShiftInstances.aspx.designer.vb">
+      <DependentUpon>ShiftInstances.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ShiftInstances.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ShiftInstances.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ShiftMaster.aspx.designer.vb">
+      <DependentUpon>ShiftMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ShiftMaster.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>ShiftMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ShiftPerformance.aspx.designer.vb">
+      <DependentUpon>ShiftPerformance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ShiftPerformance.aspx.vb">
+      <DependentUpon>ShiftPerformance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Shipment.aspx.vb">
+      <DependentUpon>Shipment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ShippingContainers.aspx.vb">
+      <DependentUpon>HandelingUnitType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ShowOutbounds.aspx.vb">
+      <DependentUpon>ShowOutbounds.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\SignatureImage.aspx.vb">
+      <DependentUpon>SignatureImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\SignatureView.aspx.vb">
+      <DependentUpon>SignatureView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Simulators.aspx.designer.vb">
+      <DependentUpon>Simulators.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Simulators.aspx.vb">
+      <DependentUpon>Simulators.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Sites.aspx.vb">
+      <DependentUpon>Sites.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\SKU.aspx.vb">
+      <DependentUpon>SKU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\SkuClass.aspx.vb">
+      <DependentUpon>SkuClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\SLAssignmentPolicy.aspx.designer.vb">
+      <DependentUpon>SLAssignmentPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\SLAssignmentPolicy.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>SLAssignmentPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\SLPlans.aspx.vb">
+      <DependentUpon>SLPlans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\SplitLoad.aspx.vb">
+      <DependentUpon>SplitLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\TableMaintenance.aspx.vb">
+      <DependentUpon>TableMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\TalkmanConfigurationSetup.aspx.designer.vb">
+      <DependentUpon>TalkmanConfigurationSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\TalkmanConfigurationSetup.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>TalkmanConfigurationSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\TaskAssignment.aspx.vb">
+      <DependentUpon>TaskAssignment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\TaskProblemCodes.aspx.designer.vb">
+      <DependentUpon>TaskProblemCodes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\TaskProblemCodes.aspx.vb">
+      <DependentUpon>TaskProblemCodes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Tasks.aspx.vb">
+      <DependentUpon>Tasks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\TasksPolicies.aspx.vb">
+      <DependentUpon>TasksPolicies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\TransShipment.aspx.vb">
+      <DependentUpon>TransShipment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\UseClockInAssignTask.aspx.designer.vb">
+      <DependentUpon>UseClockInAssignTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\UseClockInAssignTask.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>UseClockInAssignTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\UserInfo.aspx.vb">
+      <DependentUpon>UserInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ValueAdded.aspx.vb">
+      <DependentUpon>ValueAdded.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Vehicle.aspx.vb">
+      <DependentUpon>Vehicle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\VehiclePosition.aspx.vb">
+      <DependentUpon>VehiclePosition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\VehicleType.aspx.vb">
+      <DependentUpon>VehicleType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Verification.aspx.vb">
+      <DependentUpon>Verification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\Wave.aspx.vb">
+      <DependentUpon>Wave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\WHActivity.aspx.vb">
+      <DependentUpon>WHActivity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\WHActivityViewer.aspx.vb">
+      <DependentUpon>WHActivityViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\WHArea.aspx.designer.vb">
+      <DependentUpon>WHArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\WHArea.aspx.vb">
+      <DependentUpon>WHArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\WHMapAisles.aspx.vb">
+      <DependentUpon>WHMapAisles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\WHMapEdges.aspx.vb">
+      <DependentUpon>WHMapEdges.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\WHMapNodes.aspx.vb">
+      <DependentUpon>WHMapNodes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\WHMapViewer.aspx.vb">
+      <DependentUpon>WHMapViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\WHParams.aspx.designer.vb">
+      <DependentUpon>WHParams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\WHParams.aspx.vb">
+      <DependentUpon>WHParams.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\WorkCenter.aspx.vb">
+      <DependentUpon>WorkCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\WorkRegion.aspx.designer.vb">
+      <DependentUpon>WorkRegion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\WorkRegion.aspx.vb">
+      <DependentUpon>WorkRegion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\WorkRegionManagement.aspx.designer.vb">
+      <DependentUpon>WorkRegionManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\WorkRegionManagement.aspx.vb">
+      <DependentUpon>WorkRegionManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\WOScheduleLoads.aspx.vb">
+      <DependentUpon>WOScheduleLoads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\BatchReplenishment.aspx.vb">
+      <DependentUpon>BatchReplenishment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ZoneReplenishment.aspx.vb">
+      <DependentUpon>ZoneReplenishment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Screens\ZoneReplenishmentSetup.aspx.vb">
+      <DependentUpon>ZoneReplenishmentSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utils\GoogleGeocoding.vb" />
+    <Compile Include="Utils\GoogleMap.vb" />
+    <Compile Include="Utils\SKUAttributeCheck.vb" />
+    <Compile Include="Utils\VehicleDrawer.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebAppUtil.vb" />
+    <Content Include="aspnet_client\system_web\1_0_3705_0\SmartNav.js" />
+    <Content Include="aspnet_client\system_web\1_0_3705_0\SmartNavIE5.js" />
+    <Content Include="aspnet_client\system_web\1_0_3705_0\WebUIValidation.js" />
+    <Content Include="aspnet_client\system_web\1_1_4322\SmartNav.htm" />
+    <Content Include="aspnet_client\system_web\1_1_4322\SmartNav.js" />
+    <Content Include="aspnet_client\system_web\1_1_4322\WebUIValidation.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\chart.gif" />
+    <Content Include="Images\csv.gif" />
+    <Content Include="Images\dd-end.png" />
+    <Content Include="Images\dd-start.png" />
+    <Content Include="Images\dd_20_green_start.png" />
+    <Content Include="Images\dd_20_red_end.png" />
+    <Content Include="Images\flag.png" />
+    <Content Include="Images\flag_shadow.png" />
+    <Content Include="Images\Go_Button.jpg" />
+    <Content Include="Images\marker.png" />
+    <Content Include="Images\markerA.png" />
+    <Content Include="Images\markershadow.png" />
+    <Content Include="Images\markerZ.png" />
+    <Content Include="Images\mm_20_black.png" />
+    <Content Include="Images\mm_20_blue.png" />
+    <Content Include="Images\mm_20_brown.png" />
+    <Content Include="Images\mm_20_green.png" />
+    <Content Include="Images\mm_20_orange.png" />
+    <Content Include="Images\mm_20_purple.png" />
+    <Content Include="Images\mm_20_red.png" />
+    <Content Include="Images\mm_20_shadow.png" />
+    <Content Include="Images\mm_20_white.png" />
+    <Content Include="Images\mm_20_yellow.png" />
+    <Content Include="Images\RadMenu\arrow_left.gif" />
+    <Content Include="Images\RadMenu\arrow_right.gif" />
+    <Content Include="Images\spacer.gif" />
+    <Content Include="Images\truck.jpg" />
+    <Content Include="Images\warehouse_layout.jpg" />
+    <Content Include="Images\zoom-button-activated.gif" />
+    <Content Include="Images\zoom-button.gif" />
+    <Content Include="Include\head.html" />
+    <Content Include="Include\Header.html" />
+    <Content Include="m4nClientScripts\DisplayTypes\m4nCheckBox.js" />
+    <Content Include="m4nClientScripts\DisplayTypes\m4nDateBox.js" />
+    <Content Include="m4nClientScripts\DisplayTypes\m4nDisplayType.js" />
+    <Content Include="m4nClientScripts\DisplayTypes\m4nDisplayTypeInformation.js" />
+    <Content Include="m4nClientScripts\DisplayTypes\m4nDisplayTypeInstanceManager.js" />
+    <Content Include="m4nClientScripts\DisplayTypes\m4nLinkedTextBox.js" />
+    <Content Include="m4nClientScripts\DisplayTypes\m4nNumericTextBox.js" />
+    <Content Include="m4nClientScripts\DisplayTypes\m4nTypeAheadBox.js" />
+    <Content Include="m4nClientScripts\gsmapsearch.js" />
+    <Content Include="m4nClientScripts\keydragzoom.js" />
+    <Content Include="m4nClientScripts\LicenseFile.xml" />
+    <Content Include="m4nClientScripts\m4nCalcGrid.js" />
+    <Content Include="m4nClientScripts\m4nCommon.js" />
+    <Content Include="m4nClientScripts\m4nDateBox_FormatConversionScript.js" />
+    <Content Include="m4nClientScripts\m4nExpression.js" />
+    <Content Include="m4nClientScripts\m4nGoglemap.js" />
+    <Content Include="m4nClientScripts\m4nKeyboard.js" />
+    <Content Include="m4nClientScripts\m4nNumericTextBox.js" />
+    <Content Include="m4nClientScripts\m4nNumFormat.js" />
+    <Content Include="m4nClientScripts\m4nSumGrid.js" />
+    <Content Include="m4nClientScripts\Maps\MapScript.js" />
+    <Content Include="m4nClientScripts\MultilineButtonController.js" />
+    <Content Include="m4nClientScripts\popcalendar.js" />
+    <Content Include="m4nClientScripts\PopCal\add_holidays.js" />
+    <Content Include="m4nClientScripts\PopCal\cal.gif" />
+    <Content Include="m4nClientScripts\PopCal\close.gif" />
+    <Content Include="m4nClientScripts\PopCal\drop1.gif" />
+    <Content Include="m4nClientScripts\PopCal\drop2.gif" />
+    <Content Include="m4nClientScripts\PopCal\left1.gif" />
+    <Content Include="m4nClientScripts\PopCal\left2.gif" />
+    <Content Include="m4nClientScripts\PopCal\popcalendar-bak.js" />
+    <Content Include="m4nClientScripts\PopCal\popcalendar.js" />
+    <Content Include="m4nClientScripts\PopCal\popcalendar_0.js" />
+    <Content Include="m4nClientScripts\PopCal\popcalendar_1.js" />
+    <Content Include="m4nClientScripts\PopCal\Popcalendar_10.js" />
+    <Content Include="m4nClientScripts\PopCal\popcalendar_14.js" />
+    <Content Include="m4nClientScripts\PopCal\popcalendar_16.js" />
+    <Content Include="m4nClientScripts\PopCal\Popcalendar_18.js" />
+    <Content Include="m4nClientScripts\PopCal\popcalendar_2.js" />
+    <Content Include="m4nClientScripts\PopCal\popcalendar_21.js" />
+    <Content Include="m4nClientScripts\PopCal\popcalendar_22.js" />
+    <Content Include="m4nClientScripts\PopCal\popcalendar_29.js" />
+    <Content Include="m4nClientScripts\PopCal\popcalendar_4.js" />
+    <Content Include="m4nClientScripts\PopCal\popcalendar_7.js" />
+    <Content Include="m4nClientScripts\PopCal\right1.gif" />
+    <Content Include="m4nClientScripts\PopCal\right2.gif" />
+    <Content Include="m4nClientScripts\RadGrid\m4nRadGrid.js" />
+    <Content Include="m4nClientScripts\RadMenu\RadMenu.js" />
+    <Content Include="m4nClientScripts\RadMenu\RadMenuRTL.js" />
+    <Content Include="m4nClientScripts\TypeAhead\Images\down_arrow.gif" />
+    <Content Include="m4nClientScripts\TypeAhead\Images\down_arrow2.gif" />
+    <Content Include="m4nClientScripts\TypeAhead\m4nTypeAhead.js" />
+    <Content Include="m4nClientScripts\TypeAhead\typeahead.htc" />
+    <Content Include="m4nScreens\AppComponentCloneOptions.aspx" />
+    <Content Include="m4nScreens\AppComponentDockConfig.aspx" />
+    <Content Include="m4nScreens\AppComponentDockList.aspx" />
+    <Content Include="m4nScreens\AppComponentEditor.ascx" />
+    <Content Include="m4nScreens\AppComponentEditor.aspx" />
+    <Content Include="m4nScreens\BaseAppComponentEditor.ascx" />
+    <Content Include="m4nScreens\BaseAppComponentEditor.aspx" />
+    <Content Include="m4nScreens\ChartViewer.aspx" />
+    <Content Include="m4nScreens\CustomViews.aspx" />
+    <Content Include="m4nScreens\DOCSVExport.aspx" />
+    <Content Include="m4nScreens\DocViewer.aspx" />
+    <Content Include="m4nScreens\DODataImport.aspx" />
+    <Content Include="m4nScreens\DOReportExport.aspx" />
+    <Content Include="m4nScreens\DTEditor.aspx" />
+    <Content Include="m4nScreens\dtHelp.aspx" />
+    <Content Include="m4nScreens\ExpressionProvider.aspx" />
+    <Content Include="m4nScreens\GroupManagement.aspx" />
+    <Content Include="m4nScreens\HelpScreen.aspx" />
+    <Content Include="m4nScreens\ImagePopup.aspx" />
+    <Content Include="m4nScreens\ImportManagerRun.ascx" />
+    <Content Include="m4nScreens\LabelPrinters.aspx" />
+    <Content Include="m4nScreens\LabelTypes.aspx" />
+    <Content Include="m4nScreens\LangManagement.aspx" />
+    <Content Include="m4nScreens\LibImageRotator.aspx" />
+    <Content Include="m4nScreens\LicCreator.aspx" />
+    <Content Include="m4nScreens\LicManScr.aspx" />
+    <Content Include="m4nScreens\Login.aspx" />
+    <Content Include="m4nScreens\LoginWarehouse.aspx" />
+    <Content Include="m4nScreens\MenuEditor.aspx" />
+    <Content Include="m4nScreens\RadComboBoxDataProvider.aspx" />
+    <Content Include="m4nScreens\ReportPrinters.aspx" />
+    <Content Include="m4nScreens\Reports.aspx" />
+    <Content Include="m4nScreens\ReportSetup.aspx" />
+    <Content Include="m4nScreens\SavedSearch.ascx" />
+    <Content Include="m4nScreens\SavedSearch.aspx" />
+    <Content Include="m4nScreens\SchedulingApplications.aspx" />
+    <Content Include="m4nScreens\SchedulingTriggers.aspx" />
+    <Content Include="m4nScreens\SGImport.aspx" />
+    <Content Include="m4nScreens\SQLQuery.aspx" />
+    <Content Include="m4nScreens\SysApplications.aspx" />
+    <Content Include="m4nScreens\SysDynReport.aspx" />
+    <Content Include="m4nScreens\SysParam.aspx" />
+    <Content Include="m4nScreens\TableEditorPresetManager.aspx" />
+    <Content Include="m4nScreens\TableMaintenance.aspx" />
+    <Content Include="m4nScreens\TypeAheadDataProvider.aspx" />
+    <Content Include="m4nScreens\UserManagement.aspx" />
+    <Content Include="m4nScreens\wc1.ascx" />
+    <Content Include="m4nSkins\DefaultRTL\CSS\Styles.css" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\BG.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnApprovePicks.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnApprovePicks_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnCancel.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnCancelAllocating.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnCancelAllocating_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnCancelPicks.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnCancelPicks_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnCancel_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnCheck.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnCheck_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnClearAll.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnClearAll_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnDelete.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnDelete_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnDoc.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnDocCancel.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnDocCancel_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnEdit.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnEdit_a.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnEdit_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnExec.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnExec_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnFind.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnFind_a.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnFind_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btngeocode.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btngeocode_a.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btngeocode_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnHelp.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnHelp.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnMapShowPoint.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnMapShowPoint_a.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnMapShowPoint_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnMultiEdit.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnMultiEdit_a.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnMultiEdit_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnNew.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnNew_a.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnNew_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnrouteproc.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnrouteproc_a.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnrouteproc_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnSave.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnSavedSearch.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnSavedSearch_a.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnSave_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\BtnShipOrders.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\BtnShipOrders_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnSplitPicks.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnSplitPicks_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnView.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnViews.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnViews_a.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnViews_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnView_a.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\btnView_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Centered_Icon.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Centered_Icon_Disable.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\chart.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\CleanMap1_icon.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\CleanMap1_icon_Disable.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\CleanMap2_icon.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\CleanMap2_icon_Disable.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Clean_Map.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Clean_Mapicon.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Clean_Mapicon_Selected.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Clean_Map_Disabl.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Clean_Map_Disable.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\CompleteWave.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\CompleteWave_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\csv.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\CustomerTruck_Mapicon.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\CustomerTruck_Mapicon_Disable.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\CustomerTruck_Mapicon_Selected.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\ExtendedView.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Grid_Map.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Grid_Mapicon.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Grid_Mapicon_Disable.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Grid_Mapicon_Selected.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Grid_Map_Disable.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\home.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\home.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Label.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Label_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Left.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\LoginPageDisconnectUser.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Move_map.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Move_map_Disable.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Orientation_Mapicon.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Orientation_Mapicon_Disable.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Pin_Mapicon_Disable.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Pin_Mapicon_Selected.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\PlanWave.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\PlanWave_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\PopUPSmall_Map.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\PopUpSmall_Map_Disable.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Receipt.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Receipt_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\RegularView.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\ReleaseWave.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\ReleaseWave_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\ReplanishLoc.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\ReplanishLoc_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\ReportPreview.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\ReportPrint.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\ReportPrint_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\ReportShowPDF.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Right.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\SuperZoomBack_Mapicon.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\SuperZoomBack_Mapicon_Disable.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\SuperZoomOut_Mapicon.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\SuperZoomOut_Mapicon_Disable.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\SuperZoomOut_Mapicon_Selected.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Territory-_icon.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Territory-_icon_Disable.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Territory-_Mapicon.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Territory-_Mapicon_Disable.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Territory-_Mapicon_Selected.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Truck-_Mapicon.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Truck-_Mapicon_Disable.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\Truck-_Mapicon_Selected.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\ZoomIn_Mapicon.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\ZoomIn_Mapicon_Disable.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\ZoomIn_Mapicon_Selected.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\ZoomOut_Mapicon.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ActionBar\ZoomOut_Mapicon_Disable.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\DriverCab.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\Empty.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\FedExTruck.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ForkLift.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\FrameBottomBG.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\FrameBottomLeftCorner.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\FrameBottomRightCorner.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\FrameJumpLeftArrow.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\FrameJumpRightArrow.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\FrameTopBg.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\FrameTopLeftCorner.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\FrameTopRightCorner.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\FTableSelectedTabsBg.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\FTableTabsNonSelectedArrow.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\FTableTabsNonSelectedBg.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\FTableTabsNonSelectedLeftCo.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\FTableTabsNonSelectedMiddleCorner.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\FTableTabsNonSelectedRightC.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\FTableTabsSelectedArrow.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\FTableTabsSelectedLeftCorne.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\FTableTabsSelectedMiddleCorner.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\FTableTabsSelectedRightCorn.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\Go_Button.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\GridColumnDelete.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\GridColumnEdit.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\GridColumnLocate.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\GridColumnLocate_d.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\GridColumnSelect.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\GridColumnView.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\HandTruck.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\HandTruck1.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\LastScreenArrow.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\LastScreenArrow.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\LeftBanner.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\loaded.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\loading.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\LoadingExpert.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\LoadingExpert_IP_LeftBanner.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\MenuBg.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\MenuLeftCorner.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\MenuRightCorner.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\MenuSeparator.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\MiddleBanner.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\Minus.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\mm_20_black.png" />
+    <Content Include="m4nSkins\DefaultRTL\Images\mm_20_blue.png" />
+    <Content Include="m4nSkins\DefaultRTL\Images\mm_20_brown.png" />
+    <Content Include="m4nSkins\DefaultRTL\Images\mm_20_green.png" />
+    <Content Include="m4nSkins\DefaultRTL\Images\mm_20_orange.png" />
+    <Content Include="m4nSkins\DefaultRTL\Images\mm_20_purple.png" />
+    <Content Include="m4nSkins\DefaultRTL\Images\mm_20_red.png" />
+    <Content Include="m4nSkins\DefaultRTL\Images\mm_20_shadow.png" />
+    <Content Include="m4nSkins\DefaultRTL\Images\mm_20_white.png" />
+    <Content Include="m4nSkins\DefaultRTL\Images\mm_20_yellow.png" />
+    <Content Include="m4nSkins\DefaultRTL\Images\NavBg.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\PalletTruck.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\Plus.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ReportPreview.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ReportPrint.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\ReportShowPDF.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\RightBanner.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\RightDriverCab.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\RightTruckWheels.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\SortAsc.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\SortDesc.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\spacer.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\STableSelectedTabsBg.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\STableTabsNonSelectedArrow.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\STableTabsNonSelectedBg.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\STableTabsNonSelectedLeftCo.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\STableTabsNonSelectedRightC.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\STableTabsSelectedArrow.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\STableTabsSelectedLeftCorne.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\STableTabsSelectedLeftCorner.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\STableTabsSelectedRightCorn.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\TableContentArrangeArrow.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\TableContentBg.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\TableContentLeftCorner.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\TableContentRightCorner.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\TopLeftBanner.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\TopMiddleBanner.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\TopRightBanner.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\Truck.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\truck.png" />
+    <Content Include="m4nSkins\DefaultRTL\Images\Truck1.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\Truck2.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\truckshadow.png" />
+    <Content Include="m4nSkins\DefaultRTL\Images\TruckWheels.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\unloaded.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\unloading.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\UPSTruck-2.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\UPSTruck.gif" />
+    <Content Include="m4nSkins\DefaultRTL\Images\Waiting.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\WHLayoutSchema.JPG" />
+    <Content Include="m4nSkins\DefaultRTL\Images\WHLayoutSchema1.JPG" />
+    <Content Include="m4nSkins\DefaultRTL\Images\Yard Layout.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\Yard Layout2.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\Images\YardLayoutSchema.JPG" />
+    <Content Include="m4nSkins\DefaultRTL\Images\Yard\YardBG.jpg" />
+    <Content Include="m4nSkins\DefaultRTL\SkinConfig.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="m4nSkins\Default\CSS\Styles.css" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\BG.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnApprovePicks.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnApprovePicks_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnCancel.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnCancelAllocating.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnCancelAllocating_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnCancelPicks.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnCancelPicks_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnCancel_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnCheck.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnCheck_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnClearAll.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnClearAll_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnDelete.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnDelete_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnDoc.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnDocCancel.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnDocCancel_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnEdit.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnEdit_a.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnEdit_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnExec.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnExec_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnFind.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnFind_a.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnFind_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btngeocode.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btngeocode_a.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btngeocode_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnHelp.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnHelp.jpg" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnMapShowPoint.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnMapShowPoint_a.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnMapShowPoint_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnMultiEdit.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnMultiEdit_a.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnMultiEdit_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnNew.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnNew_a.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnNew_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnrouteproc.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnrouteproc_a.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnrouteproc_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnSave.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnSavedSearch.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnSavedSearch_a.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnSave_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\BtnShipLabel.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\BtnShipLabel_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\BtnShipOrders.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\BtnShipOrders_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnSplitPicks.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnSplitPicks_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnView.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnViews.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnViews_a.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnViews_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnView_a.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnView_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnZoomIn.GIF" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\btnZoomOut.GIF" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Centered_Icon_Disable.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\chart.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\CleanMap1_icon.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\CleanMap1_icon_Disable.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\CleanMap2_icon.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\CleanMap2_icon_Disable.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Clean_Map.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Clean_Mapicon.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Clean_Map_Disabl.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Clean_Map_Disable.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\CompleteWave.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\CompleteWave_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\csv.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\CustomerTruck_Mapicon.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\CustomerTruck_Mapicon_Disable.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\CustomerTruck_Mapicon_Selected.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\DockActive.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\DockActiveAtDock.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\DockActiveLoading.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\DockActiveUnLoading.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\DockInactive.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\ExtendedView.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\FitToPage.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\FullExtent.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\FullExtent_1.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Grid_Map.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Grid_Mapicon.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Grid_Mapicon_Disable.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Grid_Mapicon_Selected.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Grid_Map_Disable.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\home.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\home.jpg" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Label.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Label_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Left.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\LoginPageDisconnectUser.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Move_map.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Move_map_Disable.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Orientation_Mapicon.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Orientation_Mapicon_Disable.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Pin_Mapicon_Disable.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Pin_Mapicon_Selected.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\PlanWave.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\PlanWave_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\PopUPSmall_Map.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\PopUpSmall_Map_Disable.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Receipt.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Receipt_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Refresh.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\RegularView.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\ReleaseWave.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\ReleaseWave_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\ReplanishLoc.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\ReplanishLoc_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\ReportPreview.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\ReportPrint.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\ReportPrint_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\ReportShowPDF.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Right.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\SoftPlanWave.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\SoftPlanWave_d.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\SuperZoomBack_Mapicon_Disable.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\SuperZoomOut_Mapicon.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\SuperZoomOut_Mapicon_Disable.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Territory-_icon.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Territory-_icon_Disable.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Territory-_Mapicon.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Territory-_Mapicon_Disable.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Territory-_Mapicon_Selected.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Truck-_Mapicon.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Truck-_Mapicon_Disable.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\Truck-_Mapicon_Selected.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\ZoomIn.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\ZoomIn_Mapicon.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\ZoomIn_Mapicon_Disable.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\ZoomOut.gif" />
+    <Content Include="m4nSkins\Default\Images\ActionBar\ZoomOut_Mapicon_Disable.gif" />
+    <Content Include="m4nSkins\Default\Images\DriverCab.gif" />
+    <Content Include="m4nSkins\Default\Images\Empty.gif" />
+    <Content Include="m4nSkins\Default\Images\FedExTruck.gif" />
+    <Content Include="m4nSkins\Default\Images\ForkLift.gif" />
+    <Content Include="m4nSkins\Default\Images\FrameBottomBG.jpg" />
+    <Content Include="m4nSkins\Default\Images\FrameBottomLeftCorner.jpg" />
+    <Content Include="m4nSkins\Default\Images\FrameBottomRightCorner.jpg" />
+    <Content Include="m4nSkins\Default\Images\FrameJumpLeftArrow.jpg" />
+    <Content Include="m4nSkins\Default\Images\FrameJumpRightArrow.jpg" />
+    <Content Include="m4nSkins\Default\Images\FrameTopBg.jpg" />
+    <Content Include="m4nSkins\Default\Images\FrameTopLeftCorner.jpg" />
+    <Content Include="m4nSkins\Default\Images\FrameTopRightCorner.jpg" />
+    <Content Include="m4nSkins\Default\Images\FTableSelectedTabsBg.jpg" />
+    <Content Include="m4nSkins\Default\Images\FTableTabsNonSelectedArrow.jpg" />
+    <Content Include="m4nSkins\Default\Images\FTableTabsNonSelectedBg.jpg" />
+    <Content Include="m4nSkins\Default\Images\FTableTabsNonSelectedLeftCo.jpg" />
+    <Content Include="m4nSkins\Default\Images\FTableTabsNonSelectedMiddleCorner.jpg" />
+    <Content Include="m4nSkins\Default\Images\FTableTabsNonSelectedRightC.jpg" />
+    <Content Include="m4nSkins\Default\Images\FTableTabsSelectedArrow.jpg" />
+    <Content Include="m4nSkins\Default\Images\FTableTabsSelectedLeftCorne.jpg" />
+    <Content Include="m4nSkins\Default\Images\FTableTabsSelectedMiddleCorner.jpg" />
+    <Content Include="m4nSkins\Default\Images\FTableTabsSelectedRightCorn.jpg" />
+    <Content Include="m4nSkins\Default\Images\Go_Button.jpg" />
+    <Content Include="m4nSkins\Default\Images\GridColumnDelete.gif" />
+    <Content Include="m4nSkins\Default\Images\GridColumnEdit.gif" />
+    <Content Include="m4nSkins\Default\Images\GridColumnLocate.gif" />
+    <Content Include="m4nSkins\Default\Images\GridColumnLocate_d.gif" />
+    <Content Include="m4nSkins\Default\Images\GridColumnSelect.gif" />
+    <Content Include="m4nSkins\Default\Images\GridColumnView.gif" />
+    <Content Include="m4nSkins\Default\Images\HandTruck.gif" />
+    <Content Include="m4nSkins\Default\Images\HandTruck1.gif" />
+    <Content Include="m4nSkins\Default\Images\LastScreenArrow.gif" />
+    <Content Include="m4nSkins\Default\Images\LastScreenArrow.jpg" />
+    <Content Include="m4nSkins\Default\Images\LeftBanner.jpg" />
+    <Content Include="m4nSkins\Default\Images\loaded.jpg" />
+    <Content Include="m4nSkins\Default\Images\loading.jpg" />
+    <Content Include="m4nSkins\Default\Images\LoadingExpert.jpg" />
+    <Content Include="m4nSkins\Default\Images\LoadingExpert_IP_LeftBanner.jpg" />
+    <Content Include="m4nSkins\Default\Images\LowerLeft.jpg" />
+    <Content Include="m4nSkins\Default\Images\MenuBg.jpg" />
+    <Content Include="m4nSkins\Default\Images\MenuLeftCorner.jpg" />
+    <Content Include="m4nSkins\Default\Images\MenuRightCorner.jpg" />
+    <Content Include="m4nSkins\Default\Images\MenuSeparator.jpg" />
+    <Content Include="m4nSkins\Default\Images\MiddleBanner.jpg" />
+    <Content Include="m4nSkins\Default\Images\Minus.gif" />
+    <Content Include="m4nSkins\Default\Images\mm_20_black.png" />
+    <Content Include="m4nSkins\Default\Images\mm_20_blue.png" />
+    <Content Include="m4nSkins\Default\Images\mm_20_brown.png" />
+    <Content Include="m4nSkins\Default\Images\mm_20_green.png" />
+    <Content Include="m4nSkins\Default\Images\mm_20_orange.png" />
+    <Content Include="m4nSkins\Default\Images\mm_20_purple.png" />
+    <Content Include="m4nSkins\Default\Images\mm_20_red.png" />
+    <Content Include="m4nSkins\Default\Images\mm_20_shadow.png" />
+    <Content Include="m4nSkins\Default\Images\mm_20_white.png" />
+    <Content Include="m4nSkins\Default\Images\mm_20_yellow.png" />
+    <Content Include="m4nSkins\Default\Images\NavBg.jpg" />
+    <Content Include="m4nSkins\Default\Images\PalletTruck.gif" />
+    <Content Include="m4nSkins\Default\Images\Plus.gif" />
+    <Content Include="m4nSkins\Default\Images\ReportPreview.gif" />
+    <Content Include="m4nSkins\Default\Images\ReportPrint.gif" />
+    <Content Include="m4nSkins\Default\Images\ReportShowPDF.gif" />
+    <Content Include="m4nSkins\Default\Images\RightBanner.jpg" />
+    <Content Include="m4nSkins\Default\Images\RightDriverCab.gif" />
+    <Content Include="m4nSkins\Default\Images\RightTruckWheels.gif" />
+    <Content Include="m4nSkins\Default\Images\SortAsc.gif" />
+    <Content Include="m4nSkins\Default\Images\SortDesc.gif" />
+    <Content Include="m4nSkins\Default\Images\spacer.gif" />
+    <Content Include="m4nSkins\Default\Images\STableSelectedTabsBg.jpg" />
+    <Content Include="m4nSkins\Default\Images\STableTabsNonSelectedArrow.jpg" />
+    <Content Include="m4nSkins\Default\Images\STableTabsNonSelectedBg.jpg" />
+    <Content Include="m4nSkins\Default\Images\STableTabsNonSelectedLeftCo.jpg" />
+    <Content Include="m4nSkins\Default\Images\STableTabsNonSelectedRightC.jpg" />
+    <Content Include="m4nSkins\Default\Images\STableTabsSelectedArrow.jpg" />
+    <Content Include="m4nSkins\Default\Images\STableTabsSelectedLeftCorne.jpg" />
+    <Content Include="m4nSkins\Default\Images\STableTabsSelectedLeftCorner.jpg" />
+    <Content Include="m4nSkins\Default\Images\STableTabsSelectedRightCorn.jpg" />
+    <Content Include="m4nSkins\Default\Images\TableContentArrangeArrow.gif" />
+    <Content Include="m4nSkins\Default\Images\TableContentBg.jpg" />
+    <Content Include="m4nSkins\Default\Images\TableContentLeftCorner.jpg" />
+    <Content Include="m4nSkins\Default\Images\TableContentRightCorner.jpg" />
+    <Content Include="m4nSkins\Default\Images\TopLeftBanner.jpg" />
+    <Content Include="m4nSkins\Default\Images\TopMiddleBanner.jpg" />
+    <Content Include="m4nSkins\Default\Images\TopRightBanner.jpg" />
+    <Content Include="m4nSkins\Default\Images\Truck.gif" />
+    <Content Include="m4nSkins\Default\Images\truck.png" />
+    <Content Include="m4nSkins\Default\Images\Truck1.gif" />
+    <Content Include="m4nSkins\Default\Images\Truck2.gif" />
+    <Content Include="m4nSkins\Default\Images\truckshadow.png" />
+    <Content Include="m4nSkins\Default\Images\TruckWheels.gif" />
+    <Content Include="m4nSkins\Default\Images\unloaded.jpg" />
+    <Content Include="m4nSkins\Default\Images\unloading.jpg" />
+    <Content Include="m4nSkins\Default\Images\UPSTruck-2.gif" />
+    <Content Include="m4nSkins\Default\Images\UPSTruck.gif" />
+    <Content Include="m4nSkins\Default\Images\Waiting.jpg" />
+    <Content Include="m4nSkins\Default\Images\WHLayoutSchema.JPG" />
+    <Content Include="m4nSkins\Default\Images\WHLayoutSchema1.JPG" />
+    <Content Include="m4nSkins\Default\Images\Yard Layout.jpg" />
+    <Content Include="m4nSkins\Default\Images\Yard Layout2.jpg" />
+    <Content Include="m4nSkins\Default\Images\YardLayoutSchema.JPG" />
+    <Content Include="m4nSkins\Default\SkinConfig.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="resources\css\app-login.css" />
+    <Content Include="resources\css\general.css" />
+    <Content Include="resources\css\icomoon.css" />
+    <Content Include="resources\css\jquery-ui.min.css" />
+    <Content Include="resources\css\main.css" />
+    <Content Include="resources\css\new.css" />
+    <Content Include="resources\fonts\icomoon.svg" />
+    <Content Include="resources\images\logo.png" />
+    <Content Include="resources\js\jquery-ui.min.js" />
+    <Content Include="resources\js\jquery.min.js" />
+    <Content Include="resources\js\powerplus.js" />
+    <Content Include="Screens\ArchiveDetails.aspx" />
+    <Content Include="Screens\ArchiveMaster.aspx" />
+    <Content Include="Screens\BatchReplenishmentTasks.aspx" />
+    <Content Include="Screens\BillingAgreement.aspx" />
+    <Content Include="Screens\BillingCharges.aspx" />
+    <Content Include="Screens\BillingPriceList.aspx" />
+    <Content Include="Screens\CheckDistance.aspx" />
+    <Content Include="Screens\LaborMeetings.aspx" />
+    <Content Include="Screens\LaborTaskDurationDelay.aspx" />
+    <Content Include="Screens\REPLENISHMENTSUBTYPE.aspx" />
+    <Content Include="Screens\LocationCountSchedule.aspx" />
+    <Content Include="Screens\LocationCount.aspx" />
+    <Content Include="Screens\SkuGroup.aspx" />
+    <Content Include="Screens\UserPickRegion.aspx" />
+    <Content Include="Screens\WeightInventory.aspx" />
+    <Content Include="Screens\DelLocDynamicAssign.aspx" />
+    <Content Include="Screens\DelLocFixAssign.aspx" />
+    <Content Include="Screens\DocTimeCalculationMethods.aspx" />
+    <Content Include="Screens\DynamicDeliveryLocation.aspx" />
+    <Content Include="Screens\LocationProblemRC.aspx" />
+    <Content Include="Screens\MiscTasks.aspx" />
+    <Content Include="Screens\OutboundManagement.aspx" />
+    <Content Include="Screens\PriceFactorCalcParam.aspx" />
+    <Content Include="RadControls\Chart\Image.aspx" />
+    <Content Include="RadControls\Chart\Image.aspx.cs" />
+    <Content Include="RadControls\Dock\Skins\DefaultRTL\Img\close.GIF" />
+    <Content Include="RadControls\Dock\Skins\DefaultRTL\Img\collapse.gif" />
+    <Content Include="RadControls\Dock\Skins\DefaultRTL\Img\expand.gif" />
+    <Content Include="RadControls\Dock\Skins\DefaultRTL\Img\pin.gif" />
+    <Content Include="RadControls\Dock\Skins\DefaultRTL\Img\titleBarBg.gif" />
+    <Content Include="RadControls\Dock\Skins\DefaultRTL\Img\titleBarLeft.gif" />
+    <Content Include="RadControls\Dock\Skins\DefaultRTL\Img\unpin.gif" />
+    <Content Include="RadControls\Dock\Skins\DefaultRTL\RadDockableObject.css" />
+    <Content Include="RadControls\Dock\Skins\Default\Img\close.GIF" />
+    <Content Include="RadControls\Dock\Skins\Default\Img\collapse.gif" />
+    <Content Include="RadControls\Dock\Skins\Default\Img\expand.gif" />
+    <Content Include="RadControls\Dock\Skins\Default\Img\pin.gif" />
+    <Content Include="RadControls\Dock\Skins\Default\Img\titleBarBg.gif" />
+    <Content Include="RadControls\Dock\Skins\Default\Img\titleBarLeft.gif" />
+    <Content Include="RadControls\Dock\Skins\Default\Img\unpin.gif" />
+    <Content Include="RadControls\Dock\Skins\Default\RadDockableObject.css" />
+    <Content Include="RadControls\Grid\Skins\DefaultRTL\AddRecord.gif" />
+    <Content Include="RadControls\Grid\Skins\DefaultRTL\Cancel.gif" />
+    <Content Include="RadControls\Grid\Skins\DefaultRTL\Default.gif" />
+    <Content Include="RadControls\Grid\Skins\DefaultRTL\Delete.gif" />
+    <Content Include="RadControls\Grid\Skins\DefaultRTL\Edit.gif" />
+    <Content Include="RadControls\Grid\Skins\DefaultRTL\Filter.gif" />
+    <Content Include="RadControls\Grid\Skins\DefaultRTL\img\filterBg.gif" />
+    <Content Include="RadControls\Grid\Skins\DefaultRTL\img\groupBg.gif" />
+    <Content Include="RadControls\Grid\Skins\DefaultRTL\img\groupHeaderBg.gif" />
+    <Content Include="RadControls\Grid\Skins\DefaultRTL\img\headerBg_11.gif" />
+    <Content Include="RadControls\Grid\Skins\DefaultRTL\img\headerSeparator.gif" />
+    <Content Include="RadControls\Grid\Skins\DefaultRTL\img\MoveDown.gif" />
+    <Content Include="RadControls\Grid\Skins\DefaultRTL\img\MoveUp.gif" />
+    <Content Include="RadControls\Grid\Skins\DefaultRTL\Insert.gif" />
+    <Content Include="RadControls\Grid\Skins\DefaultRTL\Loading.gif" />
+    <Content Include="RadControls\Grid\Skins\DefaultRTL\NotSelectedMenu.gif" />
+    <Content Include="RadControls\Grid\Skins\DefaultRTL\Refresh.gif" />
+    <Content Include="RadControls\Grid\Skins\DefaultRTL\SelectedMenu.gif" />
+    <Content Include="RadControls\Grid\Skins\DefaultRTL\SingleMinus.gif" />
+    <Content Include="RadControls\Grid\Skins\DefaultRTL\SinglePlus.gif" />
+    <Content Include="RadControls\Grid\Skins\DefaultRTL\SortAsc.gif" />
+    <Content Include="RadControls\Grid\Skins\DefaultRTL\SortDesc.gif" />
+    <Content Include="RadControls\Grid\Skins\DefaultRTL\Styles.css" />
+    <Content Include="RadControls\Grid\Skins\DefaultRTL\Update.gif" />
+    <Content Include="RadControls\Grid\Skins\Default\AddRecord.gif" />
+    <Content Include="RadControls\Grid\Skins\Default\Cancel.gif" />
+    <Content Include="RadControls\Grid\Skins\Default\Default.gif" />
+    <Content Include="RadControls\Grid\Skins\Default\Delete.gif" />
+    <Content Include="RadControls\Grid\Skins\Default\Edit.gif" />
+    <Content Include="RadControls\Grid\Skins\Default\Filter.gif" />
+    <Content Include="RadControls\Grid\Skins\Default\img\filterBg.gif" />
+    <Content Include="RadControls\Grid\Skins\Default\img\groupBg.gif" />
+    <Content Include="RadControls\Grid\Skins\Default\img\groupHeaderBg.gif" />
+    <Content Include="RadControls\Grid\Skins\Default\img\headerSeparator.gif" />
+    <Content Include="RadControls\Grid\Skins\Default\img\MoveDown.gif" />
+    <Content Include="RadControls\Grid\Skins\Default\img\MoveUp.gif" />
+    <Content Include="RadControls\Grid\Skins\Default\Insert.gif" />
+    <Content Include="RadControls\Grid\Skins\Default\Loading.gif" />
+    <Content Include="RadControls\Grid\Skins\Default\NotSelectedMenu.gif" />
+    <Content Include="RadControls\Grid\Skins\Default\Refresh.gif" />
+    <Content Include="RadControls\Grid\Skins\Default\SelectedMenu.gif" />
+    <Content Include="RadControls\Grid\Skins\Default\SingleMinus.gif" />
+    <Content Include="RadControls\Grid\Skins\Default\SinglePlus.gif" />
+    <Content Include="RadControls\Grid\Skins\Default\SortAsc.gif" />
+    <Content Include="RadControls\Grid\Skins\Default\SortDesc.gif" />
+    <Content Include="RadControls\Grid\Skins\Default\Styles.css" />
+    <Content Include="RadControls\Grid\Skins\Default\Update.gif" />
+    <Content Include="RadControls\Menu\Scripts\4_4_5\menu.css" />
+    <Content Include="RadControls\Menu\Scripts\4_4_5\RadBrowser.js" />
+    <Content Include="RadControls\Menu\Scripts\4_4_5\RadFilters.js" />
+    <Content Include="RadControls\Menu\Scripts\4_4_5\RadHelper.js" />
+    <Content Include="RadControls\Menu\Scripts\4_4_5\RadImageCache.js" />
+    <Content Include="RadControls\Menu\Scripts\4_4_5\RadMenu.js" />
+    <Content Include="RadControls\Menu\Scripts\4_4_5\RadMenu_Globals.js" />
+    <Content Include="RadControls\Menu\Scripts\4_4_5\RadMenu_Keyboard.js" />
+    <Content Include="RadControls\Menu\Scripts\4_4_5\RadMenu_Scroll.js" />
+    <Content Include="RadControls\Menu\Scripts\4_4_5\RadMenu_Utils.js" />
+    <Content Include="RadControls\Menu\Skins\DefaultRTL\Default.gif" />
+    <Content Include="RadControls\Menu\Skins\DefaultRTL\img\ArrowExpand.gif" />
+    <Content Include="RadControls\Menu\Skins\DefaultRTL\img\ArrowExpandHovered.gif" />
+    <Content Include="RadControls\Menu\Skins\DefaultRTL\img\ArrowExpandHoveredRTL.gif" />
+    <Content Include="RadControls\Menu\Skins\DefaultRTL\img\ArrowExpandRTL.gif" />
+    <Content Include="RadControls\Menu\Skins\DefaultRTL\img\ArrowScrollLeftRight.gif" />
+    <Content Include="RadControls\Menu\Skins\DefaultRTL\img\ArrowScrollUpDown.gif" />
+    <Content Include="RadControls\Menu\Skins\DefaultRTL\img\bottom.gif" />
+    <Content Include="RadControls\Menu\Skins\DefaultRTL\img\groupImage.gif" />
+    <Content Include="RadControls\Menu\Skins\DefaultRTL\img\groupImageRTL.gif" />
+    <Content Include="RadControls\Menu\Skins\DefaultRTL\img\invertedGroupImage.gif" />
+    <Content Include="RadControls\Menu\Skins\DefaultRTL\img\left.gif" />
+    <Content Include="RadControls\Menu\Skins\DefaultRTL\img\MenuBackground.gif" />
+    <Content Include="RadControls\Menu\Skins\DefaultRTL\img\menuItemArrow.gif" />
+    <Content Include="RadControls\Menu\Skins\DefaultRTL\img\menuItemHover.gif" />
+    <Content Include="RadControls\Menu\Skins\DefaultRTL\img\right.gif" />
+    <Content Include="RadControls\Menu\Skins\DefaultRTL\img\top.gif" />
+    <Content Include="RadControls\Menu\Skins\DefaultRTL\styles.css" />
+    <Content Include="RadControls\Menu\Skins\Default\Default.gif" />
+    <Content Include="RadControls\Menu\Skins\Default\img\ArrowExpand.gif" />
+    <Content Include="RadControls\Menu\Skins\Default\img\ArrowExpandHovered.gif" />
+    <Content Include="RadControls\Menu\Skins\Default\img\ArrowExpandHoveredRTL.gif" />
+    <Content Include="RadControls\Menu\Skins\Default\img\ArrowExpandRTL.gif" />
+    <Content Include="RadControls\Menu\Skins\Default\img\ArrowScrollLeftRight.gif" />
+    <Content Include="RadControls\Menu\Skins\Default\img\ArrowScrollUpDown.gif" />
+    <Content Include="RadControls\Menu\Skins\Default\img\bottom.gif" />
+    <Content Include="RadControls\Menu\Skins\Default\img\groupImage.gif" />
+    <Content Include="RadControls\Menu\Skins\Default\img\groupImageRTL.gif" />
+    <Content Include="RadControls\Menu\Skins\Default\img\invertedGroupImage.gif" />
+    <Content Include="RadControls\Menu\Skins\Default\img\left.gif" />
+    <Content Include="RadControls\Menu\Skins\Default\img\MenuBackground.gif" />
+    <Content Include="RadControls\Menu\Skins\Default\img\menuItemArrow.gif" />
+    <Content Include="RadControls\Menu\Skins\Default\img\menuItemHover.gif" />
+    <Content Include="RadControls\Menu\Skins\Default\img\right.gif" />
+    <Content Include="RadControls\Menu\Skins\Default\img\top.gif" />
+    <Content Include="RadControls\Menu\Skins\Default\styles.css" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\DefaultRTL.css" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\addNewItem.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\alignLeft.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\alignRight.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\back.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\backColor.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\backGreen.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\bold.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\bullets.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\center.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\copy.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\cut.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\decreaseIndent.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\find.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\foreColor.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\forward.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\forwardGreen.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\help.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\increaseIndent.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\italic.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\justify.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\link.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\new.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\newProject.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\numbering.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\open.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\paste.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\print.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\redo.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\save.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\saveAll.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\spellCheck.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\table.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\toolbarBg.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\toolbarBgHover.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\toolbarBgSelected.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\toolbarBgVertical.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\toolbarButtonOver.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\toolbarButtonSelected.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\toolbarCorners.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\toolbarSeparatorH.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\toolbarSeparatorV.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\underline.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\undo.gif" />
+    <Content Include="RadControls\Toolbar\Skins\DefaultRTL\img\wordWrap.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\default.css" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\addNewItem.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\alignLeft.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\alignRight.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\back.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\backColor.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\backGreen.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\bold.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\bullets.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\center.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\copy.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\cut.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\decreaseIndent.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\find.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\foreColor.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\forward.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\forwardGreen.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\help.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\increaseIndent.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\italic.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\justify.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\link.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\new.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\newProject.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\numbering.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\open.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\paste.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\print.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\redo.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\save.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\saveAll.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\spellCheck.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\table.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\toolbarBg.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\toolbarBgHover.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\toolbarBgSelected.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\toolbarBgVertical.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\toolbarButtonOver.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\toolbarButtonSelected.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\toolbarCorners.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\toolbarSeparatorH.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\toolbarSeparatorV.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\underline.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\undo.gif" />
+    <Content Include="RadControls\Toolbar\Skins\default\img\wordWrap.gif" />
+    <Content Include="RadControls\Window\Localization\en-US\Main.xml" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\CoreTemplates.xml" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\CssImg\dialogueHeaderCenter.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\CssImg\dialogueHeaderLeft.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\CssImg\draggedToolbarTitleBg.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\CssImg\footerResize.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\CssImg\RadWMinimizedBg.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\CssImg\RadWStatus.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\CssImg\RadWWrapperBodyLeft.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\CssImg\RadWWrapperBodyRight.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\CssImg\RadWWrapperHeaderCenter.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\CssImg\RadWWrapperHeaderLeft.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\CssImg\RadWWrapperHeaderRight.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\CssImg\TabLeft.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\CssImg\TabLeftSelected.GIF" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\CssImg\TabMiddle.GIF" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\CssImg\TabMiddleSelected.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\CssImg\TabRight.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\CssImg\TabRightSelected.GIF" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\Img\alert.wav" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\Img\AlertIcon.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\Img\Close.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\Img\ConfirmIcon.GIF" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\Img\defaultIcon.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\Img\loading.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\Img\Maximize.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\Img\Minimize.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\Img\PinOff.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\Img\PinOn.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\Img\Refresh.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\Img\Reload.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\Img\Restore.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\Img\splash.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\Img\Splash.jpg" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\Img\transp.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\Img\transpFake.gif" />
+    <Content Include="RadControls\Window\Skins\DefaultRTL\Window.css" />
+    <Content Include="RadControls\Window\Skins\Default\CoreTemplates.xml" />
+    <Content Include="RadControls\Window\Skins\Default\CssImg\dialogueHeaderCenter.gif" />
+    <Content Include="RadControls\Window\Skins\Default\CssImg\dialogueHeaderLeft.gif" />
+    <Content Include="RadControls\Window\Skins\Default\CssImg\draggedToolbarTitleBg.gif" />
+    <Content Include="RadControls\Window\Skins\Default\CssImg\footerResize.gif" />
+    <Content Include="RadControls\Window\Skins\Default\CssImg\RadWMinimizedBg.gif" />
+    <Content Include="RadControls\Window\Skins\Default\CssImg\RadWStatus.gif" />
+    <Content Include="RadControls\Window\Skins\Default\CssImg\RadWWrapperBodyLeft.gif" />
+    <Content Include="RadControls\Window\Skins\Default\CssImg\RadWWrapperBodyRight.gif" />
+    <Content Include="RadControls\Window\Skins\Default\CssImg\RadWWrapperHeaderCenter.gif" />
+    <Content Include="RadControls\Window\Skins\Default\CssImg\RadWWrapperHeaderLeft.gif" />
+    <Content Include="RadControls\Window\Skins\Default\CssImg\RadWWrapperHeaderRight.gif" />
+    <Content Include="RadControls\Window\Skins\Default\CssImg\TabLeft.gif" />
+    <Content Include="RadControls\Window\Skins\Default\CssImg\TabLeftSelected.GIF" />
+    <Content Include="RadControls\Window\Skins\Default\CssImg\TabMiddle.GIF" />
+    <Content Include="RadControls\Window\Skins\Default\CssImg\TabMiddleSelected.gif" />
+    <Content Include="RadControls\Window\Skins\Default\CssImg\TabRight.gif" />
+    <Content Include="RadControls\Window\Skins\Default\CssImg\TabRightSelected.GIF" />
+    <Content Include="RadControls\Window\Skins\Default\Img\alert.wav" />
+    <Content Include="RadControls\Window\Skins\Default\Img\AlertIcon.gif" />
+    <Content Include="RadControls\Window\Skins\Default\Img\Close.gif" />
+    <Content Include="RadControls\Window\Skins\Default\Img\ConfirmIcon.GIF" />
+    <Content Include="RadControls\Window\Skins\Default\Img\defaultIcon.gif" />
+    <Content Include="RadControls\Window\Skins\Default\Img\loading.gif" />
+    <Content Include="RadControls\Window\Skins\Default\Img\Maximize.gif" />
+    <Content Include="RadControls\Window\Skins\Default\Img\Minimize.gif" />
+    <Content Include="RadControls\Window\Skins\Default\Img\PinOff.gif" />
+    <Content Include="RadControls\Window\Skins\Default\Img\PinOn.gif" />
+    <Content Include="RadControls\Window\Skins\Default\Img\Refresh.gif" />
+    <Content Include="RadControls\Window\Skins\Default\Img\Reload.gif" />
+    <Content Include="RadControls\Window\Skins\Default\Img\Restore.gif" />
+    <Content Include="RadControls\Window\Skins\Default\Img\splash.gif" />
+    <Content Include="RadControls\Window\Skins\Default\Img\Splash.jpg" />
+    <Content Include="RadControls\Window\Skins\Default\Img\transp.gif" />
+    <Content Include="RadControls\Window\Skins\Default\Img\transpFake.gif" />
+    <Content Include="RadControls\Window\Skins\Default\Window.css" />
+    <Content Include="Screens\AddMatcher.aspx" />
+    <Content Include="Screens\AdjustCustomized.aspx" />
+    <Content Include="Screens\AdjustmentDocument.aspx" />
+    <Content Include="Screens\Adjustments.aspx" />
+    <Content Include="Screens\Agreement.aspx" />
+    <Content Include="Screens\AppointmentSchedule.aspx" />
+    <Content Include="Screens\AssemblyWorkOrder.aspx" />
+    <Content Include="Screens\Audit.aspx" />
+    <Content Include="Screens\BlindReceipt.aspx" />
+    <Content Include="Screens\BlindReceiving.aspx" />
+    <Content Include="Screens\Carrier.aspx" />
+    <Content Include="Screens\Clear.aspx" />
+    <Content Include="Screens\CLTest.aspx" />
+    <Content Include="Screens\Company.aspx" />
+    <Content Include="Screens\CompleteWave.aspx" />
+    <Content Include="Screens\Consignee.aspx" />
+    <Content Include="Screens\Consolidation.aspx" />
+    <Content Include="Screens\ConsolidationTasks.aspx" />
+    <Content Include="Screens\ContactManagement.aspx" />
+    <Content Include="Screens\ContainerContent.aspx" />
+    <Content Include="Screens\CountBooks.aspx" />
+    <Content Include="Screens\CountingSchedule.aspx" />
+    <Content Include="Screens\CreateLoad.aspx" />
+    <Content Include="Screens\CreateLoads.aspx" />
+    <Content Include="Screens\CrossDockDeliveryLoc.aspx" />
+    <Content Include="Screens\CustData.aspx" />
+    <Content Include="Screens\CustPoint.aspx" />
+    <Content Include="Screens\CycleCount.aspx" />
+    <Content Include="Screens\Deliveries.aspx" />
+    <Content Include="Screens\DeliveryProgress.aspx" />
+    <Content Include="Screens\DisAssemblyWorkOrder.aspx" />
+    <Content Include="Screens\Driver.aspx" />
+    <Content Include="Screens\DriversPoint.aspx" />
+    <Content Include="Screens\DTEditor.aspx" />
+    <Content Include="Screens\EmprtyHUPickup.aspx" />
+    <Content Include="Screens\Equipment.aspx" />
+    <Content Include="Screens\ExpectedASNLoads.aspx" />
+    <Content Include="Screens\Flowthrough.aspx" />
+    <Content Include="Screens\getmapimg.aspx" />
+    <Content Include="Screens\GoWeb.js" />
+    <Content Include="Screens\GoWebImage.aspx" />
+    <Content Include="Screens\HandelingUnitType.aspx" />
+    <Content Include="Screens\HandlingUnitStorageTemplate.aspx" />
+    <Content Include="Screens\HandOffSetup.aspx" />
+    <Content Include="Screens\HUTInbound.aspx" />
+    <Content Include="Screens\HUTOutbound.aspx" />
+    <Content Include="Screens\ImportManager.aspx" />
+    <Content Include="Screens\InboundOrder.aspx" />
+    <Content Include="Screens\InvArea.aspx" />
+    <Content Include="Screens\InvConsignee.aspx" />
+    <Content Include="Screens\InvCount.aspx" />
+    <Content Include="Screens\InventoryAdjustment.aspx" />
+    <Content Include="Screens\InventoryHold.aspx" />
+    <Content Include="Screens\InventoryMove.aspx" />
+    <Content Include="Screens\InvLocation.aspx" />
+    <Content Include="Screens\InvOrders.aspx" />
+    <Content Include="Screens\InvSKU.aspx" />
+    <Content Include="Screens\InvTrans.aspx" />
+    <Content Include="Screens\LaborCalcMethod.aspx" />
+    <Content Include="Screens\LaborCalcParam.aspx" />
+    <Content Include="Screens\LaborPerfAudit.aspx" />
+    <Content Include="Screens\LaborTaskCalc.aspx" />
+    <Content Include="Screens\LaborUserInfo.aspx" />
+    <Content Include="Screens\LangSkinSetup.aspx" />
+    <Content Include="Screens\LimboAdjustments.aspx" />
+    <Content Include="Screens\Load.aspx" />
+    <Content Include="Screens\LoadAtt.aspx" />
+    <Content Include="Screens\LoadCountSchedule.aspx" />
+    <Content Include="Screens\LoadingPlan.aspx" />
+    <Content Include="Screens\LoadingPlanPolicies.aspx" />
+    <Content Include="Screens\LoadsLocation.aspx" />
+    <Content Include="Screens\Location.aspx" />
+    <Content Include="Screens\LocationCountingSchedule.aspx" />
+    <Content Include="Screens\LocationManagementSummary.aspx" />
+    <Content Include="Screens\LocationOccupancy.aspx" />
+    <Content Include="Screens\Main.aspx" />
+    <Content Include="Screens\Menu.aspx" />
+    <Content Include="Screens\MHE.aspx" />
+    <Content Include="Screens\NewMDScreen.aspx" />
+    <Content Include="Screens\OrderAutomationShipmentAssign.aspx" />
+    <Content Include="Screens\OrderAutomationWaveAssign.aspx" />
+    <Content Include="Screens\OutboundHandlingUnits.aspx" />
+    <Content Include="Screens\OutboundOrder.aspx" />
+    <Content Include="Screens\OutboundOrderStatuses.aspx" />
+    <Content Include="Screens\OutordRoutes.aspx" />
+    <Content Include="Screens\Packing.aspx" />
+    <Content Include="Screens\PackingLists.aspx" />
+    <Content Include="Screens\Pick.aspx" />
+    <Content Include="Screens\PickContainer.aspx" />
+    <Content Include="Screens\PickingPolicy.aspx" />
+    <Content Include="Screens\PickList.aspx" />
+    <Content Include="Screens\PickLists.aspx" />
+    <Content Include="Screens\PickLoc.aspx" />
+    <Content Include="Screens\PickUps.aspx" />
+    <Content Include="Screens\PlanPolicy.aspx" />
+    <Content Include="Screens\PoliciesLookup.aspx" />
+    <Content Include="Screens\PostCharges.aspx" />
+    <Content Include="Screens\PriceList.aspx" />
+    <Content Include="Screens\ProblemLocation.aspx" />
+    <Content Include="Screens\PutawayPolicies.aspx" />
+    <Content Include="Screens\QCLoads.aspx" />
+    <Content Include="Screens\QCSetup.aspx" />
+    <Content Include="Screens\RealTableMaintenance.aspx" />
+    <Content Include="Screens\Receipt.aspx" />
+    <Content Include="Screens\Replenishment.aspx" />
+    <Content Include="Screens\ReplPolicy.aspx" />
+    <Content Include="Screens\ReplTasks.aspx" />
+    <Content Include="Screens\ReportGenerator.aspx" />
+    <Content Include="Screens\ReturnLoads.aspx" />
+    <Content Include="Screens\RouteMaster.aspx" />
+    <Content Include="Screens\RoutePolicy.aspx" />
+    <Content Include="Screens\RouteSchedule.aspx" />
+    <Content Include="Screens\SCExpertConnectPluginSetup.aspx" />
+    <Content Include="Screens\SCExpertConnectSetupPluginTypes.aspx" />
+    <Content Include="Screens\SCExpertConnectTransactions.aspx" />
+    <Content Include="Screens\SCExpertTransactionData.aspx" />
+    <Content Include="Screens\Scheduler.aspx" />
+    <Content Include="Screens\ScreenGenerator.aspx" />
+    <Content Include="Screens\Services.aspx" />
+    <Content Include="Screens\Shift.aspx" />
+    <Content Include="Screens\ShiftInstances.aspx" />
+    <Content Include="Screens\ShiftMaster.aspx" />
+    <Content Include="Screens\ShiftPerformance.aspx" />
+    <Content Include="Screens\Shipment.aspx" />
+    <Content Include="Screens\ShowOutbounds.aspx" />
+    <Content Include="Screens\SignatureImage.aspx" />
+    <Content Include="Screens\SignatureView.aspx" />
+    <Content Include="Screens\Simulators.aspx" />
+    <Content Include="Screens\Sites.aspx" />
+    <Content Include="Screens\SKU.aspx" />
+    <Content Include="Screens\SkuClass.aspx" />
+    <Content Include="Screens\SLAssignmentPolicy.aspx" />
+    <Content Include="Screens\SLPlans.aspx" />
+    <Content Include="Screens\SplitLoad.aspx" />
+    <Content Include="Screens\TableMaintenance.aspx" />
+    <Content Include="Screens\TalkmanConfigurationSetup.aspx" />
+    <Content Include="Screens\TaskAssignment.aspx" />
+    <Content Include="Screens\TaskProblemCodes.aspx" />
+    <Content Include="Screens\Tasks.aspx" />
+    <Content Include="Screens\TasksPolicies.aspx" />
+    <Content Include="Screens\TransShipment.aspx" />
+    <Content Include="Screens\UseClockInAssignTask.aspx" />
+    <Content Include="Screens\UserInfo.aspx" />
+    <Content Include="Screens\ValueAdded.aspx" />
+    <Content Include="Screens\Vehicle.aspx" />
+    <Content Include="Screens\VehiclePosition.aspx" />
+    <Content Include="Screens\VehicleType.aspx" />
+    <Content Include="Screens\Verification.aspx" />
+    <Content Include="Screens\Wave.aspx" />
+    <Content Include="Screens\WHActivity.aspx" />
+    <Content Include="Screens\WHActivityViewer.aspx" />
+    <Content Include="Screens\WHArea.aspx" />
+    <Content Include="Screens\WHMapAisles.aspx" />
+    <Content Include="Screens\WHMapEdges.aspx" />
+    <Content Include="Screens\WHMapNodes.aspx" />
+    <Content Include="Screens\WHMapViewer.aspx" />
+    <Content Include="Screens\WHParams.aspx" />
+    <Content Include="Screens\WorkCenter.aspx" />
+    <Content Include="Screens\WorkRegion.aspx" />
+    <Content Include="Screens\WorkRegionManagement.aspx" />
+    <Content Include="Screens\WOScheduleLoads.aspx" />
+    <Content Include="Screens\BatchReplenishment.aspx" />
+    <Content Include="Screens\ZoneReplenishment.aspx" />
+    <Content Include="Screens\ZoneReplenishmentSetup.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="webctrl_client\1_0\images\folder.gif" />
+    <Content Include="webctrl_client\1_0\images\folderopen.gif" />
+    <Content Include="webctrl_client\1_0\images\html.gif" />
+    <Content Include="webctrl_client\1_0\images\root.gif" />
+    <Content Include="webctrl_client\1_0\MultiPage.htc" />
+    <Content Include="webctrl_client\1_0\TabStrip.htc" />
+    <Content Include="webctrl_client\1_0\toolbar.htc" />
+    <Content Include="webctrl_client\1_0\treeview.htc" />
+    <Content Include="webctrl_client\1_0\webservice.htc" />
+    <Content Include="webctrl_client\1_0\webserviced.htc" />
+    <EmbeddedResource Include="Default.aspx.resx">
+      <DependentUpon>Default.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\AppComponentCloneOptions.aspx.resx">
+      <DependentUpon>AppComponentCloneOptions.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\AppComponentDockConfig.aspx.resx">
+      <DependentUpon>AppComponentDockConfig.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\AppComponentDockList.aspx.resx">
+      <DependentUpon>AppComponentDockList.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\AppComponentEditor.ascx.resx">
+      <DependentUpon>AppComponentEditor.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\AppComponentEditor.aspx.resx">
+      <DependentUpon>AppComponentEditor.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\BaseAppComponentEditor.ascx.resx">
+      <DependentUpon>BaseAppComponentEditor.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\BaseAppComponentEditor.aspx.resx">
+      <DependentUpon>BaseAppComponentEditor.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\ChartViewer.aspx.resx">
+      <DependentUpon>ChartViewer.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\CustomViews.aspx.resx">
+      <DependentUpon>CustomViews.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\DOCSVExport.aspx.resx">
+      <DependentUpon>DOCSVExport.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\DocViewer.aspx.resx">
+      <DependentUpon>DocViewer.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\DODataImport.aspx.resx">
+      <DependentUpon>DODataImport.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\DOReportExport.aspx.resx">
+      <DependentUpon>DOReportExport.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\DTEditor.aspx.resx">
+      <DependentUpon>DTEditor.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\ExpressionProvider.aspx.resx">
+      <DependentUpon>ExpressionProvider.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\GroupManagement.aspx.resx">
+      <DependentUpon>GroupManagement.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\HelpScreen.aspx.resx">
+      <DependentUpon>HelpScreen.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\ImagePopup.aspx.resx">
+      <DependentUpon>ImagePopup.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\ImportManagerRun.ascx.resx">
+      <DependentUpon>ImportManagerRun.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\LabelTypes.aspx.resx">
+      <DependentUpon>LabelTypes.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\LangManagement.aspx.resx">
+      <DependentUpon>LangManagement.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\LibImageRotator.aspx.resx">
+      <DependentUpon>LibImageRotator.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\LicCreator.aspx.resx">
+      <DependentUpon>LicCreator.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\LicManScr.aspx.resx">
+      <DependentUpon>LicManScr.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\Login.aspx.resx">
+      <DependentUpon>Login.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\LoginWarehouse.aspx.resx">
+      <DependentUpon>LoginWarehouse.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\MenuEditor.aspx.resx">
+      <DependentUpon>MenuEditor.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\RadComboBoxDataProvider.aspx.resx">
+      <DependentUpon>RadComboBoxDataProvider.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\Reports.aspx.resx">
+      <DependentUpon>Reports.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\ReportSetup.aspx.resx">
+      <DependentUpon>ReportSetup.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\SavedSearch.ascx.resx">
+      <DependentUpon>SavedSearch.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\SavedSearch.aspx.resx">
+      <DependentUpon>SavedSearch.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\SchedulingApplications.aspx.resx">
+      <DependentUpon>SchedulingApplications.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\SchedulingTriggers.aspx.resx">
+      <DependentUpon>SchedulingTriggers.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\SQLQuery.aspx.resx">
+      <DependentUpon>SQLQuery.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\SysApplications.aspx.resx">
+      <DependentUpon>SysApplications.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\SysDynReport.aspx.resx">
+      <DependentUpon>SysDynReport.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\SysParam.aspx.resx">
+      <DependentUpon>SysParam.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\TableMaintenance.aspx.resx">
+      <DependentUpon>TableMaintenance.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\TypeAheadDataProvider.aspx.resx">
+      <DependentUpon>TypeAheadDataProvider.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\UserManagement.aspx.resx">
+      <DependentUpon>UserManagement.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m4nScreens\wc1.ascx.resx">
+      <DependentUpon>wc1.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadControls\Chart\Image.aspx.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\AddMatcher.aspx.resx">
+      <DependentUpon>AddMatcher.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\AdjustCustomized.aspx.resx">
+      <DependentUpon>AdjustCustomized.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\AdjustmentDocument.aspx.resx">
+      <DependentUpon>AdjustmentDocument.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Adjustments.aspx.resx">
+      <DependentUpon>Adjustments.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Agreement.aspx.resx">
+      <DependentUpon>Agreement.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\AssemblyWorkOrder.aspx.resx">
+      <DependentUpon>AssemblyWorkOrder.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Audit.aspx.resx">
+      <DependentUpon>Audit.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\BillingAgreement.aspx.resx">
+      <DependentUpon>BillingAgreement.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\BillingCharges.aspx.resx">
+      <DependentUpon>BillingCharges.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\BillingPriceList.aspx.resx">
+      <DependentUpon>BillingPriceList.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\BlindReceipt.aspx.resx">
+      <DependentUpon>BlindReceipt.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\BlindReceiving.aspx.resx">
+      <DependentUpon>BlindReceiving.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Carrier.aspx.resx">
+      <DependentUpon>Carrier.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Clear.aspx.resx">
+      <DependentUpon>Clear.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CLTest.aspx.resx">
+      <DependentUpon>CLTest.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Company.aspx.resx">
+      <DependentUpon>Company.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CompleteWave.aspx.resx">
+      <DependentUpon>CompleteWave.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Consignee.aspx.resx">
+      <DependentUpon>Consignee.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Consolidation.aspx.resx">
+      <DependentUpon>Consolidation.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ConsolidationTasks.aspx.resx">
+      <DependentUpon>ConsolidationTasks.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ContainerContent.aspx.resx">
+      <DependentUpon>ContainerContent.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LaborTaskDurationDelay.aspx.resx">
+      <DependentUpon>LaborTaskDurationDelay.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LocationCountSchedule.aspx.resx">
+      <DependentUpon>LocationCountSchedule.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LocationCount.aspx.resx">
+      <DependentUpon>LocationCount.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\SkuGroup.aspx.resx">
+      <DependentUpon>SkuGroup.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\UserPickRegion.aspx.resx">
+      <DependentUpon>UserPickRegion.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\WeightInventory.aspx.resx">
+      <DependentUpon>WeightInventory.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CountingSchedule.aspx.resx">
+      <DependentUpon>CountingSchedule.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CreateLoad.aspx.resx">
+      <DependentUpon>CreateLoad.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CreateLoads.aspx.resx">
+      <DependentUpon>CreateLoads.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CustData.aspx.resx">
+      <DependentUpon>CustData.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CustPoint.aspx.resx">
+      <DependentUpon>CustPoint.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CycleCount.aspx.resx">
+      <DependentUpon>CycleCount.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Deliveries.aspx.resx">
+      <DependentUpon>Deliveries.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\DisAssemblyWorkOrder.aspx.resx">
+      <DependentUpon>DisAssemblyWorkOrder.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Driver.aspx.resx">
+      <DependentUpon>Driver.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\DriversPoint.aspx.resx">
+      <DependentUpon>DriversPoint.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\DTEditor.aspx.resx">
+      <DependentUpon>DTEditor.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Equipment.aspx.resx">
+      <DependentUpon>Equipment.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Flowthrough.aspx.resx">
+      <DependentUpon>Flowthrough.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\getmapimg.aspx.resx">
+      <DependentUpon>getmapimg.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\GoWebImage.aspx.resx">
+      <DependentUpon>GoWebImage.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\HandelingUnitType.aspx.resx">
+      <DependentUpon>HandelingUnitType.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\HandOffSetup.aspx.resx">
+      <DependentUpon>HandOffSetup.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ImportManager.aspx.resx">
+      <DependentUpon>ImportManager.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\InboundOrder.aspx.resx">
+      <DependentUpon>InboundOrder.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\InvArea.aspx.resx">
+      <DependentUpon>InvArea.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\InvConsignee.aspx.resx">
+      <DependentUpon>InvConsignee.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\InvCount.aspx.resx">
+      <DependentUpon>InvCount.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\InventoryAdjustment.aspx.resx">
+      <DependentUpon>InventoryAdjustment.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\InventoryHold.aspx.resx">
+      <DependentUpon>InventoryHold.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\InventoryMove.aspx.resx">
+      <DependentUpon>InventoryMove.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\InvLocation.aspx.resx">
+      <DependentUpon>InvLocation.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\InvSKU.aspx.resx">
+      <DependentUpon>InvSKU.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\InvTrans.aspx.resx">
+      <DependentUpon>InvTrans.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LaborCalcMethod.aspx.resx">
+      <DependentUpon>LaborCalcMethod.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LaborCalcParam.aspx.resx">
+      <DependentUpon>LaborCalcParam.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LaborPerfAudit.aspx.resx">
+      <DependentUpon>LaborPerfAudit.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LaborTaskCalc.aspx.resx">
+      <DependentUpon>LaborTaskCalc.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LaborUserInfo.aspx.resx">
+      <DependentUpon>LaborUserInfo.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LangSkinSetup.aspx.resx">
+      <DependentUpon>LangSkinSetup.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\licenses.licx" />
+    <EmbeddedResource Include="Screens\LimboAdjustments.aspx.resx">
+      <DependentUpon>LimboAdjustments.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Load.aspx.resx">
+      <DependentUpon>Load.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LoadAtt.aspx.resx">
+      <DependentUpon>LoadAtt.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LoadingPlan.aspx.resx">
+      <DependentUpon>LoadingPlan.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LoadingPlanPolicies.aspx.resx">
+      <DependentUpon>LoadingPlanPolicies.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LoadsLocation.aspx.resx">
+      <DependentUpon>LoadsLocation.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Location.aspx.resx">
+      <DependentUpon>Location.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LocationCountingSchedule.aspx.resx">
+      <DependentUpon>LocationCountingSchedule.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Main.aspx.resx">
+      <DependentUpon>Main.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Menu.aspx.resx">
+      <DependentUpon>Menu.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\MHE.aspx.resx">
+      <DependentUpon>MHE.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\NewMDScreen.aspx.resx">
+      <DependentUpon>NewMDScreen.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\OutboundHandlingUnits.aspx.resx">
+      <DependentUpon>OutboundHandlingUnits.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\OutboundOrder.aspx.resx">
+      <DependentUpon>OutboundOrder.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\OutboundOrderStatuses.aspx.resx">
+      <DependentUpon>OutboundOrderStatuses.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\OutordRoutes.aspx.resx">
+      <DependentUpon>OutordRoutes.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Packing.aspx.resx">
+      <DependentUpon>Packing.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Pick.aspx.resx">
+      <DependentUpon>Pick.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PickContainer.aspx.resx">
+      <DependentUpon>PickContainer.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PickingPolicy.aspx.resx">
+      <DependentUpon>PickingPolicy.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PickList.aspx.resx">
+      <DependentUpon>PickList.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PickLists.aspx.resx">
+      <DependentUpon>PickLists.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PickLoc.aspx.resx">
+      <DependentUpon>PickLoc.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PickUps.aspx.resx">
+      <DependentUpon>PickUps.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PlanPolicy.aspx.resx">
+      <DependentUpon>PlanPolicy.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PoliciesLookup.aspx.resx">
+      <DependentUpon>PoliciesLookup.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PostCharges.aspx.resx">
+      <DependentUpon>PostCharges.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PriceList.aspx.resx">
+      <DependentUpon>PriceList.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PutawayPolicies.aspx.resx">
+      <DependentUpon>PutawayPolicies.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\RealTableMaintenance.aspx.resx">
+      <DependentUpon>RealTableMaintenance.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Receipt.aspx.resx">
+      <DependentUpon>Receipt.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Replenishment.aspx.resx">
+      <DependentUpon>Replenishment.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ReplPolicy.aspx.resx">
+      <DependentUpon>ReplPolicy.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ReplTasks.aspx.resx">
+      <DependentUpon>ReplTasks.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ReportGenerator.aspx.resx">
+      <DependentUpon>ReportGenerator.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\RoutePolicy.aspx.resx">
+      <DependentUpon>RoutePolicy.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Scheduler.aspx.resx">
+      <DependentUpon>Scheduler.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Services.aspx.resx">
+      <DependentUpon>Services.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Shift.aspx.resx">
+      <DependentUpon>Shift.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ShiftPerformance.aspx.resx">
+      <DependentUpon>ShiftPerformance.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Shipment.aspx.resx">
+      <DependentUpon>Shipment.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ShippingContainers.aspx.resx">
+      <DependentUpon>ShippingContainers.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ShowOutbounds.aspx.resx">
+      <DependentUpon>ShowOutbounds.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\SignatureImage.aspx.resx">
+      <DependentUpon>SignatureImage.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\SignatureView.aspx.resx">
+      <DependentUpon>SignatureView.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Sites.aspx.resx">
+      <DependentUpon>Sites.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\SKU.aspx.resx">
+      <DependentUpon>SKU.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\SkuClass.aspx.resx">
+      <DependentUpon>SkuClass.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\SLPlans.aspx.resx">
+      <DependentUpon>SLPlans.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\SplitLoad.aspx.resx">
+      <DependentUpon>SplitLoad.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\TableMaintenance.aspx.resx">
+      <DependentUpon>TableMaintenance.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\TaskAssignment.aspx.resx">
+      <DependentUpon>TaskAssignment.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Tasks.aspx.resx">
+      <DependentUpon>Tasks.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\TasksPolicies.aspx.resx">
+      <DependentUpon>TasksPolicies.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\TransShipment.aspx.resx">
+      <DependentUpon>TransShipment.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\UserInfo.aspx.resx">
+      <DependentUpon>UserInfo.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ValueAdded.aspx.resx">
+      <DependentUpon>ValueAdded.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Vehicle.aspx.resx">
+      <DependentUpon>Vehicle.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\VehiclePosition.aspx.resx">
+      <DependentUpon>VehiclePosition.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\VehicleType.aspx.resx">
+      <DependentUpon>VehicleType.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Verification.aspx.resx">
+      <DependentUpon>Verification.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Wave.aspx.resx">
+      <DependentUpon>Wave.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\WHActivity.aspx.resx">
+      <DependentUpon>WHActivity.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\WHActivityViewer.aspx.resx">
+      <DependentUpon>WHActivityViewer.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\WHMapAisles.aspx.resx">
+      <DependentUpon>WHMapAisles.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\WHMapEdges.aspx.resx">
+      <DependentUpon>WHMapEdges.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\WHMapNodes.aspx.resx">
+      <DependentUpon>WHMapNodes.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\WHMapViewer.aspx.resx">
+      <DependentUpon>WHMapViewer.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\WorkCenter.aspx.resx">
+      <DependentUpon>WorkCenter.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\WOScheduleLoads.aspx.resx">
+      <DependentUpon>WOScheduleLoads.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\BatchReplenishment.aspx.resx">
+      <DependentUpon>BatchReplenishment.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ZoneReplenishment.aspx.resx">
+      <DependentUpon>ZoneReplenishment.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ZoneReplenishmentSetup.aspx.resx">
+      <DependentUpon>ZoneReplenishmentSetup.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="resources\fonts\icomoon.eot" />
+    <Content Include="resources\fonts\icomoon.ttf" />
+    <Content Include="resources\fonts\icomoon.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ChartTemp\" />
+    <Folder Include="Logs\" />
+    <Folder Include="RadControls\Menu\Images\" />
+    <Folder Include="rst\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

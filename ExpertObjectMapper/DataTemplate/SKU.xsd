@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SKU" targetNamespace="http://tempuri.org/SKU.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/SKU.xsd" xmlns:mstns="http://tempuri.org/SKU.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified">
+  <xs:element name="BUSINESSOBJECT">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="BOTYPE" type="xs:string" />
+				<xs:element name="DATACOLLECTION" type="xs:string" />
+				<xs:element name="DATA">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CONSIGNEE" type="xs:string" />
+							<xs:element name="SKU" type="xs:string" />
+							<xs:element name="DEFAULTUOM" type="xs:string" />
+							<xs:element name="SKUDESC" type="xs:string" />
+							<xs:element name="PICKSORTORDER" type="xs:string" />
+							<xs:element name="SKUSHORTDESC" type="xs:string" />
+							<xs:element name="MANUFACTURERSKU" type="xs:string" />
+							<xs:element name="VENDORSKU" type="xs:string" />
+							<xs:element name="OTHERSKU" type="xs:string" />
+							<xs:element name="SKUGROUP" type="xs:string" />
+              <xs:element name="PARENTSKU" type="xs:string" />
+							<xs:element name="STATUS" type="xs:boolean" />
+							<xs:element name="INVENTORY" type="xs:boolean" />
+							<xs:element name="NEWSKU" type="xs:boolean" />
+							<xs:element name="INITIALSTATUS" type="xs:string" />
+							<xs:element name="VELOCITY" type="xs:string" />
+							<xs:element name="FIFOINDIFFERENCE" type="xs:double" />
+							<xs:element name="ONSITEMIN" type="xs:decimal" />
+							<xs:element name="ONSITEMAX" type="xs:decimal" />
+							<xs:element name="LASTCYCLECOUNT" type="xs:dateTime" />
+							<xs:element name="CYCLECOUNTINT" type="xs:integer" />
+							<xs:element name="LOWLIMITCOUNT" type="xs:integer" />
+							<xs:element name="PREFLOCATION" type="xs:string" />
+							<xs:element name="PREFPUTREGION" type="xs:string" />
+							<xs:element name="PICTURE" type="xs:string" />
+							<xs:element name="UNITPRICE" type="xs:double" />
+							<xs:element name="HAZCLASS" type="xs:string" />
+							<xs:element name="TRANSPORTATIONCLASS" type="xs:string" />
+							<xs:element name="OVERPICKPCT" type="xs:decimal" />
+							<xs:element name="OVERRECEIVEPCT" type="xs:decimal" />
+							<xs:element name="HUTYPE" type="xs:string" />
+							<xs:element name="DEFAULTRECUOM" type="xs:string" />
+							<xs:element name="NOTES" type="xs:string" />
+							<xs:element name="OPORTUNITYRELPFLAG" type="xs:boolean" />
+							<xs:element name="STORAGECLASS" type="xs:string" />
+							<xs:element name="PREFWAREHOUSEAREA" type="xs:string" />
+							<xs:element name="BASEITEM" type="xs:string" />
+							<xs:element name="AUTOADJUSTCOUNTQTY" type="xs:decimal" />
+							<xs:element name="DEFAULTRECLOADUOM" type="xs:string" />
+							<xs:element name="OVERALLOCMODE" type="xs:string" />
+							<xs:element name="BASEITEMQTY" type="xs:decimal" />
+							<xs:element name="RECEIVINGWEIGHTCAPTUREMETHOD" type="xs:string" />
+							<xs:element name="SHIPPINGWEIGHTCAPTUREMETHOD" type="xs:string" />
+							<xs:element name="RECEIVINGWEIGHTTOLERANCE" type="xs:decimal" />
+							<xs:element name="SHIPPINGWEIGHTTOLERANCE" type="xs:decimal" />
+							<xs:element name="UOMCOLLECTION">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="UOMOBJ">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="UOM" type="xs:string" />
+													<xs:element name="EANUPC" type="xs:string" />
+													<xs:element name="GROSSWEIGHT" type="xs:decimal" />
+													<xs:element name="NETWEIGHT" type="xs:decimal" />
+													<xs:element name="LENGTH" type="xs:decimal" />
+													<xs:element name="WIDTH" type="xs:decimal" />
+													<xs:element name="HEIGHT" type="xs:decimal" />
+													<xs:element name="VOLUME" type="xs:decimal" />
+													<xs:element name="LOWERUOM" type="xs:string" />
+													<xs:element name="UNITSPERMEASURE" type="xs:decimal" />
+													<xs:element name="SHIPPABLE" type="xs:boolean" />
+													<xs:element name="LABORPACKAGETYPE" type="xs:string" />
+													<xs:element name="LABORGRABTYPE" type="xs:string" />
+													<xs:element name="LABORPREPARATIONTYPE" type="xs:string" />
+													<xs:element name="LABORHANDLINGTYPE" type="xs:string" />
+													<xs:element name="NESTEDQUANTITY" type="xs:decimal" />
+													<xs:element name="NESTEDHEIGHTDIFF" type="xs:decimal" />
+													<xs:element name="NESTEDDEPTHDIFF" type="xs:decimal" />
+													<xs:element name="NESTEDWIDTHDIFF" type="xs:decimal" />
+													<xs:element name="NESTEDVOLUMEDIFF" type="xs:decimal" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="BOMCOLLECTION">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="BOMOBJ">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="BOMSKU" type="xs:string" />
+													<xs:element name="PARTSKU" type="xs:string" />
+													<xs:element name="PARTQTY" type="xs:decimal" />
+													<xs:element name="BOMORDER" type="xs:string" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="SKUCLASS">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="CLASSNAME" type="xs:string" />
+										<xs:element name="DESCRIPTION" type="xs:string" />
+										<xs:element name="ATTRIBUTES">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="ATTRIBUTE">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="ATTNAME" type="xs:string" />
+																<xs:element name="ATTVALUE" type="xs:string" />
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="SKUATTRIBUTES">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="SKUATTRIBUTE">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="ATTRIBUTENAME" type="xs:string" />
+													<xs:element name="ATTRIBUTEVALUE" type="xs:string" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+  </xs:element>
+</xs:schema>

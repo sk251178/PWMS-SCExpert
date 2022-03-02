@@ -1,0 +1,4 @@
+﻿[*.vb]
+
+# BC40027: Return type of function is not CLS-compliant
+dotnet_diagnostic.BC40027.severity = none
